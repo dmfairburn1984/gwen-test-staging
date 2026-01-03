@@ -1127,7 +1127,7 @@ app.get('/widget', (req, res) => {
 // 3. PASTE all the code below DIRECTLY ABOVE that line
 // 4. Save the file
 // 5. Push to Heroku: git add . && git commit -m "Add test runner" && git push heroku main
-// 6. Access tests at: https://gwen-sales-agent.herokuapp.com/run-tests
+// 6. Access tests at: https://gwen-test-staging.herokuapp.com/run-tests
 // 
 // =====================================================
 
