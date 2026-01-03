@@ -136,6 +136,25 @@ productKnowledgeCenter.forEach(product => {
 console.log(`📦 Indexed ${Object.keys(productIndex.bySku).length} products`);
 console.log(`📦 Inventory records: ${inventoryData.length}`);
 
+// Verify specific product exists
+const testProduct = productIndex.bySku['FARO-LOUNGE-SET'];
+if (testProduct) {
+    console.log(`✅ FARO-LOUNGE-SET found in index:`);
+    console.log(`   - Name: ${testProduct.product_identity?.product_name}`);
+    console.log(`   - Material: ${testProduct.description_and_category?.material_type}`);
+    console.log(`   - Taxonomy: ${testProduct.description_and_category?.taxonomy_type}`);
+    console.log(`   - Seats: ${testProduct.specifications?.seats} (type: ${typeof testProduct.specifications?.seats})`);
+} else {
+    console.log(`❌ FARO-LOUNGE-SET NOT FOUND in index!`);
+    console.log(`   Sample SKUs: ${Object.keys(productIndex.bySku).slice(0, 5).join(', ')}`);
+}
+
+// Count rattan products
+const rattanCount = Object.values(productIndex.bySku).filter(p => 
+    p.description_and_category?.material_type?.toLowerCase() === 'rattan'
+).length;
+console.log(`📦 Rattan products: ${rattanCount}`);
+
 // ============================================
 // STOCK CHECKING - Filter BEFORE AI sees products
 // ============================================
@@ -967,6 +986,69 @@ app.get('/debug-search', (req, res) => {
         query: { type, material, seats },
         count: results.length,
         results: results
+    });
+});
+
+// Debug endpoint to check specific product
+app.get('/debug-product/:sku', (req, res) => {
+    const sku = req.params.sku;
+    const product = productIndex.bySku[sku];
+    
+    if (!product) {
+        // Try to find by partial match
+        const allSkus = Object.keys(productIndex.bySku);
+        const matches = allSkus.filter(s => s.toLowerCase().includes(sku.toLowerCase()));
+        return res.json({
+            error: `Product ${sku} not found`,
+            did_you_mean: matches.slice(0, 5),
+            total_products: allSkus.length
+        });
+    }
+    
+    const stock = getProductStock(sku);
+    
+    res.json({
+        sku: sku,
+        found: true,
+        name: product.product_identity?.product_name,
+        material_type: product.description_and_category?.material_type,
+        taxonomy_type: product.description_and_category?.taxonomy_type,
+        seats: product.specifications?.seats,
+        seats_type: typeof product.specifications?.seats,
+        stock: stock,
+        would_pass_filters: {
+            has_sku: !!product.product_identity?.sku,
+            has_category: !!product.description_and_category?.primary_category,
+            material_is_rattan: product.description_and_category?.material_type?.toLowerCase() === 'rattan',
+            seats_gte_8: (parseInt(product.specifications?.seats) || 0) >= 8,
+            is_lounge: product.description_and_category?.taxonomy_type?.toLowerCase().includes('lounge'),
+            is_in_stock: stock > 0
+        }
+    });
+});
+
+// Debug endpoint to find all rattan products
+app.get('/debug-rattan', (req, res) => {
+    const allProducts = Object.values(productIndex.bySku);
+    
+    const rattanProducts = allProducts.filter(p => {
+        const materialType = p.description_and_category?.material_type?.toLowerCase() || '';
+        return materialType.includes('rattan');
+    });
+    
+    const result = rattanProducts.map(p => ({
+        sku: p.product_identity?.sku,
+        name: p.product_identity?.product_name,
+        material: p.description_and_category?.material_type,
+        taxonomy: p.description_and_category?.taxonomy_type,
+        seats: p.specifications?.seats,
+        stock: getProductStock(p.product_identity?.sku)
+    }));
+    
+    res.json({
+        total_products: allProducts.length,
+        rattan_count: rattanProducts.length,
+        rattan_products: result
     });
 });
 
