@@ -173,11 +173,13 @@ function searchProducts(criteria) {
         p.description_and_category?.primary_category
     );
     
-    console.log(`🔍 Search: type=${furnitureType}, material=${material}, seats=${seatCount}`);
+    console.log(`🔍 Search criteria: type=${furnitureType}, material=${material}, seats=${seatCount}`);
+    console.log(`🔍 Starting with ${filtered.length} products`);
     
     // Filter by furniture type
     if (furnitureType) {
         const type = furnitureType.toLowerCase();
+        const beforeCount = filtered.length;
         filtered = filtered.filter(p => {
             const taxonomy = p.description_and_category?.taxonomy_type?.toLowerCase() || '';
             const category = p.description_and_category?.primary_category?.toLowerCase() || '';
@@ -187,27 +189,59 @@ function searchProducts(criteria) {
             if (type === 'lounge') return taxonomy.includes('lounge') || category.includes('lounge') || name.includes('lounge') || name.includes('sofa');
             if (type === 'corner') return taxonomy.includes('corner') || name.includes('corner');
             if (type === 'lounger') return taxonomy.includes('lounger') || name.includes('lounger') || name.includes('sun');
-            return false;
+            return true; // If unknown type, don't filter
         });
+        console.log(`🔍 After furniture type filter (${type}): ${filtered.length} products (was ${beforeCount})`);
     }
     
     // Filter by material
     if (material) {
         const mat = material.toLowerCase();
+        const beforeCount = filtered.length;
         filtered = filtered.filter(p => {
             const materialType = p.description_and_category?.material_type?.toLowerCase() || '';
             const name = p.product_identity?.product_name?.toLowerCase() || '';
             return materialType.includes(mat) || name.includes(mat);
         });
+        console.log(`🔍 After material filter (${mat}): ${filtered.length} products (was ${beforeCount})`);
     }
     
-    // Filter by seat count
+    // Filter by seat count - MINIMUM seats, not approximate
     if (seatCount) {
         const target = parseInt(seatCount);
+        const beforeCount = filtered.length;
+        const beforeFilter = filtered.map(p => ({
+            sku: p.product_identity?.sku,
+            seats: p.specifications?.seats
+        }));
+        console.log(`🔍 Products before seat filter:`, beforeFilter.slice(0, 10));
+        
         filtered = filtered.filter(p => {
             const seats = parseInt(p.specifications?.seats);
-            return seats && Math.abs(seats - target) <= 2;
+            // Must have AT LEAST the requested number of seats
+            return seats && seats >= target;
         });
+        console.log(`🔍 After seat filter (>=${target}): ${filtered.length} products (was ${beforeCount})`);
+        
+        // If no exact matches, try slightly smaller but warn
+        if (filtered.length === 0 && beforeCount > 0) {
+            console.log(`   ⚠️ No products with ${target}+ seats, showing best available`);
+            // Go back to before seat filter and sort by seats descending
+            filtered = Object.values(productIndex.bySku).filter(p => {
+                if (material) {
+                    const mt = p.description_and_category?.material_type?.toLowerCase() || '';
+                    if (!mt.includes(material.toLowerCase())) return false;
+                }
+                if (furnitureType) {
+                    const taxonomy = p.description_and_category?.taxonomy_type?.toLowerCase() || '';
+                    const name = p.product_identity?.product_name?.toLowerCase() || '';
+                    if (furnitureType === 'lounge' && !taxonomy.includes('lounge') && !name.includes('lounge')) return false;
+                }
+                const seats = parseInt(p.specifications?.seats);
+                return seats && seats > 0;
+            });
+            filtered.sort((a, b) => (parseInt(b.specifications?.seats) || 0) - (parseInt(a.specifications?.seats) || 0));
+        }
     }
     
     // Filter by name
@@ -221,6 +255,7 @@ function searchProducts(criteria) {
     }
     
     // CRITICAL: Filter out-of-stock products BEFORE returning to AI
+    const beforeStockCount = filtered.length;
     const inStockProducts = filtered.filter(p => {
         const sku = p.product_identity.sku;
         const stock = getProductStock(sku);
@@ -231,9 +266,11 @@ function searchProducts(criteria) {
         return true;
     });
     
-    console.log(`🔍 Found ${filtered.length} products, ${inStockProducts.length} in stock`);
+    console.log(`🔍 After stock filter: ${inStockProducts.length} products (was ${beforeStockCount})`);
     
     const results = inStockProducts.slice(0, maxResults);
+    
+    console.log(`🔍 Final results: ${results.map(p => p.product_identity.sku + '(' + p.specifications?.seats + ' seats)').join(', ')}`);
     
     return results.map(p => ({
         sku: p.product_identity.sku,
@@ -752,6 +789,16 @@ app.post('/chat', async (req, res) => {
                     session.currentWhitelist = products.map(p => p.sku);
                     console.log(`🛡️ Whitelist: [${session.currentWhitelist.join(', ')}]`);
                     
+                    // Check if products actually meet the seat requirement
+                    let seatWarning = null;
+                    if (args.seatCount && products.length > 0) {
+                        const requestedSeats = parseInt(args.seatCount);
+                        const maxSeatsFound = Math.max(...products.map(p => parseInt(p.seats) || 0));
+                        if (maxSeatsFound < requestedSeats) {
+                            seatWarning = `Customer requested ${requestedSeats}+ seats but largest available is ${maxSeatsFound} seats. Be honest about this limitation.`;
+                        }
+                    }
+                    
                     toolResults.push({
                         tool_call_id: toolCall.id,
                         output: JSON.stringify({
@@ -759,9 +806,11 @@ app.post('/chat', async (req, res) => {
                             available_skus: session.currentWhitelist,
                             count: products.length,
                             products: products,
+                            searched_for: args,
+                            warning: seatWarning,
                             note: products.length > 0 
-                                ? "Use ONLY these SKUs in selected_skus. Server will render product details."
-                                : "No in-stock products found. Ask customer about alternative criteria."
+                                ? "Use ONLY these SKUs. Server renders details. " + (seatWarning || "")
+                                : "No in-stock products found matching criteria. Suggest alternatives or ask about different requirements."
                         })
                     });
                 }
@@ -901,6 +950,24 @@ app.get('/debug-session/:sessionId', (req, res) => {
     const session = sessions.get(req.params.sessionId);
     if (!session) return res.json({ error: 'Session not found' });
     res.json(session);
+});
+
+// Debug endpoint to test search directly
+app.get('/debug-search', (req, res) => {
+    const { type, material, seats } = req.query;
+    console.log(`\n🧪 DEBUG SEARCH: type=${type}, material=${material}, seats=${seats}`);
+    
+    const results = searchProducts({
+        furnitureType: type || undefined,
+        material: material || undefined,
+        seatCount: seats ? parseInt(seats) : undefined
+    });
+    
+    res.json({
+        query: { type, material, seats },
+        count: results.length,
+        results: results
+    });
 });
 
 app.get('/', (req, res) => {
