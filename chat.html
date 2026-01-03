@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINT Outdoor - Chat with Gwen</title>
+    
+    <!-- Brand Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- MINT OUTDOOR Brand Design System --- */
+        :root {
+            /* Brand Colors */
+            --color-mint-green: #9FDCC2;
+            --color-forest-green: #2E6041;
+            --color-off-white: #F5F5F0;
+            --color-charcoal-gray: #333333;
+            --color-black: #000000;
+            
+            /* Typography */
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Lora', serif;
+            
+            /* Spacing */
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            
+            /* Borders & Radius */
+            --border-radius: 8px;
+            --border-color: #EAEAEA;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-secondary);
+            background: var(--color-off-white);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-charcoal-gray);
+        }
+        
+        /* Main Chat Container */
+        .chat-container {
+            width: 90%;
+            max-width: 900px;
+            height: 85vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        /* Header */
+        .chat-header {
+            background: var(--color-off-white);
+            padding: var(--spacing-lg);
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+        
+        .chat-header h1 {
+            font-family: var(--font-primary);
+            font-weight: 800;
+            font-size: 24px;
+            color: var(--color-mint-green);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .chat-header p {
+            font-size: 16px;
+            color: var(--color-charcoal-gray);
+        }
+        
+        /* Status Indicators */
+        .status-indicators {
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-lg);
+            display: flex;
+            gap: var(--spacing-sm);
+            align-items: center;
+        }
+        
+        .status-indicator {
+            font-size: 12px;
+            padding: 6px 12px;
+            background: rgba(159, 220, 194, 0.2);
+            color: var(--color-forest-green);
+            border-radius: 20px;
+            font-family: var(--font-primary);
+            font-weight: 600;
+        }
+        
+        .status-indicator.error {
+            background: rgba(255, 0, 0, 0.1);
+            color: #d32f2f;
+        }
+        
+        /* Messages Area */
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: var(--spacing-lg);
+            scroll-behavior: smooth;
+        }
+        
+        .message {
+            display: flex;
+            margin-bottom: var(--spacing-lg);
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .message.user {
+            flex-direction: row-reverse;
+        }
+        
+        .message-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-primary);
+            font-weight: 700;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        
+        .message.bot .message-avatar {
+            background: var(--color-mint-green);
+            color: var(--color-forest-green);
+            margin-right: var(--spacing-sm);
+        }
+        
+        .message.user .message-avatar {
+            background: var(--color-forest-green);
+            color: white;
+            margin-left: var(--spacing-sm);
+        }
+        
+        .message-bubble {
+            max-width: 70%;
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            position: relative;
+        }
+        
+        .message.bot .message-bubble {
+            background: white;
+            border: 1px solid var(--border-color);
+            color: var(--color-charcoal-gray);
+        }
+        
+        .message.user .message-bubble {
+            background: var(--color-forest-green);
+            color: white;
+        }
+        
+        /* Product Formatting Styles */
+        .message-bubble h3 {
+            font-family: var(--font-primary);
+            font-size: 18px;
+            color: var(--color-black);
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            line-height: 1.3;
+        }
+        
+        .message-bubble img {
+            max-width: 100%;
+            border-radius: var(--border-radius);
+            margin: 12px 0;
+            border: 1px solid var(--border-color);
+        }
+        
+        .product-detail {
+            font-family: var(--font-primary);
+            font-size: 15px;
+            margin: 6px 0;
+        }
+        
+        .product-detail.price {
+            color: var(--color-forest-green);
+            font-weight: 700;
+        }
+        
+        .product-cta {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: var(--color-forest-green);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 14px;
+            font-family: var(--font-primary);
+            transition: all 0.2s;
+        }
+        
+        .product-cta:hover {
+            background: var(--color-black);
+            transform: translateY(-1px);
+        }
+        
+        .assembly-guide {
+            background: var(--color-off-white);
+            color: var(--color-charcoal-gray);
+            border: 1px solid var(--border-color);
+            margin-top: 8px;
+            padding: 10px 18px;
+        }
+        
+        /* Typing Indicator */
+        .typing-indicator {
+            display: none;
+            padding: 0 var(--spacing-lg) var(--spacing-md);
+        }
+        
+        .typing-indicator.show {
+            display: block;
+        }
+        
+        .typing-content {
+            display: inline-flex;
+            align-items: center;
+            padding: var(--spacing-sm) var(--spacing-md);
+            background: rgba(159, 220, 194, 0.1);
+            border-radius: 20px;
+        }
+        
+        .typing-text {
+            font-size: 14px;
+            color: var(--color-forest-green);
+            margin-right: var(--spacing-sm);
+            font-style: italic;
+        }
+        
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-forest-green);
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+        
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes typing {
+            0%, 60%, 100% {
+                transform: translateY(0);
+                opacity: 0.5;
+            }
+            30% {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+        }
+        
+        /* Suggestions */
+        .suggestions-container {
+            padding: 0 var(--spacing-lg) var(--spacing-md);
+            display: none;
+        }
+        
+        .suggestions-container.show {
+            display: block;
+        }
+        
+        .suggestions {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+        
+        .suggestion-button {
+            padding: 8px 16px;
+            background: white;
+            border: 2px solid var(--color-mint-green);
+            color: var(--color-forest-green);
+            border-radius: 20px;
+            font-family: var(--font-primary);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .suggestion-button:hover {
+            background: var(--color-mint-green);
+            transform: translateY(-1px);
+        }
+        
+
+        
+        /* Input Area */
+        .chat-input-container {
+            padding: var(--spacing-lg);
+            background: white;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: var(--spacing-md);
+        }
+        
+        .chat-input {
+            flex: 1;
+            padding: var(--spacing-md);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-family: var(--font-secondary);
+            font-size: 16px;
+            resize: none;
+            outline: none;
+            transition: border-color 0.2s;
+            min-height: 50px;
+            max-height: 120px;
+        }
+        
+        .chat-input:focus {
+            border-color: var(--color-mint-green);
+        }
+        
+        .send-button {
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: var(--color-forest-green);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: var(--font-primary);
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        
+        .send-button:hover:not(:disabled) {
+            background: var(--color-black);
+            transform: translateY(-1px);
+        }
+        
+        .send-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .chat-container {
+                width: 100%;
+                height: 100vh;
+                border-radius: 0;
+            }
+            
+            .chat-header h1 {
+                font-size: 20px;
+            }
+            
+            .message-bubble {
+                max-width: 85%;
+            }
+            
+            .status-indicators {
+                position: static;
+                margin-top: var(--spacing-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>MINT OUTDOOR</h1>
+            <p>Chat with Gwen, Your Personal Shopping Concierge</p>
+            <div class="status-indicators">
+                <div class="status-indicator" id="statusIndicator">ðŸŸ¢ Connected</div>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-avatar">G</div>
+                <div class="message-bubble">
+                    <div>Hello! I'm Gwen, your personal shopping concierge at MINT Outdoor. I'm here to help you find the perfect outdoor furniture for your space. What are you looking for today?</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="typing-content">
+                <span class="typing-text">Gwen is typing</span>
+                <div class="typing-dots">
+                    <span class="typing-dot"></span>
+                    <span class="typing-dot"></span>
+                    <span class="typing-dot"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="suggestions-container" id="suggestionsContainer">
+            <div class="suggestions" id="suggestions"></div>
+        </div>
+        
+        <div class="chat-input-container">
+            <textarea class="chat-input" id="chatInput" placeholder="Type your message here..." rows="1"></textarea>
+            <button class="send-button" id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        const API_URL = window.location.origin;
+        const sessionId = 'session_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+        
+        // DOM elements
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const sendButton = document.getElementById('sendButton');
+        const typingIndicator = document.getElementById('typingIndicator');
+        const statusIndicator = document.getElementById('statusIndicator');
+        const suggestionsContainer = document.getElementById('suggestionsContainer');
+        const suggestions = document.getElementById('suggestions');
+        
+        // Auto-focus and setup
+        window.addEventListener('load', () => {
+            chatInput.focus();
+        });
+        
+        // Auto-resize textarea
+        chatInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+        });
+        
+        // Send message on Enter (Shift+Enter for new line)
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+        
+        sendButton.addEventListener('click', sendMessage);
+        
+        // Format product messages with brand styling
+        function formatProductMessage(message) {
+            let formatted = message;
+            
+            // Product Title (Bold with brand font)
+            formatted = formatted.replace(/\*\*(.+?)\*\*/g, '<h3>$1</h3>');
+            
+            // Product Images
+            formatted = formatted.replace(/<img src="([^"]+)"[^>]*>/g, '<img src="$1" alt="Product Image">');
+            
+            // Key-Value Pairs (SKU, Price, Stock Status)
+            formatted = formatted.replace(/^(SKU|Price|Stock Status):(.+)$/gm, (match, key, value) => {
+                const className = key === 'Price' ? 'product-detail price' : 'product-detail';
+                return `<div class="${className}">${key}:${value}</div>`;
+            });
+            
+            // View Product Links (CTA Buttons)
+            formatted = formatted.replace(/\[View Product\]\((.*?)\)/g, 
+                '<a href="$1" target="_blank" class="product-cta">View in Store</a>');
+            
+            // Assembly Instructions
+            formatted = formatted.replace(/\[View Assembly Guide\]\((.*?)\)/g, 
+                '<a href="$1" target="_blank" class="product-cta assembly-guide">ðŸ“‹ Assembly Instructions</a>');
+            
+            // General Links
+            formatted = formatted.replace(/<a href="([^"]+)"[^>]*>([^<]+)<\/a>/g, (match, href, text) => {
+                if (match.includes('class=')) return match;
+                return `<a href="${href}" target="_blank" style="color: var(--color-forest-green); text-decoration: underline;">${text}</a>`;
+            });
+            
+            // Convert newlines to breaks
+            formatted = formatted.replace(/\n/g, '<br>');
+            
+            return formatted;
+        }
+        
+        // Add message to chat
+        function addMessage(message, isUser = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
+            
+            const avatarDiv = document.createElement('div');
+            avatarDiv.className = 'message-avatar';
+            avatarDiv.textContent = isUser ? 'You' : 'G';
+            
+            const bubbleDiv = document.createElement('div');
+            bubbleDiv.className = 'message-bubble';
+            
+            if (!isUser) {
+                bubbleDiv.innerHTML = formatProductMessage(message);
+            } else {
+                bubbleDiv.textContent = message;
+            }
+            
+            messageDiv.appendChild(avatarDiv);
+            messageDiv.appendChild(bubbleDiv);
+            chatMessages.appendChild(messageDiv);
+            
+            // Smooth scroll to new message
+            setTimeout(() => {
+                messageDiv.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }, 100);
+        }
+        
+        // Show/hide typing indicator
+        function showTyping(show = true) {
+            typingIndicator.classList.toggle('show', show);
+            if (show) {
+                typingIndicator.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }
+        }
+        
+        // Update status
+        function updateStatus(message, type = 'success') {
+            statusIndicator.textContent = message;
+            statusIndicator.className = 'status-indicator';
+            if (type === 'error') {
+                statusIndicator.style.background = 'rgba(255, 0, 0, 0.1)';
+                statusIndicator.style.color = '#d32f2f';
+            } else {
+                statusIndicator.style.background = 'rgba(159, 220, 194, 0.2)';
+                statusIndicator.style.color = 'var(--color-forest-green)';
+            }
+        }
+        
+        // Show suggestions
+        function showSuggestions(suggestionList) {
+            suggestions.innerHTML = '';
+            suggestionsContainer.classList.remove('show');
+            
+            if (suggestionList && suggestionList.length > 0) {
+                suggestionList.forEach(suggestion => {
+                    const button = document.createElement('button');
+                    button.className = 'suggestion-button';
+                    button.textContent = suggestion;
+                    button.onclick = () => sendSuggestion(suggestion);
+                    suggestions.appendChild(button);
+                });
+                suggestionsContainer.classList.add('show');
+            }
+        }
+        
+        // Send suggestion
+        function sendSuggestion(suggestion) {
+            chatInput.value = suggestion;
+            sendMessage();
+        }
+        
+        // Main send message function
+        async function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+            
+            // Add user message
+            addMessage(message, true);
+            chatInput.value = '';
+            chatInput.style.height = 'auto';
+            
+            // UI updates
+            sendButton.disabled = true;
+            showTyping(true);
+            updateStatus('ðŸŸ¡ Processing...', 'warning');
+            showSuggestions([]); // Hide suggestions
+            
+            try {
+                const response = await fetch(`${API_URL}/chat`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        sessionId: sessionId
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                // Hide typing and add bot response
+                showTyping(false);
+                addMessage(data.response, false);
+                
+                // Show suggestions if available
+                if (data.suggestions && data.suggestions.length > 0) {
+                    showSuggestions(data.suggestions);
+                }
+                
+                updateStatus('ðŸŸ¢ Connected');
+                
+            } catch (error) {
+                console.error('Chat error:', error);
+                showTyping(false);
+                addMessage('I apologize, but I\'m experiencing a connection issue. Please try again in a moment, or contact our team at marketing@mint-outdoor.com.', false);
+                updateStatus('ðŸ”´ Connection Error', 'error');
+            } finally {
+                sendButton.disabled = false;
+                chatInput.focus();
+            }
+        }
+        
+        console.log('MINT Outdoor Chat System Loaded - Enhanced Version');
+    </script>
+</body>
+</html>

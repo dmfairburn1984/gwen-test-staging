@@ -1,0 +1,733 @@
+{
+  "inventory": [
+    {
+      "sku": "STOCKHOLM-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 69,
+      "available": 202,
+      "runRate": 2,
+      "daysOfStock": 101,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FARO-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 61,
+      "available": 160,
+      "runRate": 2.5714285714285716,
+      "daysOfStock": 62.222222222222214,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHION-BOX",
+      "stockOnHand": 0,
+      "committed": 8,
+      "available": 159,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-COVER",
+      "stockOnHand": 0,
+      "committed": 25,
+      "available": 95,
+      "runRate": 1.1428571428571428,
+      "daysOfStock": 83.125,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-GREY",
+      "stockOnHand": 0,
+      "committed": 30,
+      "available": 96,
+      "runRate": 0.5714285714285714,
+      "daysOfStock": 168,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCKHOLM-CORNER-COVER",
+      "stockOnHand": 0,
+      "committed": 10,
+      "available": 75,
+      "runRate": 0.42857142857142855,
+      "daysOfStock": 175,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "Marbella Cushion Box",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": 66,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGETOWN-200-6S",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": 35,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-COVER",
+      "stockOnHand": 0,
+      "committed": 8,
+      "available": 33,
+      "runRate": 0.2857142857142857,
+      "daysOfStock": 115.5,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGETOWN-150-6S",
+      "stockOnHand": 0,
+      "committed": 5,
+      "available": 23,
+      "runRate": 0.42857142857142855,
+      "daysOfStock": 53.66666666666667,
+      "lowStockWarning": "30-60 Days"
+    },
+    {
+      "sku": "STOCKHOLM-CHAISE-COVER",
+      "stockOnHand": 0,
+      "committed": 8,
+      "available": 22,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": 154,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGETOWN-120-4S",
+      "stockOnHand": 0,
+      "committed": 9,
+      "available": 18,
+      "runRate": 0.42857142857142855,
+      "daysOfStock": 42,
+      "lowStockWarning": "30-60 Days"
+    },
+    {
+      "sku": "MALAGA-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 8,
+      "available": 20,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": 140,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HAVANA-8S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 18,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHESTERTON-COVER",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": 11,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA FIVE SEATER CORNER",
+      "stockOnHand": 0,
+      "committed": 39,
+      "available": 7,
+      "runRate": 0.5714285714285714,
+      "daysOfStock": 12.25,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "BALI-METAL-TAUPE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 9,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "OLIVIA-SICILY-8S-DINING",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 5,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CORA-SOFA-SET-4S",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": 3,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 9,
+      "available": 0,
+      "runRate": 0.2857142857142857,
+      "daysOfStock": 0,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "BALI-METAL-GREY",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": 1,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": 7,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "LIMA-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 2,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-2-SEATER-SOFA",
+      "stockOnHand": 0,
+      "committed": 6,
+      "available": 1,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": 7,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "LIMA-CORNER-LOUNGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MALAI-LOUNGE-SET-TEAK",
+      "stockOnHand": 0,
+      "committed": 8,
+      "available": 0,
+      "runRate": 0.2857142857142857,
+      "daysOfStock": 0,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "MARBELLA-COVER",
+      "stockOnHand": 0,
+      "committed": 10,
+      "available": 0,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": 0,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "TENERIFE-CORNER-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ARTHUR-CORNER-5S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ROSE-4S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGETOWN-70-2S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CORA-CORNER-SET-5S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WALLU-CORNER-5S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ION-4S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "TOMMY-4S-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "GIGI-4S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARKEY-4S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ROSE-LOVESEAT",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ROSE-CORNER-SOFA",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SIMON-6S-DINING",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "REVA-5S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "REVA-5S-CORNER",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ALEX-5S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "Marbella Cushion",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "TERRA-6S-CORNER",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SOLA-6S-DINING",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SOLA-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-8S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA CUSHION BOX",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-COVERS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KINGSTON-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "NUHA-SOFA-SET-4S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ROSE-DINING-6S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHES-CUSHIONS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-CUSHIONS-BLACK",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHION-COVERS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHION-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHES-CUSH-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": -2,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -2,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHES-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": -2,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-CUSHION-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": -2,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CNR-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": -2,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": -2,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": -3,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": -21,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "BARCELONA-COVERS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": -3,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": -3,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-BLACK-CSH-SET",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": -3,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-GREY-CSH-SET",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": -5,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-BEIGE-CUSHION-COVERS",
+      "stockOnHand": 0,
+      "committed": 4,
+      "available": -5,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LINH-CORNER-6S",
+      "stockOnHand": 0,
+      "committed": 4,
+      "available": -6,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHION-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 7,
+      "available": -7,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-BLACK-CUSHION-COVERS",
+      "stockOnHand": 0,
+      "committed": 7,
+      "available": -8,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCKHOLM-CHAISE-LOUNGE",
+      "stockOnHand": 0,
+      "committed": 24,
+      "available": -8,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": -56,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "SANTORINI-GREY-CUSHION-COVERS",
+      "stockOnHand": 0,
+      "committed": 10,
+      "available": -10,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-ORGANIC-CHAISE",
+      "stockOnHand": 0,
+      "committed": 35,
+      "available": -13,
+      "runRate": 0.42857142857142855,
+      "daysOfStock": -30.333333333333336,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "PALMA-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 12,
+      "available": -15,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ASSEMBLY-ADD-ON",
+      "stockOnHand": 0,
+      "committed": 4,
+      "available": -22,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCKHOLM-CORNER-BLACK",
+      "stockOnHand": 0,
+      "committed": 14,
+      "available": -107,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    }
+  ]
+}

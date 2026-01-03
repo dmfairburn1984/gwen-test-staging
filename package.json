@@ -1,0 +1,28 @@
+{
+  "name": "gwen-test-staging",
+  "version": "13.0.0",
+  "description": "GWEN Sales Agent - Phase 1 Test Version with Server-Side Rendering",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "openai": "^4.20.1",
+    "pg": "^8.11.3"
+  },
+  "keywords": [
+    "chatbot",
+    "sales",
+    "mint-outdoor"
+  ],
+  "author": "MINT Outdoor",
+  "license": "ISC"
+}

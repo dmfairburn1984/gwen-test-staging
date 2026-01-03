@@ -1,0 +1,132 @@
+[
+  {
+    "bundle_id": "bundle_002",
+    "product_sku": "KIKI-2-SEATER-SOFA",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_002",
+    "product_sku": "KIKI-ORGANIC-CHAISE",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_003",
+    "product_sku": "FARO-LOUNGE-SET",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_003",
+    "product_sku": "PALMA-COVER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_004",
+    "product_sku": "MARBELLA FIVE SEATER CORNER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_004",
+    "product_sku": "MARBELLA-COVER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_005",
+    "product_sku": "MALAGA-LOUNGE-SET",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_005",
+    "product_sku": "CHESTERTON-COVER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_006",
+    "product_sku": "STOCKHOLM-LOUNGE-SET",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_006",
+    "product_sku": "STOCKHOLM-CORNER-COVER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_007",
+    "product_sku": "STOCKHOLM-CORNER-BLACK",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_007",
+    "product_sku": "STOCKHOLM-CORNER-COVER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_008",
+    "product_sku": "STOCKHOLM-CHAISE-LOUNGE",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_008",
+    "product_sku": "STOCKHOLM-CHAISE-COVER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_009",
+    "product_sku": "SANTORINI-GREY",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_009",
+    "product_sku": "SANTORINI-COVER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_010",
+    "product_sku": "FARO-LOUNGE-SET",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_010",
+    "product_sku": "PALMA-CUSHION-BOX",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_011",
+    "product_sku": "FARO-LOUNGE-SET",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_011",
+    "product_sku": "PALMA-CUSHION-BOX",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_011",
+    "product_sku": "PALMA-COVER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_012",
+    "product_sku": "MARBELLA FIVE SEATER CORNER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_012",
+    "product_sku": "Marbella Cushion Box",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_013",
+    "product_sku": "MARBELLA FIVE SEATER CORNER",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_013",
+    "product_sku": "Marbella Cushion Box",
+    "product_qty": 1
+  },
+  {
+    "bundle_id": "bundle_013",
+    "product_sku": "MARBELLA-COVER",
+    "product_qty": 1
+  }
+]

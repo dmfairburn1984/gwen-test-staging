@@ -1,0 +1,67 @@
+[
+  {
+    "bundle_id": "bundle_002",
+    "name": "Kiki Sofa & Chaise Set",
+    "description": "Sofa plus matching chaise"
+  },
+  {
+    "bundle_id": "bundle_003",
+    "name": "Palma Lounge Set & Cover",
+    "description": "Corner set plus matching protective cover"
+  },
+  {
+    "bundle_id": "bundle_004",
+    "name": "Marbella Lounge Set & Cover",
+    "description": "Lounge set plus matching protective cover"
+  },
+  {
+    "bundle_id": "bundle_005",
+    "name": "Chesterton Lounge Set & Cover",
+    "description": "Lounge set plus matching protective cover"
+  },
+  {
+    "bundle_id": "bundle_006",
+    "name": "Stockholm Corner Lounge Set Grey & Cover",
+    "description": "Lounge set plus matching protective cover"
+  },
+  {
+    "bundle_id": "bundle_007",
+    "name": "Stockholm Corner Lounge Set Black & Cover",
+    "description": "Lounge set plus matching protective cover"
+  },
+  {
+    "bundle_id": "bundle_008",
+    "name": "Stockholm Chaise Set & Cover",
+    "description": "Lounge set plus matching protective cover"
+  },
+  {
+    "bundle_id": "bundle_009",
+    "name": "Santorini Lounge Set & Cover",
+    "description": "Lounge set plus matching protective cover"
+  },
+  {
+    "bundle_id": "bundle_010",
+    "name": "Palma Lounge Set & cushion box",
+    "description": "Lounge set plus matching cushion box"
+  },
+  {
+    "bundle_id": "bundle_011",
+    "name": "Palma Lounge Set, Cover and Cushion Box",
+    "description": "Lounge set plus matching cushion box and cover"
+  },
+  {
+    "bundle_id": "bundle_012",
+    "name": "Marbella Lounge Set & cushion box",
+    "description": "Lounge set plus matching cushion box"
+  },
+   {
+    "bundle_id": "bundle_014",
+    "name": "Stockholm Chaise Set & Cover",
+    "description": "Lounge set plus matching cushion box"
+  },
+  {
+    "bundle_id": "bundle_013",
+    "name": "Marbella Lounge Set, Cover and Cushion Box",
+    "description": "Lounge set plus matching cushion box and cover"
+  }
+]

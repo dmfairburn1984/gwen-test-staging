@@ -1,0 +1,6375 @@
+[
+  {
+    "product_identity": {
+      "product_name": "Two-Person Delivery Charge",
+      "sku": "2-PERSON-DELIVERY",
+      "product_family": "",
+      "image_url": ""
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Alanne 6 Seater Rattan Grey Rectangular Garden Dining Set",
+      "sku": "ALANNE-6S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/alanne-dining-set-1.webp?v=1740330269"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "medium_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "N/A",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Alex Teak 5 Seater Green Garden Sofa and Armchair Set",
+      "sku": "ALEX-5S-SOFA-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Alex-5-seater-lounge-set-1.webp?v=1735921461"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Green",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "N/A",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Teak",
+        "category": "wood",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
+        "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
+        "warranty": "5 years (structural defects only)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Arthur 5-Seater Teak Corner Garden Lounge Set",
+      "sku": "ARTHUR-CORNER-5S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/arthur-lounge-set-1.webp?v=1730725063"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "left,right",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Teak",
+        "category": "wood",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
+        "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
+        "warranty": "5 years (structural defects only)"
+      },
+      {
+        "name": "Aluminium",
+        "category": "metal",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Rust-proof, Easy to clean, Lightweight and easy to move",
+        "cons": "Can dent under heavy impact, Surface scratches may expose bare metal",
+        "maintenance": "Wipe with mild soap solution as needed.",
+        "warranty": "10 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "White Glove Assembly Service",
+      "sku": "ASSEMBLY-ADD-ON",
+      "product_family": "",
+      "image_url": ""
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 4,
+        "available": -22,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Bali Grey Metal Parasol 2.67m",
+      "sku": "BALI-METAL-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-grey-metal-1_2.webp?v=1737299926"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "parasols",
+      "taxonomy_category": "umbrellas",
+      "taxonomy_type": "accessories",
+      "colour": "Grey",
+      "material_type": "Metal"
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 2,
+        "available": 1,
+        "low_stock_warning": "<30 Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Bali Taupe Metal Parasol 2.67m",
+      "sku": "BALI-METAL-TAUPE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Bali-taupe-1.webp?v=1737304652"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "parasols",
+      "taxonomy_category": "umbrellas",
+      "taxonomy_type": "accessories",
+      "colour": "Taupe",
+      "material_type": "Metal"
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": 9,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Bali Hunter Green Wooden Parasol 2.85m",
+      "sku": "BALI-WOOD-PARASOL-GREEN",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-green-parasol-1.webp?v=1753881445"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "parasols",
+      "taxonomy_category": "umbrellas",
+      "taxonomy_type": "accessories",
+      "colour": "Green",
+      "material_type": "Wood"
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Bali Grey Wooden Parasol 2.85m",
+      "sku": "BALI-WOOD-PARASOL-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-wooden-parasol-grey-1.webp?v=1753875189"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "parasols",
+      "taxonomy_category": "umbrellas",
+      "taxonomy_type": "accessories",
+      "colour": "Grey",
+      "material_type": "Wood"
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
+      "sku": "BARCELONA-COVERS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 3,
+        "available": -3,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
+      "sku": "BARCELONA-COVERS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
+      "sku": "BARCELONA-COVERS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
+      "sku": "BARCELONA-CUSHIONS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 2,
+        "available": -2,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
+      "sku": "BARCELONA-CUSHIONS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
+      "sku": "BARCELONA-CUSHIONS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Barcelona 9 Seater Black Corner Rattan Garden Sofa Set",
+      "sku": "BARCELONA-LOUNGE-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Barcelona-lounge-set-out-and-out-low-res-1.jpg?v=1723023569"
+    },
+    "description_and_category": {
+      "primary_category": "Dual-Purpose Sets",
+      "sub_category": "",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Black",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "right",
+      "dimensions_cm": {
+        "width": 191,
+        "depth": 74,
+        "height": 91
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Tempered Glass",
+        "category": "glass",
+        "durability_rating": "Affordable",
+        "weather_resistance": "none",
+        "pros": "Affordable and maintenance-free, High strength due to tempering process, Sleek, modern aesthetic",
+        "cons": "Risk of localized melting under magnified sunlight, Shows fingerprints and smudges easily",
+        "maintenance": "Clean with glass cleaner or mild soap and water, Use coasters to prevent scratches, Avoid leaving magnifying lenses (e.g. glassware) on surface in direct sun",
+        "warranty": "2 years (Structural integrity under normal use)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 9,
+        "available": "",
+        "low_stock_warning": "<30 Days"
+      },
+      "components": [
+        {
+          "component_sku": "BARCELONA-SET-BOX-1",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "BARCELONA-SET-BOX-2",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Bridgetown 4 Seater Round Rattan and Polywood Grey Garden Dining Set 120cm",
+      "sku": "BRIDGETOWN-120-4S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bridgetown-120-4s-1.webp?v=1731348096"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "small_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "N/A",
+      "dimensions_cm": {
+        "width": 120,
+        "depth": "N/A",
+        "height": 75
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Polystyrene Imitation Wood Plank",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "Realistic wood look without rot or splintering, Lightweight and easy to move, Resistant to moisture and insects",
+        "cons": "Can melt under concentrated sunlight when magnified by glass, Surface can scratch under sharp objects",
+        "maintenance": "Avoid leaving glass objects under direct sun for long periods, Clean with mild soap and water, Inspect for scratches and address promptly",
+        "warranty": "2 years (Structural integrity under normal use)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 9,
+        "available": 18,
+        "low_stock_warning": "30-60 Days"
+      },
+      "components": [
+        {
+          "component_sku": "BRIDGETOWN (Sienna) 120CM TABLE",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "BRIDGETOWN (Sienna) Armchair",
+          "quantity": 4,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Bridgetown 6 Seater Round Rattan and Polywood Grey Garden Dining Set 150cm",
+      "sku": "BRIDGETOWN-150-6S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/39.webp?v=1731356104"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "medium_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "N/A",
+      "dimensions_cm": {
+        "width": 150,
+        "depth": "N/A",
+        "height": 75
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Polystyrene Imitation Wood Plank",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "Realistic wood look without rot or splintering, Lightweight and easy to move, Resistant to moisture and insects",
+        "cons": "Can melt under concentrated sunlight when magnified by glass, Surface can scratch under sharp objects",
+        "maintenance": "Avoid leaving glass objects under direct sun for long periods, Clean with mild soap and water, Inspect for scratches and address promptly",
+        "warranty": "2 years (Structural integrity under normal use)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 5,
+        "available": 23,
+        "low_stock_warning": "30-60 Days"
+      },
+      "components": [
+        {
+          "component_sku": "BRIDGETOWN (Sienna) 150CM TABLE",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "BRIDGETOWN (Sienna) Armchair",
+          "quantity": 6,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Bridgetown 6 Seater Rectangular Rattan and Polywood Grey Garden Dining Set 200cm",
+      "sku": "BRIDGETOWN-200-6S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Bridgetown-200cm-rect-1.webp?v=1731414361"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "medium_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "N/A",
+      "dimensions_cm": {
+        "width": 200,
+        "depth": "N/A",
+        "height": 74
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Polystyrene Imitation Wood Plank",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "Realistic wood look without rot or splintering, Lightweight and easy to move, Resistant to moisture and insects",
+        "cons": "Can melt under concentrated sunlight when magnified by glass, Surface can scratch under sharp objects",
+        "maintenance": "Avoid leaving glass objects under direct sun for long periods, Clean with mild soap and water, Inspect for scratches and address promptly",
+        "warranty": "2 years (Structural integrity under normal use)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": 35,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": [
+        {
+          "component_sku": "BRIDGETOWN (Sienna) 200CM TABLE",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "BRIDGETOWN (Sienna) Armchair",
+          "quantity": 6,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CAL-COVERS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CAL-COVERS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CAL-COVERS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CAL-CUSHIONS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CAL-CUSHIONS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CAL-CUSHIONS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Cali 7 Seater Wooden Corner Sofa Lounge and Dining Set",
+      "sku": "CALI-8S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Cali-7s-set.png?v=1738677914"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "large_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "",
+      "material_type": "Wood"
+    },
+    "specifications": {
+      "seats": 8,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Eucalyptus",
+        "category": "wood",
+        "durability_rating": 7,
+        "weather_resistance": "good (with treatment)",
+        "pros": "More affordable than teak, Attractive pale brown colour, Fastâ€renewable resource",
+        "cons": "Less rotâ€resistant without sealant, Occasional splitting if untreated, Colour fades to silverâ€gray",
+        "maintenance": "Seal with any outdoor oil at least once pre year.",
+        "warranty": "3 years (rotting and splitting is possible under normal use without maintenance)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Keter California 3-Seater Taupe Rattan Garden Sofa",
+      "sku": "CALIFORNIA-3S-SOFA-TAUPE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-3s-sofa.webp?v=1753957411"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Keter California Taupe Rattan Coffee Table 68 x 68cm",
+      "sku": "CALIFORNIA-COFFEE-TABLE-TAUPE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/California-table-2.webp?v=1754059587"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CHES-CUSH-COVERS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CHES-CUSH-COVERS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CHES-CUSH-COVERS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 2,
+        "available": -2,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CHES-CUSHIONS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CHES-CUSHIONS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
+      "sku": "CHES-CUSHIONS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 2,
+        "available": -2,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Custom-Fitted Furniture Cover",
+      "sku": "CHESTERTON-COVER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Santorini-cover.png?v=1747745228"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "covers",
+      "taxonomy_category": "furniture_covers",
+      "taxonomy_type": "accessories",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 2,
+        "available": 11,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Collection Fee",
+      "sku": "COLLECTION-FEE",
+      "product_family": "",
+      "image_url": ""
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Cora 4 Seater Woven and Aluminium Garden Sofa and Armchair Set",
+      "sku": "CORA-SOFA-SET-4S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Cora-4-seater-sofa-set-1.webp?v=1732280063"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Woven"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": 3,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Della Porta 10 Seater Grey Corner Garden Sofa Set With Up-Down Table",
+      "sku": "DELLA-PORTA-SOFA-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/della-porta-corner-sofa-set-1.webp?v=1740344875"
+    },
+    "description_and_category": {
+      "primary_category": "Dual-Purpose Sets",
+      "sub_category": "",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": 10,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Palma Grey Corner Rattan Casual Garden Dining and Lounge Set 9 Seater",
+      "sku": "FARO-LOUNGE-SET",
+      "product_family": "PALMA",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-Corner-Rattan-Set-and-Cushion-Box-Bundle-Out-and-Out-Low-Res-1.jpg?v=1723461226"
+    },
+    "description_and_category": {
+      "primary_category": "Dual-Purpose Sets",
+      "sub_category": "",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 9,
+      "configurable_sides": "left",
+      "dimensions_cm": {
+        "width": 200,
+        "depth": 74,
+        "height": 84
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": "https://drive.google.com/file/d/1kQDD6aRVLI1SEIjq7S6AP5ZB5BYW15gd/view"
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 61,
+        "available": 160,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": [
+        {
+          "component_sku": "FARO-LOUNGE-SET-BOX-1",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "FARO-LOUNGE-SET-BOX-2",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "PALMA-COVER",
+      "accessories": [
+        "PALMA-CUSHION-BOX"
+      ]
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Gigi 5 Seater Teak Garden Sofa and Armchair Set",
+      "sku": "GIGI-4S-SOFA-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/gigi-3-seater-sofa-set.webp?v=1736269362"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Havana Dark Grey 8 Seater Aluminium and Textilline Patio Dining Set",
+      "sku": "HAVANA-8S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/63.jpg?v=1724062538"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "large_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "Dark Grey",
+      "material_type": "Aluminium"
+    },
+    "specifications": {
+      "seats": 8,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Aluminium",
+        "category": "metal",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Rust-proof, Easy to clean, Lightweight and easy to move",
+        "cons": "Can dent under heavy impact, Surface scratches may expose bare metal",
+        "maintenance": "Wipe with mild soap solution as needed.",
+        "warranty": "10 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Aluminium",
+        "category": "metal",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Rust-proof, Easy to clean, Lightweight and easy to move",
+        "cons": "Can dent under heavy impact, Surface scratches may expose bare metal",
+        "maintenance": "Wipe with mild soap solution as needed.",
+        "warranty": "10 years (corrosion and structural defects)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": 18,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Malai 5 Seater Luxury Beige Teak Corner Garden Set",
+      "sku": "MALAI-LOUNGE-SET-TEAK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Haze-set-1_3840666d-c88f-4ca9-af36-5c07dcc55f3d.webp?v=1742914303"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "Beige",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Teak",
+        "category": "wood",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
+        "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
+        "warranty": "5 years (structural defects only)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 8,
+        "available": "",
+        "low_stock_warning": "<30 Days"
+      },
+      "components": [
+        {
+          "component_sku": "Haze Teak Lounge Set Box 1",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "Haze Teak Lounge Set Box 2",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Headrest Garden Chair or Sun Lounger Cushion",
+      "sku": "HEADREST-BASIL-GREEN-1",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/HeadrestGardenFurnitureCushionBasilGreen-1.webp?v=1757594692"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Headrest Garden Chair or Sun Lounger Cushion",
+      "sku": "HEADREST-BASIL-GREEN-2",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/HeadrestGardenFurnitureCushionBasilGreen-1.webp?v=1757594692"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Ion 4 Seater Teak and Aluminium Garden Sofa and Armchair Set",
+      "sku": "ION-4S-SOFA-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Ion-4-Seater-Wooden-Garden-Sofa-Set-1.webp?v=1734436777"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Kiki 2 Seater Beige Aluminium Outdoor Sofa",
+      "sku": "KIKI-2-SEATER-SOFA",
+      "product_family": "KIKI",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/kiki-2s-sofa-4.webp?v=1743101419"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "compact_lounge",
+      "taxonomy_category": "loveseats",
+      "taxonomy_type": "lounge",
+      "colour": "Beige",
+      "material_type": "Aluminium"
+    },
+    "specifications": {
+      "seats": 2,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 6,
+        "available": 1,
+        "low_stock_warning": "<30 Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Kiki Beige 3-Seater Organic Garden Chaise Sofa",
+      "sku": "KIKI-ORGANIC-CHAISE",
+      "product_family": "KIKI",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/kiki-chaise-1.webp?v=1743264265"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "chaise_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Beige",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": 3,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Aluminium",
+        "category": "metal",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Rust-proof, Easy to clean, Lightweight and easy to move",
+        "cons": "Can dent under heavy impact, Surface scratches may expose bare metal",
+        "maintenance": "Wipe with mild soap solution as needed.",
+        "warranty": "10 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 35,
+        "available": -13,
+        "low_stock_warning": "<30 Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Lima 7 Seater Rattan Grey Garden Sofa Set With Sools and Up-Down Table",
+      "sku": "LIMA-CORNER-LOUNGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/lima-7-seater-rattan-garden-sofa-set-with-up-down-table-1.webp?v=1745323445"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 7,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": 1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Lima 5 Seater Rattan Grey Sofa and Armchair Garden Furniture Set",
+      "sku": "LIMA-LOUNGE-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/lima-5-seater-sofa-set-1.webp?v=1745583690"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": 2,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Linh 6 Seater Corner Acacia Wood Garden Sofa Set",
+      "sku": "LINH-CORNER-6S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Linh-corner-set-1.webp?v=1733416396"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Wood"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 4,
+        "available": -6,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Rattan Luxury Grey Sun Lounger",
+      "sku": "MALAGA-LOUNGER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Chesterton-sun-lounger-out-and-out-low-res-1.webp?v=1752065455"
+    },
+    "description_and_category": {
+      "primary_category": "Sun Loungers",
+      "sub_category": "",
+      "taxonomy_category": "sunloungers",
+      "taxonomy_type": "sunlounger",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Rattan Luxury Grey Sun Lounger - Set of Two",
+      "sku": "MALAGA-LOUNGER-X2",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Chesterton-set-of-2-sun-loungers.webp?v=1753718948"
+    },
+    "description_and_category": {
+      "primary_category": "Sun Loungers",
+      "sub_category": "",
+      "taxonomy_category": "sunloungers",
+      "taxonomy_type": "sunlounger",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Chesterton Grey 5 Seater Corner Rattan Garden Sofa Lounge Set",
+      "sku": "MALAGA-LOUNGE-SET",
+      "product_family": "CHESTERTON",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Chesterton-Corner-Lounge-Set-Grey-Out-and-Out-9-low-res-edit-final.png?v=1722850343"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "N/A",
+      "dimensions_cm": {
+        "width": 230,
+        "depth": 81,
+        "height": 67
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": "https://drive.google.com/file/d/1c_D45khcP5po-IOux3yNVJbIjkqZNMoP/view"
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Tempered Glass",
+        "category": "glass",
+        "durability_rating": "Affordable",
+        "weather_resistance": "none",
+        "pros": "Affordable and maintenance-free, High strength due to tempering process, Sleek, modern aesthetic",
+        "cons": "Risk of localized melting under magnified sunlight, Shows fingerprints and smudges easily",
+        "maintenance": "Clean with glass cleaner or mild soap and water, Use coasters to prevent scratches, Avoid leaving magnifying lenses (e.g. glassware) on surface in direct sun",
+        "warranty": "2 years (Structural integrity under normal use)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 8,
+        "available": 20,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": [
+        {
+          "component_sku": "MALAGA-SET-BOX-1",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "MALAGA-SET-BOX-2",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "CHESTERTON-COVER",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Marbella Rattan Cushion Box L.105 x W.76 x H.72cm",
+      "sku": "Marbella Cushion Box",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushion-box-1.png?v=1736370694"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "storage",
+      "taxonomy_category": "storage_boxes",
+      "taxonomy_type": "accessories",
+      "colour": "",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 3,
+        "available": 66,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Marbella Protective Furniture Cover",
+      "sku": "MARBELLA-COVER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-furniture-cover.webp?v=1746371144"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "covers",
+      "taxonomy_category": "furniture_covers",
+      "taxonomy_type": "accessories",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 10,
+        "available": "",
+        "low_stock_warning": "<30 Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MARBELLA-CUSHION-COVERS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MARBELLA-CUSHION-COVERS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 2,
+        "available": -2,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MARBELLA-CUSHION-COVERS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MARBELLA-CUSHIONS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MARBELLA-CUSHIONS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MARBELLA-CUSHIONS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 3,
+        "available": -3,
+        "low_stock_warning": "<30 Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Marbella Grey 5 Seater Chaise Garden Sofa and Armchair Lounge Set",
+      "sku": "MARBELLA FIVE SEATER CORNER",
+      "product_family": "MARBELLA",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/18.png?v=1722605192"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "left,right",
+      "dimensions_cm": {
+        "width": 217,
+        "depth": 81,
+        "height": 77
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": "https://drive.google.com/file/d/1PQucTDRyAfkvg21FfZ3Q3sgACI1FKnHZ/view"
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Tempered Glass",
+        "category": "glass",
+        "durability_rating": "Affordable",
+        "weather_resistance": "none",
+        "pros": "Affordable and maintenance-free, High strength due to tempering process, Sleek, modern aesthetic",
+        "cons": "Risk of localized melting under magnified sunlight, Shows fingerprints and smudges easily",
+        "maintenance": "Clean with glass cleaner or mild soap and water, Use coasters to prevent scratches, Avoid leaving magnifying lenses (e.g. glassware) on surface in direct sun",
+        "warranty": "2 years (Structural integrity under normal use)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 39,
+        "available": 7,
+        "low_stock_warning": "<30 Days"
+      },
+      "components": [
+        {
+          "component_sku": "MARBELLA-SET-BOX-1",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "MARBELLA-SET-BOX-2",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "MARBELLA-COVER",
+      "accessories": [
+        "Marbella Cushion Box"
+      ]
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Markey 4 Seater Beige Teak and Metal Garden Sofa and Armchair Set",
+      "sku": "MARKEY-4S-SOFA-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Markey-4-seater-sofa-set-1.webp?v=1735309372"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Beige",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MURCIA-COVERS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MURCIA-COVERS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MURCIA-COVERS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MURCIA-CUSHIONS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MURCIA-CUSHIONS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "MURCIA-CUSHIONS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Nuha 4 Seater Woven Garden and Aluminium Sofa and Armchair Set",
+      "sku": "NUHA-SOFA-SET-4S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Nuha4-SeaterLoungeSet-1_54791ac8-1dfc-444f-a2c7-c66604b13054.webp?v=1735831782"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Woven"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Sicily 8 Seater Teak and Wrought Iron Square Garden Dining Set",
+      "sku": "OLIVIA-SICILY-8S-DINING",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sicily-dining-set-1.webp?v=1743268232"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "large_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 8,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Wrought Iron",
+        "category": "metal",
+        "durability_rating": 9,
+        "weather_resistance": "fair (painted/coated required)",
+        "pros": "Timeless, decorative designs, Extremely strong and durable",
+        "cons": "Very heavy, Prone to rust if coating is damaged",
+        "maintenance": "Remove rust spots, repaint or recoat as needed.",
+        "warranty": "5 years (structural integrity only)"
+      },
+      {
+        "name": "Teak",
+        "category": "wood",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
+        "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
+        "warranty": "5 years (structural defects only)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": 5,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": [
+        {
+          "component_sku": "Olivia Table",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "Olivia chair",
+          "quantity": 8,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Palma Custom-Fitted Furniture Cover",
+      "sku": "PALMA-COVER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cover_1.webp?v=1755091625"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "covers",
+      "taxonomy_category": "furniture_covers",
+      "taxonomy_type": "accessories",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 25,
+        "available": 95,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Palma Rattan Cushion Box L.149 x W.76 x H.70cm",
+      "sku": "PALMA-CUSHION-BOX",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-cushion-box-1.png?v=1736367334"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "storage",
+      "taxonomy_category": "storage_boxes",
+      "taxonomy_type": "accessories",
+      "colour": "",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 8,
+        "available": 159,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "PALMA-CUSHION-COVERS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "PALMA-CUSHION-COVERS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "PALMA-CUSHION-COVERS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 7,
+        "available": -7,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "PALMA-CUSHIONS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": -2,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "PALMA-CUSHIONS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
+      "sku": "PALMA-CUSHIONS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 12,
+        "available": -15,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Sonny Kids Outdoor Play Sofa",
+      "sku": "PLAY-SOFA-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Sonny Kids Outdoor Play Sofa",
+      "sku": "PLAY-SOFA-BLUE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Sonny Kids Outdoor Play Sofa",
+      "sku": "PLAY-SOFA-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Sonny Kids Outdoor Play Sofa",
+      "sku": "PLAY-SOFA-RED",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Reva 5 Seater Corner Outdoor Teak Sofa Set with Table",
+      "sku": "REVA-5S-CORNER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Reva-corner-set-1.webp?v=1735854575"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Reva 5 Seater Teak Garden Sofa and Armchair Set",
+      "sku": "REVA-5S-SOFA-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Reva-lounge-set-1.webp?v=1735834271"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Rose 4-Seater Teak Garden Sofa and Armchair Set",
+      "sku": "ROSE-4S-SOFA-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Rose-lounge-set-1_ea4d35fc-fc98-460f-8d50-f3ee4337adc2.webp?v=1735401145"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Rose Corner 5 Seater Garden Sofa Set",
+      "sku": "ROSE-CORNER-SOFA",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Rose-corner-sofa-1.webp?v=1735394207"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Rose 6 Seater Teak Oval Garden Dining Set",
+      "sku": "ROSE-DINING-6S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Rose-dining-set-1.webp?v=1735408825"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "medium_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Rose Round Teak Garden Loveseat",
+      "sku": "ROSE-LOVESEAT",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/rose-loveseat-1.png?v=1735318323"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "compact_lounge",
+      "taxonomy_category": "loveseats",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 2,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
+      "sku": "SANTORINI-BEIGE-CSH-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
+      "sku": "SANTORINI-BEIGE-CUSHION-COVERS",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 4,
+        "available": -5,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
+      "sku": "SANTORINI-BLACK-CSH-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 2,
+        "available": -3,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
+      "sku": "SANTORINI-BLACK-CUSHION-COVERS",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 7,
+        "available": -8,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Santorini Custom-Fitted Furniture Cover",
+      "sku": "SANTORINI-COVER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Santorini-cover.png?v=1747745228"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "covers",
+      "taxonomy_category": "furniture_covers",
+      "taxonomy_type": "accessories",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 8,
+        "available": 33,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Santorini Grey 4 Seater Modular Aluminium Lounge Set with Side Cushions",
+      "sku": "SANTORINI-GREY",
+      "product_family": "SANTORINI",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini-cushions-grey.webp?v=1742569366"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "modular_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": "Aluminium"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "N/A",
+      "dimensions_cm": {
+        "width": 112.5,
+        "depth": 68.5,
+        "height": 59
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "easy",
+        "instructions_url": "https://drive.google.com/file/d/1GSQD-JMMgCx8KV1veJuSRgY6cOjRMDCS/view"
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Aluminium",
+        "category": "metal",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Rust-proof, Easy to clean, Lightweight and easy to move",
+        "cons": "Can dent under heavy impact, Surface scratches may expose bare metal",
+        "maintenance": "Wipe with mild soap solution as needed.",
+        "warranty": "10 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 30,
+        "available": 96,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "SANTORINI-COVER",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
+      "sku": "SANTORINI-GREY-CSH-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 3,
+        "available": -5,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
+      "sku": "SANTORINI-GREY-CUSHION-COVERS",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 10,
+        "available": -10,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Simon 6 Seater Wooden Grey Woven Teak Garden Dining Set",
+      "sku": "SIMON-6S-DINING",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Simon-6-seater-dining-set-1.webp?v=1735479888"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "medium_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "Grey",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Sola 6 Seater Acacia Wood Rectangular Garden Dining Set",
+      "sku": "SOLA-6S-DINING",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sola-dining-set-10.webp?v=1737817559"
+    },
+    "description_and_category": {
+      "primary_category": "Dining Sets",
+      "sub_category": "medium_dining",
+      "taxonomy_category": "dining_sets",
+      "taxonomy_type": "dining",
+      "colour": "",
+      "material_type": "Wood"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Sola 7 Seater Wooden Garden Sofa Set",
+      "sku": "SOLA-SOFA-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/269.webp?v=1737837961"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Wood"
+    },
+    "specifications": {
+      "seats": 7,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Sola Acacia Wood Luxury Sunlounger",
+      "sku": "SOLA-SUNLOUNGER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sola-sunlounger-1.webp?v=1737558401"
+    },
+    "description_and_category": {
+      "primary_category": "Sun Loungers",
+      "sub_category": "",
+      "taxonomy_category": "sunloungers",
+      "taxonomy_type": "sunlounger",
+      "colour": "",
+      "material_type": "Wood"
+    },
+    "specifications": {
+      "seats": 1,
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Chaise Replacement Cushions/Covers",
+      "sku": "STOCK-CHAISE-COVERS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Chaise Replacement Cushions/Covers",
+      "sku": "STOCK-CHAISE-COVERS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Chaise Replacement Cushions/Covers",
+      "sku": "STOCK-CHAISE-COVERS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 1,
+        "available": -1,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Chaise Replacement Cushions/Covers",
+      "sku": "STOCK-CHAISE-CUSHIONS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 3,
+        "available": -3,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Chaise Replacement Cushions/Covers",
+      "sku": "STOCK-CHAISE-CUSHIONS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Chaise Replacement Cushions/Covers",
+      "sku": "STOCK-CHAISE-CUSHIONS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
+      "sku": "STOCK-CNR-COVERS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
+      "sku": "STOCK-CNR-COVERS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
+      "sku": "STOCK-CNR-COVERS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
+      "sku": "STOCK-CNR-CUSHIONS-BEIGE",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 2,
+        "available": -2,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
+      "sku": "STOCK-CNR-CUSHIONS-BLACK",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
+      "sku": "STOCK-CNR-CUSHIONS-GREY",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Chaise Custom-Fitted Furniture Cover",
+      "sku": "STOCKHOLM-CHAISE-COVER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Stockholm-chaise-cover.png?v=1739718933"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "covers",
+      "taxonomy_category": "furniture_covers",
+      "taxonomy_type": "accessories",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 8,
+        "available": 22,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Rattan Grey 4 Seater Garden Chaise Lounge Set with Armchair",
+      "sku": "STOCKHOLM-CHAISE-LOUNGE",
+      "product_family": "STOCKHOLM",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Stockholm-chaise-new-fabric-2.webp?v=1748952377"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "chaise_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "left",
+      "dimensions_cm": {
+        "width": 162,
+        "depth": 70,
+        "height": 76
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": "https://drive.google.com/file/d/1nesrAy1zCUAfgfZECmEbgJ6aQIfq4Rq3/view"
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 24,
+        "available": -8,
+        "low_stock_warning": "<30 Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "STOCKHOLM-CORNER-COVER",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm 6 Seater Black Rattan Corner Garden Dining and Lounge Set",
+      "sku": "STOCKHOLM-CORNER-BLACK",
+      "product_family": "STOCKHOLM",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/stockholm-black-edit-1.webp?v=1746621526"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "Black",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "right",
+      "dimensions_cm": {
+        "width": 179,
+        "depth": 66,
+        "height": 73
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": "https://drive.google.com/file/d/1bmqYlyMwaeRwTKpHgbaX70uQLHLFL2wy/view"
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 14,
+        "available": -107,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": [
+        {
+          "component_sku": "STOCKHOLM-CORNER-BLACK-BOX-1",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "STOCKHOLM-CORNER-BLACK-BOX-2",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "STOCKHOLM-CORNER-COVER",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm Corner Custom-Fitted Furniture Cover",
+      "sku": "STOCKHOLM-CORNER-COVER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cover_1_ebc45d7f-e1c2-4af4-b044-66f07f917fe7.webp?v=1755091934"
+    },
+    "description_and_category": {
+      "primary_category": "Accessories",
+      "sub_category": "covers",
+      "taxonomy_category": "furniture_covers",
+      "taxonomy_type": "accessories",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 10,
+        "available": 75,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Stockholm 6 Seater Grey Rattan Corner Garden Dining and Lounge Set",
+      "sku": "STOCKHOLM-LOUNGE-SET",
+      "product_family": "STOCKHOLM",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Stockholm-corner-lounge-set-upgraded-fabric-grey_1_1.webp?v=1749999162"
+    },
+    "description_and_category": {
+      "primary_category": "Dual-Purpose Sets",
+      "sub_category": "",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "right",
+      "dimensions_cm": {
+        "width": 179,
+        "depth": 66,
+        "height": 73
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": "https://drive.google.com/file/d/1bmqYlyMwaeRwTKpHgbaX70uQLHLFL2wy/view"
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": 69,
+        "available": 202,
+        "low_stock_warning": "60+ Days"
+      },
+      "components": [
+        {
+          "component_sku": "STOCKHOLM-CORNER-GREY-BOX-1",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        },
+        {
+          "component_sku": "STOCKHOLM-CORNER-GREY-BOX-2",
+          "quantity": 1,
+          "box_dimensions_cm": {
+            "length": "",
+            "width": "",
+            "height": ""
+          },
+          "pcs_per_box": "",
+          "box_cbm": ""
+        }
+      ]
+    },
+    "related_products": {
+      "matching_cover_sku": "STOCKHOLM-CORNER-COVER",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Tenerife Grey 5 Seater Teak and Aluminium Corner Lounge Set",
+      "sku": "TENERIFE-CORNER-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Tenerife-lounge-set-DD.png?v=1722254917"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "left,right",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Teak",
+        "category": "wood",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
+        "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
+        "warranty": "5 years (structural defects only)"
+      },
+      {
+        "name": "Aluminium",
+        "category": "metal",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Rust-proof, Easy to clean, Lightweight and easy to move",
+        "cons": "Can dent under heavy impact, Surface scratches may expose bare metal",
+        "maintenance": "Wipe with mild soap solution as needed.",
+        "warranty": "10 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Terra 6 Seater Teak Corner Garden Sofa and Table Set",
+      "sku": "TERRA-6S-CORNER",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/terra-lounge-set-1.webp?v=1736623895"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Teak"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "left,right",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Teak",
+        "category": "wood",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
+        "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
+        "warranty": "5 years (structural defects only)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Tommy Grey Aluminium 4 Seater Sofa Set",
+      "sku": "TOMMY-4S-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Tommy-sofa-set-1.webp?v=1734967452"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "standard_lounge",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "Grey",
+      "material_type": "Aluminium"
+    },
+    "specifications": {
+      "seats": 4,
+      "configurable_sides": "N/A",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Aluminium",
+        "category": "metal",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Rust-proof, Easy to clean, Lightweight and easy to move",
+        "cons": "Can dent under heavy impact, Surface scratches may expose bare metal",
+        "maintenance": "Wipe with mild soap solution as needed.",
+        "warranty": "10 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Valente Rattan 6 Seater Corner Sofa and Armchair Lounge Set",
+      "sku": "VALENTE-SOFA-SET",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/valente-1.webp?v=1740324820"
+    },
+    "description_and_category": {
+      "primary_category": "Dual-Purpose Sets",
+      "sub_category": "",
+      "taxonomy_category": "conversation_sets",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Rattan"
+    },
+    "specifications": {
+      "seats": 6,
+      "configurable_sides": "left,right",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Poly Rattan (PE Wicker)",
+        "category": "synthetic",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "high",
+        "pros": "100% recyclable PE, Built-in UV absorbers prevent brittleness, Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK, Replacement parts available free for 1 year and after that are available at a modest cost",
+        "cons": "Can snap if frozen and thawed repeatedly, Salt spray can accelerate degradation without proper UV additives",
+        "maintenance": "Cover during harsh weather to extend life, Avoid dragging on frozen surfaces, Rinse away salt deposits with fresh water",
+        "warranty": "2 years (Structural integrity and colour retention under normal use)"
+      },
+      {
+        "name": "Steel",
+        "category": "metal",
+        "durability_rating": 8,
+        "weather_resistance": "good (galvanised/powder-coated)",
+        "pros": "High strength and stability, Less likely to dent than aluminium",
+        "cons": "Heavier to move, Requires protective coating to prevent rust",
+        "maintenance": "Inspect coatings, touch-up paint as needed, clean with mild detergent.",
+        "warranty": "4 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Wallu 5 Seater Corner Aluminium Garden Sofa Set",
+      "sku": "WALLU-CORNER-5S",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/wallu-corner-set-1.webp?v=1744311681"
+    },
+    "description_and_category": {
+      "primary_category": "Lounge Sets",
+      "sub_category": "corner_lounge",
+      "taxonomy_category": "sectionals",
+      "taxonomy_type": "lounge",
+      "colour": "",
+      "material_type": "Aluminium"
+    },
+    "specifications": {
+      "seats": 5,
+      "configurable_sides": "left,right",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": true,
+        "difficulty": "medium",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [
+      {
+        "name": "Aluminium",
+        "category": "metal",
+        "durability_rating": 9,
+        "weather_resistance": "excellent",
+        "pros": "Rust-proof, Easy to clean, Lightweight and easy to move",
+        "cons": "Can dent under heavy impact, Surface scratches may expose bare metal",
+        "maintenance": "Wipe with mild soap solution as needed.",
+        "warranty": "10 years (corrosion and structural defects)"
+      },
+      {
+        "name": "Olefin",
+        "category": "fabric",
+        "durability_rating": "Mid Range",
+        "weather_resistance": "moderate",
+        "pros": "Affordable luxury, Quick-dry, Soft hand-feel",
+        "cons": "Almost no cons unless its important for you to have the Sunbrella brand, Can fade over time in direct sun as all fabrics will eventually",
+        "maintenance": "Vacuum regularly to remove debris, Spot clean with mild detergent, Rinse and air dry after cleaning",
+        "warranty": "3 years (Fabric performance under normal use)"
+      }
+    ],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": "60+ Days"
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": "",
+      "accessories": []
+    }
+  }
+]
