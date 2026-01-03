@@ -1112,6 +1112,618 @@ app.get('/widget', (req, res) => {
     res.sendFile(path.join(__dirname, 'widget.html'));
 });
 
+// =====================================================
+// GWEN AUTOMATED TEST RUNNER v1.0
+// =====================================================
+// 
+// HOW TO ADD TO YOUR APP.JS:
+// 
+// 1. Open your App.js file
+// 2. Find this line near the end (around line 3117):
+//    // ============================================
+//    // SERVER STARTUP
+//    // ============================================
+// 
+// 3. PASTE all the code below DIRECTLY ABOVE that line
+// 4. Save the file
+// 5. Push to Heroku: git add . && git commit -m "Add test runner" && git push heroku main
+// 6. Access tests at: https://gwen-sales-agent.herokuapp.com/run-tests
+// 
+// =====================================================
+
+// ============================================
+// TEST SCENARIOS
+// ============================================
+
+const TEST_SCENARIOS = {
+  "fuzzy_product_matching": [
+    {
+      id: "FUZZY-001",
+      name: "Vague seating request",
+      input: "I need something to sit on outside",
+      expect_any: ["sofa", "lounge", "seating", "corner", "seat", "Sofa", "Lounge", "Corner"]
+    },
+    {
+      id: "FUZZY-002",
+      name: "Relaxation focused",
+      input: "somewhere to chill and have drinks",
+      expect_any: ["lounge", "sofa", "corner", "Lounge", "Sofa", "Corner"]
+    },
+    {
+      id: "FUZZY-003",
+      name: "Sunbathing request",
+      input: "want to sunbathe in my garden",
+      expect_any: ["sunlounger", "lounger", "Sola", "sun"]
+    },
+    {
+      id: "FUZZY-004",
+      name: "Dining intent",
+      input: "want to eat outside with family",
+      expect_any: ["dining", "table", "Dining", "Table", "eat"]
+    }
+  ],
+  "seat_count": [
+    {
+      id: "SEAT-001",
+      name: "2 people",
+      input: "outdoor furniture for 2 people",
+      expect_any: ["2", "two", "couple", "bistro"],
+      must_not_contain: ["8 seater", "9 seater", "10 seater"]
+    },
+    {
+      id: "SEAT-002",
+      name: "4 people",
+      input: "need seating for 4 guests",
+      expect_any: ["4", "four"]
+    },
+    {
+      id: "SEAT-003",
+      name: "6 people",
+      input: "furniture for family of 6",
+      expect_any: ["6", "six"]
+    },
+    {
+      id: "SEAT-004",
+      name: "8+ people",
+      input: "hosting big parties need 8 or more seats",
+      expect_any: ["8", "9", "10", "eight", "nine", "ten"]
+    }
+  ],
+  "material_questions": [
+    {
+      id: "MAT-001",
+      name: "Durability concern",
+      input: "will this furniture last outside?",
+      expect_any: ["durable", "weather", "year", "last", "UV", "resistant"]
+    },
+    {
+      id: "MAT-002",
+      name: "Rattan longevity",
+      input: "how long does rattan furniture last?",
+      expect_any: ["20", "year", "polyrattan", "rattan", "UV"]
+    },
+    {
+      id: "MAT-003",
+      name: "Aluminium rust",
+      input: "will aluminium furniture rust?",
+      expect_any: ["rust", "powder", "coat", "resistant", "no", "doesn't", "won't"]
+    }
+  ],
+  "weather_care": [
+    {
+      id: "WEATHER-001",
+      name: "Rain concern",
+      input: "can I leave furniture out in the rain?",
+      expect_any: ["rain", "weather", "cover", "store", "yes", "outdoor"]
+    },
+    {
+      id: "WEATHER-002",
+      name: "Winter storage",
+      input: "what do I do with furniture in winter?",
+      expect_any: ["winter", "store", "cover", "indoor", "protect"]
+    },
+    {
+      id: "WEATHER-003",
+      name: "All year outside",
+      input: "can polyrattan stay outside all year round?",
+      expect_any: ["year", "outside", "cover", "yes", "recommend"]
+    }
+  ],
+  "warranty_delivery": [
+    {
+      id: "WARRANTY-001",
+      name: "Warranty question",
+      input: "what warranty do you offer?",
+      expect_any: ["warranty", "year", "guarantee", "1", "2", "3", "5", "10"]
+    },
+    {
+      id: "DELIVERY-001",
+      name: "Delivery time",
+      input: "how long for delivery?",
+      expect_any: ["5", "10", "day", "working", "delivery", "week"]
+    },
+    {
+      id: "DELIVERY-002",
+      name: "Assembly service",
+      input: "can someone assemble for me?",
+      expect_any: ["assembly", "service", "£69", "69.95"]
+    }
+  ],
+  "upsell_bundles": [
+    {
+      id: "UPSELL-001",
+      name: "Cover suggestion",
+      input: "I want to buy the Faro lounge set",
+      expect_any: ["Faro", "cover", "protect", "bundle", "20%", "save"]
+    },
+    {
+      id: "UPSELL-002",
+      name: "Bundle deals",
+      input: "do you have any deals or bundles?",
+      expect_any: ["bundle", "save", "20%", "discount", "deal"]
+    }
+  ],
+  "specific_products": [
+    {
+      id: "PROD-001",
+      name: "Faro details",
+      input: "tell me about the Faro lounge set",
+      expect_any: ["Faro", "9", "seat", "rattan"]
+    },
+    {
+      id: "PROD-002",
+      name: "Stockholm options",
+      input: "what Stockholm sets do you have?",
+      expect_any: ["Stockholm"]
+    },
+    {
+      id: "PROD-003",
+      name: "Barcelona info",
+      input: "Barcelona lounge set features?",
+      expect_any: ["Barcelona", "seat"]
+    }
+  ],
+  "edge_cases": [
+    {
+      id: "EDGE-001",
+      name: "Simple greeting",
+      input: "hi",
+      expect_any: ["help", "Hello", "Hi", "looking", "outdoor", "welcome"]
+    },
+    {
+      id: "EDGE-002",
+      name: "Price query",
+      input: "how much is the Faro?",
+      expect_any: ["£", "price", "Faro"]
+    }
+  ]
+};
+
+// ============================================
+// TEST RUNNER FUNCTIONS
+// ============================================
+
+function checkTestResult(response, scenario) {
+  const lowerResponse = response.toLowerCase();
+  
+  // Check expect_any (at least one term must be found)
+  let expectAnyPassed = true;
+  let foundTerms = [];
+  let missingTerms = [];
+  
+  if (scenario.expect_any && scenario.expect_any.length > 0) {
+    let anyFound = false;
+    for (const term of scenario.expect_any) {
+      if (lowerResponse.includes(term.toLowerCase())) {
+        foundTerms.push(term);
+        anyFound = true;
+      } else {
+        missingTerms.push(term);
+      }
+    }
+    expectAnyPassed = anyFound;
+  }
+  
+  // Check must_not_contain
+  let mustNotPassed = true;
+  let violations = [];
+  
+  if (scenario.must_not_contain && scenario.must_not_contain.length > 0) {
+    for (const term of scenario.must_not_contain) {
+      if (lowerResponse.includes(term.toLowerCase())) {
+        violations.push(term);
+        mustNotPassed = false;
+      }
+    }
+  }
+  
+  return {
+    passed: expectAnyPassed && mustNotPassed,
+    foundTerms,
+    missingTerms,
+    violations,
+    expectAnyPassed,
+    mustNotPassed
+  };
+}
+
+// ============================================
+// TEST ENDPOINTS
+// ============================================
+
+// Full test suite
+app.get('/run-tests', async (req, res) => {
+  console.log('\n🧪 ═══════════════════════════════════════');
+  console.log('🧪 STARTING GWEN TEST SUITE');
+  console.log('🧪 ═══════════════════════════════════════\n');
+  
+  const results = {
+    timestamp: new Date().toISOString(),
+    summary: { total: 0, passed: 0, failed: 0, passRate: '0%' },
+    suites: {}
+  };
+  
+  for (const [suiteName, scenarios] of Object.entries(TEST_SCENARIOS)) {
+    console.log(`\n📋 Suite: ${suiteName}`);
+    results.suites[suiteName] = { total: 0, passed: 0, failed: 0, tests: [] };
+    
+    for (const scenario of scenarios) {
+      console.log(`  🔄 ${scenario.id}: ${scenario.name}`);
+      const startTime = Date.now();
+      
+      try {
+        // Create fresh session for each test
+        const testSessionId = `test-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+        
+        // Build system prompt (using your existing function)
+        const systemPrompt = buildSystemPrompt ? buildSystemPrompt() : '';
+        
+        const messages = [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: scenario.input }
+        ];
+        
+        // Call OpenAI
+        const completion = await openai.chat.completions.create({
+          model: "gpt-4o",
+          messages: messages,
+          tools: aiTools,
+          tool_choice: "auto",
+          temperature: 0.4,
+          max_tokens: 600
+        });
+        
+        let response = completion.choices[0].message;
+        let finalContent = response.content || '';
+        
+        // Handle tool calls if any
+        if (response.tool_calls && response.tool_calls.length > 0) {
+          const toolMessages = [...messages, response];
+          
+          for (const toolCall of response.tool_calls) {
+            const funcName = toolCall.function.name;
+            const args = JSON.parse(toolCall.function.arguments);
+            
+            let toolResult = { error: "Unknown function" };
+            
+            // Call the appropriate handler
+            if (funcName === "search_products") {
+              toolResult = await searchRealProducts(args);
+            } else if (funcName === "get_product_availability") {
+              // Use your existing availability check
+              const product = productIndex.bySku[args.sku];
+              toolResult = product ? { 
+                sku: args.sku, 
+                available: true,
+                stockLevel: product.stockStatus?.level || 'In Stock'
+              } : { error: "Product not found" };
+            } else if (funcName === "get_comprehensive_warranty") {
+              const product = productIndex.bySku[args.sku];
+              toolResult = product?.actual_warranties || { standard: "1 year guarantee" };
+            } else if (funcName === "get_material_expertise") {
+              toolResult = getMaterialExpertise ? getMaterialExpertise(args.material) : { info: "Material information" };
+            }
+            
+            toolMessages.push({
+              role: "tool",
+              tool_call_id: toolCall.id,
+              content: JSON.stringify(toolResult)
+            });
+          }
+          
+          // Get final response
+          const finalCompletion = await openai.chat.completions.create({
+            model: "gpt-4o",
+            messages: toolMessages,
+            temperature: 0.4,
+            max_tokens: 600
+          });
+          
+          finalContent = finalCompletion.choices[0].message.content || '';
+        }
+        
+        const responseTime = Date.now() - startTime;
+        const result = checkTestResult(finalContent, scenario);
+        
+        const testResult = {
+          id: scenario.id,
+          name: scenario.name,
+          input: scenario.input,
+          passed: result.passed,
+          responseTime,
+          response: finalContent.substring(0, 400) + (finalContent.length > 400 ? '...' : ''),
+          found: result.foundTerms,
+          missing: result.missingTerms,
+          violations: result.violations
+        };
+        
+        results.suites[suiteName].tests.push(testResult);
+        results.suites[suiteName].total++;
+        results.summary.total++;
+        
+        if (result.passed) {
+          results.suites[suiteName].passed++;
+          results.summary.passed++;
+          console.log(`  ✅ PASSED (${responseTime}ms)`);
+        } else {
+          results.suites[suiteName].failed++;
+          results.summary.failed++;
+          console.log(`  ❌ FAILED (${responseTime}ms)`);
+          if (result.missingTerms.length > 0 && result.foundTerms.length === 0) {
+            console.log(`     None found from: ${scenario.expect_any.join(', ')}`);
+          }
+          if (result.violations.length > 0) {
+            console.log(`     Violations: ${result.violations.join(', ')}`);
+          }
+        }
+        
+      } catch (error) {
+        console.log(`  ❌ ERROR: ${error.message}`);
+        results.suites[suiteName].tests.push({
+          id: scenario.id,
+          name: scenario.name,
+          input: scenario.input,
+          passed: false,
+          error: error.message
+        });
+        results.suites[suiteName].total++;
+        results.suites[suiteName].failed++;
+        results.summary.total++;
+        results.summary.failed++;
+      }
+      
+      // Rate limit protection
+      await new Promise(resolve => setTimeout(resolve, 800));
+    }
+  }
+  
+  // Calculate pass rate
+  results.summary.passRate = results.summary.total > 0 
+    ? ((results.summary.passed / results.summary.total) * 100).toFixed(1) + '%'
+    : '0%';
+  
+  console.log(`\n🧪 ═══════════════════════════════════════`);
+  console.log(`🧪 RESULTS: ${results.summary.passed}/${results.summary.total} (${results.summary.passRate})`);
+  console.log(`🧪 ═══════════════════════════════════════\n`);
+  
+  // Return HTML or JSON
+  if (req.query.format === 'json') {
+    return res.json(results);
+  }
+  
+  // Generate HTML report
+  let html = generateTestReportHTML(results);
+  res.send(html);
+});
+
+// Single test endpoint
+app.get('/test-single', async (req, res) => {
+  const input = req.query.input || req.query.q || 'outdoor furniture for 4 people';
+  
+  console.log(`\n🧪 Single test: "${input}"`);
+  
+  try {
+    const systemPrompt = buildSystemPrompt ? buildSystemPrompt() : '';
+    
+    const messages = [
+      { role: "system", content: systemPrompt },
+      { role: "user", content: input }
+    ];
+    
+    const completion = await openai.chat.completions.create({
+      model: "gpt-4o",
+      messages: messages,
+      tools: aiTools,
+      tool_choice: "auto",
+      temperature: 0.4,
+      max_tokens: 600
+    });
+    
+    let response = completion.choices[0].message;
+    let toolsCalled = [];
+    let finalContent = response.content || '';
+    
+    if (response.tool_calls && response.tool_calls.length > 0) {
+      const toolMessages = [...messages, response];
+      
+      for (const toolCall of response.tool_calls) {
+        const funcName = toolCall.function.name;
+        const args = JSON.parse(toolCall.function.arguments);
+        toolsCalled.push({ function: funcName, args });
+        
+        let toolResult = { error: "Unknown function" };
+        
+        if (funcName === "search_products") {
+          toolResult = await searchRealProducts(args);
+        }
+        
+        toolMessages.push({
+          role: "tool",
+          tool_call_id: toolCall.id,
+          content: JSON.stringify(toolResult)
+        });
+      }
+      
+      const finalCompletion = await openai.chat.completions.create({
+        model: "gpt-4o",
+        messages: toolMessages,
+        temperature: 0.4,
+        max_tokens: 600
+      });
+      
+      finalContent = finalCompletion.choices[0].message.content || '';
+    }
+    
+    res.json({
+      input,
+      toolsCalled,
+      response: finalContent
+    });
+    
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// HTML Report Generator
+function generateTestReportHTML(results) {
+  return `<!DOCTYPE html>
+<html>
+<head>
+  <title>Gwen Test Results</title>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+    .header { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 20px; }
+    .header h1 { margin: 0 0 10px 0; }
+    .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 20px; }
+    .stat { background: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .stat h3 { margin: 0 0 8px 0; color: #666; font-size: 12px; text-transform: uppercase; }
+    .stat .value { font-size: 32px; font-weight: bold; }
+    .passed { color: #10b981; }
+    .failed { color: #ef4444; }
+    .suite { background: white; border-radius: 10px; margin-bottom: 15px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .suite-header { padding: 15px 20px; background: #f8fafc; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
+    .suite-name { font-weight: 600; text-transform: uppercase; font-size: 14px; }
+    .suite-stats { font-size: 14px; color: #666; }
+    .test { padding: 12px 20px; border-bottom: 1px solid #f1f5f9; }
+    .test:last-child { border-bottom: none; }
+    .test-row { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+    .test-status { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
+    .test-status.pass { background: #dcfce7; color: #10b981; }
+    .test-status.fail { background: #fee2e2; color: #ef4444; }
+    .test-info { flex: 1; }
+    .test-id { font-weight: 600; font-size: 13px; }
+    .test-name { color: #666; font-size: 13px; }
+    .test-time { color: #999; font-size: 12px; }
+    .test-details { display: none; margin-top: 12px; padding: 12px; background: #f8fafc; border-radius: 8px; font-size: 13px; }
+    .test-details.show { display: block; }
+    .detail-row { margin-bottom: 8px; }
+    .detail-label { font-weight: 600; color: #374151; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin: 2px; }
+    .badge.found { background: #dcfce7; color: #15803d; }
+    .badge.missing { background: #fef3c7; color: #b45309; }
+    .badge.violation { background: #fee2e2; color: #b91c1c; }
+    .response-text { background: white; padding: 10px; border-radius: 6px; margin-top: 8px; white-space: pre-wrap; font-size: 12px; color: #374151; max-height: 200px; overflow-y: auto; }
+    .actions { margin-top: 20px; text-align: center; }
+    .btn { display: inline-block; padding: 10px 20px; background: #10b981; color: white; text-decoration: none; border-radius: 6px; margin: 5px; }
+    .btn:hover { background: #059669; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🧪 Gwen Test Results</h1>
+    <p>Run at: ${results.timestamp}</p>
+  </div>
+  
+  <div class="summary">
+    <div class="stat">
+      <h3>Total Tests</h3>
+      <div class="value">${results.summary.total}</div>
+    </div>
+    <div class="stat">
+      <h3>Passed</h3>
+      <div class="value passed">${results.summary.passed}</div>
+    </div>
+    <div class="stat">
+      <h3>Failed</h3>
+      <div class="value failed">${results.summary.failed}</div>
+    </div>
+    <div class="stat">
+      <h3>Pass Rate</h3>
+      <div class="value" style="color: ${parseFloat(results.summary.passRate) >= 70 ? '#10b981' : '#ef4444'}">${results.summary.passRate}</div>
+    </div>
+  </div>
+  
+  ${Object.entries(results.suites).map(([suiteName, suite]) => `
+  <div class="suite">
+    <div class="suite-header">
+      <span class="suite-name">${suiteName.replace(/_/g, ' ')}</span>
+      <span class="suite-stats">${suite.passed}/${suite.total} passed</span>
+    </div>
+    ${suite.tests.map(test => `
+    <div class="test">
+      <div class="test-row" onclick="this.nextElementSibling.classList.toggle('show')">
+        <div class="test-status ${test.passed ? 'pass' : 'fail'}">${test.passed ? '✓' : '✗'}</div>
+        <div class="test-info">
+          <span class="test-id">${test.id}</span>
+          <span class="test-name">- ${test.name}</span>
+        </div>
+        <span class="test-time">${test.responseTime || 0}ms</span>
+      </div>
+      <div class="test-details">
+        <div class="detail-row">
+          <span class="detail-label">Input:</span> "${test.input}"
+        </div>
+        ${test.found && test.found.length > 0 ? `
+        <div class="detail-row">
+          <span class="detail-label">Found:</span>
+          ${test.found.map(t => `<span class="badge found">${t}</span>`).join('')}
+        </div>
+        ` : ''}
+        ${test.missing && test.missing.length > 0 && (!test.found || test.found.length === 0) ? `
+        <div class="detail-row">
+          <span class="detail-label">Expected one of:</span>
+          ${test.missing.map(t => `<span class="badge missing">${t}</span>`).join('')}
+        </div>
+        ` : ''}
+        ${test.violations && test.violations.length > 0 ? `
+        <div class="detail-row">
+          <span class="detail-label">Violations:</span>
+          ${test.violations.map(t => `<span class="badge violation">${t}</span>`).join('')}
+        </div>
+        ` : ''}
+        ${test.error ? `
+        <div class="detail-row">
+          <span class="detail-label" style="color: #ef4444;">Error:</span> ${test.error}
+        </div>
+        ` : ''}
+        ${test.response ? `
+        <div class="detail-row">
+          <span class="detail-label">Response:</span>
+          <div class="response-text">${test.response.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>
+        </div>
+        ` : ''}
+      </div>
+    </div>
+    `).join('')}
+  </div>
+  `).join('')}
+  
+  <div class="actions">
+    <a href="/run-tests" class="btn">🔄 Run Again</a>
+    <a href="/run-tests?format=json" class="btn">📊 JSON Results</a>
+    <a href="/test-single?input=I need 6 seater rattan furniture" class="btn">🧪 Test Single</a>
+  </div>
+</body>
+</html>`;
+}
+
+// =====================================================
+// END OF TEST RUNNER - PASTE ABOVE SERVER STARTUP
+// =====================================================
+
 // ============================================
 // SERVER STARTUP
 // ============================================
