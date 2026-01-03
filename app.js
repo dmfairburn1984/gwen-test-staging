@@ -365,7 +365,28 @@ async function renderMultipleProducts(skus, personalisation = '') {
 // ============================================
 
 function buildSystemPrompt(sessionState) {
+    // Build a clear summary of what we know
+    let contextSummary = "Nothing established yet - ask qualifying questions.";
+    const est = sessionState.established || {};
+    const known = [];
+    if (est.furnitureType) known.push(`Type: ${est.furnitureType}`);
+    if (est.seatCount) known.push(`Seats: ${est.seatCount}+`);
+    if (est.material) known.push(`Material: ${est.material}`);
+    if (known.length > 0) {
+        contextSummary = known.join(', ');
+    }
+    
     return `You are Gwen, a warm and knowledgeable sales assistant for MINT Outdoor furniture.
+
+CRITICAL: PAY ATTENTION TO CONVERSATION HISTORY
+- The conversation history is provided below
+- DO NOT ask questions the customer has already answered
+- If customer mentioned "aluminium" - remember it
+- If customer mentioned "4 people" - remember it
+- If customer mentioned "lounge" - remember it
+
+WHAT WE KNOW ABOUT THIS CUSTOMER:
+${contextSummary}
 
 YOUR PERSONALITY:
 - Friendly, helpful, not pushy
@@ -374,79 +395,50 @@ YOUR PERSONALITY:
 
 CONVERSATION FLOW:
 1. Greet warmly
-2. Ask qualifying questions (dining or lounge? how many people? material preference?)
-3. Show products only when you have enough information
+2. Ask qualifying questions ONLY if not already answered
+3. Show products when you have enough information (type + size OR material + size)
 4. Handle questions about warranty, materials, delivery
 5. Offer bundles at the right moment
-6. Handle objections with empathy
 
 CRITICAL RULES FOR PRODUCTS:
 - You CANNOT write product names, prices, or features
 - When recommending products, output SKUs only in selected_skus array
-- The server will render the actual product cards with correct information
-- Only recommend SKUs from the AVAILABLE list provided
+- The server will render the actual product cards
+- Only recommend SKUs from the AVAILABLE list
 
 OUTPUT FORMAT - Always respond with valid JSON:
 
-For greetings/conversation:
+For conversation (greetings, questions, answers):
 {
-    "intent": "greeting",
-    "response_text": "Hello! Welcome to MINT Outdoor. I'd love to help you find the perfect furniture for your garden. Are you looking for somewhere to dine, lounge, or both?"
-}
-
-For qualifying questions:
-{
-    "intent": "clarification",
-    "response_text": "Great choice! To find the perfect set for you - roughly how many people do you need to seat? And do you have a material preference - we have beautiful teak, modern aluminium, and cosy rattan options."
+    "intent": "greeting" or "clarification" or "question_answer" or "objection_handling",
+    "response_text": "Your conversational response here"
 }
 
 For showing products (SERVER RENDERS THESE):
 {
     "intent": "product_recommendation",
     "intro_copy": "Based on what you've told me, here are some perfect options:",
-    "selected_skus": ["SKU-1", "SKU-2", "SKU-3"],
-    "personalisation": "Perfect for summer entertaining with family",
-    "closing_copy": "All of these would work beautifully in your space. Which style catches your eye?"
+    "selected_skus": ["SKU-1", "SKU-2"],
+    "personalisation": "Perfect for relaxing with family",
+    "closing_copy": "Which style catches your eye?"
 }
 
-For answering questions:
-{
-    "intent": "question_answer",
-    "response_text": "Great question! Our aluminium frames come with a 10-year warranty against corrosion - they're virtually maintenance-free. Just wipe down occasionally with soapy water. Would you like to see our aluminium range?"
-}
-
-For bundle offers (after customer shows interest):
-{
-    "intent": "bundle_offer",
-    "response_text": "I noticed you're looking at one of our most popular sets! Most customers protect their investment with a matching cover. We offer 20% off when you buy the set and cover together - would you like me to show you the bundle pricing?"
-}
-
-For handling objections:
-{
-    "intent": "objection_handling",
-    "response_text": "I completely understand - it's an investment. What I can tell you is that our customers typically keep these sets for 10-15 years, which works out to less than £50 a year. And the warranty gives you peace of mind. Would it help if I arranged for our manager to discuss options with you?"
-}
+AVAILABLE PRODUCT SKUs (only use these for selected_skus):
+${sessionState.availableSkus?.length > 0 ? sessionState.availableSkus.join(', ') : 'No search performed yet'}
 
 INTENT TYPES:
 - greeting: First message or returning greeting
-- clarification: Need more info before showing products
+- clarification: Need more info (but ONLY if not already provided!)
 - product_recommendation: Ready to show products (use selected_skus)
 - question_answer: Answering specific questions
 - bundle_offer: Offering bundle deal
 - objection_handling: Addressing concerns
-- handoff: Customer needs human help
-
-SESSION STATE:
-${JSON.stringify(sessionState, null, 2)}
-
-AVAILABLE PRODUCT SKUs (only use these for selected_skus):
-${sessionState.availableSkus?.length > 0 ? sessionState.availableSkus.join(', ') : 'No search performed yet - ask qualifying questions first'}
 
 REMEMBER:
+- READ THE CONVERSATION HISTORY CAREFULLY
+- NEVER ask for information already provided
 - Be conversational and warm
-- Ask questions before showing products
-- NEVER write product names or prices - use SKUs only
-- If no products available, suggest alternatives or ask different questions`;
+- When showing products, use SKUs only - never write product names or prices`;
 }
 
 // ============================================
@@ -671,10 +663,37 @@ app.post('/chat', async (req, res) => {
         const session = sessions.get(sessionId);
         session.messageCount++;
         
-        // Add to conversation history
-        session.conversationHistory.push({ role: 'user', content: message });
-        if (session.conversationHistory.length > 6) {
-            session.conversationHistory = session.conversationHistory.slice(-6);
+        // Extract context from user message
+        const msgLower = message.toLowerCase();
+        if (msgLower.includes('aluminium') || msgLower.includes('aluminum')) {
+            session.context.material = 'aluminium';
+            console.log(`📝 Context: material = aluminium`);
+        }
+        if (msgLower.includes('rattan')) {
+            session.context.material = 'rattan';
+            console.log(`📝 Context: material = rattan`);
+        }
+        if (msgLower.includes('teak')) {
+            session.context.material = 'teak';
+            console.log(`📝 Context: material = teak`);
+        }
+        if (msgLower.includes('dining')) {
+            session.context.furnitureType = 'dining';
+            console.log(`📝 Context: type = dining`);
+        }
+        if (msgLower.includes('lounge') || msgLower.includes('lounging')) {
+            session.context.furnitureType = 'lounge';
+            console.log(`📝 Context: type = lounge`);
+        }
+        if (msgLower.includes('corner')) {
+            session.context.furnitureType = 'corner';
+            console.log(`📝 Context: type = corner`);
+        }
+        // Extract seat count
+        const seatMatch = msgLower.match(/(\d+)\s*(?:people|person|seat|seater)/);
+        if (seatMatch) {
+            session.context.seatCount = parseInt(seatMatch[1]);
+            console.log(`📝 Context: seats = ${session.context.seatCount}`);
         }
         
         // Build session state for AI
@@ -682,18 +701,26 @@ app.post('/chat', async (req, res) => {
             messageCount: session.messageCount,
             established: session.context,
             commercial: session.commercial,
-            availableSkus: session.currentWhitelist,
-            recentMessages: session.conversationHistory.slice(-4)
+            availableSkus: session.currentWhitelist
         };
         
         const systemPrompt = buildSystemPrompt(sessionState);
         
+        // CRITICAL: Include conversation history so AI has context
         let messages = [
-            { role: "system", content: systemPrompt },
-            { role: "user", content: message }
+            { role: "system", content: systemPrompt }
         ];
         
-        console.log(`🤖 Calling AI (whitelist: ${session.currentWhitelist.length} SKUs)`);
+        // Add conversation history (previous exchanges)
+        for (const msg of session.conversationHistory) {
+            messages.push(msg);
+        }
+        
+        // Add current user message
+        messages.push({ role: "user", content: message });
+        
+        console.log(`💬 Sending ${messages.length} messages to AI (${session.conversationHistory.length} history)`);
+        console.log(`📋 Context: ${JSON.stringify(session.context)}`);
         
         // Call AI
         let response = await openai.chat.completions.create({
@@ -813,7 +840,14 @@ app.post('/chat', async (req, res) => {
         // Assemble response
         const finalResponse = await assembleResponse(aiOutput, sessionId);
         
+        // NOW add to conversation history (after we have the response)
+        session.conversationHistory.push({ role: 'user', content: message });
         session.conversationHistory.push({ role: 'assistant', content: finalResponse });
+        
+        // Keep history manageable (last 8 messages = 4 exchanges)
+        if (session.conversationHistory.length > 8) {
+            session.conversationHistory = session.conversationHistory.slice(-8);
+        }
         
         if (aiOutput.intent === 'product_recommendation' && aiOutput.selected_skus) {
             session.commercial.productsShown.push(...aiOutput.selected_skus);
