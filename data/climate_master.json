@@ -1,0 +1,32 @@
+{
+  "teak": {
+    "coastal_salt": "Excellent resistance; natural oils and dense grain withstand salt air. Rinse occasionally to remove salt deposits.",
+    "hot_dry": "Performs well, but may benefit from monthly oiling to replace evaporated oils.",
+    "humid_wet": "High rot-resistance but ensure good airflow to prevent mold under cushions.",
+    "windy": "Heavy and stable; minimal movement in wind."
+  },
+  "rattan": {
+    "coastal_salt": "PE wicker resists corrosion but salt can accelerate wear; rinse off salt spray regularly.",
+    "hot_dry": "UV absorbers protect; covers recommended for prolonged exposure to prevent fading.",
+    "humid_wet": "Quick-dry cores resist mold; avoid standing water in weave.",
+    "windy": "Lightweight weave can blow; secure or move under cover in storms."
+  },
+  "aluminium": {
+    "coastal_salt": "Top performer; powder coat resists salt corrosion better than untreated metals.",
+    "hot_dry": "Excellent; metal can heat up but fast cooling under shade.",
+    "humid_wet": "Resilient; wipe dry after rain to avoid water spots.",
+    "windy": "Lightweight but strong; consider anchoring in gusty areas."
+  },
+  "olefin": {
+    "coastal_salt": "Recommended choice: solution-dyed polypropylene resists UV and salt spray better than polyester. Rinse salt off monthly.",
+    "hot_dry": "Superior UV stability; will not become brittle or fade like polyester under intense sun.",
+    "humid_wet": "Quick-dry fibers prevent mold and mildew\u2014ideal for damp climates.",
+    "windy": "Lightweight cushion fabrics remain intact; olefin maintains integrity vs. polyester that may tear."
+  },
+  "polyester": {
+    "coastal_salt": "Polyester can degrade faster; salt exposure leads to fiber weakening\u2014rinse thoroughly or replace more often.",
+    "hot_dry": "Prone to UV fading and brittleness; inferior to olefin in sun resistance.",
+    "humid_wet": "Retains moisture longer and can develop mildew; olefin is a better mold-resistant option.",
+    "windy": "Heavier when wet and can sag; olefin cushions rebound better in windy conditions."
+  }
+}

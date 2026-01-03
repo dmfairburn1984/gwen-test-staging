@@ -1,0 +1,223 @@
+[
+  {
+    "module_id": "stone_concrete",
+    "name": "Concrete",
+    "category": "stone_composite",
+    "level": "Mid Range",
+    "description": "Cast concrete tabletop material offering industrial appeal and durability.",
+    "properties": {
+      "weight": "very heavy",
+      "porosity": "moderate",
+      "heat_absorption": "high",
+      "maintenance": "requires sealing"
+    },
+    "pros_cons": {
+      "pros": [
+        "Modern industrial look",
+        "Highly durable and weather-resistant",
+        "Customizable shapes and finishes"
+      ],
+      "cons": [
+        "Very heavy and may need reinforced frames",
+        "Porous so needs periodic sealing",
+        "Can crack under freeze-thaw if not sealed properly"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Seal surface annually to prevent staining",
+        "Clean with pH-neutral cleaner",
+        "Avoid abrasive scrubbing"
+      ]
+    },
+    "environmental_factors": {
+      "freeze_thaw": "Cracking risk if water seeps into pores without sealant",
+      "uplight": "Can become very hot under direct sun"
+    },
+    "warranty": {
+      "period_years": 3,
+      "coverage": "Structural integrity and finish under normal use"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Concrete",
+      "https://www.concretenetwork.com"
+    ]
+  },
+  {
+    "module_id": "stone_terrazzo",
+    "name": "Terrazzo",
+    "category": "stone_composite",
+    "level": "Premium",
+    "description": "Composite surface of marble, quartz, or glass chips set in cement or resin for a high-end finish.",
+    "properties": {
+      "weight": "very heavy",
+      "porosity": "low (when sealed)",
+      "heat_absorption": "moderate",
+      "maintenance": "minimal when sealed"
+    },
+    "pros_cons": {
+      "pros": [
+        "Luxurious aesthetic with varied patterns",
+        "Low porosity when sealed",
+        "Highly customizable"
+      ],
+      "cons": [
+        "Expensive material and fabrication",
+        "Heavy\u2014requires sturdy support",
+        "Requires professional sealing"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Reseal every 2-3 years",
+        "Clean with mild detergent",
+        "Avoid acidic cleaners"
+      ]
+    },
+    "environmental_factors": {
+      "freeze_thaw": "Low risk if properly sealed",
+      "uplight": "Moderate heat absorption"
+    },
+    "warranty": {
+      "period_years": 5,
+      "coverage": "Surface finish and structural integrity"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Terrazzo",
+      "https://www.terrazzoexperts.com"
+    ]
+  },
+  {
+    "module_id": "stone_ceramic",
+    "name": "Ceramic",
+    "category": "stone_composite",
+    "level": "Budget to Mid Range",
+    "description": "Glazed ceramic tile tabletop offering easy maintenance and varied designs.",
+    "properties": {
+      "weight": "medium to heavy",
+      "porosity": "very low",
+      "heat_absorption": "low",
+      "maintenance": "none required beyond cleaning"
+    },
+    "pros_cons": {
+      "pros": [
+        "Resistant to stains and scratches",
+        "Variety of colors and patterns",
+        "Cool to the touch in hot weather"
+      ],
+      "cons": [
+        "Tiles can chip or crack with impact",
+        "Grout lines require occasional cleaning",
+        "Heavy\u2014may need robust support"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Clean with mild soap and water",
+        "Inspect grout annually and regrout as needed",
+        "Avoid dropping heavy items"
+      ]
+    },
+    "environmental_factors": {
+      "freeze_thaw": "Chipping risk in freeze-thaw cycles",
+      "uplight": "Remains relatively cool"
+    },
+    "warranty": {
+      "period_years": 2,
+      "coverage": "Tile integrity and finish"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Ceramic_tile",
+      "https://www.ceramicindustry.com"
+    ]
+  },
+  {
+    "module_id": "stone_hpl",
+    "name": "High-Pressure Laminate (HPL)",
+    "category": "stone_composite",
+    "level": "Mid Range",
+    "description": "Engineered laminate surface with wear-resistant finish, often used as an alternative to real stone.",
+    "properties": {
+      "weight": "light",
+      "porosity": "none",
+      "heat_resistance": "moderate",
+      "maintenance": "very low"
+    },
+    "pros_cons": {
+      "pros": [
+        "Lightweight and easy to install",
+        "Consistent appearance and color",
+        "Highly stain and scratch resistant"
+      ],
+      "cons": [
+        "Can delaminate over time",
+        "Lower heat tolerance than stone",
+        "Not as high-end in appearance"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Wipe with damp cloth and mild cleaner",
+        "Avoid heat sources like hot pans directly on surface"
+      ]
+    },
+    "environmental_factors": {
+      "freeze_thaw": "No significant risk",
+      "uplight": "Surface may warm but won\u2019t absorb excessive heat"
+    },
+    "warranty": {
+      "period_years": 3,
+      "coverage": "Surface integrity and finish"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Laminate",
+      "https://www.hplmanufacturers.com"
+    ]
+  },
+  {
+    "module_id": "stone_tempered_glass",
+    "name": "Tempered Glass",
+    "category": "glass",
+    "level": "Affordable",
+    "description": "Heat-treated safety glass offering excellent strength and a sleek, modern look for tabletops.",
+    "properties": {
+      "weight": "medium",
+      "clarity": "high",
+      "maintenance": "none beyond cleaning",
+      "safety": "shatters into small, safe granules if broken"
+    },
+    "pros_cons": {
+      "pros": [
+        "Affordable and maintenance-free",
+        "High strength due to tempering process",
+        "Sleek, modern aesthetic"
+      ],
+      "cons": [
+        "Risk of localized melting under magnified sunlight",
+        "Shows fingerprints and smudges easily"
+      ]
+    },
+    "risks": {
+      "glass_magnification": "Sunlight through glass objects can focus heat and cause surface damage or melting over time."
+    },
+    "maintenance": {
+      "instructions": [
+        "Clean with glass cleaner or mild soap and water",
+        "Use coasters to prevent scratches",
+        "Avoid leaving magnifying lenses (e.g. glassware) on surface in direct sun"
+      ]
+    },
+    "environmental_factors": {
+      "freeze_thaw": "Resistant to cracking but can become brittle in extreme cold",
+      "uplight": "Remains cool but sun magnification risk exists"
+    },
+    "warranty": {
+      "period_years": 2,
+      "coverage": "Structural integrity under normal use"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Tempered_glass",
+      "https://www.glassonweb.com"
+    ]
+  }
+]

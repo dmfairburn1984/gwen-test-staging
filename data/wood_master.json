@@ -1,0 +1,282 @@
+[
+  {
+    "module_id": "materials_teak",
+    "name": "Teak",
+    "category": "wood",
+    "level": "Luxury",
+    "description": "The King of outdoor timber! Teak is a premium tropical hardwood prized for its natural oils, durability, and golden patina.",
+    "properties": {
+      "density_kg_m3": 650,
+      "natural_oils": true,
+      "grain": "straight to interlocked",
+      "weight": "medium",
+      "origin": ["Myanmar", "Indonesia", "Thailand", "South America"]
+    },
+    "durability_rating": 9,
+    "weather_resistance": "excellent",
+    "pros_cons": {
+      "pros": [
+        "Self‐oiling—high rot resistance",
+        "Beautiful golden patina over time",
+        "Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly",
+        "If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,",
+        "High strength to weight ratio"
+      ],
+      "cons": [
+        "High cost",
+        "Annual maintenance to preserve color",
+        "Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation",
+        "Sustainability concerns if not FSC-certified"
+      ]
+    },
+    "finishes": ["natural weathered", "teak oil", "sealant"],
+    "maintenance": {
+      "required": true,
+      "frequency": "annual",
+      "instructions": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction."
+    },
+    "sustainability": {
+      "fsc_certified": true,
+      "harvest_method": "plantation-grown preferred"
+    },
+    "warranty": {
+      "period_years": 5,
+      "coverage": "structural defects only"
+    },
+    "reference_links": [
+      "https://www.tropicalhardwoods.org/teak-info",
+      "https://en.wikipedia.org/wiki/Teak"
+    ]
+  },
+  {
+    "module_id": "materials_eucalyptus",
+    "name": "Eucalyptus",
+    "category": "wood",
+    "level": "Mid Range",
+    "description": "Fast-growing hardwood with a pale yellow hue, good outdoor performance when treated.",
+    "properties": {
+      "density_kg_m3": 600,
+      "natural_oils": false,
+      "grain": "straight",
+      "weight": "medium",
+      "origin": ["Australia", "Brazil"]
+    },
+    "durability_rating": 7,
+    "weather_resistance": "good (with treatment)",
+    "pros_cons": {
+      "pros": [
+        "More affordable than teak",
+        "Attractive pale brown colour",
+        "Fast‐renewable resource"
+      ],
+      "cons": [
+        "Less rot‐resistant without sealant",
+        "Occasional splitting if untreated",
+        "Colour fades to silver‐gray"
+      ]
+    },
+    "finishes": ["oil", "sealer", "stain"],
+    "maintenance": {
+      "required": true,
+      "frequency": "biannual",
+      "instructions": "Seal with any outdoor oil at least once pre year."
+    },
+    "sustainability": {
+      "fsc_certified": true,
+      "harvest_method": "rapid-growth plantations"
+    },
+    "warranty": {
+      "period_years": 3,
+      "coverage": "rotting and splitting is possible under normal use without maintenance"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Eucalyptus",
+      "https://www.fsc-uk.org"
+    ]
+  },
+  {
+    "module_id": "materials_shorea",
+    "name": "Shorea",
+    "category": "wood",
+    "level": "Luxury",
+    "description": "Also known as “Philippine mahogany,” a dense tropical hardwood used in premium outdoor furniture.",
+    "properties": {
+      "density_kg_m3": 700,
+      "natural_oils": true,
+      "grain": "interlocked",
+      "weight": "heavy",
+      "origin": ["Philippines", "Malaysia"]
+    },
+    "durability_rating": 8,
+    "weather_resistance": "very good",
+    "pros_cons": {
+      "pros": [
+        "Excellent strength",
+        "Deep reddish-brown colour",
+        "Good rot resistance"
+      ],
+      "cons": [
+        "Heavier to handle",
+        "Less common—higher cost",
+        "Needs oiling to maintain tone"
+      ]
+    },
+    "finishes": ["oil", "sealant"],
+    "maintenance": {
+      "required": true,
+      "frequency": "annual",
+      "instructions": "Apply tung oil after cleaning; sand lightly as needed."
+    },
+    "sustainability": {
+      "fsc_certified": false,
+      "harvest_method": "selective logging"
+    },
+    "warranty": {
+      "period_years": 4,
+      "coverage": "structural integrity"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Shorea",
+      "https://www.worldwildlife.org"
+    ]
+  },
+  {
+    "module_id": "materials_acacia",
+    "name": "Acacia",
+    "category": "wood",
+    "level": "Mid Range",
+    "description": "Durable, richly grained hardwood with good outdoor performance when sealed. Its appearance has a rich grain and the presence of knots which brings character and a natural feel. Typically, when Acacia is used for outdoor furniture its oiled at the furniture maker and has a gentle brown appearance",
+    "properties": {
+      "density_kg_m3": 750,
+      "natural_oils": false,
+      "grain": "varied",
+      "weight": "heavy",
+      "origin": ["Asia", "Australia", "South America"]
+    },
+    "durability_rating": 7,
+    "weather_resistance": "very good (if sealed)",
+    "pros_cons": {
+      "pros": [
+        "Hard-wearing",
+        "Affordable alternative to teak although without the same durability",
+        "Environmentally friendly as always taken from managed and sustainable plantations",
+        "Attractive grain patterns"
+      ],
+      "cons": [
+        "Requires sealant yearly",
+        "Can split if untreated",
+        "There can be some colour variations batch-to-batch but some users enjoy this natural ebb and flow of the material"
+      ]
+    },
+    "finishes": ["sealant", "oil", "stain"],
+    "maintenance": {
+      "required": true,
+      "frequency": "annual",
+      "instructions": "Clean, sand, and seal with clear outdoor wood sealant."
+    },
+    "sustainability": {
+      "fsc_certified": true,
+      "harvest_method": "plantation"
+    },
+    "warranty": {
+      "period_years": 3,
+      "coverage": "rotting/splitting is possible if left untreated"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Acacia",
+      "https://www.wood-database.com/acacia/"
+    ]
+  },
+  {
+    "module_id": "materials_cedar",
+    "name": "Cedar",
+    "category": "wood",
+    "level": "Mid Range",
+    "description": "Lightweight softwood with natural aromatic oils, moderate rot resistance.",
+    "properties": {
+      "density_kg_m3": 350,
+      "natural_oils": true,
+      "grain": "straight",
+      "weight": "light",
+      "origin": ["Western North America", "Eastern Canada"]
+    },
+    "durability_rating": 6,
+    "weather_resistance": "good (natural oils)",
+    "pros_cons": {
+      "pros": [
+        "Lightweight & easy to move",
+        "Natural insect resistance",
+        "Pleasant aroma"
+      ],
+      "cons": [
+        "Softwood—scratches/dents easily",
+        "Prone to checking (splitting)",
+        "Colour fades to gray"
+      ]
+    },
+    "finishes": ["clear sealant", "stain"],
+    "maintenance": {
+      "required": true,
+      "frequency": "biennial",
+      "instructions": "Apply exterior clear coat every 2 years to preserve colour."
+    },
+    "sustainability": {
+      "fsc_certified": true,
+      "harvest_method": "selective logging"
+    },
+    "warranty": {
+      "period_years": 2,
+      "coverage": "rotting under normal use"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Cedar_(wood)",
+      "https://www.wood-database.com/cedar/"
+    ]
+  },
+  {
+    "module_id": "materials_pine",
+    "name": "Pine",
+    "category": "wood",
+    "level": "Affordable",
+    "description": "Economical softwood, often pressure-treated for outdoor use, light colour and grain.",
+    "properties": {
+      "density_kg_m3": 500,
+      "natural_oils": false,
+      "grain": "straight",
+      "weight": "light",
+      "origin": ["Europe", "North America"]
+    },
+    "durability_rating": 5,
+    "weather_resistance": "fair (if treated)",
+    "pros_cons": {
+      "pros": [
+        "Low cost",
+        "Widely available",
+        "Lightweight"
+      ],
+      "cons": [
+        "Soft—dents/scratches easily",
+        "Requires pressure treatment or sealant",
+        "Prone to rot if untreated"
+      ]
+    },
+    "finishes": ["pressure-treated", "stain", "sealant"],
+    "maintenance": {
+      "required": true,
+      "frequency": "annual",
+      "instructions": "Inspect for rot, seal with wood preservative yearly."
+    },
+    "sustainability": {
+      "fsc_certified": true,
+      "harvest_method": "managed forests"
+    },
+    "warranty": {
+      "period_years": 2,
+      "coverage": "rotting/splitting if left untreated"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Pine",
+      "https://www.wood-database.com/pine/"
+    ]
+  }
+]

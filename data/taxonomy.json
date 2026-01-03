@@ -1,0 +1,180 @@
+{
+  "product_categories": {
+    "sunloungers": {
+      "synonyms": ["sunloungers","sunlounger", "sun lounger", "daybed", "day bed", "chaise lounge", "chaise longue", "lounger", "recliner", "pool lounger", "garden lounger"],
+      "search_terms": ["lounger", "daybed", "chaise", "reclining"],
+      "category_type": "sunlounger",
+      "material_agnostic": true
+    },
+    "hammocks": {
+      "synonyms": ["hammock", "hammock chair", "hammock stand", "hanging bed"],
+      "search_terms": ["hammock", "hanging"],
+      "category_type": "lounge",
+      "special_features": ["stand", "swing"]
+    },
+    "porch_swings": {
+      "synonyms": ["porch swing", "swing chair", "swing bench"],
+      "search_terms": ["swing", "porch swing"],
+      "category_type": "lounge"
+    },
+    "adirondack_chairs": {
+      "synonyms": ["adirondack", "lawn chair", "garden chair"],
+      "search_terms": ["adirondack", "lawn chair"],
+      "category_type": "seating"
+    },
+    "rocking_gliders": {
+      "synonyms": ["rocking chair", "glider", "patio rocker"],
+      "search_terms": ["rocking", "glider"],
+      "category_type": "seating"
+    },
+    "club_chairs": {
+      "synonyms": ["club chair", "armchair", "outdoor armchair"],
+      "search_terms": ["club chair", "armchair"],
+      "category_type": "seating"
+    },
+    "benches": {
+      "synonyms": ["bench", "garden bench", "outdoor bench", "porch bench"],
+      "search_terms": ["bench"],
+      "category_type": "seating",
+      "special_features": ["storage option"]
+    },
+    "sectionals": {
+      "synonyms": ["sectional", "corner set", "l-shaped sofa", "modular sofa"],
+      "search_terms": ["sectional", "corner", "modular"],
+      "category_type": "lounge",
+      "special_features": ["modular", "corner"] 
+    },
+    "conversation_sets": {
+      "synonyms": ["conversation set", "sofa set", "patio sofa set", "outdoor living set"],
+      "search_terms": ["conversation", "sofa set", "living set"],
+      "category_type": "lounge"
+    },
+    "loveseats": {
+      "synonyms": ["loveseat", "patio loveseat"],
+      "search_terms": ["loveseat"],
+      "category_type": "lounge"
+    },
+    "dining_sets": {
+      "synonyms": ["dining set", "patio dining set", "table and chairs", "outdoor dining"],
+      "search_terms": ["dining", "table", "chairs"],
+      "category_type": "dining",
+      "seat_capacity_aware": true
+    },
+    "dining_tables": {
+      "synonyms": ["dining table", "outdoor dining table", "patio table"],
+      "search_terms": ["dining table", "patio table"],
+      "category_type": "dining"
+    },
+    "dining_chairs": {
+      "synonyms": ["dining chair", "patio chair", "outdoor chair"],
+      "search_terms": ["dining chair", "patio chair"],
+      "category_type": "dining"
+    },
+    "bar_dining_sets": {
+      "synonyms": ["bar dining set", "patio bar set", "bar table and stools"],
+      "search_terms": ["bar dining", "counter height", "bar height"],
+      "category_type": "dining"
+    },
+    "bar_tables": {
+      "synonyms": ["bar table", "counter table", "high table"],
+      "search_terms": ["bar table", "counter height"],
+      "category_type": "dining",
+      "feature_detection": ["high_table"]
+    },
+    "bar_stools": {
+      "synonyms": ["bar stool", "counter stool", "high stool"],
+      "search_terms": ["bar stool", "counter stool"],
+      "category_type": "dining"
+    },
+    "bistro_sets": {
+      "synonyms": ["bistro set", "bistro table and chairs", "cafe set"],
+      "search_terms": ["bistro", "cafe"],
+      "category_type": "dining"
+    },
+    "side_tables": {
+      "synonyms": ["side table", "end table", "accent table"],
+      "search_terms": ["side table", "end table"],
+      "category_type": "accessories"
+    },
+    "coffee_tables": {
+      "synonyms": ["coffee table", "patio coffee table"],
+      "search_terms": ["coffee table"],
+      "category_type": "accessories"
+    },
+    "console_tables": {
+      "synonyms": ["console table", "hall table", "sofa table"],
+      "search_terms": ["console table"],
+      "category_type": "accessories"
+    },
+    "picnic_tables": {
+      "synonyms": ["picnic table", "park table"],
+      "search_terms": ["picnic table"],
+      "category_type": "dining"
+    },
+    "fire_pit_tables": {
+      "synonyms": ["fire pit table", "heated table", "outdoor fire table"],
+      "search_terms": ["fire pit", "heated table"],
+      "category_type": "accessories",
+      "special_features": ["heating"]
+    },
+    "storage_boxes": {
+      "synonyms": ["storage box", "deck box", "cushion box", "outdoor storage"],
+      "search_terms": ["storage", "box", "deck box"],
+      "category_type": "accessories",
+      "solves_needs": ["store cushions", "outdoor storage"]
+    },
+    "furniture_covers": {
+      "synonyms": ["furniture cover", "patio cover", "outdoor cover"],
+      "search_terms": ["cover", "protector"],
+      "category_type": "accessories"
+    },
+    "umbrellas": {
+      "synonyms": ["umbrella", "parasol", "patio umbrella", "garden umbrella"],
+      "search_terms": ["umbrella", "parasol", "shade"],
+      "category_type": "accessories",
+      "solves_needs": ["shade", "sun protection"]
+    },
+    "gazebos_and_pergolas": {
+      "synonyms": ["gazebo", "pergola", "canopy", "shade sail"],
+      "search_terms": ["gazebo", "pergola", "canopy", "shade sail"],
+      "category_type": "accessories",
+      "solves_needs": ["shade", "structure"]
+    },
+    "patio_heaters": {
+      "synonyms": ["patio heater", "outdoor heater", "fireheater"],
+      "search_terms": ["heater", "heat", "patio heater"],
+      "category_type": "accessories",
+      "special_features": ["heating"]
+    }
+  },
+  
+  "style_taxonomy": {
+    "modern": {
+      "keywords": ["sleek", "minimalist", "contemporary", "clean lines", "geometric", "aluminum", "steel"],
+      "avoid_keywords": ["rustic", "traditional", "ornate", "vintage"],
+      "preferred_materials": ["aluminium", "steel", "glass"],
+      "design_characteristics": ["geometric", "minimalist", "streamlined"]
+    },
+    "traditional": {
+      "keywords": ["classic", "ornate", "decorative", "carved", "vintage", "timeless"],
+      "avoid_keywords": ["modern", "contemporary", "minimalist"],
+      "preferred_materials": ["teak", "hardwood"],
+      "design_characteristics": ["detailed", "ornate", "classic"]
+    },
+    "contemporary": {
+      "keywords": ["current", "trendy", "stylish", "updated", "fresh"],
+      "preferred_materials": ["rattan", "wicker", "mixed materials"],
+      "design_characteristics": ["balanced", "comfortable", "versatile"]
+    },
+    "bohemian": {
+      "keywords": ["boho", "eclectic", "woven", "colorful", "relaxed"],
+      "preferred_materials": ["rattan", "woven rope", "textile"],
+      "design_characteristics": ["layered", "patterned", "earthy"]
+    },
+    "coastal": {
+      "keywords": ["nautical", "beachy", "light-tone", "sea-inspired"],
+      "preferred_materials": ["wicker", "teak", "canvas"],
+      "design_characteristics": ["light", "airy", "weathered"]
+    }
+  }
+}

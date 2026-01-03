@@ -1,0 +1,66 @@
+{
+  "primary_categories": {
+    "dining_sets": {
+      "name": "Dining Sets",
+      "description": "Complete dining furniture with table and chairs",
+      "subcategories": {
+        "small_dining": {
+          "seats": "2-4",
+          "skus": ["BRIDGETOWN-70-2S", "BRIDGETOWN-120-4S"]
+        },
+        "medium_dining": {
+          "seats": "5-6", 
+          "skus": ["BRIDGETOWN-150-6S", "BRIDGETOWN-200-6S", "ALANNE-6S", "ROSE-DINING-6S", "SIMON-6S-DINING", "SOLA-6S-DINING"]
+        },
+        "large_dining": {
+          "seats": "7+",
+          "skus": ["HAVANA-8S", "OLIVIA-SICILY-8S-DINING", "CALI-8S"]
+        }
+      }
+    },
+    "lounge_sets": {
+      "name": "Lounge Sets",
+      "description": "Sofas and armchairs for relaxation",
+      "subcategories": {
+        "standard_lounge": {
+          "type": "non-corner",
+          "skus": ["LIMA-LOUNGE-SET", "ALEX-5S-SOFA-SET", "GIGI-4S-SOFA-SET", "ION-4S-SOFA-SET", "MARKEY-4S-SOFA-SET", "NUHA-SOFA-SET-4S", "ROSE-4S-SOFA-SET", "TOMMY-4S-SET", "SOLA-SOFA-SET"]
+        },
+        "corner_lounge": {
+          "type": "L-shaped",
+          "skus": ["LIMA-CORNER-LOUNGE", "LINH-CORNER-6S", "MALAGA-LOUNGE-SET", "MARBELLA FIVE SEATER CORNER", "REVA-5S-CORNER", "ROSE-CORNER-SOFA", "STOCKHOLM-CORNER-BLACK", "TENERIFE-CORNER-SET", "TERRA-6S-CORNER", "WALLU-CORNER-5S", "ARTHUR-CORNER-5S"]
+        },
+        "chaise_lounge": {
+          "type": "with-chaise",
+          "skus": ["STOCKHOLM-CHAISE-LOUNGE", "KIKI-ORGANIC-CHAISE"]
+        },
+        "compact_lounge": {
+          "type": "small-space",
+          "skus": ["KIKI-2-SEATER-SOFA", "ROSE-LOVESEAT"]
+        }
+      }
+    },
+    "hybrid_sets": {
+      "name": "Dual-Purpose Sets",
+      "description": "Can be used for both dining and lounging",
+      "skus": ["BARCELONA-LOUNGE-SET", "DELLA-PORTA-SOFA-SET", "FARO-LOUNGE-SET", "STOCKHOLM-LOUNGE-SET", "VALENTE-SOFA-SET"]
+    },
+    "sun_loungers": {
+      "name": "Sun Loungers",
+      "description": "For sunbathing and poolside",
+      "skus": ["SOLA-SUNLOUNGER", "MALAGA-LOUNGER", "MALAGA-LOUNGER-X2"]
+    },
+    "accessories": {
+      "parasols": ["BALI-METAL-GREY", "BALI-METAL-TAUPE", "BALI-WOOD-PARASOL-GREEN", "BALI-WOOD-PARASOL-GREY"],
+      "storage": ["PALMA-CUSHION-BOX", "Marbella Cushion Box"],
+      "covers": ["CHESTERTON-COVER", "MARBELLA-COVER", "PALMA-COVER", "SANTORINI-COVER", "STOCKHOLM-CHAISE-COVER", "STOCKHOLM-CORNER-COVER"],
+      "cushions": ["[all cushion SKUs]"]
+    }
+  },
+  "material_categories": {
+    "rattan_products": ["FARO-LOUNGE-SET", "STOCKHOLM-LOUNGE-SET", "STOCKHOLM-CORNER-BLACK", "STOCKHOLM-CHAISE-LOUNGE", "MALAGA-LOUNGE-SET", "BARCELONA-LOUNGE-SET", "BRIDGETOWN-120-4S", "BRIDGETOWN-150-6S", "BRIDGETOWN-200-6S", "BRIDGETOWN-70-2S", "LIMA-CORNER-LOUNGE", "LIMA-LOUNGE-SET", "ALANNE-6S", "DELLA-PORTA-SOFA-SET", "VALENTE-SOFA-SET"],
+    "teak_products": ["ALEX-5S-SOFA-SET", "ARTHUR-CORNER-5S", "GIGI-4S-SOFA-SET", "ION-4S-SOFA-SET", "LINH-CORNER-6S", "MALAI-LOUNGE-SET-TEAK", "MARKEY-4S-SOFA-SET", "REVA-5S-CORNER", "REVA-5S-SOFA-SET", "ROSE-4S-SOFA-SET", "ROSE-CORNER-SOFA", "ROSE-DINING-6S", "ROSE-LOVESEAT", "SIMON-6S-DINING", "SOLA-6S-DINING", "SOLA-SOFA-SET", "TERRA-6S-CORNER", "OLIVIA-SICILY-8S-DINING"],
+    "aluminium_products": ["HAVANA-8S", "KIKI-2-SEATER-SOFA", "KIKI-ORGANIC-CHAISE", "SANTORINI-GREY", "TENERIFE-CORNER-SET", "TOMMY-4S-SET", "WALLU-CORNER-5S"],
+    "wood_products": ["CALI-8S", "LINH-CORNER-6S", "SOLA-SUNLOUNGER", "SOLA-6S-DINING", "SOLA-SOFA-SET"]
+  }
+}   

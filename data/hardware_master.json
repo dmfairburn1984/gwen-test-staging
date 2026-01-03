@@ -1,0 +1,84 @@
+[
+  {
+    "module_id": "hardware_stainless_steel",
+    "name": "Stainless Steel Fasteners",
+    "category": "hardware",
+    "level": "Premium",
+    "description": "High-grade stainless steel screws, bolts, and brackets that resist corrosion and maintain strength outdoors.",
+    "properties": {
+      "material": "304 & 316 stainless steel",
+      "corrosion_resistance": "excellent",
+      "strength": "high",
+      "finish": "polished or brushed"
+    },
+    "pros_cons": {
+      "pros": [
+        "Outstanding rust and corrosion resistance",
+        "Long-term durability in all climates",
+        "Aesthetic finish complements furniture"
+      ],
+      "cons": [
+        "Higher cost than galvanized options",
+        "Can gall if over-tightened without lubrication"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Inspect annually for signs of galling",
+        "Tighten loose fasteners as needed",
+        "Apply lubricant on threads to prevent galling"
+      ]
+    },
+    "assembly_ease": "Medium; requires proper torque to avoid galling",
+    "quality_control": "ISO 3506 certified",
+    "warranty": {
+      "period_years": 7,
+      "coverage": "Corrosion and structural integrity"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Stainless_steel",
+      "https://www.astm.org/standards/a276.htm"
+    ]
+  },
+  {
+    "module_id": "hardware_galvanized_steel",
+    "name": "Galvanized Steel Fasteners",
+    "category": "hardware",
+    "level": "Mid Range",
+    "description": "Steel fasteners with a zinc coating to provide corrosion resistance in outdoor environments.",
+    "properties": {
+      "material": "Carbon steel with zinc galvanization",
+      "corrosion_resistance": "good",
+      "strength": "high",
+      "finish": "zinc plated"
+    },
+    "pros_cons": {
+      "pros": [
+        "Cost-effective corrosion protection",
+        "Strong and reliable hold",
+        "Widely available"
+      ],
+      "cons": [
+        "Zinc coating can wear off over time",
+        "Susceptible to white rust if left wet"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Inspect coating annually",
+        "Touch-up with cold galvanizing spray if needed",
+        "Keep fasteners dry when possible"
+      ]
+    },
+    "assembly_ease": "Easy; standard tooling",
+    "quality_control": "ASTM A153 compliance",
+    "warranty": {
+      "period_years": 5,
+      "coverage": "Coating integrity and structural strength"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Galvanization",
+      "https://www.astm.org/standards/a153.htm"
+    ]
+  }
+]

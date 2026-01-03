@@ -1,0 +1,109 @@
+[
+  {
+    "module_id": "warranty_terms",
+    "entries": [
+      {
+        "item": "All Products",
+        "period_years": 2,
+        "coverage": "Structural integrity under normal use"
+      },
+      {
+        "item": "Teak Furniture",
+        "period_years": 5,
+        "coverage": "Structural defects only"
+      },
+      {
+        "item": "Aluminium Frames",
+        "period_years": 3,
+        "coverage": "Corrosion and structural defects"
+      },
+      {
+        "item": "Powder-Coated Steel",
+        "period_years": 4,
+        "coverage": "Coating integrity and structural strength"
+      },
+      {
+        "item": "Synthetic Wicker",
+        "period_years": 2,
+        "coverage": "UV and structural performance"
+      },
+      {
+        "item": "Fabrics (Sunbrella/Olefin)",
+        "period_years": 5,
+        "coverage": "Colorfastness and mildew resistance"
+      },
+      {
+        "item": "Glass & Composites",
+        "period_years": 2,
+        "coverage": "Surface integrity and impact resistance"
+      }
+    ]
+  },
+  {
+    "module_id": "certifications",
+    "entries": [
+      {
+        "cert": "FSC",
+        "scope": "Sustainable wood sourcing",
+        "applicability": "Teak, Eucalyptus, Acacia"
+      },
+      {
+        "cert": "EN 581",
+        "scope": "Outdoor furniture safety & durability",
+        "applicability": "Seating & tables"
+      },
+      {
+        "cert": "Fire-Retardant",
+        "scope": "Flame resistance",
+        "applicability": "Fabrics & cushions"
+      },
+      {
+        "cert": "BSCI",
+        "scope": "Social compliance and ethical labor standards",
+        "applicability": "All MINT furniture makers are BSCI approved, ensuring fair labor practices and safe working conditions."
+      }
+    ]
+  },
+  {
+    "module_id": "import_export_tariffs",
+    "entries": [
+      {
+        "region": "UK",
+        "tariff_rate": "0%",
+        "notes": "Favourable trade deals post-Brexit for furniture imports"
+      },
+      {
+        "region": "EU",
+        "tariff_rate": "2.7%",
+        "notes": "Standard EU furniture import tariff"
+      },
+      {
+        "region": "USA",
+        "tariff_rate": "2.5%",
+        "notes": "Applicable to wooden furniture imports"
+      },
+      {
+        "region": "Australia",
+        "tariff_rate": "5%",
+        "notes": "Includes anti-dumping duties on steel frames"
+      }
+    ]
+  },
+  {
+    "module_id": "insurance_liability",
+    "entries": [
+      {
+        "aspect": "Product Liability",
+        "detail": "Covers defects causing injury or damage"
+      },
+      {
+        "aspect": "Marine Transit",
+        "detail": "Covers damage in shipping and handling"
+      },
+      {
+        "aspect": "Public Liability",
+        "detail": "Covers customer injury during delivery or assembly"
+      }
+    ]
+  }
+]

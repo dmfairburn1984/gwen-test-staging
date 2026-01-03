@@ -1,0 +1,74 @@
+{
+  "seasonal_demand_patterns": {
+    "spring": {
+      "focus": "Patio refresh, new cushions, garden party furniture",
+      "products": [
+        "Cushions & Covers",
+        "Dining Sets",
+        "Sun Loungers"
+      ],
+      "marketing_tips": "Promote bundles and sunshade, bundle with covers."
+    },
+    "summer": {
+      "focus": "Outdoor dining, sun protection, lounge seating",
+      "products": [
+        "Shade & Shelter",
+        "Dining Tables",
+        "Sectionals"
+      ],
+      "marketing_tips": "Highlight UV-resistant materials and bundle deals."
+    },
+    "autumn": {
+      "focus": "Outdoor heating accessories, durable materials",
+      "products": [
+        "Covers",
+        "Heaters",
+        "Aluminium Frames"
+      ],
+      "marketing_tips": "Offer covers/bundles and pre-winter maintenance services."
+    },
+    "winter": {
+      "focus": "Storage solutions, indoor transitioning, maintenance",
+      "products": [
+        "Cushion Storage Boxes",
+        "Maintenance Kits"
+      ],
+      "marketing_tips": "Upsell maintenance, highlight durability."
+    }
+  },
+  "sustainability_trends": {
+    "eco_materials": [
+      "Recycled PE wicker",
+      "FSC-certified woods",
+      "Natural teak oil"
+    ],
+    "consumer_interest": "Growing demand for eco-friendly and ethically sourced materials.",
+    "marketing_tips": "Use sustainability badges, provide sourcing transparency."
+  },
+  "indoor_outdoor_convergence": {
+    "trend": "Seamless transition between interior and exterior living spaces",
+    "features": [
+      "All-weather fabrics",
+      "Modular indoor/outdoor collections"
+    ],
+    "marketing_tips": "Show dual-use scenarios, cross-sell interior accessories."
+  },
+  "competitor_landscape": {
+    "budget_brands": [
+      "Wayfair",
+      "Argos",
+      "B&Q"
+    ],
+    "mid_range_brands": [
+      "Kettler",
+      "Hartman",
+      "Bramblecrest"
+    ],
+    "premium_brands": [
+      "Dedon",
+      "Brown Jordan",
+      "Gloster"
+    ],
+    "differentiators": "Mint offers higher UV ratings, better maintenance policies, and native British climate testing."
+  }
+}

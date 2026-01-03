@@ -1,0 +1,590 @@
+[
+  {
+    "sku": "FARO-LOUNGE-SET",
+    "product_title": "Faro Lounge Set",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 60
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 25
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "STOCKHOLM-LOUNGE-SET",
+    "product_title": "Stockholm Lounge Set",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 60
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 25
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "STOCKHOLM-CORNER-BLACK",
+    "product_title": "Stockholm Black Corner Set",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 60
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 25
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "STOCKHOLM-CHAISE-LOUNGE",
+    "product_title": "Stockholm Chaise Lounge",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 70
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 20
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "sku": "MARBELLA FIVE SEATER CORNER",
+    "product_title": "Marbella Five Seater Corner",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 50
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 20
+      },
+      {
+        "component": "tabletop",
+        "material_type": "glass",
+        "material_name": "tempered_glass",
+        "percentage": 15
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "SANTORINI-GREY",
+    "product_title": "Santorini Grey",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "aluminium",
+        "percentage": 80
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 20
+      }
+    ]
+  },
+  {
+    "sku": "MALAGA-LOUNGE-SET",
+    "product_title": "Malaga Lounge Set",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 50
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 20
+      },
+      {
+        "component": "tabletop",
+        "material_type": "glass",
+        "material_name": "tempered_glass",
+        "percentage": 15
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "BARCELONA-LOUNGE-SET",
+    "product_title": "Barcelona Lounge Set",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 50
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 20
+      },
+      {
+        "component": "tabletop",
+        "material_type": "glass",
+        "material_name": "tempered_glass",
+        "percentage": 15
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "BRIDGETOWN-70-2S",
+    "product_title": "Bridgetown 70cm 2 Seater",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 50
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 20
+      },
+      {
+        "component": "tabletop",
+        "material_type": "synthetic",
+        "material_name": "polywood_slats",
+        "percentage": 15
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "BRIDGETOWN-120-4S",
+    "product_title": "Bridgetown 120cm 4 Seater",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 50
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 20
+      },
+      {
+        "component": "tabletop",
+        "material_type": "synthetic",
+        "material_name": "polywood_slats",
+        "percentage": 15
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "BRIDGETOWN-150-6S",
+    "product_title": "Bridgetown 150cm 6 Seater",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 50
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 20
+      },
+      {
+        "component": "tabletop",
+        "material_type": "synthetic",
+        "material_name": "polywood_slats",
+        "percentage": 15
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "BRIDGETOWN-200-6S",
+    "product_title": "Bridgetown 200cm 6 Seater",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 50
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 20
+      },
+      {
+        "component": "tabletop",
+        "material_type": "synthetic",
+        "material_name": "polywood_slats",
+        "percentage": 15
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "CALI-8S",
+    "product_title": "Cali 8 Seater",
+    "materials": [
+      {
+        "component": "frame_table",
+        "material_type": "wood",
+        "material_name": "eucalyptus",
+        "percentage": 70
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 30
+      }
+    ]
+  },
+  {
+    "sku": "HAVANA-8S",
+    "product_title": "Havana 8 Seater",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "aluminium",
+        "percentage": 70
+      },
+      {
+        "component": "tabletop",
+        "material_type": "metal",
+        "material_name": "aluminium",
+        "percentage": 20
+      },
+      {
+        "component": "seat_back",
+        "material_type": "fabric",
+        "material_name": "textilene",
+        "percentage": 10
+      }
+    ]
+  },
+  {
+    "sku": "MALAI-LOUNGE-SET-TEAK",
+    "product_title": "Malai Teak Lounge Set",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "wood",
+        "material_name": "teak",
+        "percentage": 70
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 30
+      }
+    ]
+  },
+  {
+    "sku": "OLIVIA-SICILY-8S-DINING",
+    "product_title": "Olivia Sicily 8 Seater Dining",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "wrought_iron",
+        "percentage": 50
+      },
+      {
+        "component": "tabletop",
+        "material_type": "wood",
+        "material_name": "teak",
+        "percentage": 50
+      }
+    ]
+  },
+  {
+    "sku": "KIKI-ORGANIC-CHAISE",
+    "product_title": "Kiki Organic Chaise",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "aluminium",
+        "percentage": 80
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 20
+      }
+    ]
+  },
+  {
+    "sku": "ALANNE-6S",
+    "product_title": "Alanne 6 Seater Rattan Grey Rectangular Garden Dining Set",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 60
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 25
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "ALEX-5S-SOFA-SET",
+    "product_title": "Alex Teak 5 Seater Green Garden Sofa and Armchair Set",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "wood",
+        "material_name": "teak",
+        "percentage": 70
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 30
+      }
+    ]
+  },
+  {
+    "sku": "ARTHUR-CORNER-5S",
+    "product_title": "Arthur 5-Seater Teak Corner Garden Lounge Set",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "wood",
+        "material_name": "teak",
+        "percentage": 40
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "aluminium",
+        "percentage": 30
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 30
+      }
+    ]
+  },
+  {
+    "sku": "TERRA-6S-CORNER",
+    "product_title": "Terra 6 Seater Teak Corner Garden Sofa and Table Set",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "wood",
+        "material_name": "teak",
+        "percentage": 70
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 30
+      }
+    ]
+  },
+  {
+    "sku": "TOMMY-4S-SET",
+    "product_title": "Tommy Grey Aluminium 4 Seater Sofa Set",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "aluminium",
+        "percentage": 80
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 20
+      }
+    ]
+  },
+  {
+    "sku": "VALENTE-SOFA-SET",
+    "product_title": "Valente Rattan 6 Seater Corner Sofa and Armchair Lounge Set",
+    "materials": [
+      {
+        "component": "wicker",
+        "material_type": "synthetic",
+        "material_name": "poly_rattan",
+        "percentage": 60
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "steel",
+        "percentage": 25
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 15
+      }
+    ]
+  },
+  {
+    "sku": "WALLU-CORNER-5S",
+    "product_title": "Wallu 5 Seater Corner Aluminium Garden Sofa Set",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "aluminium",
+        "percentage": 80
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 20
+      }
+    ]
+  },
+  {
+    "sku": "TENERIFE-CORNER-SET",
+    "product_title": "Tenerife Grey 5 Seater Teak and Aluminium Corner Lounge Set",
+    "materials": [
+      {
+        "component": "frame",
+        "material_type": "wood",
+        "material_name": "teak",
+        "percentage": 40
+      },
+      {
+        "component": "frame",
+        "material_type": "metal",
+        "material_name": "aluminium",
+        "percentage": 40
+      },
+      {
+        "component": "cushions",
+        "material_type": "fabric",
+        "material_name": "olefin",
+        "percentage": 20
+      }
+    ]
+  }
+]

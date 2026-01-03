@@ -1,0 +1,175 @@
+{
+  "reportGenerated": "2026-01-03T09:59:54.992Z",
+  "auditSections": [
+    {
+      "sectionTitle": "⚠️ Pre-orders Tagged as In-Stock (but PO Not Arrived)",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "PO Number",
+        "PO Arrived?",
+        "Uploaded to RRL?",
+        "Issue"
+      ],
+      "rows": [
+        [
+          "No issues found",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "sectionTitle": "🚨 Orders Assigned to Empty PO (All SKUs Zero/Missing in PO Column)",
+      "headers": [
+        "Order ID",
+        "Order SKUs",
+        "Matched PO in Tag",
+        "PO SKU Qty (Summary)",
+        "Issue",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          4197,
+          "FARO-LOUNGE-SET-BEIGE",
+          "19/2026",
+          "FARO-LOUNGE-SET-BEIGE: 0",
+          "All order SKUs assigned to a PO with zero or missing quantities for them.",
+          "",
+          ""
+        ],
+        [
+          4131,
+          "STOCKHOLM-LOUNGE-SET",
+          "16/2026",
+          "STOCKHOLM-LOUNGE-SET: 0",
+          "All order SKUs assigned to a PO with zero or missing quantities for them.",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "sectionTitle": "🔴 Refunded PreOrders Audit (Needs 'refunded' tag)",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "Issue",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "No issues found",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "sectionTitle": "🟣 Pre-orders in JOB But PO Hasn't Landed (Too Early)",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "PO Number",
+        "Effective PO Arrival Date",
+        "Issue",
+        ""
+      ],
+      "rows": [
+        [
+          "No issues found",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "sectionTitle": "🟢 Pre-orders NOT in JOB But PO HAS Landed (Excludes Fulfilled/Refunded Orders)",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "PO Number",
+        "PO Arrival Date",
+        "Issue",
+        ""
+      ],
+      "rows": [
+        [
+          "No issues found",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "sectionTitle": "⚠️ Duplicated JOB Entries in Podfather",
+      "headers": [
+        "Order ID",
+        "Occurrences",
+        "Issue",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        [
+          "No duplicates found",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "sectionTitle": "🟡 Orders With In-Stock Tags But Not in JOB or POD",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "In JOB?",
+        "In POD?",
+        "Financial Status (Sheet1 Col I)",
+        "Issue"
+      ],
+      "rows": [
+        [
+          "No issues found",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

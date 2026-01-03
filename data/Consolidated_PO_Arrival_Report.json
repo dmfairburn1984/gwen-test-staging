@@ -1,0 +1,1281 @@
+{
+  "02/2025": {
+    "etaWarehouse": "2025-05-15",
+    "orders": []
+  },
+  "03/2025": {
+    "etaWarehouse": "2025-05-16",
+    "orders": []
+  },
+  "04/2025": {
+    "etaWarehouse": "2025-05-19",
+    "orders": []
+  },
+  "05/2025": {
+    "etaWarehouse": "2025-05-16",
+    "orders": []
+  },
+  "06/2025": {
+    "etaWarehouse": "2025-05-19",
+    "orders": [
+      {
+        "sku": "FARO-LOUNGE-SET",
+        "orderId": "2119",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "FARO-LOUNGE-SET",
+        "orderId": "2038",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "FARO-LOUNGE-SET",
+        "orderId": "1498",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "FARO-LOUNGE-SET",
+        "orderId": "1395",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "FARO-LOUNGE-SET",
+        "orderId": "1307",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "partially_refunded"
+      },
+      {
+        "sku": "FARO-LOUNGE-SET",
+        "orderId": "1163",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "FARO-LOUNGE-SET",
+        "orderId": "1117",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "partially_refunded"
+      }
+    ]
+  },
+  "07/2025": {
+    "etaWarehouse": "2025-05-15",
+    "orders": []
+  },
+  "08/2025": {
+    "etaWarehouse": "2025-05-16",
+    "orders": []
+  },
+  "09/2025": {
+    "etaWarehouse": "2025-05-26",
+    "orders": [
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "2044",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "2043",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "2005",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1986",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1960",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1959",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1952",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1902",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "CORA-SOFA-SET-4S",
+        "orderId": "1090",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 3,
+        "financialStatus": "refunded"
+      }
+    ]
+  },
+  "10/2025": {
+    "etaWarehouse": "2025-05-28",
+    "orders": [
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1884",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "partially_refunded"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1881",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "partially_refunded"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1880",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "partially_refunded"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1801",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "partially_refunded"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1522",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "partially_refunded"
+      },
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "1390",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      }
+    ]
+  },
+  "11/2025": {
+    "etaWarehouse": "2025-05-28",
+    "orders": []
+  },
+  "12/2025": {
+    "etaWarehouse": "2025-05-30",
+    "orders": [
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2268",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2083",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2077",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "1814",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      }
+    ]
+  },
+  "13/2025": {
+    "etaWarehouse": "2025-05-28",
+    "orders": []
+  },
+  "14/2025": {
+    "etaWarehouse": "2025-05-29",
+    "orders": []
+  },
+  "15/2025": {
+    "etaWarehouse": "2025-05-26",
+    "orders": []
+  },
+  "16/2025": {
+    "etaWarehouse": "2025-05-30",
+    "orders": [
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2356",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2298",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-COVER",
+        "orderId": "2298",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "1671",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "partially_refunded"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "1469",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "1293",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      }
+    ]
+  },
+  "17/2025": {
+    "etaWarehouse": "2025-05-30",
+    "orders": []
+  },
+  "18/2025": {
+    "etaWarehouse": "2025-05-29",
+    "orders": [
+      {
+        "sku": "STOCKHOLM-LOUNGE-SET",
+        "orderId": "2454",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      }
+    ]
+  },
+  "19/2025": {
+    "etaWarehouse": "2025-05-26",
+    "orders": [
+      {
+        "sku": "BRIDGETOWN-150-6S",
+        "orderId": "2560",
+        "lineItemFulfillmentStatus": "fulfilled",
+        "quantity": 1,
+        "financialStatus": "paid"
+      }
+    ]
+  },
+  "20/2025": {
+    "etaWarehouse": "2025-06-09",
+    "orders": []
+  },
+  "21/2025": {
+    "etaWarehouse": "2025-06-08",
+    "orders": []
+  },
+  "22/2025": {
+    "etaWarehouse": "2025-06-09",
+    "orders": []
+  },
+  "23/2025": {
+    "etaWarehouse": "2025-07-21",
+    "orders": []
+  },
+  "24/2025": {
+    "etaWarehouse": "2025-06-09",
+    "orders": []
+  },
+  "25/2025": {
+    "etaWarehouse": "2025-06-08",
+    "orders": [
+      {
+        "sku": "BARCELONA-LOUNGE-SET",
+        "orderId": "2692",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "BARCELONA-LOUNGE-SET",
+        "orderId": "2306",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "BARCELONA-LOUNGE-SET",
+        "orderId": "1714",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "BARCELONA-LOUNGE-SET",
+        "orderId": "1345",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      }
+    ]
+  },
+  "26/2025": {
+    "etaWarehouse": "2025-05-16",
+    "orders": []
+  },
+  "27/2025": {
+    "etaWarehouse": "2025-06-05",
+    "orders": [
+      {
+        "sku": "KIKI-2-SEATER-SOFA",
+        "orderId": "2541",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 2,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2285",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2200",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "KIKI-2-SEATER-SOFA",
+        "orderId": "1686",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "KIKI-2-SEATER-SOFA",
+        "orderId": "1601",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      }
+    ]
+  },
+  "28/2025": {
+    "etaWarehouse": "2025-05-05",
+    "orders": []
+  },
+  "29/2025": {
+    "etaWarehouse": "2025-06-08",
+    "orders": [
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2892",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2883",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2882",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2878",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "ASSEMBLY-ADD-ON",
+        "orderId": "2878",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCK-CHAISE-COVERS-BEIGE",
+        "orderId": "1627",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      }
+    ]
+  },
+  "30/2025": {
+    "etaWarehouse": "2025-07-24",
+    "orders": [
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2904",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "partially_paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2871",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHIONS-GREY",
+        "orderId": "2825",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CUSHION-COVERS",
+        "orderId": "2795",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      }
+    ]
+  },
+  "31/2025": {
+    "etaWarehouse": "2025-07-24",
+    "orders": [
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2659",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2531",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2506",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2463",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2455",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2450",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2435",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2423",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2311",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2300",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2299",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CORNER-BLACK",
+        "orderId": "2291",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      }
+    ]
+  },
+  "32/2025": {
+    "etaWarehouse": "2025-07-24",
+    "orders": []
+  },
+  "33/2025": {
+    "etaWarehouse": "2025-07-24",
+    "orders": [
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2870",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2869",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "partially_paid"
+      },
+      {
+        "sku": "MARBELLA FIVE SEATER CORNER",
+        "orderId": "2851",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      }
+    ]
+  },
+  "34/2025": {
+    "etaWarehouse": "2025-07-24",
+    "orders": []
+  },
+  "35/2025": {
+    "etaWarehouse": "2025-07-26",
+    "orders": []
+  },
+  "36/2025": {
+    "etaWarehouse": "2025-07-26",
+    "orders": []
+  },
+  "37/2025": {
+    "etaWarehouse": "2025-07-26",
+    "orders": []
+  },
+  "39/2025": {
+    "etaWarehouse": "2025-07-21",
+    "orders": [
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2911",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-COVER",
+        "orderId": "2911",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2835",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "partially_paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-COVER",
+        "orderId": "2835",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "partially_paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2831",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-COVER",
+        "orderId": "2831",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2803",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2783",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2766",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2760",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-COVER",
+        "orderId": "2760",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-LOUNGE",
+        "orderId": "2748",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCKHOLM-CHAISE-COVER",
+        "orderId": "2748",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      }
+    ]
+  },
+  "40/2025": {
+    "etaWarehouse": "2025-07-21",
+    "orders": []
+  },
+  "41/2025": {
+    "etaWarehouse": "2025-07-21",
+    "orders": []
+  },
+  "42/2025": {
+    "etaWarehouse": "2025-07-06",
+    "orders": [
+      {
+        "sku": "PALMA-CUSHIONS-GREY",
+        "orderId": "2839",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-BLACK-CUSHION-COVERS",
+        "orderId": "2820",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHION-COVERS-GREY",
+        "orderId": "2797",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "CHES-CUSHIONS-GREY",
+        "orderId": "2744",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHIONS-GREY",
+        "orderId": "2718",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHION-COVERS-GREY",
+        "orderId": "2704",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHION-COVERS-GREY",
+        "orderId": "2685",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHION-COVERS-GREY",
+        "orderId": "2647",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCK-CHAISE-COVERS-BLACK",
+        "orderId": "2590",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHIONS-BEIGE",
+        "orderId": "2586",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CUSHION-COVERS",
+        "orderId": "2515",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "CHES-CUSH-COVERS-GREY",
+        "orderId": "2507",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHION-COVERS-GREY",
+        "orderId": "2504",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "MARBELLA-CUSHIONS-GREY",
+        "orderId": "2494",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "partially_paid"
+      },
+      {
+        "sku": "ASSEMBLY-ADD-ON",
+        "orderId": "2494",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "partially_paid"
+      },
+      {
+        "sku": "SANTORINI-BEIGE-CUSHION-COVERS",
+        "orderId": "2480",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "MARBELLA-CUSHION-COVERS-BLACK",
+        "orderId": "2472",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-BLACK-CSH-SET",
+        "orderId": "2458",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-BEIGE-CUSHION-COVERS",
+        "orderId": "2453",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHIONS-GREY",
+        "orderId": "2444",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHIONS-GREY",
+        "orderId": "2437",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CSH-SET",
+        "orderId": "2428",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-BLACK-CSH-SET",
+        "orderId": "2425",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "MARBELLA-CUSHION-COVERS-BLACK",
+        "orderId": "2401",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CSH-SET",
+        "orderId": "2397",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "BARCELONA-CUSHIONS-BEIGE",
+        "orderId": "2388",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHIONS-GREY",
+        "orderId": "2375",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-BLACK-CUSHION-COVERS",
+        "orderId": "2369",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHIONS-GREY",
+        "orderId": "2357",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-BEIGE-CUSHION-COVERS",
+        "orderId": "2350",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-BLACK-CUSHION-COVERS",
+        "orderId": "2335",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-BLACK-CUSHION-COVERS",
+        "orderId": "2331",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "MARBELLA-CUSHIONS-GREY",
+        "orderId": "2328",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-BLACK-CUSHION-COVERS",
+        "orderId": "2309",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CUSHION-COVERS",
+        "orderId": "2292",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCK-CHAISE-CUSHIONS-BEIGE",
+        "orderId": "2286",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHION-COVERS-BEIGE",
+        "orderId": "2267",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "BARCELONA-COVERS-BEIGE",
+        "orderId": "2262",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCK-CNR-CUSHIONS-BEIGE",
+        "orderId": "2218",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CUSHION-COVERS",
+        "orderId": "2217",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "BARCELONA-COVERS-GREY",
+        "orderId": "2216",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHION-COVERS-GREY",
+        "orderId": "2215",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CUSHION-COVERS",
+        "orderId": "2213",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHION-COVERS-GREY",
+        "orderId": "2195",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHIONS-GREY",
+        "orderId": "2173",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCK-CHAISE-CUSHIONS-BEIGE",
+        "orderId": "2151",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "BARCELONA-CUSHIONS-BLACK",
+        "orderId": "2144",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "STOCK-CHAISE-COVERS-GREY",
+        "orderId": "2143",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CUSHION-COVERS",
+        "orderId": "2133",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CUSHION-COVERS",
+        "orderId": "2096",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "STOCK-CNR-CUSHIONS-BEIGE",
+        "orderId": "2025",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "PALMA-CUSHIONS-GREY",
+        "orderId": "2020",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CUSHION-COVERS",
+        "orderId": "2002",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "BARCELONA-COVERS-BEIGE",
+        "orderId": "1968",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "SANTORINI-GREY-CUSHION-COVERS",
+        "orderId": "1941",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      }
+    ]
+  },
+  "43/2025": {
+    "etaWarehouse": "2025-07-09",
+    "orders": [
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2909",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2899",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2877",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2802",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2787",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2776",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2743",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2726",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2723",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "refunded"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2661",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2642",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2595",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2580",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2569",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2509",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2487",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2429",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2427",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2424",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2398",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "paid"
+      },
+      {
+        "sku": "KIKI-ORGANIC-CHAISE",
+        "orderId": "2349",
+        "lineItemFulfillmentStatus": "",
+        "quantity": 1,
+        "financialStatus": "partially_refunded"
+      }
+    ]
+  }
+}

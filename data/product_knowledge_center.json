@@ -4,7 +4,8 @@
       "product_name": "Two-Person Delivery Charge",
       "sku": "2-PERSON-DELIVERY",
       "product_family": "",
-      "image_url": ""
+      "image_url": "",
+      "price_gbp": 29.95
     },
     "description_and_category": {
       "primary_category": "",
@@ -39,8 +40,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "COLLECTION-FEE",
+      "requires_assembly": "No"
     }
   },
   {
@@ -48,7 +54,8 @@
       "product_name": "Alanne 6 Seater Rattan Grey Rectangular Garden Dining Set",
       "sku": "ALANNE-6S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/alanne-dining-set-1.webp?v=1740330269"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/alanne-dining-set-1.webp?v=1740330269",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -113,17 +120,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Alex Teak 5 Seater Green Garden Sofa and Armchair Set",
       "sku": "ALEX-5S-SOFA-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Alex-5-seater-lounge-set-1.webp?v=1735921461"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Alex-5-seater-lounge-set-1.webp?v=1735921461",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -153,7 +158,7 @@
         "category": "wood",
         "durability_rating": 9,
         "weather_resistance": "excellent",
-        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "pros": "Self‐oiling—high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
         "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
         "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
         "warranty": "5 years (structural defects only)"
@@ -178,17 +183,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Arthur 5-Seater Teak Corner Garden Lounge Set",
       "sku": "ARTHUR-CORNER-5S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/arthur-lounge-set-1.webp?v=1730725063"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/arthur-lounge-set-1.webp?v=1730725063",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -218,7 +221,7 @@
         "category": "wood",
         "durability_rating": 9,
         "weather_resistance": "excellent",
-        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "pros": "Self‐oiling—high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
         "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
         "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
         "warranty": "5 years (structural defects only)"
@@ -253,17 +256,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "White Glove Assembly Service",
       "sku": "ASSEMBLY-ADD-ON",
       "product_family": "",
-      "image_url": ""
+      "image_url": "",
+      "price_gbp": 99.95
     },
     "description_and_category": {
       "primary_category": "",
@@ -298,8 +299,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -307,7 +313,8 @@
       "product_name": "Bali Grey Metal Parasol 2.67m",
       "sku": "BALI-METAL-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-grey-metal-1_2.webp?v=1737299926"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-grey-metal-1_2.webp?v=1737299926",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -342,8 +349,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -351,7 +363,8 @@
       "product_name": "Bali Taupe Metal Parasol 2.67m",
       "sku": "BALI-METAL-TAUPE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Bali-taupe-1.webp?v=1737304652"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-your-home.webp?v=1757949060",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -386,8 +399,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -395,7 +413,8 @@
       "product_name": "Bali Hunter Green Wooden Parasol 2.85m",
       "sku": "BALI-WOOD-PARASOL-GREEN",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-green-parasol-1.webp?v=1753881445"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-green-parasol-1.webp?v=1753881445",
+      "price_gbp": 49
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -430,8 +449,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -439,7 +463,8 @@
       "product_name": "Bali Grey Wooden Parasol 2.85m",
       "sku": "BALI-WOOD-PARASOL-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-wooden-parasol-grey-1.webp?v=1753875189"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bali-wooden-parasol-grey-1.webp?v=1753875189",
+      "price_gbp": 49
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -474,8 +499,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -483,7 +513,8 @@
       "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
       "sku": "BARCELONA-COVERS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -518,8 +549,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "BARCELONA-CUSHIONS-BEIGE, BARCELONA-CUSHIONS-BLACK, BARCELONA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -527,7 +563,8 @@
       "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
       "sku": "BARCELONA-COVERS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -562,8 +599,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "BARCELONA-CUSHIONS-BEIGE, BARCELONA-CUSHIONS-BLACK, BARCELONA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -571,7 +613,8 @@
       "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
       "sku": "BARCELONA-COVERS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -606,8 +649,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "BARCELONA-CUSHIONS-BEIGE, BARCELONA-CUSHIONS-BLACK, BARCELONA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -615,7 +663,8 @@
       "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
       "sku": "BARCELONA-CUSHIONS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -650,8 +699,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "BARCELONA-CUSHIONS-BEIGE, BARCELONA-CUSHIONS-BLACK, BARCELONA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -659,7 +713,8 @@
       "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
       "sku": "BARCELONA-CUSHIONS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -694,8 +749,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "BARCELONA-CUSHIONS-BEIGE, BARCELONA-CUSHIONS-BLACK, BARCELONA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -703,7 +763,8 @@
       "product_name": "Barcelona Lounge Set Replacement Cushions/Covers",
       "sku": "BARCELONA-CUSHIONS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/barcelona-cushions-1.webp?v=1742487730",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -738,8 +799,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "BARCELONA-CUSHIONS-BEIGE, BARCELONA-CUSHIONS-BLACK, BARCELONA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -747,7 +813,8 @@
       "product_name": "Barcelona 9 Seater Black Corner Rattan Garden Sofa Set",
       "sku": "BARCELONA-LOUNGE-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Barcelona-lounge-set-out-and-out-low-res-1.jpg?v=1723023569"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Barcelona-lounge-set-out-and-out-low-res-1.jpg?v=1723023569",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Dual-Purpose Sets",
@@ -825,37 +892,35 @@
           "component_sku": "BARCELONA-SET-BOX-1",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 174.5,
+            "width": 92,
+            "height": 55
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 32,
+          "box_cbm": 0.883
         },
         {
           "component_sku": "BARCELONA-SET-BOX-2",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 133,
+            "width": 72,
+            "height": 18
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 7,
+          "box_cbm": 0.172
         }
       ]
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Bridgetown 4 Seater Round Rattan and Polywood Grey Garden Dining Set 120cm",
       "sku": "BRIDGETOWN-120-4S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bridgetown-120-4s-1.webp?v=1731348096"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/bridgetown-120-4s-1.webp?v=1731348096",
+      "price_gbp": 499
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -933,29 +998,34 @@
           "component_sku": "BRIDGETOWN (Sienna) 120CM TABLE",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 123,
+            "width": 123,
+            "height": 15
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 5,
+          "box_cbm": 0.227
         },
         {
           "component_sku": "BRIDGETOWN (Sienna) Armchair",
           "quantity": 4,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 83,
+            "width": 58,
+            "height": 39
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 5,
+          "box_cbm": 0.188
         }
       ]
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -963,7 +1033,8 @@
       "product_name": "Bridgetown 6 Seater Round Rattan and Polywood Grey Garden Dining Set 150cm",
       "sku": "BRIDGETOWN-150-6S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/39.webp?v=1731356104"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/39.webp?v=1731356104",
+      "price_gbp": 599
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -1041,29 +1112,34 @@
           "component_sku": "BRIDGETOWN (Sienna) 150CM TABLE",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 144,
+            "width": 144,
+            "height": 16
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 5,
+          "box_cbm": 0.332
         },
         {
           "component_sku": "BRIDGETOWN (Sienna) Armchair",
           "quantity": 6,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 83,
+            "width": 58,
+            "height": 39
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 5,
+          "box_cbm": 0.188
         }
       ]
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "BRIDGETOWN-200-6S",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -1071,7 +1147,8 @@
       "product_name": "Bridgetown 6 Seater Rectangular Rattan and Polywood Grey Garden Dining Set 200cm",
       "sku": "BRIDGETOWN-200-6S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Bridgetown-200cm-rect-1.webp?v=1731414361"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Bridgetown-200cm-rect-1.webp?v=1731414361",
+      "price_gbp": 699
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -1149,29 +1226,34 @@
           "component_sku": "BRIDGETOWN (Sienna) 200CM TABLE",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 203,
+            "width": 100,
+            "height": 15
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 4,
+          "box_cbm": 0.305
         },
         {
           "component_sku": "BRIDGETOWN (Sienna) Armchair",
           "quantity": 6,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 83,
+            "width": 58,
+            "height": 39
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 5,
+          "box_cbm": 0.188
         }
       ]
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -1179,7 +1261,8 @@
       "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CAL-COVERS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -1214,8 +1297,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CAL-CUSHIONS-BEIGE, CAL-CUSHIONS-BLACK, CAL-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1223,7 +1311,8 @@
       "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CAL-COVERS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -1258,8 +1347,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CAL-CUSHIONS-BEIGE, CAL-CUSHIONS-BLACK, CAL-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1267,7 +1361,8 @@
       "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CAL-COVERS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -1302,8 +1397,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CAL-CUSHIONS-BEIGE, CAL-CUSHIONS-BLACK, CAL-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1311,7 +1411,8 @@
       "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CAL-CUSHIONS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -1346,8 +1447,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CAL-CUSHIONS-BEIGE, CAL-CUSHIONS-BLACK, CAL-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1355,7 +1461,8 @@
       "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CAL-CUSHIONS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -1390,8 +1497,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CAL-CUSHIONS-BEIGE, CAL-CUSHIONS-BLACK, CAL-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1399,7 +1511,8 @@
       "product_name": "California Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CAL-CUSHIONS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-cushions-beige.webp?v=1742904916",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -1434,8 +1547,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CAL-CUSHIONS-BEIGE, CAL-CUSHIONS-BLACK, CAL-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1443,7 +1561,8 @@
       "product_name": "Cali 7 Seater Wooden Corner Sofa Lounge and Dining Set",
       "sku": "CALI-8S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Cali-7s-set.png?v=1738677914"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Cali-7s-set.png?v=1738677914",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -1473,8 +1592,8 @@
         "category": "wood",
         "durability_rating": 7,
         "weather_resistance": "good (with treatment)",
-        "pros": "More affordable than teak, Attractive pale brown colour, Fastâ€renewable resource",
-        "cons": "Less rotâ€resistant without sealant, Occasional splitting if untreated, Colour fades to silverâ€gray",
+        "pros": "More affordable than teak, Attractive pale brown colour, Fast‐renewable resource",
+        "cons": "Less rot‐resistant without sealant, Occasional splitting if untreated, Colour fades to silver‐gray",
         "maintenance": "Seal with any outdoor oil at least once pre year.",
         "warranty": "3 years (rotting and splitting is possible under normal use without maintenance)"
       },
@@ -1498,17 +1617,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Keter California 3-Seater Taupe Rattan Garden Sofa",
       "sku": "CALIFORNIA-3S-SOFA-TAUPE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-3s-sofa.webp?v=1753957411"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/california-3s-sofa.webp?v=1753957411",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -1543,8 +1660,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": "HARBOUR-3S-BEIGE",
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -1552,7 +1674,8 @@
       "product_name": "Keter California Taupe Rattan Coffee Table 68 x 68cm",
       "sku": "CALIFORNIA-COFFEE-TABLE-TAUPE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/California-table-2.webp?v=1754059587"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/California-table-2.webp?v=1754059587",
+      "price_gbp": 49
     },
     "description_and_category": {
       "primary_category": "",
@@ -1587,8 +1710,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1596,7 +1724,8 @@
       "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CHES-CUSH-COVERS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -1631,8 +1760,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CHES-CUSHIONS-BEIGE, CHES-CUSHIONS-BLACK, CHES-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1640,7 +1774,8 @@
       "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CHES-CUSH-COVERS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -1675,8 +1810,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CHES-CUSHIONS-BEIGE, CHES-CUSHIONS-BLACK, CHES-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1684,7 +1824,8 @@
       "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CHES-CUSH-COVERS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -1719,8 +1860,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CHES-CUSHIONS-BEIGE, CHES-CUSHIONS-BLACK, CHES-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1728,7 +1874,8 @@
       "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CHES-CUSHIONS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -1763,8 +1910,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CHES-CUSHIONS-BEIGE, CHES-CUSHIONS-BLACK, CHES-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1772,7 +1924,8 @@
       "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CHES-CUSHIONS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -1807,8 +1960,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CHES-CUSHIONS-BEIGE, CHES-CUSHIONS-BLACK, CHES-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1816,7 +1974,8 @@
       "product_name": "Chesterton Grey Garden Sofa Set Replacement Cushions/Covers",
       "sku": "CHES-CUSHIONS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-new-ai-dd_b88faa96-5218-4362-ad3f-7cd6c48ee330.png?v=1722850753",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -1851,8 +2010,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "CHES-CUSHIONS-BEIGE, CHES-CUSHIONS-BLACK, CHES-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1860,7 +2024,8 @@
       "product_name": "Chesterton Custom-Fitted Furniture Cover",
       "sku": "CHESTERTON-COVER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Santorini-cover.png?v=1747745228"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Santorini-cover.png?v=1747745228",
+      "price_gbp": 69
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -1895,8 +2060,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -1904,7 +2074,8 @@
       "product_name": "Collection Fee",
       "sku": "COLLECTION-FEE",
       "product_family": "",
-      "image_url": ""
+      "image_url": "",
+      "price_gbp": 39.95
     },
     "description_and_category": {
       "primary_category": "",
@@ -1939,8 +2110,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "CALIFORNIA-COFFEE-TABLE-TAUPE",
+      "requires_assembly": "No"
     }
   },
   {
@@ -1948,7 +2124,8 @@
       "product_name": "Cora 4 Seater Woven and Aluminium Garden Sofa and Armchair Set",
       "sku": "CORA-SOFA-SET-4S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Cora-4-seater-sofa-set-1.webp?v=1732280063"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Cora-4-seater-sofa-set-1.webp?v=1732280063",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -1982,17 +2159,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Della Porta 10 Seater Grey Corner Garden Sofa Set With Up-Down Table",
       "sku": "DELLA-PORTA-SOFA-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/della-porta-corner-sofa-set-1.webp?v=1740344875"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/della-porta-corner-sofa-set-1.webp?v=1740344875",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Dual-Purpose Sets",
@@ -2026,17 +2201,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Palma Grey Corner Rattan Casual Garden Dining and Lounge Set 9 Seater",
       "sku": "FARO-LOUNGE-SET",
       "product_family": "PALMA",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-Corner-Rattan-Set-and-Cushion-Box-Bundle-Out-and-Out-Low-Res-1.jpg?v=1723461226"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-Corner-Rattan-Set-and-Cushion-Box-Bundle-Out-and-Out-Low-Res-1.jpg?v=1723461226",
+      "price_gbp": 699
     },
     "description_and_category": {
       "primary_category": "Dual-Purpose Sets",
@@ -2104,39 +2277,127 @@
           "component_sku": "FARO-LOUNGE-SET-BOX-1",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 188,
+            "width": 88,
+            "height": 57
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 22,
+          "box_cbm": 0.943
         },
         {
           "component_sku": "FARO-LOUNGE-SET-BOX-2",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 153,
+            "width": 87,
+            "height": 29
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 17,
+          "box_cbm": 0.386
         }
       ]
     },
     "related_products": {
-      "matching_cover_sku": "PALMA-COVER",
-      "accessories": [
-        "PALMA-CUSHION-BOX"
-      ]
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "MALAI-LOUNGE-SET-TEAK",
+      "requires_assembly": "Yes"
     }
+  },
+  {
+    "product_identity": {
+      "product_name": "Folding Padded Garden Armchair Cushion 88 x 44cm",
+      "sku": "FOLDING-ARMCHAIR-GREEN",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Folding-Garden-Armchair-Cushion-Green.webp?v=1757681907",
+      "price_gbp": null
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {}
+  },
+  {
+    "product_identity": {
+      "product_name": "Folding Padded Garden Armchair Cushion 88 x 44cm",
+      "sku": "FOLDING-ARMCHAIR-SAND",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Folding-Garden-Armchair-Cushion-Green.webp?v=1757681907",
+      "price_gbp": null
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Gigi 5 Seater Teak Garden Sofa and Armchair Set",
       "sku": "GIGI-4S-SOFA-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/gigi-3-seater-sofa-set.webp?v=1736269362"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/gigi-3-seater-sofa-set.webp?v=1736269362",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -2170,17 +2431,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Havana Dark Grey 8 Seater Aluminium and Textilline Patio Dining Set",
       "sku": "HAVANA-8S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/63.jpg?v=1724062538"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/63.jpg?v=1724062538",
+      "price_gbp": 899
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -2236,8 +2495,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -2245,7 +2509,8 @@
       "product_name": "Malai 5 Seater Luxury Beige Teak Corner Garden Set",
       "sku": "MALAI-LOUNGE-SET-TEAK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Haze-set-1_3840666d-c88f-4ca9-af36-5c07dcc55f3d.webp?v=1742914303"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Haze-set-1_3840666d-c88f-4ca9-af36-5c07dcc55f3d.webp?v=1742914303",
+      "price_gbp": 899
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -2275,7 +2540,7 @@
         "category": "wood",
         "durability_rating": 9,
         "weather_resistance": "excellent",
-        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "pros": "Self‐oiling—high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
         "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
         "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
         "warranty": "5 years (structural defects only)"
@@ -2324,16 +2589,22 @@
       ]
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
     "product_identity": {
-      "product_name": "Headrest Garden Chair or Sun Lounger Cushion",
+      "product_name": "Headrest Padded Garden Chair or Sun Lounger Cushion 30 x 15cm",
       "sku": "HEADREST-BASIL-GREEN-1",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/HeadrestGardenFurnitureCushionBasilGreen-1.webp?v=1757594692"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/HeadrestGardenFurnitureCushionBasilGreen-1.webp?v=1757594692",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "",
@@ -2367,17 +2638,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
-      "product_name": "Headrest Garden Chair or Sun Lounger Cushion",
+      "product_name": "Headrest Padded Garden Chair or Sun Lounger Cushion 30 x 15cm",
       "sku": "HEADREST-BASIL-GREEN-2",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/HeadrestGardenFurnitureCushionBasilGreen-1.webp?v=1757594692"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/HeadrestGardenFurnitureCushionBasilGreen-1.webp?v=1757594692",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "",
@@ -2411,17 +2680,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Ion 4 Seater Teak and Aluminium Garden Sofa and Armchair Set",
       "sku": "ION-4S-SOFA-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Ion-4-Seater-Wooden-Garden-Sofa-Set-1.webp?v=1734436777"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Ion-4-Seater-Wooden-Garden-Sofa-Set-1.webp?v=1734436777",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -2455,17 +2722,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Kiki 2 Seater Beige Aluminium Outdoor Sofa",
       "sku": "KIKI-2-SEATER-SOFA",
       "product_family": "KIKI",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/kiki-2s-sofa-4.webp?v=1743101419"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/kiki-2s-sofa-4.webp?v=1743101419",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -2499,17 +2764,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Kiki Beige 3-Seater Organic Garden Chaise Sofa",
       "sku": "KIKI-ORGANIC-CHAISE",
       "product_family": "KIKI",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/kiki-chaise-1.webp?v=1743264265"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/kiki-chaise-1.webp?v=1743264265",
+      "price_gbp": 499
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -2565,8 +2828,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -2574,7 +2842,8 @@
       "product_name": "Lima 7 Seater Rattan Grey Garden Sofa Set With Sools and Up-Down Table",
       "sku": "LIMA-CORNER-LOUNGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/lima-7-seater-rattan-garden-sofa-set-with-up-down-table-1.webp?v=1745323445"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/lima-7-seater-rattan-garden-sofa-set-with-up-down-table-1.webp?v=1745323445",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -2608,17 +2877,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Lima 5 Seater Rattan Grey Sofa and Armchair Garden Furniture Set",
       "sku": "LIMA-LOUNGE-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/lima-5-seater-sofa-set-1.webp?v=1745583690"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/lima-5-seater-sofa-set-1.webp?v=1745583690",
+      "price_gbp": 799
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -2653,8 +2920,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -2662,7 +2934,8 @@
       "product_name": "Linh 6 Seater Corner Acacia Wood Garden Sofa Set",
       "sku": "LINH-CORNER-6S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Linh-corner-set-1.webp?v=1733416396"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Linh-corner-set-1.webp?v=1733416396",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -2696,9 +2969,106 @@
       },
       "components": []
     },
+    "related_products": {}
+  },
+  {
+    "product_identity": {
+      "product_name": "Padded Sun Lounger Cushion 178 x 60cm",
+      "sku": "LOUNGER-CUSHION-GREEN",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/green-sun-lounger-cushion.webp?v=1757939832",
+      "price_gbp": 45
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "LOUNGER-CUSHION-GREEN, LOUNGER-CUSHION-SAND",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
+    }
+  },
+  {
+    "product_identity": {
+      "product_name": "Padded Sun Lounger Cushion 178 x 60cm",
+      "sku": "LOUNGER-CUSHION-SAND",
+      "product_family": "",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/green-sun-lounger-cushion.webp?v=1757939832",
+      "price_gbp": 45
+    },
+    "description_and_category": {
+      "primary_category": "",
+      "sub_category": "",
+      "taxonomy_category": "",
+      "taxonomy_type": "",
+      "colour": "",
+      "material_type": ""
+    },
+    "specifications": {
+      "seats": "",
+      "configurable_sides": "",
+      "dimensions_cm": {
+        "width": "",
+        "depth": "",
+        "height": ""
+      },
+      "assembly": {
+        "required": "",
+        "difficulty": "",
+        "instructions_url": ""
+      }
+    },
+    "materials_and_care": [],
+    "logistics_and_inventory": {
+      "inventory": {
+        "stock_on_hand": "",
+        "committed": "",
+        "available": "",
+        "low_stock_warning": ""
+      },
+      "components": []
+    },
+    "related_products": {
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "LOUNGER-CUSHION-GREEN, LOUNGER-CUSHION-SAND",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -2706,7 +3076,8 @@
       "product_name": "Chesterton Rattan Luxury Grey Sun Lounger",
       "sku": "MALAGA-LOUNGER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Chesterton-sun-lounger-out-and-out-low-res-1.webp?v=1752065455"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Chesterton-sun-lounger-out-and-out-low-res-1.webp?v=1752065455",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "Sun Loungers",
@@ -2741,8 +3112,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -2750,7 +3126,8 @@
       "product_name": "Chesterton Rattan Luxury Grey Sun Lounger - Set of Two",
       "sku": "MALAGA-LOUNGER-X2",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Chesterton-set-of-2-sun-loungers.webp?v=1753718948"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Chesterton-set-of-2-sun-loungers.webp?v=1753718948",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "Sun Loungers",
@@ -2785,8 +3162,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -2794,7 +3176,8 @@
       "product_name": "Chesterton Grey 5 Seater Corner Rattan Garden Sofa Lounge Set",
       "sku": "MALAGA-LOUNGE-SET",
       "product_family": "CHESTERTON",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Chesterton-Corner-Lounge-Set-Grey-Out-and-Out-9-low-res-edit-final.png?v=1722850343"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Chesterton-Corner-Lounge-Set-Grey-Out-and-Out-9-low-res-edit-final.png?v=1722850343",
+      "price_gbp": 599
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -2872,29 +3255,34 @@
           "component_sku": "MALAGA-SET-BOX-1",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 142,
+            "width": 73,
+            "height": 44
           },
           "pcs_per_box": "",
-          "box_cbm": ""
+          "box_cbm": 0.456
         },
         {
           "component_sku": "MALAGA-SET-BOX-2",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 210,
+            "width": 73,
+            "height": 42
           },
           "pcs_per_box": "",
-          "box_cbm": ""
+          "box_cbm": 0.644
         }
       ]
     },
     "related_products": {
-      "matching_cover_sku": "CHESTERTON-COVER",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": "STOCKHOLM-CORNER-BLACK",
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "FARO-LOUNGE-SET",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -2902,7 +3290,8 @@
       "product_name": "Marbella Rattan Cushion Box L.105 x W.76 x H.72cm",
       "sku": "Marbella Cushion Box",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushion-box-1.png?v=1736370694"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushion-box-1.png?v=1736370694",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -2937,8 +3326,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "Marbella Cushion Box",
+      "replacement_cushions_sku": "MARBELLA-CUSHIONS-BEIGE, MARBELLA-CUSHIONS-BLACK, MARBELLA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -2946,7 +3340,8 @@
       "product_name": "Marbella Protective Furniture Cover",
       "sku": "MARBELLA-COVER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-furniture-cover.webp?v=1746371144"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-furniture-cover.webp?v=1746371144",
+      "price_gbp": 69
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -2981,8 +3376,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "Marbella Cushion Box",
+      "replacement_cushions_sku": "MARBELLA-CUSHIONS-BEIGE, MARBELLA-CUSHIONS-BLACK, MARBELLA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -2990,7 +3390,8 @@
       "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MARBELLA-CUSHION-COVERS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -3025,8 +3426,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "Marbella Cushion Box",
+      "replacement_cushions_sku": "MARBELLA-CUSHIONS-BEIGE, MARBELLA-CUSHIONS-BLACK, MARBELLA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3034,7 +3440,8 @@
       "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MARBELLA-CUSHION-COVERS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -3069,8 +3476,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "Marbella Cushion Box",
+      "replacement_cushions_sku": "MARBELLA-CUSHIONS-BEIGE, MARBELLA-CUSHIONS-BLACK, MARBELLA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3078,7 +3490,8 @@
       "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MARBELLA-CUSHION-COVERS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -3113,8 +3526,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "Marbella Cushion Box",
+      "replacement_cushions_sku": "MARBELLA-CUSHIONS-BEIGE, MARBELLA-CUSHIONS-BLACK, MARBELLA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3122,7 +3540,8 @@
       "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MARBELLA-CUSHIONS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -3157,8 +3576,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "Marbella Cushion Box",
+      "replacement_cushions_sku": "MARBELLA-CUSHIONS-BEIGE, MARBELLA-CUSHIONS-BLACK, MARBELLA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3166,7 +3590,8 @@
       "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MARBELLA-CUSHIONS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -3201,8 +3626,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "Marbella Cushion Box",
+      "replacement_cushions_sku": "MARBELLA-CUSHIONS-BEIGE, MARBELLA-CUSHIONS-BLACK, MARBELLA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3210,7 +3640,8 @@
       "product_name": "Marbella Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MARBELLA-CUSHIONS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/marbella-cushions-2.webp?v=1742477517",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -3245,8 +3676,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "Marbella Cushion Box",
+      "replacement_cushions_sku": "MARBELLA-CUSHIONS-BEIGE, MARBELLA-CUSHIONS-BLACK, MARBELLA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3254,7 +3690,8 @@
       "product_name": "Marbella Grey 5 Seater Chaise Garden Sofa and Armchair Lounge Set",
       "sku": "MARBELLA FIVE SEATER CORNER",
       "product_family": "MARBELLA",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/18.png?v=1722605192"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/18.png?v=1722605192",
+      "price_gbp": 599
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -3332,31 +3769,34 @@
           "component_sku": "MARBELLA-SET-BOX-1",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 208,
+            "width": 86,
+            "height": 49
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 18,
+          "box_cbm": 0.877
         },
         {
           "component_sku": "MARBELLA-SET-BOX-2",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 69.5,
+            "width": 45.5,
+            "height": 70
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 7,
+          "box_cbm": 0.221
         }
       ]
     },
     "related_products": {
       "matching_cover_sku": "MARBELLA-COVER",
-      "accessories": [
-        "Marbella Cushion Box"
-      ]
+      "cushion_box_sku": "Marbella Cushion Box",
+      "replacement_cushions_sku": "MARBELLA-CUSHIONS-BEIGE, MARBELLA-CUSHIONS-BLACK, MARBELLA-CUSHIONS-GREY",
+      "upsell_size_sku": "STOCKHOLM-CORNER-BLACK",
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "FARO-LOUNGE-SET",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -3364,7 +3804,8 @@
       "product_name": "Markey 4 Seater Beige Teak and Metal Garden Sofa and Armchair Set",
       "sku": "MARKEY-4S-SOFA-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Markey-4-seater-sofa-set-1.webp?v=1735309372"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Markey-4-seater-sofa-set-1.webp?v=1735309372",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -3398,17 +3839,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MURCIA-COVERS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -3443,8 +3882,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "MURCIA-CUSHIONS-BEIGE, MURCIA-CUSHIONS-BLACK, MURCIA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3452,7 +3896,8 @@
       "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MURCIA-COVERS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -3487,8 +3932,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "MURCIA-CUSHIONS-BEIGE, MURCIA-CUSHIONS-BLACK, MURCIA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3496,7 +3946,8 @@
       "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MURCIA-COVERS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -3531,8 +3982,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "MURCIA-CUSHIONS-BEIGE, MURCIA-CUSHIONS-BLACK, MURCIA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3540,7 +3996,8 @@
       "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MURCIA-CUSHIONS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -3575,8 +4032,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "MURCIA-CUSHIONS-BEIGE, MURCIA-CUSHIONS-BLACK, MURCIA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3584,7 +4046,8 @@
       "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MURCIA-CUSHIONS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -3619,8 +4082,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "MURCIA-CUSHIONS-BEIGE, MURCIA-CUSHIONS-BLACK, MURCIA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3628,7 +4096,8 @@
       "product_name": "Murcia Garden Lounge Set Replacement Cushions/Covers",
       "sku": "MURCIA-CUSHIONS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/murcia-cushions_2.webp?v=1742899828",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -3663,8 +4132,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "MURCIA-CUSHIONS-BEIGE, MURCIA-CUSHIONS-BLACK, MURCIA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3672,7 +4146,8 @@
       "product_name": "Nuha 4 Seater Woven Garden and Aluminium Sofa and Armchair Set",
       "sku": "NUHA-SOFA-SET-4S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Nuha4-SeaterLoungeSet-1_54791ac8-1dfc-444f-a2c7-c66604b13054.webp?v=1735831782"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Nuha4-SeaterLoungeSet-1_54791ac8-1dfc-444f-a2c7-c66604b13054.webp?v=1735831782",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -3706,17 +4181,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Sicily 8 Seater Teak and Wrought Iron Square Garden Dining Set",
       "sku": "OLIVIA-SICILY-8S-DINING",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sicily-dining-set-1.webp?v=1743268232"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sicily-dining-set-1.webp?v=1743268232",
+      "price_gbp": 799
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -3756,7 +4229,7 @@
         "category": "wood",
         "durability_rating": 9,
         "weather_resistance": "excellent",
-        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "pros": "Self‐oiling—high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
         "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
         "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
         "warranty": "5 years (structural defects only)"
@@ -3795,8 +4268,13 @@
       ]
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "HAVANA-8S",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -3804,7 +4282,8 @@
       "product_name": "Palma Custom-Fitted Furniture Cover",
       "sku": "PALMA-COVER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cover_1.webp?v=1755091625"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cover_1.webp?v=1755091625",
+      "price_gbp": 69
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -3839,16 +4318,22 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "PALMA-CUSHION-BOX",
+      "replacement_cushions_sku": "PALMA-CUSHIONS-BEIGE, PALMA-CUSHIONS-BLACK, PALMA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
     "product_identity": {
       "product_name": "Palma Rattan Cushion Box L.149 x W.76 x H.70cm",
       "sku": "PALMA-CUSHION-BOX",
-      "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-cushion-box-1.png?v=1736367334"
+      "product_family": "PALMA",
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Palma-cushion-box-1.png?v=1736367334",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -3883,8 +4368,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "PALMA-CUSHION-BOX",
+      "replacement_cushions_sku": "PALMA-CUSHIONS-BEIGE, PALMA-CUSHIONS-BLACK, PALMA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3892,7 +4382,8 @@
       "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
       "sku": "PALMA-CUSHION-COVERS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -3927,8 +4418,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "PALMA-CUSHION-BOX",
+      "replacement_cushions_sku": "PALMA-CUSHIONS-BEIGE, PALMA-CUSHIONS-BLACK, PALMA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3936,7 +4432,8 @@
       "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
       "sku": "PALMA-CUSHION-COVERS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -3971,8 +4468,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "PALMA-CUSHION-BOX",
+      "replacement_cushions_sku": "PALMA-CUSHIONS-BEIGE, PALMA-CUSHIONS-BLACK, PALMA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -3980,7 +4482,8 @@
       "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
       "sku": "PALMA-CUSHION-COVERS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -4015,8 +4518,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "PALMA-CUSHION-BOX",
+      "replacement_cushions_sku": "PALMA-CUSHIONS-BEIGE, PALMA-CUSHIONS-BLACK, PALMA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -4024,7 +4532,8 @@
       "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
       "sku": "PALMA-CUSHIONS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -4059,8 +4568,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "PALMA-CUSHION-BOX",
+      "replacement_cushions_sku": "PALMA-CUSHIONS-BEIGE, PALMA-CUSHIONS-BLACK, PALMA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -4068,7 +4582,8 @@
       "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
       "sku": "PALMA-CUSHIONS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -4103,8 +4618,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "PALMA-CUSHION-BOX",
+      "replacement_cushions_sku": "PALMA-CUSHIONS-BEIGE, PALMA-CUSHIONS-BLACK, PALMA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -4112,7 +4632,8 @@
       "product_name": "Palma Grey Garden Lounge Set Replacement Cushions/Covers",
       "sku": "PALMA-CUSHIONS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cushions-3.webp?v=1742471478",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -4147,8 +4668,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": "PALMA-CUSHION-BOX",
+      "replacement_cushions_sku": "PALMA-CUSHIONS-BEIGE, PALMA-CUSHIONS-BLACK, PALMA-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -4156,7 +4682,8 @@
       "product_name": "Sonny Kids Outdoor Play Sofa",
       "sku": "PLAY-SOFA-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "",
@@ -4190,17 +4717,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Sonny Kids Outdoor Play Sofa",
       "sku": "PLAY-SOFA-BLUE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "",
@@ -4234,17 +4759,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Sonny Kids Outdoor Play Sofa",
       "sku": "PLAY-SOFA-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "",
@@ -4278,17 +4801,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Sonny Kids Outdoor Play Sofa",
       "sku": "PLAY-SOFA-RED",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sonny-grey-standard-layout-play-sofa.webp?v=1745598897",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "",
@@ -4322,17 +4843,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Reva 5 Seater Corner Outdoor Teak Sofa Set with Table",
       "sku": "REVA-5S-CORNER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Reva-corner-set-1.webp?v=1735854575"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Reva-corner-set-1.webp?v=1735854575",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -4366,17 +4885,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Reva 5 Seater Teak Garden Sofa and Armchair Set",
       "sku": "REVA-5S-SOFA-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Reva-lounge-set-1.webp?v=1735834271"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Reva-lounge-set-1.webp?v=1735834271",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -4410,17 +4927,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Rose 4-Seater Teak Garden Sofa and Armchair Set",
       "sku": "ROSE-4S-SOFA-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Rose-lounge-set-1_ea4d35fc-fc98-460f-8d50-f3ee4337adc2.webp?v=1735401145"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Rose-lounge-set-1_ea4d35fc-fc98-460f-8d50-f3ee4337adc2.webp?v=1735401145",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -4454,17 +4969,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Rose Corner 5 Seater Garden Sofa Set",
       "sku": "ROSE-CORNER-SOFA",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Rose-corner-sofa-1.webp?v=1735394207"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Rose-corner-sofa-1.webp?v=1735394207",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -4498,17 +5011,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Rose 6 Seater Teak Oval Garden Dining Set",
       "sku": "ROSE-DINING-6S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Rose-dining-set-1.webp?v=1735408825"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Rose-dining-set-1.webp?v=1735408825",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -4542,17 +5053,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Rose Round Teak Garden Loveseat",
       "sku": "ROSE-LOVESEAT",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/rose-loveseat-1.png?v=1735318323"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/rose-loveseat-1.png?v=1735318323",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -4586,17 +5095,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
       "sku": "SANTORINI-BEIGE-CSH-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -4631,8 +5138,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": "SANTORINI-COVER",
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "BARCELONA-CUSHIONS-BEIGE",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -4640,7 +5152,8 @@
       "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
       "sku": "SANTORINI-BEIGE-CUSHION-COVERS",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -4675,8 +5188,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -4684,7 +5202,8 @@
       "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
       "sku": "SANTORINI-BLACK-CSH-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -4719,8 +5238,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": "SANTORINI-COVER",
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "BARCELONA-CUSHIONS-BEIGE",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -4728,7 +5252,8 @@
       "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
       "sku": "SANTORINI-BLACK-CUSHION-COVERS",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -4763,8 +5288,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -4772,7 +5302,8 @@
       "product_name": "Santorini Custom-Fitted Furniture Cover",
       "sku": "SANTORINI-COVER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Santorini-cover.png?v=1747745228"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Santorini-cover.png?v=1747745228",
+      "price_gbp": 69
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -4807,8 +5338,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -4816,7 +5352,8 @@
       "product_name": "Santorini Grey 4 Seater Modular Aluminium Lounge Set with Side Cushions",
       "sku": "SANTORINI-GREY",
       "product_family": "SANTORINI",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini-cushions-grey.webp?v=1742569366"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini-cushions-grey.webp?v=1742569366",
+      "price_gbp": 599
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -4873,7 +5410,12 @@
     },
     "related_products": {
       "matching_cover_sku": "SANTORINI-COVER",
-      "accessories": []
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -4881,7 +5423,8 @@
       "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
       "sku": "SANTORINI-GREY-CSH-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -4916,8 +5459,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": "SANTORINI-COVER",
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "BARCELONA-CUSHIONS-BEIGE",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -4925,7 +5473,8 @@
       "product_name": "Santorini Modular Lounge Set Replacement Cushions/Covers",
       "sku": "SANTORINI-GREY-CUSHION-COVERS",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/santorini_1.webp?v=1742569366",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -4960,8 +5509,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -4969,7 +5523,8 @@
       "product_name": "Simon 6 Seater Wooden Grey Woven Teak Garden Dining Set",
       "sku": "SIMON-6S-DINING",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Simon-6-seater-dining-set-1.webp?v=1735479888"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Simon-6-seater-dining-set-1.webp?v=1735479888",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -5003,17 +5558,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Sola 6 Seater Acacia Wood Rectangular Garden Dining Set",
       "sku": "SOLA-6S-DINING",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sola-dining-set-10.webp?v=1737817559"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sola-dining-set-10.webp?v=1737817559",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Dining Sets",
@@ -5047,17 +5600,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Sola 7 Seater Wooden Garden Sofa Set",
       "sku": "SOLA-SOFA-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/269.webp?v=1737837961"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/269.webp?v=1737837961",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -5091,17 +5642,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Sola Acacia Wood Luxury Sunlounger",
       "sku": "SOLA-SUNLOUNGER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sola-sunlounger-1.webp?v=1737558401"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/sola-sunlounger-1.webp?v=1737558401",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Sun Loungers",
@@ -5135,17 +5684,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Stockholm Chaise Replacement Cushions/Covers",
       "sku": "STOCK-CHAISE-COVERS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -5180,8 +5727,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5189,7 +5741,8 @@
       "product_name": "Stockholm Chaise Replacement Cushions/Covers",
       "sku": "STOCK-CHAISE-COVERS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -5224,8 +5777,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5233,7 +5791,8 @@
       "product_name": "Stockholm Chaise Replacement Cushions/Covers",
       "sku": "STOCK-CHAISE-COVERS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743",
+      "price_gbp": 129
     },
     "description_and_category": {
       "primary_category": "",
@@ -5268,8 +5827,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5277,7 +5841,8 @@
       "product_name": "Stockholm Chaise Replacement Cushions/Covers",
       "sku": "STOCK-CHAISE-CUSHIONS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -5312,8 +5877,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5321,7 +5891,8 @@
       "product_name": "Stockholm Chaise Replacement Cushions/Covers",
       "sku": "STOCK-CHAISE-CUSHIONS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -5356,8 +5927,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5365,7 +5941,8 @@
       "product_name": "Stockholm Chaise Replacement Cushions/Covers",
       "sku": "STOCK-CHAISE-CUSHIONS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/14.png?v=1742909743",
+      "price_gbp": 199
     },
     "description_and_category": {
       "primary_category": "",
@@ -5400,8 +5977,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5409,7 +5991,8 @@
       "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
       "sku": "STOCK-CNR-COVERS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -5444,8 +6027,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5453,7 +6041,8 @@
       "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
       "sku": "STOCK-CNR-COVERS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -5488,8 +6077,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5497,7 +6091,8 @@
       "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
       "sku": "STOCK-CNR-COVERS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792",
+      "price_gbp": 149
     },
     "description_and_category": {
       "primary_category": "",
@@ -5532,8 +6127,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5541,7 +6141,8 @@
       "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
       "sku": "STOCK-CNR-CUSHIONS-BEIGE",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -5576,8 +6177,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5585,7 +6191,8 @@
       "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
       "sku": "STOCK-CNR-CUSHIONS-BLACK",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -5620,8 +6227,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5629,7 +6241,8 @@
       "product_name": "Stockholm Corner Sofa Replacement Cushions/Covers",
       "sku": "STOCK-CNR-CUSHIONS-GREY",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Screenshot_2024-08-01_at_13.01.42.png?v=1722513792",
+      "price_gbp": 249
     },
     "description_and_category": {
       "primary_category": "",
@@ -5664,8 +6277,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": "STOCK-CHAISE-CUSHIONS-BEIGE, STOCK-CHAISE-CUSHIONS-BLACK, STOCK-CHAISE-CUSHIONS-GREY, STOCK-CNR-CUSHIONS-BEIGE, STOCK-CNR-CUSHIONS-BLACK, STOCK-CNR-CUSHIONS-GREY",
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5673,7 +6291,8 @@
       "product_name": "Stockholm Chaise Custom-Fitted Furniture Cover",
       "sku": "STOCKHOLM-CHAISE-COVER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Stockholm-chaise-cover.png?v=1739718933"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Stockholm-chaise-cover.png?v=1739718933",
+      "price_gbp": 69
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -5708,8 +6327,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5717,7 +6341,8 @@
       "product_name": "Stockholm Rattan Grey 4 Seater Garden Chaise Lounge Set with Armchair",
       "sku": "STOCKHOLM-CHAISE-LOUNGE",
       "product_family": "STOCKHOLM",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Stockholm-chaise-new-fabric-2.webp?v=1748952377"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Stockholm-chaise-new-fabric-2.webp?v=1748952377",
+      "price_gbp": 399
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -5783,8 +6408,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "STOCKHOLM-CORNER-COVER",
-      "accessories": []
+      "matching_cover_sku": "STOCKHOLM-CHAISE-COVER",
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": "KIKI-ORGANIC-CHAISE",
+      "upsell_premium_sku": "KIKI-ORGANIC-CHAISE",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -5792,7 +6422,8 @@
       "product_name": "Stockholm 6 Seater Black Rattan Corner Garden Dining and Lounge Set",
       "sku": "STOCKHOLM-CORNER-BLACK",
       "product_family": "STOCKHOLM",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/stockholm-black-edit-1.webp?v=1746621526"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/stockholm-black-edit-1.webp?v=1746621526",
+      "price_gbp": 599
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -5860,29 +6491,34 @@
           "component_sku": "STOCKHOLM-CORNER-BLACK-BOX-1",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 149,
+            "width": 78,
+            "height": 17
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 6,
+          "box_cbm": 0.198
         },
         {
           "component_sku": "STOCKHOLM-CORNER-BLACK-BOX-2",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 166,
+            "width": 71,
+            "height": 49
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 16,
+          "box_cbm": 0.578
         }
       ]
     },
     "related_products": {
       "matching_cover_sku": "STOCKHOLM-CORNER-COVER",
-      "accessories": []
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": "FARO-LOUNGE-SET",
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "FARO-LOUNGE-SET",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -5890,7 +6526,8 @@
       "product_name": "Stockholm Corner Custom-Fitted Furniture Cover",
       "sku": "STOCKHOLM-CORNER-COVER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cover_1_ebc45d7f-e1c2-4af4-b044-66f07f917fe7.webp?v=1755091934"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/palma-cover_1_ebc45d7f-e1c2-4af4-b044-66f07f917fe7.webp?v=1755091934",
+      "price_gbp": 69
     },
     "description_and_category": {
       "primary_category": "Accessories",
@@ -5925,8 +6562,13 @@
       "components": []
     },
     "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": null,
+      "upsell_material_sku": null,
+      "upsell_premium_sku": null,
+      "requires_assembly": "No"
     }
   },
   {
@@ -5934,7 +6576,8 @@
       "product_name": "Stockholm 6 Seater Grey Rattan Corner Garden Dining and Lounge Set",
       "sku": "STOCKHOLM-LOUNGE-SET",
       "product_family": "STOCKHOLM",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Stockholm-corner-lounge-set-upgraded-fabric-grey_1_1.webp?v=1749999162"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Stockholm-corner-lounge-set-upgraded-fabric-grey_1_1.webp?v=1749999162",
+      "price_gbp": 599
     },
     "description_and_category": {
       "primary_category": "Dual-Purpose Sets",
@@ -6002,29 +6645,34 @@
           "component_sku": "STOCKHOLM-CORNER-GREY-BOX-1",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 149,
+            "width": 78,
+            "height": 17
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 6,
+          "box_cbm": 0.198
         },
         {
           "component_sku": "STOCKHOLM-CORNER-GREY-BOX-2",
           "quantity": 1,
           "box_dimensions_cm": {
-            "length": "",
-            "width": "",
-            "height": ""
+            "length": 166,
+            "width": 71,
+            "height": 49
           },
-          "pcs_per_box": "",
-          "box_cbm": ""
+          "pcs_per_box": 16,
+          "box_cbm": 0.578
         }
       ]
     },
     "related_products": {
-      "matching_cover_sku": "STOCKHOLM-CORNER-COVER",
-      "accessories": []
+      "matching_cover_sku": null,
+      "cushion_box_sku": null,
+      "replacement_cushions_sku": null,
+      "upsell_size_sku": "FARO-LOUNGE-SET",
+      "upsell_material_sku": null,
+      "upsell_premium_sku": "FARO-LOUNGE-SET",
+      "requires_assembly": "Yes"
     }
   },
   {
@@ -6032,7 +6680,8 @@
       "product_name": "Tenerife Grey 5 Seater Teak and Aluminium Corner Lounge Set",
       "sku": "TENERIFE-CORNER-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Tenerife-lounge-set-DD.png?v=1722254917"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Tenerife-lounge-set-DD.png?v=1722254917",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -6062,7 +6711,7 @@
         "category": "wood",
         "durability_rating": 9,
         "weather_resistance": "excellent",
-        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "pros": "Self‐oiling—high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
         "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
         "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
         "warranty": "5 years (structural defects only)"
@@ -6097,17 +6746,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Terra 6 Seater Teak Corner Garden Sofa and Table Set",
       "sku": "TERRA-6S-CORNER",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/terra-lounge-set-1.webp?v=1736623895"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/terra-lounge-set-1.webp?v=1736623895",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -6137,7 +6784,7 @@
         "category": "wood",
         "durability_rating": 9,
         "weather_resistance": "excellent",
-        "pros": "Selfâ€oilingâ€”high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
+        "pros": "Self‐oiling—high rot resistance, Beautiful golden patina over time, Mint Teak is only from sustainable and certified teak plantations so incredibly environmentally friendly, If left untreated, will form a beautiful silver-grey patina that still offers very good weather protection due to the natural oils and tannins protecting the teak,, High strength to weight ratio",
         "cons": "High cost, Annual maintenance to preserve color, Be aware, some retailers acquire poorer grade teak from uncertified and unsustainable plantations which contributes to damaging deforestation, Sustainability concerns if not FSC-certified",
         "maintenance": "Clean with teak cleaner, lightly sand, apply teak oil per grain direction.",
         "warranty": "5 years (structural defects only)"
@@ -6162,17 +6809,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Tommy Grey Aluminium 4 Seater Sofa Set",
       "sku": "TOMMY-4S-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Tommy-sofa-set-1.webp?v=1734967452"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/Tommy-sofa-set-1.webp?v=1734967452",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -6227,17 +6872,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Valente Rattan 6 Seater Corner Sofa and Armchair Lounge Set",
       "sku": "VALENTE-SOFA-SET",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/valente-1.webp?v=1740324820"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/valente-1.webp?v=1740324820",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Dual-Purpose Sets",
@@ -6302,17 +6945,15 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   },
   {
     "product_identity": {
       "product_name": "Wallu 5 Seater Corner Aluminium Garden Sofa Set",
       "sku": "WALLU-CORNER-5S",
       "product_family": "",
-      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/wallu-corner-set-1.webp?v=1744311681"
+      "image_url": "https://cdn.shopify.com/s/files/1/0833/7738/9900/files/wallu-corner-set-1.webp?v=1744311681",
+      "price_gbp": null
     },
     "description_and_category": {
       "primary_category": "Lounge Sets",
@@ -6367,9 +7008,6 @@
       },
       "components": []
     },
-    "related_products": {
-      "matching_cover_sku": "",
-      "accessories": []
-    }
+    "related_products": {}
   }
 ]

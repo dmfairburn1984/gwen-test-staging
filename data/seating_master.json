@@ -1,0 +1,466 @@
+[
+  {
+    "sku": "2-PERSON-DELIVERY",
+    "seats": null
+  },
+  {
+    "sku": "ASSEMBLY-ADD-ON",
+    "seats": null
+  },
+  {
+    "sku": "ALANNE-6S",
+    "seats": 6
+  },
+  {
+    "sku": "ALEX-5S-SOFA-SET",
+    "seats": 5
+  },
+  {
+    "sku": "ARTHUR-CORNER-5S",
+    "seats": 5
+  },
+  {
+    "sku": "BALI-METAL-GREY",
+    "seats": null
+  },
+  {
+    "sku": "BALI-METAL-TAUPE",
+    "seats": null
+  },
+  {
+    "sku": "BALI-WOOD-PARASOL-GREEN",
+    "seats": null
+  },
+  {
+    "sku": "BALI-WOOD-PARASOL-GREY",
+    "seats": null
+  },
+  {
+    "sku": "BARCELONA-COVERS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "BARCELONA-COVERS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "BARCELONA-COVERS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "BARCELONA-CUSHIONS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "BARCELONA-CUSHIONS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "BARCELONA-CUSHIONS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "BRIDGETOWN-120-4S",
+    "seats": 4
+  },
+  {
+    "sku": "BRIDGETOWN-150-6S",
+    "seats": 6
+  },
+  {
+    "sku": "BRIDGETOWN-200-6S",
+    "seats": 6
+  },
+  {
+    "sku": "BRIDGETOWN-70-2S",
+    "seats": 2
+  },
+  {
+    "sku": "CAL-COVERS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "CAL-COVERS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "CAL-COVERS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "CAL-CUSHIONS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "CAL-CUSHIONS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "CAL-CUSHIONS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "CALI-8S",
+    "seats": 8
+  },
+  {
+    "sku": "CHES-CUSH-COVERS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "CHES-CUSH-COVERS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "CHES-CUSH-COVERS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "CHES-CUSHIONS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "CHES-CUSHIONS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "CHES-CUSHIONS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "CHESTERTON-COVER",
+    "seats": null
+  },
+  {
+    "sku": "COLLECTION-FEE",
+    "seats": null
+  },
+  {
+    "sku": "CORA-CORNER-SET-5S",
+    "seats": 5
+  },
+  {
+    "sku": "CORA-SOFA-SET-4S",
+    "seats": 4
+  },
+  {
+    "sku": "DELLA-PORTA-SOFA-SET",
+    "seats": 10
+  },
+  {
+    "sku": "FARO-LOUNGE-SET",
+    "seats": 9
+  },
+  {
+    "sku": "GIGI-4S-SOFA-SET",
+    "seats": 4
+  },
+  {
+    "sku": "HAVANA-8S",
+    "seats": 8
+  },
+  {
+    "sku": "ION-4S-SOFA-SET",
+    "seats": 4
+  },
+  {
+    "sku": "KIKI-2-SEATER-SOFA",
+    "seats": 2
+  },
+  {
+    "sku": "KIKI-ORGANIC-CHAISE",
+    "seats": 3
+  },
+  {
+    "sku": "KINGSTON-LOUNGE-SET",
+    "seats": null
+  },
+  {
+    "sku": "LINH-CORNER-6S",
+    "seats": 6
+  },
+  {
+    "sku": "LIMA-CORNER-LOUNGE",
+    "seats": 7
+  },
+  {
+    "sku": "LIMA-LOUNGE-SET",
+    "seats": 4
+  },
+  {
+    "sku": "MALAGA-LOUNGE-SET",
+    "seats": 5
+  },
+  {
+    "sku": "MALAI-LOUNGE-SET-TEAK",
+    "seats": 5
+  },
+  {
+    "sku": "MARBELLA-COVER",
+    "seats": null
+  },
+  {
+    "sku": "MARBELLA-CUSHION-COVERS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "MARBELLA-CUSHION-COVERS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "MARBELLA-CUSHION-COVERS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "MARBELLA-CUSHIONS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "MARBELLA-CUSHIONS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "MARBELLA-CUSHIONS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "MARBELLA FIVE SEATER CORNER",
+    "seats": 5
+  },
+  {
+    "sku": "Marbella Cushion Box",
+    "seats": null
+  },
+  {
+    "sku": "MARKEY-4S-SOFA-SET",
+    "seats": 4
+  },
+  {
+    "sku": "MURCIA-COVERS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "MURCIA-COVERS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "MURCIA-COVERS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "MURCIA-CUSHIONS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "MURCIA-CUSHIONS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "MURCIA-CUSHIONS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "NUHA-SOFA-SET-4S",
+    "seats": 4
+  },
+  {
+    "sku": "OLIVIA-SICILY-8S-DINING",
+    "seats": 8
+  },
+  {
+    "sku": "PALMA-COVER",
+    "seats": null
+  },
+  {
+    "sku": "PALMA-CUSHION-BOX",
+    "seats": null
+  },
+  {
+    "sku": "PALMA-CUSHION-COVERS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "PALMA-CUSHION-COVERS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "PALMA-CUSHION-COVERS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "PALMA-CUSHIONS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "PALMA-CUSHIONS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "PALMA-CUSHIONS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "PLAY-SOFA",
+    "seats": 2
+  },
+  {
+    "sku": "REVA-5S-CORNER",
+    "seats": 5
+  },
+  {
+    "sku": "REVA-5S-SOFA-SET",
+    "seats": 5
+  },
+  {
+    "sku": "ROSE-4S-SOFA-SET",
+    "seats": 4
+  },
+  {
+    "sku": "ROSE-CORNER-SOFA",
+    "seats": 5
+  },
+  {
+    "sku": "ROSE-DINING-6S",
+    "seats": 6
+  },
+  {
+    "sku": "ROSE-LOVESEAT",
+    "seats": 2
+  },
+  {
+    "sku": "SANTORINI-BEIGE-CSH-SET",
+    "seats": null
+  },
+  {
+    "sku": "SANTORINI-BEIGE-CUSHION-COVERS",
+    "seats": null
+  },
+  {
+    "sku": "SANTORINI-BLACK-CSH-SET",
+    "seats": null
+  },
+  {
+    "sku": "SANTORINI-BLACK-CUSHION-COVERS",
+    "seats": null
+  },
+  {
+    "sku": "SANTORINI-COVER",
+    "seats": null
+  },
+  {
+    "sku": "SANTORINI-GREY",
+    "seats": 4
+  },
+  {
+    "sku": "SANTORINI-GREY-CSH-SET",
+    "seats": null
+  },
+  {
+    "sku": "SANTORINI-GREY-CUSHION-COVERS",
+    "seats": null
+  },
+  {
+    "sku": "SIMON-6S-DINING",
+    "seats": 6
+  },
+  {
+    "sku": "SOLA-6S-DINING",
+    "seats": 6
+  },
+  {
+    "sku": "SOLA-SOFA-SET",
+    "seats": 7
+  },
+  {
+    "sku": "SOLA-SUNLOUNGER",
+    "seats": 1
+  },
+  {
+    "sku": "STOCK-CHAISE-COVERS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CHAISE-COVERS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CHAISE-COVERS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CHAISE-CUSHIONS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CHAISE-CUSHIONS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CHAISE-CUSHIONS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CNR-COVERS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CNR-COVERS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CNR-COVERS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CNR-CUSHIONS-BEIGE",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CNR-CUSHIONS-BLACK",
+    "seats": null
+  },
+  {
+    "sku": "STOCK-CNR-CUSHIONS-GREY",
+    "seats": null
+  },
+  {
+    "sku": "STOCKHOLM-CHAISE-COVER",
+    "seats": null
+  },
+  {
+    "sku": "STOCKHOLM-CHAISE-LOUNGE",
+    "seats": 4
+  },
+  {
+    "sku": "STOCKHOLM-CORNER-BLACK",
+    "seats": 6
+  },
+  {
+    "sku": "STOCKHOLM-CORNER-COVER",
+    "seats": null
+  },
+  {
+    "sku": "STOCKHOLM-LOUNGE-SET",
+    "seats": 6
+  },
+  {
+    "sku": "TENERIFE-CORNER-SET",
+    "seats": 5
+  },
+  {
+    "sku": "TERRA-6S-CORNER",
+    "seats": 6
+  },
+  {
+    "sku": "TOMMY-4S-SET",
+    "seats": 4
+  },
+  {
+    "sku": "VALENTE-SOFA-SET",
+    "seats": 6
+  },
+  {
+    "sku": "WALLU-CORNER-5S",
+    "seats": 5
+  }
+]

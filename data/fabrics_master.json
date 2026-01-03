@@ -1,0 +1,160 @@
+[
+  {
+    "module_id": "fabrics_sunbrella",
+    "name": "Sunbrella",
+    "category": "fabric",
+    "level": "Premium",
+    "description": "The most expensive outdoor fabric with the highest possible quality assurance. Solution-dyed acrylic fabric renowned for UV, mildew, and stain resistance.",
+    "properties": {
+      "fiber": "Solution-dyed acrylic",
+      "uv_stability": "excellent",
+      "mildew_resistance": true,
+      "water_resistance": "high",
+      "breathability": "medium"
+    },
+    "pros_cons": {
+      "pros": [
+        "Outstanding colorfastness",
+        "Mildew and water-resistant",
+        "Easy to clean"
+      ],
+      "cons": [
+        "Incredibly expensive",
+        "Less soft than some wovens"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Clean spills immediately with mild soap and water",
+        "Use a soft brush for stubborn stains",
+        "Allow to air dry"
+      ]
+    },
+    "warranty": {
+      "period_years": 5,
+      "coverage": "Colorfastness and fabric integrity"
+    },
+    "reference_links": [
+      "https://www.sunbrella.com",
+      "https://en.wikipedia.org/wiki/Sunbrella"
+    ]
+  },
+  {
+    "module_id": "fabrics_olefin",
+    "name": "Olefin",
+    "category": "fabric",
+    "level": "Mid Range",
+    "description": "Best available alternative to Sunbrella fabric which is the worlds leading quality outdoor fabric. Offers upto 95% of the durability and weather resistance properties as Sunbrella for a fraction of the cost. All Mint fabrics are Olefin material which is polypropylene-based fabric offering excellent moisture and stain resistance plus 2000 UV hours of protection equating to 3 years of real world usage.",
+    "properties": {
+      "fiber": "Polypropylene",
+      "uv_stability": "good",
+      "mildew_resistance": true,
+      "water_resistance": "moderate",
+      "breathability": "high"
+    },
+    "pros_cons": {
+      "pros": [
+        "Affordable luxury",
+        "Quick-dry",
+        "Soft hand-feel"
+      ],
+      "cons": [
+        "Almost no cons unless its important for you to have the Sunbrella brand",
+        "Can fade over time in direct sun as all fabrics will eventually"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Vacuum regularly to remove debris",
+        "Spot clean with mild detergent",
+        "Rinse and air dry after cleaning"
+      ]
+    },
+    "warranty": {
+      "period_years": 3,
+      "coverage": "Fabric performance under normal use"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Polypropylene_fiber",
+      "https://www.fiberfacts.org"
+    ]
+  },
+  {
+    "module_id": "fabrics_polyester",
+    "name": "Polyester",
+    "category": "fabric",
+    "level": "Budget",
+    "description": "The majority of the outdoor furniture cushions in the UK is made with polyester. It is a woven polyester fabric commonly used for outdoor cushions with fair durability but only in reflection to the price. If you are looking for more than 18 months of usage then upgrade to Olefin and make sure to check retailer's product specifications for what fabric is used.",
+    "properties": {
+      "fiber": "Polyester",
+      "uv_stability": "fair",
+      "mildew_resistance": false,
+      "water_resistance": "low-moderate",
+      "breathability": "medium"
+    },
+    "pros_cons": {
+      "pros": [
+        "Low cost"
+        
+      ],
+      "cons": [
+        "Prone to mildew if not dried",
+        "Fades faster in sun in as little as 12 months"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Remove cushions to dry after rain",
+        "Spot treat with mildew cleaner if needed"
+      ]
+    },
+    "warranty": {
+      "period_years": 1,
+      "coverage": "Basic wear and tear"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Polyester_fiber",
+      "https://www.fiberjournal.com"
+    ]
+  },
+  {
+    "module_id": "fabrics_acrylic",
+    "name": "Acrylic (Generic)",
+    "category": "fabric",
+    "level": "Mid Range",
+    "description": "UV-stable acrylic fabric offering durability and color retention at a lower price than Sunbrella. Acrylic based fabrics are very durable however they lack character and can feel artificial unlike Olefins.",
+    "properties": {
+      "fiber": "Acrylic",
+      "uv_stability": "good",
+      "mildew_resistance": true,
+      "water_resistance": "moderate",
+      "breathability": "medium"
+    },
+    "pros_cons": {
+      "pros": [
+        "Good color retention",
+        "Resistant to mildew",
+        "Soft texture"
+      ],
+      "cons": [
+        "Can feel unnatural",
+        "Can pill over time"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Clean with mild soap solution",
+        "Avoid harsh chemicals",
+        "Air dry completely"
+      ]
+    },
+    "warranty": {
+      "period_years": 3,
+      "coverage": "Colorfastness and basic fabric integrity"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Acrylic_fiber",
+      "https://www.textileworld.com"
+    ]
+  }
+]

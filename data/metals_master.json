@@ -1,0 +1,149 @@
+[
+  {
+    "module_id": "materials_aluminium",
+    "name": "Aluminium",
+    "category": "metal",
+    "description": "Lightweight, corrosion-resistant metal commonly used in outdoor furniture frames.",
+    "properties": {
+      "density_kg_m3": 2700,
+      "corrosion_resistance": "excellent",
+      "weight": "light",
+      "strength_to_weight": "high",
+      "origin": [
+        "Global"
+      ]
+    },
+    "durability_rating": 9,
+    "weather_resistance": "excellent",
+    "pros_cons": {
+      "pros": [
+        "Rust-proof",
+        "Easy to clean",
+        "Lightweight and easy to move"
+      ],
+      "cons": [
+        "Can dent under heavy impact",
+        "Surface scratches may expose bare metal"
+      ]
+    },
+    "finishes": [
+      "powder-coated",
+      "anodized",
+      "painted"
+    ],
+    "maintenance": {
+      "required": false,
+      "frequency": "none",
+      "instructions": "Wipe with mild soap solution as needed."
+    },
+    "sustainability": {
+      "recyclable": true,
+      "recycled_content": "varies by manufacturer"
+    },
+    "warranty": {
+      "period_years": 10,
+      "coverage": "corrosion and structural defects"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Aluminium",
+      "https://www.azom.com/article.aspx?ArticleID=924"
+    ]
+  },
+  {
+    "module_id": "materials_steel",
+    "name": "Steel",
+    "category": "metal",
+    "description": "Strong, durable metal often used in outdoor furniture, typically treated to resist corrosion.",
+    "properties": {
+      "density_kg_m3": 7850,
+      "corrosion_resistance": "good (with treatment)",
+      "weight": "heavy",
+      "strength": "high",
+      "origin": [
+        "Global"
+      ]
+    },
+    "durability_rating": 8,
+    "weather_resistance": "good (galvanised/powder-coated)",
+    "pros_cons": {
+      "pros": [
+        "High strength and stability",
+        "Less likely to dent than aluminium"
+      ],
+      "cons": [
+        "Heavier to move",
+        "Requires protective coating to prevent rust"
+      ]
+    },
+    "finishes": [
+      "galvanized",
+      "powder-coated",
+      "painted"
+    ],
+    "maintenance": {
+      "required": true,
+      "frequency": "annual",
+      "instructions": "Inspect coatings, touch-up paint as needed, clean with mild detergent."
+    },
+    "sustainability": {
+      "recyclable": true,
+      "recycled_content": "common"
+    },
+    "warranty": {
+      "period_years": 4,
+      "coverage": "corrosion and structural defects"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Steel",
+      "https://www.worldsteel.org/steel"
+    ]
+  },
+  {
+    "module_id": "materials_wrought_iron",
+    "name": "Wrought Iron",
+    "category": "metal",
+    "description": "Traditional heavy metal known for its classic aesthetic and high durability, but requires maintenance.",
+    "properties": {
+      "density_kg_m3": 7800,
+      "corrosion_resistance": "fair (requires maintenance)",
+      "weight": "very heavy",
+      "origin": [
+        "Europe",
+        "Asia"
+      ]
+    },
+    "durability_rating": 9,
+    "weather_resistance": "fair (painted/coated required)",
+    "pros_cons": {
+      "pros": [
+        "Timeless, decorative designs",
+        "Extremely strong and durable"
+      ],
+      "cons": [
+        "Very heavy",
+        "Prone to rust if coating is damaged"
+      ]
+    },
+    "finishes": [
+      "painted",
+      "powder-coated"
+    ],
+    "maintenance": {
+      "required": true,
+      "frequency": "annual",
+      "instructions": "Remove rust spots, repaint or recoat as needed."
+    },
+    "sustainability": {
+      "recyclable": true,
+      "recycled_content": "varies"
+    },
+    "warranty": {
+      "period_years": 5,
+      "coverage": "structural integrity only"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Wrought_iron",
+      "https://www.encyclopedia.com/materials"
+    ]
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "script": "Full Order Handling Audit",
+  "description": "Automated audit of order handling issues including tagging errors, fulfilment mistakes, and PO allocation problems.",
+  "outputsTo": "Order Audit Dashboard",
+  "runWith": "runFullOrderHandlingAudit()",
+  "notes": [
+    "Pre-order flag is determined by parsing column W (JSON format)",
+    "Tags come from PullOrderDataApp column D; the last one is considered 'current'",
+    "PO arrival dates are pulled from PO List, columns E (original) and F (delayed)",
+    "Only unfulfilled and non-refunded orders are included in most audits"
+  ],
+  "functions": [
+    {
+      "title": "⚠️ Pre-orders Tagged as In-Stock",
+      "function": "clearAndPrintAudit_PreOrdersWithInStockTags",
+      "checks": "Pre-orders with in-stock tags like 'delivery booking in progress' or 'potential delivery delay'",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "Uploaded to RRL?",
+        "Issue"
+      ],
+      "issue": "Pre-orders falsely marked as in-stock",
+      "recommendation": "Check tags; do not book delivery for pre-orders"
+    },
+    {
+      "title": "🚨 Orders Assigned to Empty PO",
+      "function": "clearAndPrintAudit_OrdersAssignedToEmptyPO",
+      "checks": "Orders assigned to a PO with zero stock",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "PO Number",
+        "PO SKU Qty",
+        "Issue"
+      ],
+      "issue": "Pre-order tagged with PO that has no available SKU qty",
+      "recommendation": "Reallocate to a valid PO with stock"
+    },
+    {
+      "title": "↩️ Refunded Pre-orders with Existing Tags",
+      "function": "clearAndPrintAudit_RefundedPreOrdersWithTags",
+      "checks": "Refunded pre-orders still tagged as active",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "Issue"
+      ],
+      "issue": "Refunded orders may still appear in RRL pipeline",
+      "recommendation": "Tag as 'refunded' to release stock and avoid delivery"
+    },
+    {
+      "title": "🟣 Pre-orders in JOB But PO Hasn't Landed",
+      "function": "clearAndPrintAudit_PreOrdersInJOBBeforeArrival",
+      "checks": "Pre-orders uploaded to JOB sheet before PO arrival",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "PO Number",
+        "PO Arrival Date",
+        "Issue"
+      ],
+      "issue": "Courier job assigned before goods arrive in warehouse",
+      "recommendation": "Delay JOB entry until stock arrival date"
+    },
+    {
+      "title": "🟢 Pre-orders NOT in JOB But PO HAS Landed",
+      "function": "clearAndPrintAudit_PreOrdersNotInJOBButPOLanded",
+      "checks": "PO has landed but pre-order not yet sent to courier",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "PO Number",
+        "PO Arrival Date",
+        "Issue"
+      ],
+      "issue": "Delay in uploading to RRL after stock arrival",
+      "recommendation": "Upload eligible orders immediately"
+    },
+    {
+      "title": "🟡 Orders With In-Stock Tags But Not in JOB or POD",
+      "function": "clearAndPrintAudit_OrdersWithInStockTagsButNotInJOBorPOD",
+      "checks": "Orders marked as in-stock but not in JOB or POD and not cancelled/refunded",
+      "headers": [
+        "Order ID",
+        "SKU",
+        "Current Tag",
+        "In JOB?",
+        "In POD?",
+        "Cancelled or Refunded?",
+        "Issue"
+      ],
+      "issue": "Orders stuck in limbo with in-stock tag but no courier booking",
+      "recommendation": "Investigate why they aren’t moving; upload to JOB if valid"
+    },
+    {
+      "title": "📬 Outstanding Pre-Order Balance Payments",
+      "function": "auditOutstandingPreOrderPayments",
+      "checks": "Partially paid pre-orders with future due dates",
+      "headers": [
+        "Order ID",
+        "Amount Due",
+        "Due Date",
+        "PO Number",
+        "Original ETA (Warehouse)",
+        "Delayed ETA (Warehouse)"
+      ],
+      "issue": "Pending balance due for pre-orders",
+      "recommendation": "Flag for upcoming payment collection and notify customer"
+    }
+  ]
+}

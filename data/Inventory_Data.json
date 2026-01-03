@@ -1,28 +1,46 @@
 {
   "inventory": [
     {
-      "sku": "STOCKHOLM-LOUNGE-SET",
-      "stockOnHand": 0,
-      "committed": 69,
-      "available": 202,
-      "runRate": 2,
-      "daysOfStock": 101,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "FARO-LOUNGE-SET",
-      "stockOnHand": 0,
-      "committed": 61,
-      "available": 160,
-      "runRate": 2.5714285714285716,
-      "daysOfStock": 62.222222222222214,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "PALMA-CUSHION-BOX",
+      "sku": "STOCKHOLM-CHAISE-LOUNGE",
       "stockOnHand": 0,
       "committed": 8,
-      "available": 159,
+      "available": 223,
+      "runRate": 0.42857142857142855,
+      "daysOfStock": 520.3333333333334,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHESTERTON-COVER",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": 205,
+      "runRate": 0.2857142857142857,
+      "daysOfStock": 717.5,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCKHOLM-CORNER-BLACK",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": 190,
+      "runRate": 0.42857142857142855,
+      "daysOfStock": 443.33333333333337,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "Marbella Cushion Box",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": 100,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": 700,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCKHOLM-CORNER-COVER",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": 94,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
@@ -30,107 +48,8 @@
     {
       "sku": "PALMA-COVER",
       "stockOnHand": 0,
-      "committed": 25,
-      "available": 95,
-      "runRate": 1.1428571428571428,
-      "daysOfStock": 83.125,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "SANTORINI-GREY",
-      "stockOnHand": 0,
-      "committed": 30,
-      "available": 96,
-      "runRate": 0.5714285714285714,
-      "daysOfStock": 168,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "STOCKHOLM-CORNER-COVER",
-      "stockOnHand": 0,
-      "committed": 10,
-      "available": 75,
-      "runRate": 0.42857142857142855,
-      "daysOfStock": 175,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "Marbella Cushion Box",
-      "stockOnHand": 0,
-      "committed": 3,
-      "available": 66,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "BRIDGETOWN-200-6S",
-      "stockOnHand": 0,
-      "committed": 1,
-      "available": 35,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "SANTORINI-COVER",
-      "stockOnHand": 0,
-      "committed": 8,
-      "available": 33,
-      "runRate": 0.2857142857142857,
-      "daysOfStock": 115.5,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "BRIDGETOWN-150-6S",
-      "stockOnHand": 0,
-      "committed": 5,
-      "available": 23,
-      "runRate": 0.42857142857142855,
-      "daysOfStock": 53.66666666666667,
-      "lowStockWarning": "30-60 Days"
-    },
-    {
-      "sku": "STOCKHOLM-CHAISE-COVER",
-      "stockOnHand": 0,
-      "committed": 8,
-      "available": 22,
-      "runRate": 0.14285714285714285,
-      "daysOfStock": 154,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "BRIDGETOWN-120-4S",
-      "stockOnHand": 0,
-      "committed": 9,
-      "available": 18,
-      "runRate": 0.42857142857142855,
-      "daysOfStock": 42,
-      "lowStockWarning": "30-60 Days"
-    },
-    {
-      "sku": "MALAGA-LOUNGE-SET",
-      "stockOnHand": 0,
-      "committed": 8,
-      "available": 20,
-      "runRate": 0.14285714285714285,
-      "daysOfStock": 140,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "HAVANA-8S",
-      "stockOnHand": 0,
-      "committed": 0,
-      "available": 18,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "CHESTERTON-COVER",
-      "stockOnHand": 0,
-      "committed": 2,
-      "available": 11,
+      "committed": 22,
+      "available": 0,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
@@ -138,26 +57,125 @@
     {
       "sku": "MARBELLA FIVE SEATER CORNER",
       "stockOnHand": 0,
-      "committed": 39,
-      "available": 7,
-      "runRate": 0.5714285714285714,
-      "daysOfStock": 12.25,
-      "lowStockWarning": "<30 Days"
-    },
-    {
-      "sku": "BALI-METAL-TAUPE",
-      "stockOnHand": 0,
-      "committed": 0,
-      "available": 9,
+      "committed": 8,
+      "available": 55,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "OLIVIA-SICILY-8S-DINING",
+      "sku": "BALI-WOOD-PARASOL-GREY",
       "stockOnHand": 0,
       "committed": 0,
-      "available": 5,
+      "available": 50,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BALI-WOOD-PARASOL-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 49,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCKHOLM-CHAISE-COVER",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": 43,
+      "runRate": 0.2857142857142857,
+      "daysOfStock": 150.5,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALIFORNIA-COFFEE-TABLE-TAUPE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 42,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-GREY",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": 39,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FARO-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 20,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGETOWN-200-6S",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": 28,
+      "runRate": 0.2857142857142857,
+      "daysOfStock": 98,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-COVER",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": 29,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-COVER",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": 14,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": 98,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MALAGA-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 6,
+      "available": 13,
+      "runRate": 0.42857142857142855,
+      "daysOfStock": 30.333333333333336,
+      "lowStockWarning": "30-60 Days"
+    },
+    {
+      "sku": "OLIVIA-SICILY-8S-DINING",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": 1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LIMA-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CORA-SOFA-SET-4S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
@@ -165,53 +183,62 @@
     {
       "sku": "CORA-SOFA-SET-4S",
       "stockOnHand": 0,
-      "committed": 1,
-      "available": 3,
+      "committed": 0,
+      "available": 0,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "BARCELONA-LOUNGE-SET",
-      "stockOnHand": 0,
-      "committed": 9,
-      "available": 0,
-      "runRate": 0.2857142857142857,
-      "daysOfStock": 0,
-      "lowStockWarning": "<30 Days"
-    },
-    {
-      "sku": "BALI-METAL-GREY",
-      "stockOnHand": 0,
-      "committed": 2,
-      "available": 1,
-      "runRate": 0.14285714285714285,
-      "daysOfStock": 7,
-      "lowStockWarning": "<30 Days"
-    },
-    {
-      "sku": "LIMA-LOUNGE-SET",
+      "sku": "BRIDGETOWN-120-4S",
       "stockOnHand": 0,
       "committed": 0,
-      "available": 2,
+      "available": 0,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "KIKI-2-SEATER-SOFA",
+      "sku": "BRIDGETOWN-150-6S",
       "stockOnHand": 0,
-      "committed": 6,
-      "available": 1,
-      "runRate": 0.14285714285714285,
-      "daysOfStock": 7,
-      "lowStockWarning": "<30 Days"
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
     },
     {
       "sku": "LIMA-CORNER-LOUNGE",
       "stockOnHand": 0,
       "committed": 0,
-      "available": 1,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MALAGA-LOUNGER",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MALAGA-LOUNGER-X2",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BALI-METAL-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
@@ -219,20 +246,65 @@
     {
       "sku": "MALAI-LOUNGE-SET-TEAK",
       "stockOnHand": 0,
-      "committed": 8,
+      "committed": 0,
       "available": 0,
-      "runRate": 0.2857142857142857,
-      "daysOfStock": 0,
-      "lowStockWarning": "<30 Days"
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "MARBELLA-COVER",
+      "sku": "HAVANA-8S",
       "stockOnHand": 0,
-      "committed": 10,
+      "committed": 1,
       "available": 0,
-      "runRate": 0.14285714285714285,
-      "daysOfStock": 0,
-      "lowStockWarning": "<30 Days"
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALIFORNIA-3S-SOFA-TAUPE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FOLDING-ARMCHAIR-BASIL-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-2-SEATER-SOFA",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HEADREST-BASIL-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BALI-METAL-TAUPE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
     },
     {
       "sku": "TENERIFE-CORNER-SET",
@@ -244,7 +316,7 @@
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "ARTHUR-CORNER-5S",
+      "sku": "BARCELONA-LOUNGE-SET",
       "stockOnHand": 0,
       "committed": 0,
       "available": 0,
@@ -253,7 +325,7 @@
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "ROSE-4S-SOFA-SET",
+      "sku": "ARTHUR-CORNER-5S",
       "stockOnHand": 0,
       "committed": 0,
       "available": 0,
@@ -379,7 +451,7 @@
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "Marbella Cushion",
+      "sku": "TERRA-6S-CORNER",
       "stockOnHand": 0,
       "committed": 0,
       "available": 0,
@@ -388,7 +460,7 @@
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "TERRA-6S-CORNER",
+      "sku": "SOLA-SUNLOUNGER",
       "stockOnHand": 0,
       "committed": 0,
       "available": 0,
@@ -424,7 +496,133 @@
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "MARBELLA CUSHION BOX",
+      "sku": "VALENTE-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ALANNE-6S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "DELLA-PORTA-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "2-PERSON-DELIVERY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCKHOLM-CORNER-GREY-CSH-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "AUDREY-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-CUSHION-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHIONS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-CUSHIONS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-CUSHION-COVERS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHES-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHES-CUSH-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHES-CUSH-COVERS-BEIGE",
       "stockOnHand": 0,
       "committed": 0,
       "available": 0,
@@ -442,16 +640,2536 @@
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "KINGSTON-LOUNGE-SET",
+      "sku": "STOCK-CHAISE-CUSHIONS-BLACK",
       "stockOnHand": 0,
       "committed": 0,
-      "available": -1,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CNR-CUSHIONS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CNR-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CNR-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CNR-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MURCIA-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MURCIA-COVERS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MURCIA-CUSHIONS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MURCIA-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MURCIA-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MURCIA-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CAL-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CAL-COVERS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CAL-CUSHIONS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CAL-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CAL-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CAL-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PLAY-SOFA-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PLAY-SOFA-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PLAY-SOFA-BLUE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PLAY-SOFA-RED",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALIFORNIA-3S-SOFA-TABLE-TAUPE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HEADREST-BASIL-GREEN-1",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HEADREST-BASIL-GREEN-2",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FOLDING-ARMCHAIR-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FOLDING-ARMCHAIR-SAND",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LOUNGER-CUSHION-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LOUNGER-CUSHION-SAND",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MURCIA-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ROSE-4S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LINH-CORNER-6S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MIRA-CORNER-5S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-4S-CORNER",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-4S-SOFA",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ADELAIDE-5S-CORNER",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SORRENTO-7S-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WILLOW-CORNER-SEAT",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WILLOW-1S-SOFA",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WILLOW-TABLE-120CM",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARK-6S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
     },
     {
       "sku": "NUHA-SOFA-SET-4S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "COVE-CORNER-7S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WREN-5S-CNR-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MURCIA-5S-SET-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MIRA-CNR-5S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SLOANE-4S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SONNY-PLAY-SOFA-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SONNY-PLAY-SOFA-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SONNY-PLAY-SOFA-BLUE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SONNY-PLAY-SOFA-RED",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HEADREST-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HEADREST-SAND",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FOLDING-CUSHION-GREEN-X2",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FOLDING-CUSHION-SAND-X2",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARGE-CUSHION-BASIL-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARGE-CUSHION-SAND",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARGE-CUSHION-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SMALL-CUSHION-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SMALL-CUSHION-SAND",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SMALL-CUSHION-DARK-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SMALL-CUSHION-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "POD-2S-SET-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LINDEN-5S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "NEW-ENG-CHAIR-ORANGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-4S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HARBOUR-6S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BAYSWATER-5S-CNR-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-3S-CURVE-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-140CM-8S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-140CM-8S-SAND",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-140CM-8S-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-140CM-8S-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-110CM-4S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-110CM-4S-SAND",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-110CM-4S-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-110CM-4S-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-70CM-2S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-70CM-2S-SAND",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-70CM-2S-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-70CM-2S-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-120CM-4S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-120CM-4S-SAND",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-120CM-4S-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SICILY-120CM-4S-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "OXFORD-5S-CNR-BEIGE",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SORRENTO-7S-CNR-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HAVANA-5S-CNR-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WILLOW-CNR-CHAIR",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARK-4S-SET-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FOLDING-CUSHION-BLACK-X2",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FOLDING-CUSHION-BEIGE-X2",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-7S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-TERRACE-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-2S-CHAISE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-3S-CHAISE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ADELAIDE-5S-CNR-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ADELAIDE-5S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HADLEY-5S-SOFA-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WINSLOW-120CM-4S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WINSLOW-140CM-6S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "DARCY-4S-SET-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WREN-5S-CNR-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-7S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-4S-SOFA-SET-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-3S-CURVE-SET-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-TERRACE-SET-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-8S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-2S-CHAISE-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CALI-3S-CHAISE-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ADELAIDE-5S-CNR-SET-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "ADELAIDE-5S-SOFA-SET-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HADLEY-5S-SOFA-SET-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-CHAIR-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-C-TABLE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HARBOUR-9S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HARBOUR-5S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HARBOUR-3S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HARBOUR-1S-CHAIR",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HARBOUR-60CM-TABLE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HARBOUR-80CM-TABLE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "NEW-ENG-CHAIR-GREEN",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "NEW-ENG-CHAIR-BLUE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MELBOURNE-8S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARK-5S-SET-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARK-140CM-TABLE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARK-OTTOMAN-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARK-1S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "LARK-2S-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-CUSHION-COVERS",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-CUSHION-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHION-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHION-COVERS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-BEIGE-CSH-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-CUSHIONS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHES-CUSHIONS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-CUSHION-COVERS-BLACK",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHES-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "CHES-CUSH-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CNR-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "MARBELLA-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-BLACK-CSH-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BARCELONA-COVERS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-CUSHIONS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CNR-COVERS-BEIGE",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-GREY-CSH-SET",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-BEIGE-CUSHION-COVERS",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHION-COVERS-GREY",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-BLACK-CUSHION-COVERS",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "SANTORINI-GREY-CUSHION-COVERS",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "PALMA-CUSHIONS-GREY",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE120-TBL-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE120-TBL-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE120-TBB-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE120-TBT-D",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE150-TBL-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE150-LSB-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE150-CSB-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE150-TBT-D",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE200-TBT-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE200-TBL-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "BRIDGE200-SBR-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-TB-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-TB-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-TB-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-TB-D",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-OT-E",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-OT-F",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-OT-G",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-OT-H",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-OT-I",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-OT-J",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-OT-K",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-OT-L",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-3S-M",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-3S-N",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-3S-0",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-3S-S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-3S-T",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-3S-U",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-2S-P",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-2S-Q",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-2S-R",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-2S-S",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-2S-T",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-FARO-FIXINGS",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HAV-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HAV-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-2S-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-3S-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-3S-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-2S-D",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-3S-E",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-3S-F",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-2S-G",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-TB-H",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-TB-I",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-TB-J",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-TB-K",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-3S-L2",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-2S-L",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-3S-M2",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MALA-2S-M",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-SANG-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-SANG-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-SANG-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-SANG-D",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-SANG-E",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-SANG-F",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-SANG-G",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-SANG-H",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-A1",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-A2",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-D",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-E",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-F",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-G",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-H",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-I",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-K",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-L",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-M",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHASIE-N",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-O",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-CHAISE-P",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-TBT-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-TBL-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-TBSF-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-AMP-D",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-BP-E",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-SB-F",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-CBP-G",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-AMP-H",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-BKP-I",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-SB-K",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-SC-M",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-BCN-N",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-BLK-SDC-O",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-TBT-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-TBL-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-TBSF-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-AMP-D",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-BP-E",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-SB-F",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-CBP-G",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-AMP-H",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-BKP-I",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-SB-K",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-SC-M",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-BCN-N",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCK-GRY-SDC-O",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-1S-A",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-3S-A3",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-1S-B",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-3S-B3",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-1S-C",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-1S-D",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-3S-E",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-3S-F",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-ST-G",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-TB-H",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-ST-J",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-ST-K",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-ST-L",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-TB-M",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-1S-N",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "HW-MARB-1S-O",
+      "stockOnHand": 0,
+      "committed": 0,
+      "available": 0,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "STOCKHOLM-LOUNGE-SET",
+      "stockOnHand": 0,
+      "committed": 10,
+      "available": 0,
+      "runRate": 0.14285714285714285,
+      "daysOfStock": 0,
+      "lowStockWarning": "<30 Days"
+    },
+    {
+      "sku": "PALMA-CUSHION-BOX",
+      "stockOnHand": 0,
+      "committed": 3,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "FARO-LOUNGE-SET-BEIGE",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WILLOW-2S-NEUTRAL",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "WILLOW-CNR-CHAIR-NEUTRAL",
+      "stockOnHand": 0,
+      "committed": 1,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KIKI-ORGANIC-CHAISE",
+      "stockOnHand": 0,
+      "committed": 2,
+      "available": -1,
+      "runRate": 0,
+      "daysOfStock": 9999,
+      "lowStockWarning": "60+ Days"
+    },
+    {
+      "sku": "KINGSTON-LOUNGE-SET",
       "stockOnHand": 0,
       "committed": 0,
       "available": -1,
@@ -469,16 +3187,7 @@
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "BARCELONA-CUSHIONS-GREY",
-      "stockOnHand": 0,
-      "committed": 1,
-      "available": -1,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "CHES-CUSHIONS-BLACK",
+      "sku": "SANTORINI-CUSHION-COVERS",
       "stockOnHand": 0,
       "committed": 0,
       "available": -1,
@@ -487,61 +3196,16 @@
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "STOCK-CHAISE-COVERS-GREY",
+      "sku": "DARCY-4S-SET-BEIGE",
       "stockOnHand": 0,
-      "committed": 1,
+      "committed": 0,
       "available": -1,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "BARCELONA-CUSHIONS-BLACK",
-      "stockOnHand": 0,
-      "committed": 1,
-      "available": -1,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "BARCELONA-COVERS-GREY",
-      "stockOnHand": 0,
-      "committed": 1,
-      "available": -1,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "PALMA-CUSHION-COVERS-BEIGE",
-      "stockOnHand": 0,
-      "committed": 1,
-      "available": -1,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "STOCK-CHAISE-COVERS-BLACK",
-      "stockOnHand": 0,
-      "committed": 1,
-      "available": -1,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "PALMA-CUSHION-COVERS-BLACK",
-      "stockOnHand": 0,
-      "committed": 1,
-      "available": -1,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "CHES-CUSH-COVERS-GREY",
+      "sku": "WILLOW-1S-SOFA-NEUTRAL",
       "stockOnHand": 0,
       "committed": 2,
       "available": -2,
@@ -550,163 +3214,19 @@
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "PALMA-CUSHIONS-BEIGE",
+      "sku": "COLLECTION-FEE",
       "stockOnHand": 0,
-      "committed": 1,
-      "available": -2,
+      "committed": 0,
+      "available": -4,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
     },
     {
-      "sku": "CHES-CUSHIONS-GREY",
+      "sku": "COVE-CNR-7S-BEIGE",
       "stockOnHand": 0,
-      "committed": 2,
-      "available": -2,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "MARBELLA-CUSHION-COVERS-BLACK",
-      "stockOnHand": 0,
-      "committed": 2,
-      "available": -2,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "STOCK-CNR-CUSHIONS-BEIGE",
-      "stockOnHand": 0,
-      "committed": 2,
-      "available": -2,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "BARCELONA-CUSHIONS-BEIGE",
-      "stockOnHand": 0,
-      "committed": 2,
-      "available": -2,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "MARBELLA-CUSHIONS-GREY",
-      "stockOnHand": 0,
-      "committed": 3,
-      "available": -3,
-      "runRate": 0.14285714285714285,
-      "daysOfStock": -21,
-      "lowStockWarning": "<30 Days"
-    },
-    {
-      "sku": "BARCELONA-COVERS-BEIGE",
-      "stockOnHand": 0,
-      "committed": 3,
-      "available": -3,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "STOCK-CHAISE-CUSHIONS-BEIGE",
-      "stockOnHand": 0,
-      "committed": 3,
-      "available": -3,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "SANTORINI-BLACK-CSH-SET",
-      "stockOnHand": 0,
-      "committed": 2,
-      "available": -3,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "SANTORINI-GREY-CSH-SET",
-      "stockOnHand": 0,
-      "committed": 3,
-      "available": -5,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "SANTORINI-BEIGE-CUSHION-COVERS",
-      "stockOnHand": 0,
-      "committed": 4,
-      "available": -5,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "LINH-CORNER-6S",
-      "stockOnHand": 0,
-      "committed": 4,
+      "committed": 0,
       "available": -6,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "PALMA-CUSHION-COVERS-GREY",
-      "stockOnHand": 0,
-      "committed": 7,
-      "available": -7,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "SANTORINI-BLACK-CUSHION-COVERS",
-      "stockOnHand": 0,
-      "committed": 7,
-      "available": -8,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "STOCKHOLM-CHAISE-LOUNGE",
-      "stockOnHand": 0,
-      "committed": 24,
-      "available": -8,
-      "runRate": 0.14285714285714285,
-      "daysOfStock": -56,
-      "lowStockWarning": "<30 Days"
-    },
-    {
-      "sku": "SANTORINI-GREY-CUSHION-COVERS",
-      "stockOnHand": 0,
-      "committed": 10,
-      "available": -10,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "KIKI-ORGANIC-CHAISE",
-      "stockOnHand": 0,
-      "committed": 35,
-      "available": -13,
-      "runRate": 0.42857142857142855,
-      "daysOfStock": -30.333333333333336,
-      "lowStockWarning": "<30 Days"
-    },
-    {
-      "sku": "PALMA-CUSHIONS-GREY",
-      "stockOnHand": 0,
-      "committed": 12,
-      "available": -15,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"
@@ -714,17 +3234,8 @@
     {
       "sku": "ASSEMBLY-ADD-ON",
       "stockOnHand": 0,
-      "committed": 4,
-      "available": -22,
-      "runRate": 0,
-      "daysOfStock": 9999,
-      "lowStockWarning": "60+ Days"
-    },
-    {
-      "sku": "STOCKHOLM-CORNER-BLACK",
-      "stockOnHand": 0,
-      "committed": 14,
-      "available": -107,
+      "committed": 1,
+      "available": -29,
       "runRate": 0,
       "daysOfStock": 9999,
       "lowStockWarning": "60+ Days"

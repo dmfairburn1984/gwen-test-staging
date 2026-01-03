@@ -1,0 +1,178 @@
+[
+  {
+    "category_id": "seating",
+    "name": "Seating",
+    "skus": [
+      "ALANNE-6S",
+      "ALEX-5S-SOFA-SET",
+      "ARTHUR-CORNER-5S",
+      "BARCELONA-LOUNGE-SET",
+      "CALI-8S",
+      "CORA-CORNER-SET-5S",
+      "CORA-SOFA-SET-4S",
+      "DELLA-PORTA-SOFA-SET",
+      "FARO-LOUNGE-SET",
+      "GIGI-4S-SOFA-SET",
+      "ION-4S-SOFA-SET",
+      "KIKI-2-SEATER-SOFA",
+      "KIKI-ORGANIC-CHAISE",
+      "KINGSTON-LOUNGE-SET",
+      "LIMA-CORNER-LOUNGE",
+      "LIMA-LOUNGE-SET",
+      "LINH-CORNER-6S",
+      "MALAGA-LOUNGE-SET",
+      "MALAI-LOUNGE-SET-TEAK",
+      "MARBELLA FIVE SEATER CORNER",
+      "MARKEY-4S-SOFA-SET",
+      "NUHA-SOFA-SET-4S",
+      "OLIVIA-SICILY-8S-DINING",
+      "PLAY-SOFA",
+      "REVA-5S-CORNER",
+      "REVA-5S-SOFA-SET",
+      "ROSE-4S-SOFA-SET",
+      "ROSE-CORNER-SOFA",
+      "ROSE-LOVESEAT",
+      "SANTORINI-GREY",
+      "SOLA-SOFA-SET",
+      "SOLA-SUNLOUNGER",
+      "STOCKHOLM-CHAISE-LOUNGE",
+      "STOCKHOLM-CORNER-BLACK",
+      "STOCKHOLM-LOUNGE-SET",
+      "TENERIFE-CORNER-SET",
+      "TERRA-6S-CORNER",
+      "TOMMY-4S-SET",
+      "VALENTE-SOFA-SET",
+      "WALLU-CORNER-5S"
+    ]
+  },
+  {
+    "category_id": "tables",
+    "name": "Tables",
+    "skus": [
+      "BRIDGETOWN-120-4S",
+      "BRIDGETOWN-150-6S",
+      "BRIDGETOWN-200-6S",
+      "BRIDGETOWN-70-2S",
+      "HAVANA-8S",
+      "OLIVIA-SICILY-8S-DINING",
+      "ROSE-DINING-6S",
+      "SIMON-6S-DINING",
+      "SOLA-6S-DINING"
+    ]
+  },
+  {
+    "category_id": "casual_dining",
+    "name": "Casual Dining",
+    "skus": [
+      "BARCELONA-LOUNGE-SET",
+      "CALI-8S",
+      "DELLA-PORTA-SOFA-SET",
+      "FARO-LOUNGE-SET",
+      "LIMA-CORNER-LOUNGE",
+      "STOCKHOLM-CORNER-BLACK",
+      "STOCKHOLM-LOUNGE-SET",
+      "VALENTE-SOFA-SET"
+    ]
+  },
+  {
+    "category_id": "cushions_replacement",
+    "name": "Cushions & Replacement Cushions",
+    "skus": [
+      "BARCELONA-COVERS-BEIGE",
+      "BARCELONA-COVERS-BLACK",
+      "BARCELONA-COVERS-GREY",
+      "BARCELONA-CUSHIONS-BEIGE",
+      "BARCELONA-CUSHIONS-BLACK",
+      "BARCELONA-CUSHIONS-GREY",
+      "CAL-COVERS-BEIGE",
+      "CAL-COVERS-BLACK",
+      "CAL-COVERS-GREY",
+      "CAL-CUSHIONS-BEIGE",
+      "CAL-CUSHIONS-BLACK",
+      "CAL-CUSHIONS-GREY",
+      "CHES-CUSH-COVERS-BEIGE",
+      "CHES-CUSH-COVERS-BLACK",
+      "CHES-CUSH-COVERS-GREY",
+      "CHES-CUSHIONS-BEIGE",
+      "CHES-CUSHIONS-BLACK",
+      "CHES-CUSHIONS-GREY",
+      "MARBELLA-CUSHION-COVERS-BEIGE",
+      "MARBELLA-CUSHION-COVERS-BLACK",
+      "MARBELLA-CUSHION-COVERS-GREY",
+      "MARBELLA-CUSHIONS-BEIGE",
+      "MARBELLA-CUSHIONS-BLACK",
+      "MARBELLA-CUSHIONS-GREY",
+      "MURCIA-COVERS-BEIGE",
+      "MURCIA-COVERS-BLACK",
+      "MURCIA-COVERS-GREY",
+      "MURCIA-CUSHIONS-BEIGE",
+      "MURCIA-CUSHIONS-BLACK",
+      "MURCIA-CUSHIONS-GREY",
+      "PALMA-CUSHION-COVERS-BEIGE",
+      "PALMA-CUSHION-COVERS-BLACK",
+      "PALMA-CUSHION-COVERS-GREY",
+      "PALMA-CUSHIONS-BEIGE",
+      "PALMA-CUSHIONS-BLACK",
+      "PALMA-CUSHIONS-GREY",
+      "STOCK-CHAISE-COVERS-BEIGE",
+      "STOCK-CHAISE-COVERS-BLACK",
+      "STOCK-CHAISE-COVERS-GREY",
+      "STOCK-CHAISE-CUSHIONS-BEIGE",
+      "STOCK-CHAISE-CUSHIONS-BLACK",
+      "STOCK-CHAISE-CUSHIONS-GREY",
+      "STOCK-CNR-COVERS-BEIGE",
+      "STOCK-CNR-COVERS-BLACK",
+      "STOCK-CNR-COVERS-GREY",
+      "STOCK-CNR-CUSHIONS-BEIGE",
+      "STOCK-CNR-CUSHIONS-BLACK",
+      "STOCK-CNR-CUSHIONS-GREY"
+    ]
+  },
+  {
+    "category_id": "furniture_protection_covers",
+    "name": "Furniture Protection Covers",
+    "skus": [
+      "CHESTERTON-COVER",
+      "MARBELLA-COVER",
+      "PALMA-COVER",
+      "SANTORINI-COVER",
+      "STOCKHOLM-CHAISE-COVER",
+      "STOCKHOLM-CORNER-COVER"
+    ]
+  },
+  {
+    "category_id": "storage",
+    "name": "Cushion Box Storage",
+    "skus": [
+      "Marbella Cushion Box",
+      "PALMA-CUSHION-BOX"
+    ]
+  },
+  {
+    "category_id": "dining",
+    "name": "Dining",
+    "skus": [
+      "ALANNE-6S",
+      "ARTHUR-CORNER-5S",
+      "BRIDGETOWN-120-4S",
+      "BRIDGETOWN-150-6S",
+      "BRIDGETOWN-200-6S",
+      "BRIDGETOWN-70-2S",
+      "HAVANA-8S",
+      "OLIVIA-SICILY-8S-DINING",
+      "ROSE-DINING-6S",
+      "SIMON-6S-DINING"
+    ]
+  },
+  {
+    "category_id": "accessories",
+    "name": "Accessories",
+    "skus": [
+      "BALI-METAL-GREY",
+      "BALI-METAL-TAUPE",
+      "BALI-WOOD-PARASOL-GREEN",
+      "BALI-WOOD-PARASOL-GREY",
+      "SOLA-SUNLOUNGER"
+    ]
+  }
+]

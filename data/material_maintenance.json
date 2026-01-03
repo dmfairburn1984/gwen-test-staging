@@ -1,0 +1,69 @@
+{
+  "teak": {
+    "why": "Teak has natural oils that protect against rot and decay; UV and rain strip these oils over time.",
+    "cleaning": [
+      "1. Remove loose debris with a soft brush.",
+      "2. Wash with mild soap and water; scrub gently.",
+      "3. Rinse thoroughly and let dry for 24 hours."
+    ],
+    "protection": [
+      "1. Lightly sand with fine-grit sandpaper.",
+      "2. Apply teak oil evenly along the grain.",
+      "3. Wipe off excess oil after 30 minutes."
+    ],
+    "storage": "Cover during harsh weather; can remain outside all year round under cover.",
+    "weathering": "Untreated teak weathers to a silver grey patina over 6 months outdoors and uncovered."
+  },
+  "rattan": {
+    "why": "Poly rattan's UV absorbers prevent brittleness, but fading and wear can still occur.",
+    "cleaning": [
+      "1. Wipe with a damp cloth and mild detergent.",
+      "2. Rinse with clean water and dry thoroughly."
+    ],
+    "protection": [
+      "1. Keep in shaded areas when possible.",
+      "2. Use furniture covers during prolonged sun exposure."
+    ],
+    "storage": "Store indoors or under cover during winter months.",
+    "maintenance": [
+      "1. Inspect weaving for loose strands monthly.",
+      "2. Tighten or repair weaving promptly to prevent further damage."
+    ]
+  },
+  "aluminium": {
+    "why": "Powder coating resists corrosion, but dirt and salt can degrade finish over time.",
+    "cleaning": [
+      "1. Clean with mild soap and water.",
+      "2. Dry thoroughly to prevent water spots."
+    ],
+    "protection": "Powder-coated finish provides excellent weather resistance; no extra sealant needed.",
+    "storage": "Can stay outside all year round; move to reduce exposure in extreme storms.",
+    "maintenance": [
+      "1. Inspect joints and bolts seasonally.",
+      "2. Lubricate moving parts and touch up scratches with matching paint."
+    ]
+  },
+  "olefin": {
+    "why": "Olefin's quick dry fibers resist mildew, but storing wet cushions reduces lifespan.",
+    "cleaning": [
+      "1. Machine wash on gentle cycle.",
+      "2. Air dry away from direct sun."
+    ],
+    "protection": "Solution dyed fibers resist UV fading and repel water.",
+    "storage": "Store cushions indoors during winter or extended rain.",
+    "stain_removal": "Treat stains promptly with mild detergent; rinse and air dry."
+  },
+  "polyester": {
+    "why": "UV treated polyester resists fading, but mildew can form if left damp.",
+    "cleaning": [
+      "1. Spot clean spills immediately with mild detergent.",
+      "2. Rinse thoroughly and air dry."
+    ],
+    "protection": "Water coating adds extra protection against moisture but most polyesters don't have this.",
+    "storage": "Keep in dry location when not in use for long periods.",
+    "maintenance": [
+      "1. Brush fabric regularly to remove dirt.",
+      "2. Allow cushions to dry fully after rain."
+    ]
+  }
+}

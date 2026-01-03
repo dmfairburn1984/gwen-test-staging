@@ -1,0 +1,100 @@
+[
+  {
+    "module_id": "synthetics_poly_rattan",
+    "name": "Poly Rattan (PE Wicker)",
+    "category": "synthetic",
+    "level": "Mid Range",
+    "description": "High-quality polyethylene-based wicker that mimics natural rattan but offers superior durability and recyclability.",
+    "properties": {
+      "material": "Virgin High-Density Polyethylene (HDPE)",
+      "uv_absorber": true,
+      "recyclable": true,
+      "weight": "light to medium",
+      "flexibility": "high"
+    },
+    "uv_protection": {
+      "rating": 4,
+      "test_hours": 2000,
+      "structural_protection": "Maintains integrity under UV exposure when covered for at least 3 years"
+    },
+    "pros_cons": {
+      "pros": [
+        "100% recyclable PE",
+        "Built-in UV absorbers prevent brittleness",
+        "Tested to UV 2000h for long-term colour & strength equating to at least 3 years of UV protection in the UK",
+        "Replacement parts available free for 1 year and after that are available at a modest cost"
+      ],
+      "cons": [
+        "Can snap if frozen and thawed repeatedly",
+        "Salt spray can accelerate degradation without proper UV additives"
+      ]
+    },
+    "maintenance": {
+      "instructions": [
+        "Cover during harsh weather to extend life",
+        "Avoid dragging on frozen surfaces",
+        "Rinse away salt deposits with fresh water"
+      ],
+      "replacement_policy": "Free parts for 1 year; affordable thereafter"
+    },
+    "environmental_factors": {
+      "freeze_thaw": "Repeated freeze-thaw cycles can cause micro-cracks",
+      "coastal_salt": "Salt accelerates surface degradation; high-grade UV absorber mitigates this"
+    },
+    "warranty": {
+      "period_years": 2,
+      "coverage": "Structural integrity and colour retention under normal use"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Polyethylene",
+      "https://www.syntheticwickerinfo.com"
+    ]
+  },
+  {
+    "module_id": "synthetics_poly_wood_plank",
+    "name": "Polystyrene Imitation Wood Plank",
+    "category": "synthetic",
+    "level": "Mid Range",
+    "description": "Extruded polystyrene tabletop with realistic wood-grain finish, typically in grey or black.",
+    "properties": {
+      "material": "Extruded Polystyrene",
+      "finish": "Wood-grain texture",
+      "color_options": [
+        "grey",
+        "black"
+      ],
+      "weight": "medium",
+      "recyclable": true
+    },
+    "pros_cons": {
+      "pros": [
+        "Realistic wood look without rot or splintering",
+        "Lightweight and easy to move",
+        "Resistant to moisture and insects"
+      ],
+      "cons": [
+        "Can melt under concentrated sunlight when magnified by glass",
+        "Surface can scratch under sharp objects"
+      ]
+    },
+    "risks": {
+      "glass_magnification": "Glass items can focus sunlight to high heat points, causing localized melting.",
+      "freeze_thaw": "Less prone to cracking than natural materials, but extreme cycles can cause minor warping."
+    },
+    "maintenance": {
+      "instructions": [
+        "Avoid leaving glass objects under direct sun for long periods",
+        "Clean with mild soap and water",
+        "Inspect for scratches and address promptly"
+      ]
+    },
+    "warranty": {
+      "period_years": 2,
+      "coverage": "Structural integrity under normal use"
+    },
+    "reference_links": [
+      "https://en.wikipedia.org/wiki/Polystyrene",
+      "https://www.materialsinfo.org/eps-tabletops"
+    ]
+  }
+]
