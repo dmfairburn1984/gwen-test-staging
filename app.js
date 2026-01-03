@@ -124,6 +124,19 @@ const inventoryData = Array.isArray(rawInventoryData) ? rawInventoryData : (rawI
 const bundleSuggestions = loadDataFile('bundle_suggestions.json', []);
 const bundleItems = loadDataFile('bundle_items.json', []);
 
+console.log(`📦 Inventory data type: ${typeof rawInventoryData}`);
+console.log(`📦 Inventory is array after processing: ${Array.isArray(inventoryData)}`);
+console.log(`📦 Inventory length: ${inventoryData.length}`);
+
+// Check FARO specifically
+const faroInventory = inventoryData.find(i => i.sku === 'FARO-LOUNGE-SET');
+if (faroInventory) {
+    console.log(`✅ FARO-LOUNGE-SET in inventory: available=${faroInventory.available}`);
+} else {
+    console.log(`❌ FARO-LOUNGE-SET NOT in inventory array`);
+    console.log(`   First 3 inventory SKUs: ${inventoryData.slice(0, 3).map(i => i.sku).join(', ')}`);
+}
+
 // Build product index
 const productIndex = { bySku: {} };
 productKnowledgeCenter.forEach(product => {
@@ -160,20 +173,35 @@ console.log(`📦 Rattan products: ${rattanCount}`);
 // ============================================
 
 function getProductStock(sku) {
-    // Check inventory data first
+    let stockFromInventory = 0;
+    let stockFromPKC = 0;
+    
+    // Check inventory data
     const invRecord = inventoryData.find(i => i.sku === sku);
     if (invRecord) {
-        return parseInt(invRecord.available) || 0;
+        stockFromInventory = parseInt(invRecord.available) || 0;
     }
     
     // Check product knowledge center
     const product = productIndex.bySku[sku];
     if (product?.logistics_and_inventory?.inventory?.available) {
-        return parseInt(product.logistics_and_inventory.inventory.available) || 0;
+        stockFromPKC = parseInt(product.logistics_and_inventory.inventory.available) || 0;
     }
     
-    // Default to assuming in stock if no data
-    return 100;
+    // Use the higher value (in case one source is outdated)
+    const finalStock = Math.max(stockFromInventory, stockFromPKC);
+    
+    // Debug logging for troubleshooting
+    if (sku === 'FARO-LOUNGE-SET' || finalStock === 0) {
+        console.log(`📊 getProductStock(${sku}): inventory=${stockFromInventory}, PKC=${stockFromPKC}, using=${finalStock}`);
+    }
+    
+    // If no data at all, default to in stock (100)
+    if (stockFromInventory === 0 && stockFromPKC === 0 && !invRecord && !product?.logistics_and_inventory?.inventory) {
+        return 100;
+    }
+    
+    return finalStock;
 }
 
 function isInStock(sku) {
@@ -965,6 +993,20 @@ app.get('/debug-products', (req, res) => {
     });
 });
 
+// Debug endpoint to check inventory data specifically
+app.get('/debug-inventory', (req, res) => {
+    // Check if FARO-LOUNGE-SET is in inventory data
+    const faroInInventory = inventoryData.find(i => i.sku === 'FARO-LOUNGE-SET');
+    
+    res.json({
+        inventory_is_array: Array.isArray(inventoryData),
+        inventory_length: inventoryData.length,
+        sample_records: inventoryData.slice(0, 5),
+        faro_in_inventory: faroInInventory || 'NOT FOUND',
+        faro_stock_from_function: getProductStock('FARO-LOUNGE-SET')
+    });
+});
+
 app.get('/debug-session/:sessionId', (req, res) => {
     const session = sessions.get(req.params.sessionId);
     if (!session) return res.json({ error: 'Session not found' });
@@ -995,7 +1037,6 @@ app.get('/debug-product/:sku', (req, res) => {
     const product = productIndex.bySku[sku];
     
     if (!product) {
-        // Try to find by partial match
         const allSkus = Object.keys(productIndex.bySku);
         const matches = allSkus.filter(s => s.toLowerCase().includes(sku.toLowerCase()));
         return res.json({
@@ -1004,6 +1045,12 @@ app.get('/debug-product/:sku', (req, res) => {
             total_products: allSkus.length
         });
     }
+    
+    // Check inventory data directly
+    const invRecord = inventoryData.find(i => i.sku === sku);
+    
+    // Check PKC data
+    const pkcStock = product?.logistics_and_inventory?.inventory?.available;
     
     const stock = getProductStock(sku);
     
@@ -1015,7 +1062,12 @@ app.get('/debug-product/:sku', (req, res) => {
         taxonomy_type: product.description_and_category?.taxonomy_type,
         seats: product.specifications?.seats,
         seats_type: typeof product.specifications?.seats,
-        stock: stock,
+        stock_sources: {
+            inventory_data: invRecord ? invRecord.available : 'NOT FOUND',
+            pkc_data: pkcStock || 'NOT FOUND',
+            function_result: stock
+        },
+        inventory_record: invRecord || 'NOT FOUND',
         would_pass_filters: {
             has_sku: !!product.product_identity?.sku,
             has_category: !!product.description_and_category?.primary_category,
