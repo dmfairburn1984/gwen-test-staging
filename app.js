@@ -1,12 +1,14 @@
-// GWEN SALES AGENT - PHASE 1 IMPLEMENTATION
-// Version: 13.1 - SERVER-SIDE RENDERING (CORRECT IMPLEMENTATION)
-// Following approved specification v3.0/v4.0 exactly
-//
+// GWEN SALES AGENT - PHASE 1 CORRECT IMPLEMENTATION
+// Version: 14.0
+// 
 // ARCHITECTURE:
-// Customer Message → AI outputs JSON (SKUs only) → Server validates → Server renders → Customer
+// 1. AI handles CONVERSATION (greetings, questions, qualifying, objections)
+// 2. AI outputs SKUs only for product recommendations
+// 3. SERVER renders product cards from verified data
+// 4. Out-of-stock products filtered BEFORE AI sees them
 //
-// THE AI NEVER WRITES PRODUCT NAMES, PRICES, OR FEATURES
-// THE SERVER RENDERS ALL PRODUCT INFORMATION FROM VERIFIED DATA
+// THE AI CAN WRITE CONVERSATIONAL TEXT
+// THE AI CANNOT WRITE PRODUCT NAMES, PRICES, OR FEATURES
 
 require('dotenv').config();
 const express = require('express');
@@ -52,17 +54,15 @@ const SHOPIFY_ACCESS_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN;
 // ============================================
 
 const SHOPIFY_CACHE = new Map();
-const CACHE_TTL_MS = 5 * 60 * 1000; // 5 minutes
+const CACHE_TTL_MS = 5 * 60 * 1000;
 
 async function getCachedShopifyData(sku) {
     const cached = SHOPIFY_CACHE.get(sku);
     if (cached && (Date.now() - cached.timestamp) < CACHE_TTL_MS) {
-        console.log(`📦 Cache HIT for ${sku}`);
         return cached.data;
     }
     
     if (!SHOPIFY_ACCESS_TOKEN) {
-        console.log(`⚠️ No Shopify token - using local data for ${sku}`);
         return null;
     }
     
@@ -77,18 +77,12 @@ async function getCachedShopifyData(sku) {
             }
         );
         
-        if (!response.ok) {
-            console.log(`⚠️ Shopify returned ${response.status} for ${sku}`);
-            return null;
-        }
+        if (!response.ok) return null;
         
         const data = await response.json();
         const product = data.products?.[0];
         
-        if (!product) {
-            console.log(`⚠️ No Shopify product found for ${sku}`);
-            return null;
-        }
+        if (!product) return null;
         
         const result = {
             price: parseFloat(product.variants[0]?.price) || 0,
@@ -99,12 +93,10 @@ async function getCachedShopifyData(sku) {
         };
         
         SHOPIFY_CACHE.set(sku, { data: result, timestamp: Date.now() });
-        console.log(`📦 Cache MISS - fetched ${sku}: £${result.price}, stock: ${result.stock}`);
-        
         return result;
         
     } catch (error) {
-        console.error(`❌ Shopify fetch error for ${sku}:`, error.message);
+        console.error(`Shopify error for ${sku}:`, error.message);
         return null;
     }
 }
@@ -128,9 +120,9 @@ function loadDataFile(filename, defaultValue = []) {
 
 const productKnowledgeCenter = loadDataFile('product_knowledge_center.json', []);
 const rawInventoryData = loadDataFile('Inventory_Data.json', { inventory: [] });
-// Handle both array format and object format { inventory: [...] }
 const inventoryData = Array.isArray(rawInventoryData) ? rawInventoryData : (rawInventoryData.inventory || []);
 const bundleSuggestions = loadDataFile('bundle_suggestions.json', []);
+const bundleItems = loadDataFile('bundle_items.json', []);
 
 // Build product index
 const productIndex = { bySku: {} };
@@ -142,301 +134,35 @@ productKnowledgeCenter.forEach(product => {
 });
 
 console.log(`📦 Indexed ${Object.keys(productIndex.bySku).length} products`);
+console.log(`📦 Inventory records: ${inventoryData.length}`);
 
 // ============================================
-// AI OUTPUT SCHEMA (JSON ONLY - NO PROSE)
+// STOCK CHECKING - Filter BEFORE AI sees products
 // ============================================
 
-const AI_JSON_SCHEMA = {
-    type: "object",
-    properties: {
-        intent: {
-            type: "string",
-            enum: ["greeting", "clarification", "product_recommendation", "question_answer", "handoff", "farewell"],
-            description: "Type of response"
-        },
-        intro_copy: {
-            type: "string",
-            description: "Opening conversational line (max 150 chars)"
-        },
-        selected_skus: {
-            type: "array",
-            items: { type: "string" },
-            description: "Array of product SKU codes to display - ONLY from search results"
-        },
-        personalisation: {
-            type: ["string", "null"],
-            description: "Personal hook like 'Perfect for summer BBQs'"
-        },
-        commercial_signals: {
-            type: "object",
-            properties: {
-                customer_sentiment: {
-                    type: "string",
-                    enum: ["positive", "neutral", "negative", "price_concerned"]
-                },
-                bundle_candidate: { type: "boolean" }
-            },
-            required: ["customer_sentiment", "bundle_candidate"]
-        },
-        closing_question: {
-            type: "string",
-            description: "Question to continue conversation"
-        },
-        clarification_question: {
-            type: ["string", "null"],
-            description: "For clarification intent - what to ask customer"
-        },
-        answer_text: {
-            type: ["string", "null"],
-            description: "For question_answer intent - the answer"
-        }
-    },
-    required: ["intent", "intro_copy", "commercial_signals", "closing_question"],
-    additionalProperties: false
-};
-
-// ============================================
-// AI SYSTEM PROMPT (JSON OUTPUT ONLY)
-// ============================================
-
-function buildSystemPrompt(sessionState, availableSkus) {
-    return `You are Gwen, a friendly sales assistant for MINT Outdoor furniture.
-
-CRITICAL: You output JSON only. You NEVER write product names, prices, or descriptions.
-
-YOUR ROLE:
-1. Understand what the customer wants
-2. Select products by SKU code ONLY from the available list
-3. Write friendly conversational copy
-4. Signal if customer might want bundles
-
-AVAILABLE PRODUCT SKUs (you can ONLY select from these):
-${availableSkus.length > 0 ? availableSkus.join(', ') : 'No products searched yet - ask what they need'}
-
-OUTPUT FORMAT - Return ONLY valid JSON:
-{
-    "intent": "product_recommendation",
-    "intro_copy": "Here are some great options for you:",
-    "selected_skus": ["SKU-1", "SKU-2"],
-    "personalisation": "Perfect for summer entertaining",
-    "commercial_signals": {
-        "customer_sentiment": "positive",
-        "bundle_candidate": true
-    },
-    "closing_question": "Which catches your eye?"
+function getProductStock(sku) {
+    // Check inventory data first
+    const invRecord = inventoryData.find(i => i.sku === sku);
+    if (invRecord) {
+        return parseInt(invRecord.available) || 0;
+    }
+    
+    // Check product knowledge center
+    const product = productIndex.bySku[sku];
+    if (product?.logistics_and_inventory?.inventory?.available) {
+        return parseInt(product.logistics_and_inventory.inventory.available) || 0;
+    }
+    
+    // Default to assuming in stock if no data
+    return 100;
 }
 
-INTENT TYPES:
-- "greeting": Customer just said hello - ask what they're looking for
-- "clarification": Need more info - set clarification_question
-- "product_recommendation": Showing products - set selected_skus
-- "question_answer": Answering warranty/delivery/material questions - set answer_text
-- "handoff": Customer needs human help
-- "farewell": Goodbye
-
-RULES:
-1. NEVER write product names - only use SKU codes in selected_skus
-2. NEVER write prices - server handles this
-3. NEVER write features - server handles this
-4. ONLY select SKUs from the AVAILABLE list above
-5. If no products available, use "clarification" intent and ask what they need
-6. Keep intro_copy warm and conversational (max 150 chars)
-
-SESSION STATE:
-${JSON.stringify(sessionState, null, 2)}`;
+function isInStock(sku) {
+    return getProductStock(sku) > 0;
 }
 
 // ============================================
-// SKU VALIDATION (PREVENTS HALLUCINATION)
-// ============================================
-
-function validateSkusAgainstWhitelist(selectedSkus, whitelist, sessionId) {
-    const approved = [];
-    const rejected = [];
-    
-    for (const sku of (selectedSkus || [])) {
-        if (whitelist.includes(sku)) {
-            approved.push(sku);
-        } else {
-            rejected.push(sku);
-            console.log(`🛡️ [${sessionId}] HALLUCINATION BLOCKED: "${sku}" not in whitelist`);
-        }
-    }
-    
-    if (rejected.length > 0) {
-        console.log(`🛡️ Whitelist: [${whitelist.join(', ')}]`);
-        console.log(`🛡️ Rejected: [${rejected.join(', ')}]`);
-    }
-    
-    return { approved, rejected };
-}
-
-// ============================================
-// SERVER-SIDE PRODUCT CARD RENDERING
-// ============================================
-
-async function renderProductCard(sku, options = {}) {
-    const { showBundleHint = false, personalisation = '' } = options;
-    
-    const productData = productIndex.bySku[sku];
-    if (!productData) {
-        console.log(`⚠️ No product data for SKU: ${sku}`);
-        return null;
-    }
-    
-    // Get live Shopify data
-    const shopifyData = await getCachedShopifyData(sku);
-    
-    // Get local inventory data as fallback
-    const localInventory = inventoryData.find(i => i.sku === sku);
-    
-    // Determine price
-    const price = shopifyData?.price || 
-                  parseFloat(productData.product_identity?.price_gbp) || 0;
-    
-    // Determine stock
-    const stock = shopifyData?.stock ?? 
-                  parseInt(localInventory?.available) ?? 
-                  parseInt(productData.logistics_and_inventory?.inventory?.available) ?? 0;
-    
-    // CRITICAL: Filter out of stock products
-    if (stock <= 0) {
-        console.log(`📦 FILTERING OUT ${sku} - out of stock`);
-        return null;
-    }
-    
-    const name = productData.product_identity?.product_name || 'Product';
-    const imageUrl = productData.product_identity?.image_url || '';
-    const productUrl = shopifyData?.url || `https://www.mint-outdoor.com/search?q=${sku}`;
-    
-    // Extract REAL features from materials (no hallucination possible)
-    const features = [];
-    if (productData.materials_and_care) {
-        productData.materials_and_care.forEach(mat => {
-            if (mat.warranty) {
-                features.push(`${mat.name}: ${mat.warranty}`);
-            }
-            if (mat.durability_rating) {
-                features.push(`Durability: ${mat.durability_rating}`);
-            }
-        });
-    }
-    
-    // Stock message
-    let stockMessage = '';
-    if (stock <= 5) {
-        stockMessage = `🚨 Only ${stock} left - selling fast!`;
-    } else if (stock <= 20) {
-        stockMessage = `⚠️ Low stock - ${stock} remaining`;
-    } else {
-        stockMessage = `✅ In stock`;
-    }
-    
-    // Build card
-    let card = `**${name}**\n`;
-    
-    if (imageUrl) {
-        card += `<img src="${imageUrl}" alt="${name}" style="max-width:100%; border-radius:8px; margin:8px 0;">\n\n`;
-    }
-    
-    if (personalisation) {
-        card += `✨ ${personalisation}\n\n`;
-    }
-    
-    if (features.length > 0) {
-        card += `💪 **Why customers love this:**\n`;
-        features.slice(0, 3).forEach(f => {
-            card += `• ${f}\n`;
-        });
-        card += '\n';
-    }
-    
-    card += `Price: £${price.toFixed(2)}\n`;
-    card += `Stock Status: ${stockMessage}\n`;
-    card += `SKU: ${sku}\n\n`;
-    card += `[View Product](${productUrl})\n`;
-    
-    if (showBundleHint && productData.related_products?.matching_cover_sku) {
-        card += `\n🎁 *Matching cover available with 20% bundle discount*\n`;
-    }
-    
-    return card;
-}
-
-async function renderAllProductCards(skus, sessionId, personalisation = '') {
-    const cards = [];
-    
-    for (let i = 0; i < skus.length; i++) {
-        const sku = skus[i];
-        const showBundleHint = (i === 0); // Only on first product
-        
-        const card = await renderProductCard(sku, { 
-            showBundleHint, 
-            personalisation: i === 0 ? personalisation : '' 
-        });
-        
-        if (card) {
-            cards.push(card);
-        }
-    }
-    
-    if (cards.length === 0) {
-        return null;
-    }
-    
-    return cards.join('\n---\n\n');
-}
-
-// ============================================
-// RESPONSE ASSEMBLER
-// ============================================
-
-async function assembleResponse(aiOutput, sessionId) {
-    const parts = [];
-    
-    // 1. Add intro copy from AI
-    if (aiOutput.intro_copy) {
-        parts.push(aiOutput.intro_copy);
-        parts.push('');
-    }
-    
-    // 2. Render product cards (server-side, not AI)
-    if (aiOutput.selected_skus && aiOutput.selected_skus.length > 0) {
-        const productCards = await renderAllProductCards(
-            aiOutput.selected_skus, 
-            sessionId,
-            aiOutput.personalisation || ''
-        );
-        
-        if (productCards) {
-            parts.push(productCards);
-        } else {
-            parts.push("I found some options but they're currently out of stock. Let me find alternatives for you.");
-        }
-    }
-    
-    // 3. Add clarification question if needed
-    if (aiOutput.intent === 'clarification' && aiOutput.clarification_question) {
-        parts.push(aiOutput.clarification_question);
-    }
-    
-    // 4. Add answer text if needed
-    if (aiOutput.intent === 'question_answer' && aiOutput.answer_text) {
-        parts.push(aiOutput.answer_text);
-    }
-    
-    // 5. Add closing question
-    if (aiOutput.closing_question && aiOutput.intent !== 'clarification') {
-        parts.push('');
-        parts.push(aiOutput.closing_question);
-    }
-    
-    return parts.join('\n');
-}
-
-// ============================================
-// PRODUCT SEARCH (Updates Whitelist)
+// PRODUCT SEARCH - Returns ONLY in-stock products
 // ============================================
 
 function searchProducts(criteria) {
@@ -457,9 +183,10 @@ function searchProducts(criteria) {
             const category = p.description_and_category?.primary_category?.toLowerCase() || '';
             const name = p.product_identity?.product_name?.toLowerCase() || '';
             
-            if (type === 'dining') return taxonomy.includes('dining') || name.includes('dining');
-            if (type === 'lounge') return taxonomy.includes('lounge') || name.includes('lounge') || name.includes('sofa');
+            if (type === 'dining') return taxonomy.includes('dining') || category.includes('dining') || name.includes('dining');
+            if (type === 'lounge') return taxonomy.includes('lounge') || category.includes('lounge') || name.includes('lounge') || name.includes('sofa');
             if (type === 'corner') return taxonomy.includes('corner') || name.includes('corner');
+            if (type === 'lounger') return taxonomy.includes('lounger') || name.includes('lounger') || name.includes('sun');
             return false;
         });
     }
@@ -469,7 +196,8 @@ function searchProducts(criteria) {
         const mat = material.toLowerCase();
         filtered = filtered.filter(p => {
             const materialType = p.description_and_category?.material_type?.toLowerCase() || '';
-            return materialType.includes(mat);
+            const name = p.product_identity?.product_name?.toLowerCase() || '';
+            return materialType.includes(mat) || name.includes(mat);
         });
     }
     
@@ -487,18 +215,238 @@ function searchProducts(criteria) {
         const search = productName.toLowerCase();
         filtered = filtered.filter(p => {
             const name = p.product_identity?.product_name?.toLowerCase() || '';
-            return name.includes(search);
+            const sku = p.product_identity?.sku?.toLowerCase() || '';
+            return name.includes(search) || sku.includes(search);
         });
     }
     
-    const results = filtered.slice(0, maxResults);
-    console.log(`🔍 Found ${results.length} products`);
+    // CRITICAL: Filter out-of-stock products BEFORE returning to AI
+    const inStockProducts = filtered.filter(p => {
+        const sku = p.product_identity.sku;
+        const stock = getProductStock(sku);
+        if (stock <= 0) {
+            console.log(`   ❌ Filtering out ${sku} - out of stock`);
+            return false;
+        }
+        return true;
+    });
+    
+    console.log(`🔍 Found ${filtered.length} products, ${inStockProducts.length} in stock`);
+    
+    const results = inStockProducts.slice(0, maxResults);
     
     return results.map(p => ({
         sku: p.product_identity.sku,
         name: p.product_identity.product_name,
-        category: p.description_and_category?.primary_category
+        category: p.description_and_category?.primary_category,
+        seats: p.specifications?.seats,
+        material: p.description_and_category?.material_type
     }));
+}
+
+// ============================================
+// SERVER-SIDE PRODUCT CARD RENDERING
+// ============================================
+
+async function renderProductCard(sku, options = {}) {
+    const { showBundleHint = false, personalisation = '' } = options;
+    
+    const productData = productIndex.bySku[sku];
+    if (!productData) {
+        console.log(`⚠️ No product data for SKU: ${sku}`);
+        return null;
+    }
+    
+    // Get live Shopify data
+    const shopifyData = await getCachedShopifyData(sku);
+    
+    // Determine price - prefer Shopify, fallback to local
+    const price = shopifyData?.price || 
+                  parseFloat(productData.product_identity?.price_gbp) || 0;
+    
+    // Determine stock
+    const stock = shopifyData?.stock ?? getProductStock(sku);
+    
+    // Double-check stock
+    if (stock <= 0) {
+        console.log(`⚠️ ${sku} out of stock at render time`);
+        return null;
+    }
+    
+    const name = productData.product_identity?.product_name || 'Product';
+    const imageUrl = productData.product_identity?.image_url || '';
+    const productUrl = shopifyData?.url || `https://www.mint-outdoor.com/search?q=${sku}`;
+    
+    // Extract REAL features from materials
+    const features = [];
+    const warranties = [];
+    
+    if (productData.materials_and_care) {
+        productData.materials_and_care.forEach(mat => {
+            if (mat.warranty) {
+                warranties.push(`${mat.name}: ${mat.warranty}`);
+            }
+            if (mat.pros) {
+                const firstPro = mat.pros.split(',')[0].trim();
+                if (firstPro && !features.includes(firstPro)) {
+                    features.push(firstPro);
+                }
+            }
+        });
+    }
+    
+    // Add specs
+    if (productData.specifications?.seats) {
+        features.unshift(`Seats ${productData.specifications.seats} people`);
+    }
+    
+    // Stock message
+    let stockMessage = '';
+    if (stock <= 5) {
+        stockMessage = `🚨 Only ${stock} left!`;
+    } else if (stock <= 20) {
+        stockMessage = `⚠️ Low stock - ${stock} remaining`;
+    } else {
+        stockMessage = `✅ In stock`;
+    }
+    
+    // Build card
+    let card = `\n**${name}**\n`;
+    
+    if (imageUrl) {
+        card += `<a href="${productUrl}" target="_blank"><img src="${imageUrl}" alt="${name}" style="max-width:100%; border-radius:8px; margin:8px 0; cursor:pointer;"></a>\n\n`;
+    }
+    
+    if (personalisation) {
+        card += `✨ *${personalisation}*\n\n`;
+    }
+    
+    if (features.length > 0) {
+        card += `**Why customers love this:**\n`;
+        features.slice(0, 3).forEach(f => {
+            card += `• ${f}\n`;
+        });
+    }
+    
+    if (warranties.length > 0) {
+        card += `\n**Warranty:** ${warranties[0]}\n`;
+    }
+    
+    card += `\n**Price:** £${price.toFixed(2)}\n`;
+    card += `**Stock:** ${stockMessage}\n\n`;
+    card += `<a href="${productUrl}" target="_blank" style="display:inline-block; padding:10px 20px; background:#2E6041; color:white; text-decoration:none; border-radius:5px;">View Product →</a>\n`;
+    
+    if (showBundleHint && productData.related_products?.matching_cover_sku) {
+        card += `\n🎁 *Matching cover available - ask about our 20% bundle discount!*\n`;
+    }
+    
+    return card;
+}
+
+async function renderMultipleProducts(skus, personalisation = '') {
+    const cards = [];
+    
+    for (let i = 0; i < skus.length; i++) {
+        const card = await renderProductCard(skus[i], {
+            showBundleHint: (i === 0),
+            personalisation: (i === 0) ? personalisation : ''
+        });
+        
+        if (card) {
+            cards.push(card);
+        }
+    }
+    
+    return cards;
+}
+
+// ============================================
+// AI SYSTEM PROMPT
+// ============================================
+
+function buildSystemPrompt(sessionState) {
+    return `You are Gwen, a warm and knowledgeable sales assistant for MINT Outdoor furniture.
+
+YOUR PERSONALITY:
+- Friendly, helpful, not pushy
+- Expert in outdoor furniture
+- Focus on understanding customer needs before showing products
+
+CONVERSATION FLOW:
+1. Greet warmly
+2. Ask qualifying questions (dining or lounge? how many people? material preference?)
+3. Show products only when you have enough information
+4. Handle questions about warranty, materials, delivery
+5. Offer bundles at the right moment
+6. Handle objections with empathy
+
+CRITICAL RULES FOR PRODUCTS:
+- You CANNOT write product names, prices, or features
+- When recommending products, output SKUs only in selected_skus array
+- The server will render the actual product cards with correct information
+- Only recommend SKUs from the AVAILABLE list provided
+
+OUTPUT FORMAT - Always respond with valid JSON:
+
+For greetings/conversation:
+{
+    "intent": "greeting",
+    "response_text": "Hello! Welcome to MINT Outdoor. I'd love to help you find the perfect furniture for your garden. Are you looking for somewhere to dine, lounge, or both?"
+}
+
+For qualifying questions:
+{
+    "intent": "clarification",
+    "response_text": "Great choice! To find the perfect set for you - roughly how many people do you need to seat? And do you have a material preference - we have beautiful teak, modern aluminium, and cosy rattan options."
+}
+
+For showing products (SERVER RENDERS THESE):
+{
+    "intent": "product_recommendation",
+    "intro_copy": "Based on what you've told me, here are some perfect options:",
+    "selected_skus": ["SKU-1", "SKU-2", "SKU-3"],
+    "personalisation": "Perfect for summer entertaining with family",
+    "closing_copy": "All of these would work beautifully in your space. Which style catches your eye?"
+}
+
+For answering questions:
+{
+    "intent": "question_answer",
+    "response_text": "Great question! Our aluminium frames come with a 10-year warranty against corrosion - they're virtually maintenance-free. Just wipe down occasionally with soapy water. Would you like to see our aluminium range?"
+}
+
+For bundle offers (after customer shows interest):
+{
+    "intent": "bundle_offer",
+    "response_text": "I noticed you're looking at one of our most popular sets! Most customers protect their investment with a matching cover. We offer 20% off when you buy the set and cover together - would you like me to show you the bundle pricing?"
+}
+
+For handling objections:
+{
+    "intent": "objection_handling",
+    "response_text": "I completely understand - it's an investment. What I can tell you is that our customers typically keep these sets for 10-15 years, which works out to less than £50 a year. And the warranty gives you peace of mind. Would it help if I arranged for our manager to discuss options with you?"
+}
+
+INTENT TYPES:
+- greeting: First message or returning greeting
+- clarification: Need more info before showing products
+- product_recommendation: Ready to show products (use selected_skus)
+- question_answer: Answering specific questions
+- bundle_offer: Offering bundle deal
+- objection_handling: Addressing concerns
+- handoff: Customer needs human help
+
+SESSION STATE:
+${JSON.stringify(sessionState, null, 2)}
+
+AVAILABLE PRODUCT SKUs (only use these for selected_skus):
+${sessionState.availableSkus?.length > 0 ? sessionState.availableSkus.join(', ') : 'No search performed yet - ask qualifying questions first'}
+
+REMEMBER:
+- Be conversational and warm
+- Ask questions before showing products
+- NEVER write product names or prices - use SKUs only
+- If no products available, suggest alternatives or ask different questions`;
 }
 
 // ============================================
@@ -510,7 +458,7 @@ const aiTools = [
         type: "function",
         function: {
             name: "search_products",
-            description: "Search for products by criteria. Returns SKU codes only.",
+            description: "Search for products. Only call this when you have enough information from the customer (furniture type, approximate size/seats, optional material preference).",
             parameters: {
                 type: "object",
                 properties: {
@@ -521,24 +469,171 @@ const aiTools = [
                     },
                     material: {
                         type: "string",
-                        description: "Material (teak, aluminium, rattan)"
+                        description: "Material preference (teak, aluminium, rattan)"
                     },
                     seatCount: {
                         type: "integer",
-                        description: "Number of seats"
+                        description: "Number of seats needed"
                     },
                     productName: {
                         type: "string",
-                        description: "Product name to search"
+                        description: "Specific product name to search"
                     }
                 }
+            }
+        }
+    },
+    {
+        type: "function", 
+        function: {
+            name: "get_material_info",
+            description: "Get detailed information about a material type for answering customer questions",
+            parameters: {
+                type: "object",
+                properties: {
+                    material: {
+                        type: "string",
+                        enum: ["teak", "aluminium", "rattan", "steel"],
+                        description: "Material to get info about"
+                    }
+                },
+                required: ["material"]
+            }
+        }
+    },
+    {
+        type: "function",
+        function: {
+            name: "request_human_handoff",
+            description: "Request handoff to human agent when customer needs help beyond your capabilities",
+            parameters: {
+                type: "object",
+                properties: {
+                    reason: {
+                        type: "string",
+                        description: "Reason for handoff"
+                    },
+                    customerEmail: {
+                        type: "string",
+                        description: "Customer's email if provided"
+                    }
+                },
+                required: ["reason"]
             }
         }
     }
 ];
 
+// Material information
+const materialInfo = {
+    teak: {
+        warranty: "5 years structural",
+        maintenance: "Oil annually to keep golden colour, or let weather naturally to silver-grey",
+        durability: "25+ years lifespan",
+        pros: "Beautiful natural wood, extremely durable, naturally weather-resistant",
+        cons: "Requires some maintenance, higher price point"
+    },
+    aluminium: {
+        warranty: "10 years against corrosion",
+        maintenance: "Virtually none - just wipe with soapy water",
+        durability: "20+ years lifespan",
+        pros: "Zero maintenance, rust-proof, lightweight, modern look",
+        cons: "Can get hot in direct sun"
+    },
+    rattan: {
+        warranty: "2 years structural and colour retention",
+        maintenance: "Cover during harsh winter, otherwise maintenance-free",
+        durability: "10-15 years with care",
+        pros: "UV-tested to 2000 hours, comfortable, affordable",
+        cons: "Synthetic material, should be covered in extreme weather"
+    },
+    steel: {
+        warranty: "3 years against rust",
+        maintenance: "Check for scratches annually, touch up if needed",
+        durability: "15+ years",
+        pros: "Very strong, often powder-coated for protection",
+        cons: "Can rust if coating damaged"
+    }
+};
+
 // ============================================
-// MAIN CHAT ENDPOINT (NEW ARCHITECTURE)
+// VALIDATE AI OUTPUT
+// ============================================
+
+function validateAIOutput(aiOutput, whitelist, sessionId) {
+    if (!aiOutput.intent) {
+        console.log(`⚠️ [${sessionId}] Missing intent`);
+        return null;
+    }
+    
+    // For product recommendations, validate SKUs
+    if (aiOutput.intent === 'product_recommendation' && aiOutput.selected_skus) {
+        const validSkus = [];
+        const invalidSkus = [];
+        
+        for (const sku of aiOutput.selected_skus) {
+            if (whitelist.includes(sku)) {
+                validSkus.push(sku);
+            } else {
+                invalidSkus.push(sku);
+                console.log(`🛡️ [${sessionId}] BLOCKED: "${sku}" not in whitelist`);
+            }
+        }
+        
+        aiOutput.selected_skus = validSkus;
+        
+        if (invalidSkus.length > 0) {
+            console.log(`🛡️ Whitelist was: [${whitelist.join(', ')}]`);
+        }
+    }
+    
+    return aiOutput;
+}
+
+// ============================================
+// ASSEMBLE FINAL RESPONSE
+// ============================================
+
+async function assembleResponse(aiOutput, sessionId) {
+    const intent = aiOutput.intent;
+    
+    // For non-product intents, use AI's response text directly
+    if (intent !== 'product_recommendation') {
+        return aiOutput.response_text || "I'm here to help! What would you like to know about our outdoor furniture?";
+    }
+    
+    // For product recommendations, render cards server-side
+    const parts = [];
+    
+    if (aiOutput.intro_copy) {
+        parts.push(aiOutput.intro_copy);
+    }
+    
+    if (aiOutput.selected_skus && aiOutput.selected_skus.length > 0) {
+        const cards = await renderMultipleProducts(
+            aiOutput.selected_skus,
+            aiOutput.personalisation || ''
+        );
+        
+        if (cards.length > 0) {
+            parts.push('');
+            parts.push(cards.join('\n---\n'));
+        } else {
+            parts.push("\nI'm sorry, but the products I wanted to show you aren't currently available. Let me find some alternatives - what's most important to you: material, size, or style?");
+            return parts.join('\n');
+        }
+    }
+    
+    if (aiOutput.closing_copy) {
+        parts.push('');
+        parts.push(aiOutput.closing_copy);
+    }
+    
+    return parts.join('\n');
+}
+
+// ============================================
+// MAIN CHAT ENDPOINT
 // ============================================
 
 app.post('/chat', async (req, res) => {
@@ -552,17 +647,23 @@ app.post('/chat', async (req, res) => {
         }
         
         console.log(`\n${'='.repeat(60)}`);
-        console.log(`📩 [${sessionId}] Message: "${message}"`);
+        console.log(`📩 [${sessionId}] "${message}"`);
         
         // Get or create session
         if (!sessions.has(sessionId)) {
             sessions.set(sessionId, {
                 messageCount: 0,
+                conversationHistory: [],
                 currentWhitelist: [],
-                context: {},
+                context: {
+                    furnitureType: null,
+                    seatCount: null,
+                    material: null
+                },
                 commercial: {
                     bundlesOffered: 0,
-                    bundleDeclined: false
+                    bundleDeclined: false,
+                    productsShown: []
                 }
             });
         }
@@ -570,120 +671,155 @@ app.post('/chat', async (req, res) => {
         const session = sessions.get(sessionId);
         session.messageCount++;
         
+        // Add to conversation history
+        session.conversationHistory.push({ role: 'user', content: message });
+        if (session.conversationHistory.length > 6) {
+            session.conversationHistory = session.conversationHistory.slice(-6);
+        }
+        
         // Build session state for AI
         const sessionState = {
             messageCount: session.messageCount,
-            requirements: session.context,
-            commercial: session.commercial
+            established: session.context,
+            commercial: session.commercial,
+            availableSkus: session.currentWhitelist,
+            recentMessages: session.conversationHistory.slice(-4)
         };
         
-        // Build messages for AI
-        const systemPrompt = buildSystemPrompt(sessionState, session.currentWhitelist);
+        const systemPrompt = buildSystemPrompt(sessionState);
         
         let messages = [
             { role: "system", content: systemPrompt },
             { role: "user", content: message }
         ];
         
-        console.log(`🤖 Calling AI with ${session.currentWhitelist.length} SKUs in whitelist`);
+        console.log(`🤖 Calling AI (whitelist: ${session.currentWhitelist.length} SKUs)`);
         
-        // Call AI with tools
+        // Call AI
         let response = await openai.chat.completions.create({
             model: "gpt-4o",
             messages: messages,
             tools: aiTools,
             tool_choice: "auto",
-            temperature: 0.3
+            temperature: 0.4
         });
         
         let aiMessage = response.choices[0].message;
         
-        // Handle tool calls (search)
+        // Handle tool calls
         if (aiMessage.tool_calls) {
             const toolResults = [];
             
             for (const toolCall of aiMessage.tool_calls) {
+                const args = JSON.parse(toolCall.function.arguments);
+                
                 if (toolCall.function.name === "search_products") {
-                    const args = JSON.parse(toolCall.function.arguments);
-                    console.log(`🔍 Search request:`, args);
+                    console.log(`🔍 Search:`, args);
+                    
+                    if (args.furnitureType) session.context.furnitureType = args.furnitureType;
+                    if (args.seatCount) session.context.seatCount = args.seatCount;
+                    if (args.material) session.context.material = args.material;
                     
                     const products = searchProducts(args);
                     
-                    // UPDATE WHITELIST - This is critical for preventing hallucination
-                    const newSkus = products.map(p => p.sku);
-                    session.currentWhitelist = newSkus;
-                    console.log(`🛡️ Whitelist updated to: [${newSkus.join(', ')}]`);
+                    session.currentWhitelist = products.map(p => p.sku);
+                    console.log(`🛡️ Whitelist: [${session.currentWhitelist.join(', ')}]`);
+                    
+                    toolResults.push({
+                        tool_call_id: toolCall.id,
+                        output: JSON.stringify({
+                            success: products.length > 0,
+                            available_skus: session.currentWhitelist,
+                            count: products.length,
+                            products: products,
+                            note: products.length > 0 
+                                ? "Use ONLY these SKUs in selected_skus. Server will render product details."
+                                : "No in-stock products found. Ask customer about alternative criteria."
+                        })
+                    });
+                }
+                
+                if (toolCall.function.name === "get_material_info") {
+                    const info = materialInfo[args.material] || {
+                        warranty: "Please contact us for details",
+                        maintenance: "Varies by product"
+                    };
+                    
+                    toolResults.push({
+                        tool_call_id: toolCall.id,
+                        output: JSON.stringify(info)
+                    });
+                }
+                
+                if (toolCall.function.name === "request_human_handoff") {
+                    console.log(`📧 Handoff requested: ${args.reason}`);
                     
                     toolResults.push({
                         tool_call_id: toolCall.id,
                         output: JSON.stringify({
                             success: true,
-                            available_skus: newSkus,
-                            count: products.length,
-                            instruction: "Select from these SKUs ONLY. Do not invent products."
+                            message: "Handoff logged. Tell customer a team member will be in touch."
                         })
                     });
                 }
             }
             
-            // Send tool results back and get final response
             messages.push(aiMessage);
-            messages.push({
-                role: "tool",
-                content: toolResults[0].output,
-                tool_call_id: toolResults[0].tool_call_id
-            });
             
-            // Update system prompt with new whitelist
-            messages[0].content = buildSystemPrompt(sessionState, session.currentWhitelist);
+            for (const result of toolResults) {
+                messages.push({
+                    role: "tool",
+                    content: result.output,
+                    tool_call_id: result.tool_call_id
+                });
+            }
             
-            // Get final JSON response from AI
+            sessionState.availableSkus = session.currentWhitelist;
+            messages[0].content = buildSystemPrompt(sessionState);
+            
             response = await openai.chat.completions.create({
                 model: "gpt-4o",
                 messages: messages,
                 response_format: { type: "json_object" },
-                temperature: 0.3
+                temperature: 0.4
             });
             
             aiMessage = response.choices[0].message;
         }
         
-        // Parse AI JSON output
+        // Parse AI output
         let aiOutput;
         try {
             aiOutput = JSON.parse(aiMessage.content);
-            console.log(`✅ AI returned JSON:`, JSON.stringify(aiOutput, null, 2));
+            console.log(`✅ AI intent: ${aiOutput.intent}`);
         } catch (e) {
-            console.error(`❌ AI did not return valid JSON:`, aiMessage.content);
+            console.error(`❌ Invalid JSON:`, aiMessage.content?.substring(0, 200));
             aiOutput = {
-                intent: 'clarification',
-                intro_copy: "I'd love to help you find the perfect outdoor furniture.",
-                selected_skus: [],
-                commercial_signals: { customer_sentiment: 'neutral', bundle_candidate: false },
-                closing_question: "Are you looking for a lounge set or a dining set?"
+                intent: 'greeting',
+                response_text: "Hello! Welcome to MINT Outdoor. I'd love to help you find the perfect outdoor furniture. Are you looking for a dining set, lounge set, or something else?"
             };
         }
         
-        // CRITICAL: Validate SKUs against whitelist
-        if (aiOutput.selected_skus && aiOutput.selected_skus.length > 0) {
-            const validation = validateSkusAgainstWhitelist(
-                aiOutput.selected_skus, 
-                session.currentWhitelist, 
-                sessionId
-            );
-            
-            // ONLY use approved SKUs
-            aiOutput.selected_skus = validation.approved;
-            
-            if (validation.rejected.length > 0) {
-                console.log(`🛡️ Blocked ${validation.rejected.length} hallucinated SKUs`);
-            }
+        // Validate
+        aiOutput = validateAIOutput(aiOutput, session.currentWhitelist, sessionId);
+        
+        if (!aiOutput) {
+            aiOutput = {
+                intent: 'clarification',
+                response_text: "I'd love to help you find the perfect outdoor furniture. Are you looking for dining, lounging, or both?"
+            };
         }
         
-        // ASSEMBLE RESPONSE (Server renders products, not AI)
+        // Assemble response
         const finalResponse = await assembleResponse(aiOutput, sessionId);
         
-        console.log(`📤 Response assembled (${finalResponse.length} chars)`);
+        session.conversationHistory.push({ role: 'assistant', content: finalResponse });
+        
+        if (aiOutput.intent === 'product_recommendation' && aiOutput.selected_skus) {
+            session.commercial.productsShown.push(...aiOutput.selected_skus);
+        }
+        
+        console.log(`📤 Response (${finalResponse.length} chars)`);
         console.log(`${'='.repeat(60)}\n`);
         
         res.json({
@@ -692,7 +828,7 @@ app.post('/chat', async (req, res) => {
         });
         
     } catch (error) {
-        console.error('❌ Chat error:', error);
+        console.error('❌ Error:', error);
         res.status(500).json({
             response: "I apologize, but I'm having a technical issue. Please try again.",
             error: error.message
@@ -707,64 +843,32 @@ app.post('/chat', async (req, res) => {
 app.get('/health', (req, res) => {
     res.json({
         status: 'healthy',
-        version: '13.1 - Phase 1 Server-Side Rendering',
-        architecture: 'AI outputs JSON → Server validates → Server renders',
-        products_loaded: Object.keys(productIndex.bySku).length,
-        shopify_configured: !!SHOPIFY_ACCESS_TOKEN,
-        openai_configured: !!process.env.OPENAI_API_KEY
+        version: '14.0 - Full Conversation + Server Rendering',
+        products: Object.keys(productIndex.bySku).length,
+        inventory_records: inventoryData.length
     });
 });
 
 app.get('/debug-products', (req, res) => {
-    const products = Object.values(productIndex.bySku).slice(0, 20).map(p => ({
+    const products = Object.values(productIndex.bySku).slice(0, 30).map(p => ({
         sku: p.product_identity?.sku,
         name: p.product_identity?.product_name,
-        category: p.description_and_category?.primary_category
+        stock: getProductStock(p.product_identity?.sku)
     }));
     
     res.json({
-        total_products: Object.keys(productIndex.bySku).length,
+        total: Object.keys(productIndex.bySku).length,
+        in_stock: products.filter(p => p.stock > 0).length,
         sample: products
-    });
-});
-
-app.get('/debug-cache', (req, res) => {
-    const entries = [];
-    for (const [sku, entry] of SHOPIFY_CACHE.entries()) {
-        entries.push({
-            sku,
-            price: entry.data?.price,
-            stock: entry.data?.stock,
-            age_seconds: Math.round((Date.now() - entry.timestamp) / 1000)
-        });
-    }
-    
-    res.json({
-        cache_size: SHOPIFY_CACHE.size,
-        ttl_minutes: CACHE_TTL_MS / 60000,
-        entries
     });
 });
 
 app.get('/debug-session/:sessionId', (req, res) => {
     const session = sessions.get(req.params.sessionId);
-    
-    if (!session) {
-        return res.json({ 
-            error: 'Session not found',
-            available: [...sessions.keys()].slice(0, 5)
-        });
-    }
-    
-    res.json({
-        messageCount: session.messageCount,
-        whitelist: session.currentWhitelist,
-        whitelistCount: session.currentWhitelist.length,
-        commercial: session.commercial
-    });
+    if (!session) return res.json({ error: 'Session not found' });
+    res.json(session);
 });
 
-// Serve chat interface
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'chat.html'));
 });
@@ -780,28 +884,12 @@ app.get('/widget', (req, res) => {
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`\n${'='.repeat(60)}`);
-    console.log(`🚀 GWEN Phase 1 - Server-Side Rendering`);
-    console.log(`   Version: 13.1`);
-    console.log(`   Port: ${port}`);
-    console.log(`${'='.repeat(60)}`);
-    console.log(`\n📋 ARCHITECTURE:`);
-    console.log(`   Customer → AI outputs JSON (SKUs only)`);
-    console.log(`            → Server validates against whitelist`);
-    console.log(`            → Server renders product cards`);
-    console.log(`            → Customer sees verified output`);
-    console.log(`\n🛡️ HALLUCINATION PREVENTION:`);
-    console.log(`   ✅ AI outputs JSON only - never product names`);
-    console.log(`   ✅ SKUs validated against search whitelist`);
-    console.log(`   ✅ Products rendered from verified database`);
-    console.log(`   ✅ Out-of-stock products filtered out`);
-    console.log(`\n📦 DATA:`);
+    console.log(`🚀 GWEN v14.0 - Conversation + Server Rendering`);
     console.log(`   Products: ${Object.keys(productIndex.bySku).length}`);
     console.log(`   Inventory: ${inventoryData.length} records`);
-    console.log(`\n🔧 CONFIG:`);
     console.log(`   OpenAI: ${process.env.OPENAI_API_KEY ? '✅' : '❌'}`);
-    console.log(`   Shopify: ${SHOPIFY_ACCESS_TOKEN ? '✅' : '⚠️ Not configured'}`);
-    console.log(`   Database: ${pool ? '✅' : '⚠️ Not configured'}`);
-    console.log(`\n${'='.repeat(60)}\n`);
+    console.log(`   Shopify: ${SHOPIFY_ACCESS_TOKEN ? '✅' : '⚠️'}`);
+    console.log(`${'='.repeat(60)}\n`);
 });
 
 module.exports = app;
