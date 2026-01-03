@@ -127,9 +127,10 @@ function loadDataFile(filename, defaultValue = []) {
 }
 
 const productKnowledgeCenter = loadDataFile('product_knowledge_center.json', []);
-const inventoryData = loadDataFile('Inventory_Data.json', []);
+const rawInventoryData = loadDataFile('Inventory_Data.json', { inventory: [] });
+// Handle both array format and object format { inventory: [...] }
+const inventoryData = Array.isArray(rawInventoryData) ? rawInventoryData : (rawInventoryData.inventory || []);
 const bundleSuggestions = loadDataFile('bundle_suggestions.json', []);
-const bundleItems = loadDataFile('bundle_items.json', []);
 
 // Build product index
 const productIndex = { bySku: {} };
