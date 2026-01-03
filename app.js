@@ -1375,8 +1375,14 @@ app.get('/run-tests', async (req, res) => {
         // Create fresh session for each test
         const testSessionId = `test-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
         
-        // Build system prompt (using your existing function)
-        const systemPrompt = buildSystemPrompt ? buildSystemPrompt() : '';
+        // Build system prompt with empty session state
+        const testSessionState = {
+          messageCount: 1,
+          established: {},
+          commercial: {},
+          availableSkus: []
+        };
+        const systemPrompt = buildSystemPrompt(testSessionState);
         
         const messages = [
           { role: "system", content: systemPrompt },
@@ -1408,7 +1414,7 @@ app.get('/run-tests', async (req, res) => {
             
             // Call the appropriate handler
             if (funcName === "search_products") {
-              toolResult = await searchRealProducts(args);
+              toolResult = searchProducts(args);
             } else if (funcName === "get_product_availability") {
               // Use your existing availability check
               const product = productIndex.bySku[args.sku];
@@ -1554,7 +1560,7 @@ app.get('/test-single', async (req, res) => {
         let toolResult = { error: "Unknown function" };
         
         if (funcName === "search_products") {
-          toolResult = await searchRealProducts(args);
+          toolResult = searchProducts(args);
         }
         
         toolMessages.push({
