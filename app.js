@@ -1692,59 +1692,8 @@ app.post('/chat', async (req, res) => {
                     }
                 }
             }
-            
-            // LAYER 4: CONTEXT-AWARE INTELLIGENT FALLBACK
-            if (!aiOutput) {
-                console.log(`🔄 Using context-aware fallback`);
-                const ctx = session.context;
-                const hasWhitelist = session.currentWhitelist && session.currentWhitelist.length > 0;
-                const hasContext = ctx.material || ctx.furnitureType || ctx.seatCount;
-                
-                if (hasWhitelist && hasContext) {
-                    // We have products to show - show them!
-                    let introText = "Here are some great options";
-                    const contextParts = [];
-                    if (ctx.material) contextParts.push(ctx.material);
-                    if (ctx.furnitureType) contextParts.push(ctx.furnitureType);
-                    if (ctx.seatCount) contextParts.push(`seating ${ctx.seatCount}+ people`);
-                    
-                    if (contextParts.length > 0) {
-                        introText = `Based on what you've told me about wanting ${contextParts.join(' ')} furniture, here are some perfect matches:`;
-                    }
-                    
-                    aiOutput = {
-                        intent: 'product_recommendation',
-                        intro_copy: introText,
-                        selected_skus: session.currentWhitelist.slice(0, 3),
-                        personalisation: `Perfect for your ${ctx.furnitureType || 'outdoor'} space`,
-                        closing_copy: "Would any of these work for you? I can also tell you more about materials, warranties, or dimensions."
-                    };
-                    console.log(`✅ Fallback: Showing ${session.currentWhitelist.length} products with context`);
-                    
-                } else if (hasContext && !hasWhitelist) {
-                    // We have context but no products searched yet
-                    const contextParts = [];
-                    if (ctx.material) contextParts.push(ctx.material);
-                    if (ctx.furnitureType) contextParts.push(ctx.furnitureType);
-                    if (ctx.seatCount) contextParts.push(`for ${ctx.seatCount} people`);
-                    
-                    aiOutput = {
-                        intent: 'clarification',
-                        response_text: `Great! I can see you're interested in ${contextParts.join(' ')} furniture. Let me find the best options for you. Just to make sure I show you exactly what you need - are you looking for something for dining or lounging?`
-                    };
-                    console.log(`✅ Fallback: Acknowledging context, asking to refine`);
-                    
-                } else {
-                    // No context at all
-                    aiOutput = {
-                        intent: 'greeting',
-                        response_text: "Hi there! I'm Gwen, your outdoor furniture expert. What kind of outdoor space are you looking to furnish - a dining area, a cosy lounge spot, or perhaps both?"
-                    };
-                    console.log(`✅ Fallback: Fresh greeting`);
-                }
-            }
         }
-        
+
         // ============================================
         // VALIDATION WITH CONTEXT PRESERVATION
         // ============================================
@@ -1818,9 +1767,7 @@ app.post('/chat', async (req, res) => {
         // Create a state summary for the AI to reference
         session.stateSummary = buildStateSummary(session);
         
-        if (aiOutput.intent === 'product_recommendation' && aiOutput.selected_skus) {
-            session.commercial.productsShown.push(...aiOutput.selected_skus);
-        }
+      
         
         console.log(`📤 Response (${finalResponse.length} chars)`);
         console.log(`${'='.repeat(60)}\n`);
