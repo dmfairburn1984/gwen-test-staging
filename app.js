@@ -449,162 +449,90 @@ async function renderMultipleProducts(skus, personalisation = '') {
 // ============================================
 
 function buildSystemPrompt(sessionState) {
-    // Build a clear summary of what we know
-    let contextSummary = "Nothing established yet - ask qualifying questions.";
-    const est = sessionState.established || {};
-    const known = [];
-    if (est.furnitureType) known.push(`Type: ${est.furnitureType}`);
-    if (est.seatCount) known.push(`Seats: ${est.seatCount}+`);
-    if (est.material) known.push(`Material: ${est.material}`);
-    if (known.length > 0) {
-        contextSummary = known.join(', ');
+    // Build concise context summary
+    const ctx = sessionState.established || {};
+    const contextParts = [];
+    if (ctx.furnitureType) contextParts.push(`Looking for: ${ctx.furnitureType} furniture`);
+    if (ctx.seatCount) contextParts.push(`Seats needed: ${ctx.seatCount}+`);
+    if (ctx.material) contextParts.push(`Material: ${ctx.material}`);
+    
+    const contextSummary = contextParts.length > 0 
+        ? contextParts.join(' | ') 
+        : "New customer - no preferences established yet";
+    
+    // Track commercial state
+    const commercial = sessionState.commercial || {};
+    const commercialState = [];
+    if (commercial.productsShown?.length > 0) {
+        commercialState.push(`Products shown: ${commercial.productsShown.length}`);
+    }
+    if (commercial.sentiment === 'price_concerned') {
+        commercialState.push("⚠️ Customer is price-sensitive - NO UPSELLS");
+    }
+    if (commercial.bundleDeclined) {
+        commercialState.push("⚠️ Bundle declined - don't offer again");
     }
     
-    return `You are Gwen, a warm and knowledgeable sales assistant for MINT Outdoor furniture.
+    return `You are Gwen, a friendly sales assistant for MINT Outdoor furniture. You help customers find perfect outdoor furniture.
 
-CRITICAL: PAY ATTENTION TO CONVERSATION HISTORY
-- The conversation history is provided below
-- DO NOT ask questions the customer has already answered
-- If customer mentioned "aluminium" - remember it
-- If customer mentioned "4 people" - remember it
-- If customer mentioned "lounge" - remember it
-
-WHAT WE KNOW ABOUT THIS CUSTOMER:
+═══════════════════════════════════════════════════════════
+CURRENT CUSTOMER CONTEXT
+═══════════════════════════════════════════════════════════
 ${contextSummary}
+${commercialState.length > 0 ? '\nCommercial notes: ' + commercialState.join(' | ') : ''}
+═══════════════════════════════════════════════════════════
 
-==============================================================================
-🆕 CRITICAL: ANSWER DIRECT QUESTIONS FIRST (MUST FOLLOW)
-==============================================================================
+YOUR CORE RULES:
+1. REMEMBER what customer already told you - don't ask again
+2. ANSWER direct questions FIRST, then ask follow-ups
+3. When showing products, output SKUs only - server renders the cards
+4. Be warm and helpful, never say "no" or "unfortunately"
 
-**PRICE QUESTIONS** ("how much", "what's the price", "cost of"):
-→ ALWAYS include the £ price in your response_text
-→ Say: "The [Product] is **£XXX**" or "Prices start from **£XXX**"
+WHEN TO SHOW PRODUCTS (use product_recommendation intent):
+- Customer mentions material (rattan, teak, aluminium)
+- Customer mentions furniture type (dining, lounge, corner)
+- Customer mentions size (4 people, 6 seater, large)
+→ If you have 2+ of these, call search_products tool then recommend
 
-**STOCK/AVAILABILITY QUESTIONS** ("is it in stock", "available", "delivery"):
-→ ALWAYS mention: "Yes, in stock" or "Available for delivery in 3-5 days"
-→ Include stock info from product data
+WHEN TO ASK QUESTIONS (use clarification intent):
+- Only 1 piece of info known - ask for furniture type or size
+- Never ask what they already told you
 
-**RETURNS/POLICY QUESTIONS** ("return policy", "refund", "exchange"):
-→ Say: "We offer a 14-day return policy for unused items"
-→ Say: "Damaged items get free replacement or full refund"
+RESPONDING TO SPECIFIC QUESTIONS:
+- Price: "The [Product] is **£XXX**" - always include the pound amount
+- Stock: "Yes, it's in stock with 3-5 day delivery"
+- Warranty: "We offer 1-year guarantee plus extended material warranties"
+- Dimensions: Include W x D x H in cm
+- Eco questions: "Our teak is from sustainable plantations, aluminium is 100% recyclable"
+- Commercial/B2B: "We work with businesses - contact sales@mint-outdoor.com for volume pricing"
 
-**DIMENSION QUESTIONS** ("how big", "will it fit", "measurements"):
-→ ALWAYS provide dimensions in cm from product data
-→ Say: "It measures [W]cm x [D]cm x [H]cm"
+═══════════════════════════════════════════════════════════
+OUTPUT FORMAT - ALWAYS VALID JSON
+═══════════════════════════════════════════════════════════
 
-**WARRANTY QUESTIONS** ("warranty", "guarantee"):
-→ Say: "1-year manufacturer guarantee plus extended material warranties"
-→ Add: "Aluminium 3-4 years, Rattan 2 years, Teak 2 years"
-
-==============================================================================
-🪑 SEAT COUNT - USE THESE WORDS IN RESPONSE
-==============================================================================
-
-**2-3 PEOPLE:** Use words: "two", "couple", "pair", "bistro", "loveseat"
-**4-5 PEOPLE:** Use words: "four", "4-seater", "family"  
-**6 PEOPLE:** Use words: "6", "six", "6-seater"
-**8+ PEOPLE:** Use words: "8", "nine", "large", "entertain"
-
-==============================================================================
-🏢 COMMERCIAL/B2B - USE THESE WORDS IN RESPONSE
-==============================================================================
-
-If customer mentions: hotel, restaurant, business, bulk, trade, rental
-→ Use words: "commercial", "business", "trade", "bulk", "contact", "volume"
-→ Say: "We work with commercial customers - contact sales@mint-outdoor.com"
-
-**RENTAL PROPERTY:** Use words: "durable", "robust", "low maintenance", "weather", "quality"
-
-==============================================================================
-🌱 ECO/SUSTAINABILITY - NEVER SAY "NO"
-==============================================================================
-
-If asked about eco/sustainable:
-→ NEVER say "no" or "we don't have"
-→ Say: "Our teak is from sustainable plantations"
-→ Say: "Aluminium is 100% recyclable"
-→ Say: "Synthetic rattan means no rainforest resources depleted"
-
-==============================================================================
-🔄 OUT OF STOCK - ALWAYS OFFER ALTERNATIVES
-==============================================================================
-
-If product unavailable:
-→ NEVER just say "sorry, out of stock"
-→ Use words: "alternative", "similar", "option", "recommend", "instead"
-→ Say: "That's out of stock, but I have great alternatives..."
-
-==============================================================================
-⛔ BANNED PHRASES - NEVER USE THESE
-==============================================================================
-
-NEVER say:
-- "No, we don't..."
-- "Sorry, I can't..."
-- "Unfortunately..."
-- "I'm afraid..."
-
-INSTEAD say:
-- "Great question! Here's..."
-- "Absolutely! We have..."
-- "Let me recommend..."
-
-==============================================================================
-CONVERSATION FLOW
-==============================================================================
-
-1. Greet warmly
-2. ANSWER any direct question FIRST
-3. Ask qualifying questions ONLY if not already answered
-4. Show products when you have enough information
-5. Offer bundles at the right moment
-
-YOUR PERSONALITY:
-- Friendly, helpful, not pushy
-- Expert in outdoor furniture
-- Always positive - find solutions, never just say "no"
-
-CRITICAL RULES FOR PRODUCTS:
-- You CANNOT write product names, prices, or features
-- When recommending products, output SKUs only in selected_skus array
-- The server will render the actual product cards
-- Only recommend SKUs from the AVAILABLE list
-
-OUTPUT FORMAT - Always respond with valid JSON:
-
-For conversation (greetings, questions, answers):
+For conversation only (no products):
 {
-    "intent": "greeting" or "clarification" or "question_answer" or "objection_handling",
-    "response_text": "Your conversational response here"
+    "intent": "greeting" | "clarification" | "question_answer",
+    "response_text": "Your friendly response here"
 }
 
-For showing products (SERVER RENDERS THESE):
+For showing products:
 {
     "intent": "product_recommendation",
-    "intro_copy": "Based on what you've told me, here are some perfect options:",
+    "intro_copy": "Brief intro (1 sentence)",
     "selected_skus": ["SKU-1", "SKU-2"],
-    "personalisation": "Perfect for relaxing with family",
+    "personalisation": "Brief personalisation",
     "closing_copy": "Which style catches your eye?"
 }
 
-AVAILABLE PRODUCT SKUs (only use these for selected_skus):
-${sessionState.availableSkus?.length > 0 ? sessionState.availableSkus.join(', ') : 'No search performed yet'}
+═══════════════════════════════════════════════════════════
+AVAILABLE PRODUCT SKUs (only use these):
+${sessionState.availableSkus?.length > 0 
+    ? sessionState.availableSkus.join(', ') 
+    : 'Call search_products first to find products'}
+═══════════════════════════════════════════════════════════
 
-INTENT TYPES:
-- greeting: First message or returning greeting
-- clarification: Need more info (but ONLY if not already provided!)
-- product_recommendation: Ready to show products (use selected_skus)
-- question_answer: Answering specific questions
-- bundle_offer: Offering bundle deal
-- objection_handling: Addressing concerns
-
-REMEMBER:
-- ANSWER DIRECT QUESTIONS FIRST before asking your own
-- Use specific keywords for seat counts (two, six, etc.)
-- NEVER say "no", "sorry", "unfortunately" 
-- Always offer alternatives if something is unavailable
-- Be conversational and warm
-- When showing products, use SKUs only - never write product names or prices`;
+Remember: Output ONLY valid JSON. No markdown, no code blocks, just the JSON object.`;
 }
 
 // ============================================
@@ -714,6 +642,265 @@ const materialInfo = {
     }
 };
 
+
+
+
+// ============================================
+// COMMERCE GOVERNANCE ENGINE
+// ============================================
+
+const COMMERCE_RULES = {
+    bundle: {
+        maxOffersPerSession: 3,
+        discountPercent: 20,
+        stopAfterDecline: true,
+        firstOfferType: 'soft', // 'soft' = just mention, 'detailed' = full pricing
+        requireInterestForDetailed: true
+    },
+    upsell: {
+        maxPerSession: 2,
+        maxPriceIncrease: 0.5, // 50%
+        requirePositiveSignal: true,
+        stopIfPriceConcerned: true,
+        stopAfterDecline: true
+    },
+    crossSell: {
+        priority: ['cover', 'cushion_box', 'replacement_cushions', 'assembly'],
+        maxPerProduct: 2,
+        assemblyPrice: 99.95
+    }
+};
+
+function buildStateSummary(session) {
+    const ctx = session.context;
+    const commercial = session.commercial;
+    
+    let summary = "=== CONVERSATION STATE ===\n";
+    
+    // Customer preferences
+    if (ctx.material || ctx.furnitureType || ctx.seatCount) {
+        summary += "Customer wants: ";
+        const parts = [];
+        if (ctx.material) parts.push(ctx.material);
+        if (ctx.furnitureType) parts.push(ctx.furnitureType);
+        if (ctx.seatCount) parts.push(`${ctx.seatCount}+ seats`);
+        summary += parts.join(', ') + "\n";
+    }
+    
+    // Products shown
+    if (commercial.productsShown.length > 0) {
+        summary += `Products shown: ${commercial.productsShown.slice(-5).join(', ')}\n`;
+    }
+    
+    // Commercial state
+    if (commercial.sentiment !== 'neutral') {
+        summary += `Customer sentiment: ${commercial.sentiment}\n`;
+    }
+    if (commercial.bundlesOffered > 0) {
+        summary += `Bundles offered: ${commercial.bundlesOffered}/3\n`;
+    }
+    
+    return summary;
+}
+
+function detectCustomerSentiment(message) {
+    const msgLower = message.toLowerCase();
+    
+    // Price concern signals
+    const priceConcernWords = ['expensive', 'cost', 'budget', 'afford', 'cheaper', 'price', 'discount', 'deal', 'too much', 'pricey'];
+    const isPriceConcerned = priceConcernWords.some(word => msgLower.includes(word));
+    
+    // Positive signals
+    const positiveWords = ['love', 'great', 'perfect', 'excellent', 'interested', 'like', 'yes', 'sounds good', 'looks great', 'beautiful', 'amazing'];
+    const isPositive = positiveWords.some(word => msgLower.includes(word));
+    
+    // Decline signals
+    const declineWords = ['no thanks', 'not interested', 'no thank you', 'just the', 'only want', 'don\'t need', 'pass on'];
+    const isDecline = declineWords.some(word => msgLower.includes(word));
+    
+    // Bundle interest signals
+    const bundleInterestWords = ['bundle', 'discount', 'together', 'package', 'deal', 'cover', 'protect'];
+    const bundleInterest = bundleInterestWords.some(word => msgLower.includes(word));
+    
+    return {
+        priceConcerned: isPriceConcerned,
+        positive: isPositive,
+        decline: isDecline,
+        bundleInterest: bundleInterest
+    };
+}
+
+function checkBundleEligibility(session) {
+    const rules = COMMERCE_RULES.bundle;
+    const commercial = session.commercial;
+    
+    // Rule 1: Max offers per session
+    if (commercial.bundlesOffered >= rules.maxOffersPerSession) {
+        return { eligible: false, reason: 'max_offers_reached' };
+    }
+    
+    // Rule 2: Stop after decline
+    if (rules.stopAfterDecline && commercial.bundleDeclined) {
+        return { eligible: false, reason: 'customer_declined' };
+    }
+    
+    // Rule 3: Must have shown a product first
+    if (commercial.productsShown.length === 0) {
+        return { eligible: false, reason: 'no_products_shown' };
+    }
+    
+    return { 
+        eligible: true,
+        offerType: commercial.bundleInterestShown ? 'detailed' : 'soft'
+    };
+}
+
+function checkUpsellEligibility(session, targetPrice, currentPrice) {
+    const rules = COMMERCE_RULES.upsell;
+    const commercial = session.commercial;
+    
+    // Rule 1: Not first message
+    if (session.messageCount <= 2) {
+        return { eligible: false, reason: 'too_early' };
+    }
+    
+    // Rule 2: Positive signal required
+    if (rules.requirePositiveSignal && !commercial.positiveSignalReceived) {
+        return { eligible: false, reason: 'no_positive_signal' };
+    }
+    
+    // Rule 3: Max per session
+    if (commercial.upsellsOffered >= rules.maxPerSession) {
+        return { eligible: false, reason: 'max_reached' };
+    }
+    
+    // Rule 4: Customer not price-concerned
+    if (rules.stopIfPriceConcerned && commercial.sentiment === 'price_concerned') {
+        return { eligible: false, reason: 'price_sensitive' };
+    }
+    
+    // Rule 5: Price increase limit
+    if (currentPrice && targetPrice) {
+        const increase = (targetPrice - currentPrice) / currentPrice;
+        if (increase > rules.maxPriceIncrease) {
+            return { eligible: false, reason: 'price_jump_too_high' };
+        }
+    }
+    
+    // Rule 6: Stop after decline
+    if (rules.stopAfterDecline && commercial.upsellDeclined) {
+        return { eligible: false, reason: 'customer_declined' };
+    }
+    
+    return { eligible: true };
+}
+
+function getBundleForProduct(sku) {
+    // Find bundles that include this product
+    const matchingBundles = [];
+    
+    for (const item of bundleItems) {
+        if (item.product_sku === sku) {
+            const bundle = bundleSuggestions.find(b => b.bundle_id === item.bundle_id);
+            if (bundle) {
+                const bundleProducts = bundleItems.filter(bi => bi.bundle_id === item.bundle_id);
+                matchingBundles.push({
+                    ...bundle,
+                    products: bundleProducts
+                });
+            }
+        }
+    }
+    
+    return matchingBundles;
+}
+
+function getCrossSellSuggestions(sku, session) {
+    const product = productIndex.bySku[sku];
+    if (!product) return [];
+    
+    const suggestions = [];
+    const alreadyShown = session.commercial.crossSellsShown || [];
+    
+    // Priority 1: Matching cover
+    if (product.related_products?.matching_cover_sku) {
+        const coverSku = product.related_products.matching_cover_sku;
+        if (!alreadyShown.includes(coverSku) && isInStock(coverSku)) {
+            suggestions.push({
+                type: 'cover',
+                sku: coverSku,
+                priority: 1,
+                pitch: "Protect your investment with a matching cover - extends lifespan by 3-5 years!"
+            });
+        }
+    }
+    
+    // Priority 2: Cushion box (check product name/category)
+    const materialType = product.description_and_category?.material_type?.toLowerCase();
+    if (materialType === 'rattan') {
+        // Find matching cushion box
+        const cushionBoxSku = `${product.product_identity?.product_family || 'GENERAL'}-CUSHION-BOX`;
+        if (productIndex.bySku[cushionBoxSku] && isInStock(cushionBoxSku)) {
+            suggestions.push({
+                type: 'cushion_box',
+                sku: cushionBoxSku,
+                priority: 2,
+                pitch: "Keep your cushions fresh and dry with a matching cushion storage box!"
+            });
+        }
+    }
+    
+    // Priority 4: Assembly service
+    if (product.specifications?.assembly?.required) {
+        suggestions.push({
+            type: 'assembly',
+            sku: 'ASSEMBLY-SERVICE',
+            priority: 4,
+            price: COMMERCE_RULES.crossSell.assemblyPrice,
+            pitch: `Save time with our professional assembly service - just £${COMMERCE_RULES.crossSell.assemblyPrice}!`
+        });
+    }
+    
+    // Sort by priority
+    return suggestions.sort((a, b) => a.priority - b.priority);
+}
+
+function buildBundleOffer(session, mainProductSku, offerType) {
+    const bundles = getBundleForProduct(mainProductSku);
+    if (bundles.length === 0) return null;
+    
+    const bundle = bundles[0]; // Take first matching bundle
+    const mainProduct = productIndex.bySku[mainProductSku];
+    
+    if (offerType === 'soft') {
+        return {
+            type: 'soft',
+            text: `🎁 *Great news! This comes with a matching protective cover bundle - save ${COMMERCE_RULES.bundle.discountPercent}% when you buy together. Would you like details?*`
+        };
+    } else {
+        // Detailed pricing
+        let totalOriginal = 0;
+        let productDetails = [];
+        
+        for (const item of bundle.products) {
+            const prod = productIndex.bySku[item.product_sku];
+            if (prod) {
+                const price = parseFloat(prod.product_identity?.price_gbp) || 0;
+                totalOriginal += price * item.product_qty;
+                productDetails.push(`- ${prod.product_identity?.product_name}: £${price.toFixed(2)}`);
+            }
+        }
+        
+        const discount = totalOriginal * (COMMERCE_RULES.bundle.discountPercent / 100);
+        const bundlePrice = totalOriginal - discount;
+        
+        return {
+            type: 'detailed',
+            text: `🎁 **${bundle.name} Bundle Deal**\n\n${productDetails.join('\n')}\n\n~~Original: £${totalOriginal.toFixed(2)}~~\n**Bundle Price: £${bundlePrice.toFixed(2)}**\n*You save: £${discount.toFixed(2)} (${COMMERCE_RULES.bundle.discountPercent}% off)*\n\nWant me to add this bundle to help you complete your purchase?`
+        };
+    }
+}
+
 // ============================================
 // VALIDATE AI OUTPUT
 // ============================================
@@ -752,7 +939,7 @@ function validateAIOutput(aiOutput, whitelist, sessionId) {
 // ASSEMBLE FINAL RESPONSE
 // ============================================
 
-async function assembleResponse(aiOutput, sessionId) {
+async function assembleResponse(aiOutput, sessionId, session) {
     const intent = aiOutput.intent;
     
     // For non-product intents, use AI's response text directly
@@ -767,7 +954,12 @@ async function assembleResponse(aiOutput, sessionId) {
         parts.push(aiOutput.intro_copy);
     }
     
+    let productCards = [];
+    let mainProductSku = null;
+    
     if (aiOutput.selected_skus && aiOutput.selected_skus.length > 0) {
+        mainProductSku = aiOutput.selected_skus[0]; // First product is the main one
+        
         const cards = await renderMultipleProducts(
             aiOutput.selected_skus,
             aiOutput.personalisation || ''
@@ -776,12 +968,48 @@ async function assembleResponse(aiOutput, sessionId) {
         if (cards.length > 0) {
             parts.push('');
             parts.push(cards.join('\n---\n'));
+            productCards = cards;
         } else {
             parts.push("\nI'm sorry, but the products I wanted to show you aren't currently available. Let me find some alternatives - what's most important to you: material, size, or style?");
             return parts.join('\n');
         }
     }
     
+    // ============================================
+    // INTELLIGENT BUNDLE/CROSS-SELL INJECTION
+    // ============================================
+    
+    if (mainProductSku && session) {
+        // Check if we should offer a bundle
+        const bundleEligibility = checkBundleEligibility(session);
+        
+        if (bundleEligibility.eligible) {
+            const bundleOffer = buildBundleOffer(session, mainProductSku, bundleEligibility.offerType);
+            
+            if (bundleOffer) {
+                parts.push('');
+                parts.push(bundleOffer.text);
+                session.commercial.bundlesOffered++;
+                session.commercial.lastOfferType = 'bundle';
+                console.log(`🎁 Bundle offer added (${bundleEligibility.offerType})`);
+            }
+        }
+        
+        // Check for cross-sell opportunities (if no bundle offered)
+        if (!bundleEligibility.eligible || session.commercial.bundlesOffered === 0) {
+            const crossSells = getCrossSellSuggestions(mainProductSku, session);
+            
+            if (crossSells.length > 0 && session.commercial.crossSellsShown.length < 2) {
+                const suggestion = crossSells[0];
+                parts.push('');
+                parts.push(`💡 *${suggestion.pitch}*`);
+                session.commercial.crossSellsShown.push(suggestion.sku);
+                console.log(`💡 Cross-sell suggested: ${suggestion.type}`);
+            }
+        }
+    }
+    
+    // Add closing copy
     if (aiOutput.closing_copy) {
         parts.push('');
         parts.push(aiOutput.closing_copy);
@@ -818,10 +1046,18 @@ app.post('/chat', async (req, res) => {
                     seatCount: null,
                     material: null
                 },
-                commercial: {
+               commercial: {
                     bundlesOffered: 0,
                     bundleDeclined: false,
-                    productsShown: []
+                    upsellsOffered: 0,
+                    upsellDeclined: false,
+                    bundleInterestShown: false,
+                    positiveSignalReceived: false,
+                    sentiment: 'neutral', // neutral, positive, price_concerned
+                    productsShown: [],
+                    crossSellsShown: [],
+                    lastProductPrice: null,
+                    lastOfferType: null
                 }
             });
         }
@@ -860,6 +1096,31 @@ app.post('/chat', async (req, res) => {
         if (seatMatch) {
             session.context.seatCount = parseInt(seatMatch[1]);
             console.log(`📝 Context: seats = ${session.context.seatCount}`);
+        }
+
+        // Detect customer sentiment and update commercial state
+        const sentiment = detectCustomerSentiment(message);
+        if (sentiment.priceConcerned) {
+            session.commercial.sentiment = 'price_concerned';
+            console.log(`💰 Sentiment: Price concerned`);
+        } else if (sentiment.positive) {
+            session.commercial.sentiment = 'positive';
+            session.commercial.positiveSignalReceived = true;
+            console.log(`😊 Sentiment: Positive signal received`);
+        }
+        if (sentiment.bundleInterest) {
+            session.commercial.bundleInterestShown = true;
+            console.log(`🎁 Bundle interest detected`);
+        }
+        if (sentiment.decline) {
+            // Check what was last offered
+            if (session.commercial.lastOfferType === 'bundle') {
+                session.commercial.bundleDeclined = true;
+                console.log(`❌ Bundle offer declined`);
+            } else if (session.commercial.lastOfferType === 'upsell') {
+                session.commercial.upsellDeclined = true;
+                console.log(`❌ Upsell declined`);
+            }
         }
         
         // Build session state for AI
@@ -992,55 +1253,102 @@ app.post('/chat', async (req, res) => {
             aiMessage = response.choices[0].message;
         }
         
-      // Parse AI output
+// ============================================
+        // ROBUST JSON PARSING WITH CONTEXT PRESERVATION
+        // ============================================
+        
         let aiOutput;
+        
+        // LAYER 1: Try direct JSON parse
         try {
             aiOutput = JSON.parse(aiMessage.content);
             console.log(`✅ AI intent: ${aiOutput.intent}`);
-        } catch (e) {
-            console.error(`❌ Invalid JSON:`, aiMessage.content?.substring(0, 200));
+        } catch (parseError) {
+            console.log(`⚠️ JSON parse failed, trying extraction...`);
             
-            // CONTEXT-AWARE FALLBACK - Don't ignore what customer said!
-            let fallbackText = "";
-            const ctx = session.context;
+            // LAYER 2: Try to extract JSON from markdown code blocks
+            const jsonMatch = aiMessage.content?.match(/```(?:json)?\s*([\s\S]*?)```/);
+            if (jsonMatch) {
+                try {
+                    aiOutput = JSON.parse(jsonMatch[1].trim());
+                    console.log(`✅ Extracted JSON from code block`);
+                } catch (e2) {
+                    console.log(`⚠️ Code block extraction failed`);
+                }
+            }
             
-            if (ctx.material || ctx.furnitureType || ctx.seatCount) {
-                // We have context - acknowledge it
-                let parts = [];
-                if (ctx.material) parts.push(ctx.material);
-                if (ctx.furnitureType) parts.push(ctx.furnitureType);
-                if (ctx.seatCount) parts.push(`seating for ${ctx.seatCount}`);
+            // LAYER 3: Try to find JSON object in response
+            if (!aiOutput) {
+                const objectMatch = aiMessage.content?.match(/\{[\s\S]*\}/);
+                if (objectMatch) {
+                    try {
+                        aiOutput = JSON.parse(objectMatch[0]);
+                        console.log(`✅ Extracted JSON object from response`);
+                    } catch (e3) {
+                        console.log(`⚠️ Object extraction failed`);
+                    }
+                }
+            }
+            
+            // LAYER 4: CONTEXT-AWARE INTELLIGENT FALLBACK
+            if (!aiOutput) {
+                console.log(`🔄 Using context-aware fallback`);
+                const ctx = session.context;
+                const hasWhitelist = session.currentWhitelist && session.currentWhitelist.length > 0;
+                const hasContext = ctx.material || ctx.furnitureType || ctx.seatCount;
                 
-                fallbackText = `I understand you're looking for ${parts.join(' ')} furniture. Let me search for the best options for you. One moment...`;
-                
-                // Try to show products if we have a whitelist
-                if (session.currentWhitelist && session.currentWhitelist.length > 0) {
+                if (hasWhitelist && hasContext) {
+                    // We have products to show - show them!
+                    let introText = "Here are some great options";
+                    const contextParts = [];
+                    if (ctx.material) contextParts.push(ctx.material);
+                    if (ctx.furnitureType) contextParts.push(ctx.furnitureType);
+                    if (ctx.seatCount) contextParts.push(`seating ${ctx.seatCount}+ people`);
+                    
+                    if (contextParts.length > 0) {
+                        introText = `Based on what you've told me about wanting ${contextParts.join(' ')} furniture, here are some perfect matches:`;
+                    }
+                    
                     aiOutput = {
                         intent: 'product_recommendation',
-                        intro_copy: `Here are our best ${ctx.material || ''} options${ctx.seatCount ? ' for ' + ctx.seatCount + '+ people' : ''}:`,
+                        intro_copy: introText,
                         selected_skus: session.currentWhitelist.slice(0, 3),
-                        closing_copy: "Would any of these work for you?"
+                        personalisation: `Perfect for your ${ctx.furnitureType || 'outdoor'} space`,
+                        closing_copy: "Would any of these work for you? I can also tell you more about materials, warranties, or dimensions."
                     };
-                } else {
+                    console.log(`✅ Fallback: Showing ${session.currentWhitelist.length} products with context`);
+                    
+                } else if (hasContext && !hasWhitelist) {
+                    // We have context but no products searched yet
+                    const contextParts = [];
+                    if (ctx.material) contextParts.push(ctx.material);
+                    if (ctx.furnitureType) contextParts.push(ctx.furnitureType);
+                    if (ctx.seatCount) contextParts.push(`for ${ctx.seatCount} people`);
+                    
                     aiOutput = {
                         intent: 'clarification',
-                        response_text: fallbackText
+                        response_text: `Great! I can see you're interested in ${contextParts.join(' ')} furniture. Let me find the best options for you. Just to make sure I show you exactly what you need - are you looking for something for dining or lounging?`
                     };
+                    console.log(`✅ Fallback: Acknowledging context, asking to refine`);
+                    
+                } else {
+                    // No context at all
+                    aiOutput = {
+                        intent: 'greeting',
+                        response_text: "Hi there! I'm Gwen, your outdoor furniture expert. What kind of outdoor space are you looking to furnish - a dining area, a cosy lounge spot, or perhaps both?"
+                    };
+                    console.log(`✅ Fallback: Fresh greeting`);
                 }
-            } else {
-                // No context yet - use greeting
-                aiOutput = {
-                    intent: 'greeting',
-                    response_text: "Hello! Welcome to MINT Outdoor. I'd love to help you find the perfect outdoor furniture. Are you looking for a dining set, lounge set, or something else?"
-                };
             }
         }
         
-        // Validate
+        // ============================================
+        // VALIDATION WITH CONTEXT PRESERVATION
+        // ============================================
+        
         aiOutput = validateAIOutput(aiOutput, session.currentWhitelist, sessionId);
         
         if (!aiOutput) {
-            // CONTEXT-AWARE FALLBACK
             const ctx = session.context;
             let fallbackText = "I'd love to help you find the perfect outdoor furniture.";
             
@@ -1053,18 +1361,59 @@ app.post('/chat', async (req, res) => {
                 response_text: fallbackText
             };
         }
-        
+
         // Assemble response
-        const finalResponse = await assembleResponse(aiOutput, sessionId);
+        const finalResponse = await assembleResponse(aiOutput, sessionId, session);
+
         
-        // NOW add to conversation history (after we have the response)
-        session.conversationHistory.push({ role: 'user', content: message });
-        session.conversationHistory.push({ role: 'assistant', content: finalResponse });
+        // ============================================
+        // ENHANCED CONVERSATION HISTORY MANAGEMENT
+        // ============================================
         
-        // Keep history manageable (last 8 messages = 4 exchanges)
-        if (session.conversationHistory.length > 8) {
-            session.conversationHistory = session.conversationHistory.slice(-8);
+        // Build a rich context entry that includes what happened
+        const userEntry = {
+            role: 'user',
+            content: message,
+            timestamp: new Date().toISOString()
+        };
+        
+        const assistantEntry = {
+            role: 'assistant',
+            content: finalResponse,
+            metadata: {
+                intent: aiOutput.intent,
+                productsShown: aiOutput.selected_skus || [],
+                timestamp: new Date().toISOString()
+            }
+        };
+        
+        session.conversationHistory.push(userEntry);
+        session.conversationHistory.push(assistantEntry);
+        
+        // Track products shown in commercial state
+        if (aiOutput.intent === 'product_recommendation' && aiOutput.selected_skus) {
+            for (const sku of aiOutput.selected_skus) {
+                if (!session.commercial.productsShown.includes(sku)) {
+                    session.commercial.productsShown.push(sku);
+                }
+                // Track last product price for upsell calculations
+                const product = productIndex.bySku[sku];
+                if (product?.product_identity?.price_gbp) {
+                    session.commercial.lastProductPrice = parseFloat(product.product_identity.price_gbp);
+                }
+            }
         }
+        
+        // Keep history manageable but preserve more context (last 12 messages = 6 exchanges)
+        if (session.conversationHistory.length > 12) {
+            // Keep first 2 messages (initial context) and last 10
+            const firstMessages = session.conversationHistory.slice(0, 2);
+            const recentMessages = session.conversationHistory.slice(-10);
+            session.conversationHistory = [...firstMessages, ...recentMessages];
+        }
+        
+        // Create a state summary for the AI to reference
+        session.stateSummary = buildStateSummary(session);
         
         if (aiOutput.intent === 'product_recommendation' && aiOutput.selected_skus) {
             session.commercial.productsShown.push(...aiOutput.selected_skus);
