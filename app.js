@@ -253,41 +253,50 @@ function searchProducts(criteria) {
         console.log(`🔍 After material filter (${mat}): ${filtered.length} products (was ${beforeCount})`);
     }
     
-    // Filter by seat count - MINIMUM seats, not approximate
+    // Filter by seat count - STRICT MINIMUM, no irrelevant smaller products
     if (seatCount) {
         const target = parseInt(seatCount);
         const beforeCount = filtered.length;
-        const beforeFilter = filtered.map(p => ({
-            sku: p.product_identity?.sku,
-            seats: p.specifications?.seats
-        }));
-        console.log(`🔍 Products before seat filter:`, beforeFilter.slice(0, 10));
         
-        filtered = filtered.filter(p => {
+        // First, try to find products that meet the seat requirement
+        const matchingProducts = filtered.filter(p => {
             const seats = parseInt(p.specifications?.seats);
-            // Must have AT LEAST the requested number of seats
             return seats && seats >= target;
         });
-        console.log(`🔍 After seat filter (>=${target}): ${filtered.length} products (was ${beforeCount})`);
         
-        // If no exact matches, try slightly smaller but warn
-        if (filtered.length === 0 && beforeCount > 0) {
-            console.log(`   ⚠️ No products with ${target}+ seats, showing best available`);
-            // Go back to before seat filter and sort by seats descending
-            filtered = Object.values(productIndex.bySku).filter(p => {
-                if (material) {
-                    const mt = p.description_and_category?.material_type?.toLowerCase() || '';
-                    if (!mt.includes(material.toLowerCase())) return false;
-                }
-                if (furnitureType) {
-                    const taxonomy = p.description_and_category?.taxonomy_type?.toLowerCase() || '';
-                    const name = p.product_identity?.product_name?.toLowerCase() || '';
-                    if (furnitureType === 'lounge' && !taxonomy.includes('lounge') && !name.includes('lounge')) return false;
-                }
+        console.log(`🔍 After seat filter (>=${target}): ${matchingProducts.length} products (was ${beforeCount})`);
+        
+        if (matchingProducts.length > 0) {
+            // Sort by closest match to requested seats (not oversized)
+            matchingProducts.sort((a, b) => {
+                const seatsA = parseInt(a.specifications?.seats) || 0;
+                const seatsB = parseInt(b.specifications?.seats) || 0;
+                return seatsA - seatsB; // Prefer closer matches
+            });
+            filtered = matchingProducts;
+        } else {
+            // No exact matches - find the LARGEST available and warn
+            console.log(`   ⚠️ No products with ${target}+ seats, finding largest available`);
+            
+            // Get products with seat counts, sorted by seats descending
+            const productsWithSeats = filtered.filter(p => {
                 const seats = parseInt(p.specifications?.seats);
                 return seats && seats > 0;
+            }).sort((a, b) => {
+                return (parseInt(b.specifications?.seats) || 0) - (parseInt(a.specifications?.seats) || 0);
             });
-            filtered.sort((a, b) => (parseInt(b.specifications?.seats) || 0) - (parseInt(a.specifications?.seats) || 0));
+            
+            if (productsWithSeats.length > 0) {
+                const maxSeats = parseInt(productsWithSeats[0].specifications?.seats);
+                // Only show products with the maximum available seats (or close to it)
+                filtered = productsWithSeats.filter(p => {
+                    const seats = parseInt(p.specifications?.seats);
+                    return seats >= maxSeats - 1; // Allow 1 seat tolerance
+                });
+                console.log(`   📊 Showing ${filtered.length} products with ${maxSeats} seats (largest available)`);
+            } else {
+                filtered = [];
+            }
         }
     }
     
@@ -489,14 +498,32 @@ YOUR CORE RULES:
 4. Be warm and helpful, never say "no" or "unfortunately"
 
 WHEN TO SHOW PRODUCTS (use product_recommendation intent):
-- Customer mentions material (rattan, teak, aluminium)
-- Customer mentions furniture type (dining, lounge, corner)
-- Customer mentions size (4 people, 6 seater, large)
-→ If you have 2+ of these, call search_products tool then recommend
+- Customer mentions material (rattan, teak, aluminium) AND furniture type or size
+- Customer asks to see options or alternatives
+→ Only show products if you have 2+ pieces of qualifying information
+
+WHEN NOT TO SHOW PRODUCTS:
+- Customer says "I like it", "that's great", "perfect" → They've chosen! Help them buy, don't show more
+- Customer asks "how do I order" or "how to buy" → Give checkout instructions, don't show products
+- Customer says "yes" to your question → Acknowledge and help them proceed, don't restart
+
+WHEN CUSTOMER IS READY TO BUY:
+If customer says: "I'll take it", "how do I order", "how to buy", "yes I want it", "let's do it"
+→ Use the initiate_checkout tool OR give clear ordering instructions:
+   1. Tell them to click the View Product button
+   2. Add to basket on our website
+   3. Proceed to checkout
+   4. Mention any bundle discount if applicable
+
+WHEN CUSTOMER WANTS EMAIL QUOTE:
+If customer provides email or asks you to email details:
+→ Use the capture_email_for_quote tool
+→ Confirm you'll send details within a few minutes
 
 WHEN TO ASK QUESTIONS (use clarification intent):
 - Only 1 piece of info known - ask for furniture type or size
 - Never ask what they already told you
+- NEVER ask "would you like these?" after they already said yes
 
 RESPONDING TO SPECIFIC QUESTIONS:
 - Price: "The [Product] is **£XXX**" - always include the pound amount
@@ -607,6 +634,53 @@ const aiTools = [
                 required: ["reason"]
             }
         }
+    },
+    {
+        type: "function",
+        function: {
+            name: "capture_email_for_quote",
+            description: "Capture customer email to send them a quote or product summary. Use when customer provides their email address or asks you to email them details.",
+            parameters: {
+                type: "object",
+                properties: {
+                    email: {
+                        type: "string",
+                        description: "Customer's email address"
+                    },
+                    productSkus: {
+                        type: "array",
+                        items: { type: "string" },
+                        description: "SKUs of products to include in quote"
+                    },
+                    includeBundle: {
+                        type: "boolean",
+                        description: "Whether to include bundle pricing"
+                    }
+                },
+                required: ["email"]
+            }
+        }
+    },
+    {
+        type: "function",
+        function: {
+            name: "initiate_checkout",
+            description: "Help customer proceed to checkout. Use when customer says they want to buy, order, purchase, or asks how to complete their order.",
+            parameters: {
+                type: "object",
+                properties: {
+                    productSku: {
+                        type: "string",
+                        description: "SKU of main product to purchase"
+                    },
+                    includeBundle: {
+                        type: "boolean",
+                        description: "Whether customer wants the bundle deal"
+                    }
+                },
+                required: ["productSku"]
+            }
+        }
     }
 ];
 
@@ -707,26 +781,71 @@ function detectCustomerSentiment(message) {
     const msgLower = message.toLowerCase();
     
     // Price concern signals
-    const priceConcernWords = ['expensive', 'cost', 'budget', 'afford', 'cheaper', 'price', 'discount', 'deal', 'too much', 'pricey'];
+    const priceConcernWords = ['expensive', 'cost', 'budget', 'afford', 'cheaper', 'price too', 'too much', 'pricey', 'can\'t afford'];
     const isPriceConcerned = priceConcernWords.some(word => msgLower.includes(word));
     
-    // Positive signals
-    const positiveWords = ['love', 'great', 'perfect', 'excellent', 'interested', 'like', 'yes', 'sounds good', 'looks great', 'beautiful', 'amazing'];
+    // Positive signals - customer likes what they see
+    const positiveWords = ['love', 'great', 'perfect', 'excellent', 'interested', 'like', 'looks great', 'beautiful', 'amazing', 'fantastic', 'brilliant', 'lovely', 'really like', 'i like'];
     const isPositive = positiveWords.some(word => msgLower.includes(word));
     
+    // Strong positive - customer has chosen
+    const strongPositiveWords = ['i\'ll take', 'i will take', 'that\'s the one', 'decided', 'go with', 'choose', 'chosen', 'want this', 'want that', 'this one please', 'perfect for me'];
+    const isStrongPositive = strongPositiveWords.some(word => msgLower.includes(word));
+    
     // Decline signals
-    const declineWords = ['no thanks', 'not interested', 'no thank you', 'just the', 'only want', 'don\'t need', 'pass on'];
+    const declineWords = ['no thanks', 'not interested', 'no thank you', 'just the', 'only want', 'don\'t need', 'pass on', 'not for me', 'don\'t like'];
     const isDecline = declineWords.some(word => msgLower.includes(word));
     
     // Bundle interest signals
-    const bundleInterestWords = ['bundle', 'discount', 'together', 'package', 'deal', 'cover', 'protect'];
+    const bundleInterestWords = ['bundle', 'discount', 'together', 'package', 'deal', 'cover', 'protect', 'save'];
     const bundleInterest = bundleInterestWords.some(word => msgLower.includes(word));
+    
+    // ============================================
+    // PURCHASE INTENT DETECTION - CRITICAL FOR CLOSING
+    // ============================================
+    
+    // Ready to buy signals - customer wants to purchase NOW
+    const readyToBuyWords = [
+        'how do i order', 'how do i buy', 'how to order', 'how to buy',
+        'where do i buy', 'where can i buy', 'where to buy',
+        'add to cart', 'add to basket', 'checkout', 'check out',
+        'purchase', 'buy now', 'buy it', 'buy this', 'take it',
+        'i\'ll have', 'i will have', 'order this', 'order it',
+        'ready to order', 'ready to buy', 'want to order', 'want to buy',
+        'place an order', 'make an order', 'complete my order',
+        'get the discount', 'apply the discount', 'use the discount',
+        'proceed', 'go ahead', 'let\'s do it', 'sounds good let\'s go'
+    ];
+    const isReadyToBuy = readyToBuyWords.some(word => msgLower.includes(word));
+    
+    // Confirmation signals - customer saying yes to offers
+    const confirmationWords = ['yes', 'yeah', 'yep', 'sure', 'ok', 'okay', 'please', 'go ahead', 'sounds good', 'that\'s great', 'that works', 'absolutely'];
+    const isConfirmation = confirmationWords.some(word => {
+        // Check if it's a standalone confirmation or at the start
+        const regex = new RegExp(`(^|\\s)${word}($|\\s|,|\\.|!)`, 'i');
+        return regex.test(msgLower);
+    });
+    
+    // Questions about buying process
+    const buyProcessWords = ['delivery', 'shipping', 'payment', 'pay', 'card', 'checkout', 'when will it arrive', 'how long', 'return policy', 'warranty'];
+    const isAskingAboutBuying = buyProcessWords.some(word => msgLower.includes(word));
+    
+    // Calculate purchase intent level (0-3)
+    let purchaseIntentLevel = 0;
+    if (isAskingAboutBuying) purchaseIntentLevel = 1;
+    if (isStrongPositive || isConfirmation) purchaseIntentLevel = 2;
+    if (isReadyToBuy) purchaseIntentLevel = 3;
     
     return {
         priceConcerned: isPriceConcerned,
-        positive: isPositive,
+        positive: isPositive || isStrongPositive,
+        strongPositive: isStrongPositive,
         decline: isDecline,
-        bundleInterest: bundleInterest
+        bundleInterest: bundleInterest,
+        readyToBuy: isReadyToBuy,
+        confirmation: isConfirmation,
+        askingAboutBuying: isAskingAboutBuying,
+        purchaseIntentLevel: purchaseIntentLevel
     };
 }
 
@@ -865,6 +984,138 @@ function getCrossSellSuggestions(sku, session) {
     return suggestions.sort((a, b) => a.priority - b.priority);
 }
 
+// ============================================
+// CLOSING FLOW - CONVERT READY BUYERS
+// ============================================
+
+function buildClosingResponse(session, sentiment) {
+    const lastProducts = session.commercial.productsShown.slice(-3);
+    const mainProductSku = lastProducts[0];
+    const mainProduct = mainProductSku ? productIndex.bySku[mainProductSku] : null;
+    
+    if (!mainProduct) {
+        return {
+            type: 'soft_close',
+            text: "I'd love to help you complete your purchase! Which product caught your eye? I can guide you through the ordering process."
+        };
+    }
+    
+    const productName = mainProduct.product_identity?.product_name || 'your selected product';
+    const productUrl = `https://www.mint-outdoor.com/products/${mainProductSku.toLowerCase()}`;
+    const price = parseFloat(mainProduct.product_identity?.price_gbp) || 0;
+    
+    // Check if there's a bundle available
+    const bundles = getBundleForProduct(mainProductSku);
+    const hasBundle = bundles.length > 0;
+    
+    if (hasBundle && session.commercial.bundleInterestShown) {
+        // Customer showed interest in bundle - give bundle checkout flow
+        const bundle = bundles[0];
+        let bundleTotal = 0;
+        const bundleProductNames = [];
+        
+        for (const item of bundle.products) {
+            const prod = productIndex.bySku[item.product_sku];
+            if (prod) {
+                const itemPrice = parseFloat(prod.product_identity?.price_gbp) || 0;
+                bundleTotal += itemPrice * item.product_qty;
+                bundleProductNames.push(prod.product_identity?.product_name);
+            }
+        }
+        
+        const discount = bundleTotal * (COMMERCE_RULES.bundle.discountPercent / 100);
+        const finalPrice = bundleTotal - discount;
+        
+        return {
+            type: 'bundle_checkout',
+            intent: 'checkout_flow',
+            text: `Brilliant choice! Here's how to get your bundle with the ${COMMERCE_RULES.bundle.discountPercent}% discount:\n\n` +
+                  `**Your Bundle:**\n` +
+                  bundleProductNames.map(n => `✓ ${n}`).join('\n') + `\n\n` +
+                  `**Bundle Price: £${finalPrice.toFixed(2)}** ~~£${bundleTotal.toFixed(2)}~~\n` +
+                  `*You save: £${discount.toFixed(2)}*\n\n` +
+                  `**To order:**\n` +
+                  `1️⃣ Click the link below to view the main product\n` +
+                  `2️⃣ Add it to your basket\n` +
+                  `3️⃣ The matching accessories will be suggested at checkout\n` +
+                  `4️⃣ Your ${COMMERCE_RULES.bundle.discountPercent}% bundle discount applies automatically!\n\n` +
+                  `<a href="${productUrl}" target="_blank" style="display:inline-block; padding:12px 24px; background:#2E6041; color:white; text-decoration:none; border-radius:5px; font-weight:bold;">ORDER NOW → £${finalPrice.toFixed(2)}</a>\n\n` +
+                  `Or if you'd like me to email you this quote to review later, just let me know your email address and I'll send it with the discount locked in for 48 hours! 📧`,
+            mainProduct: mainProductSku,
+            bundlePrice: finalPrice,
+            savingsAmount: discount
+        };
+    } else {
+        // Standard product checkout flow
+        return {
+            type: 'product_checkout',
+            intent: 'checkout_flow',
+            text: `Excellent choice! The **${productName}** is one of our most popular sets.\n\n` +
+                  `**Price: £${price.toFixed(2)}**\n` +
+                  `✅ In stock with 3-5 day delivery\n` +
+                  `✅ 1-year warranty included\n\n` +
+                  `**To order:**\n` +
+                  `Simply click the button below to add it to your basket and checkout:\n\n` +
+                  `<a href="${productUrl}" target="_blank" style="display:inline-block; padding:12px 24px; background:#2E6041; color:white; text-decoration:none; border-radius:5px; font-weight:bold;">ORDER NOW → £${price.toFixed(2)}</a>\n\n` +
+                  `Would you also like a protective cover? It extends the furniture's life by 3-5 years and you'll save ${COMMERCE_RULES.bundle.discountPercent}% when bought together! 🎁`,
+            mainProduct: mainProductSku,
+            productPrice: price
+        };
+    }
+}
+
+function buildEmailCaptureResponse(session) {
+    const lastProducts = session.commercial.productsShown.slice(-3);
+    const mainProductSku = lastProducts[0];
+    const mainProduct = mainProductSku ? productIndex.bySku[mainProductSku] : null;
+    
+    const productName = mainProduct?.product_identity?.product_name || 'your selected items';
+    
+    return {
+        type: 'email_capture',
+        intent: 'email_capture',
+        text: `I'd be happy to email you a summary of ${productName} with all the details and your exclusive discount.\n\n` +
+              `Just share your email address and I'll send:\n` +
+              `📋 Product specifications and dimensions\n` +
+              `💰 Your personalised quote with any bundle discounts\n` +
+              `🔒 Discount locked in for 48 hours\n\n` +
+              `What's the best email to send this to?`
+    };
+}
+
+function getContextAwareClosingCopy(session, sentiment) {
+    const commercial = session.commercial;
+    
+    // Customer has shown strong positive signals - don't ask if they like it!
+    if (sentiment.strongPositive || commercial.positiveSignalReceived) {
+        const options = [
+            "Ready to order? Click the 'View Product' button above, or let me know if you have any final questions!",
+            "Great choice! Click above to add it to your basket, or ask me anything else you'd like to know.",
+            "Shall I help you complete your purchase? Just click the product link above to checkout.",
+            "Click the button above to order, or let me know if you'd like more details on delivery and warranty."
+        ];
+        return options[Math.floor(Math.random() * options.length)];
+    }
+    
+    // Customer asked about buying process - they're close to converting
+    if (sentiment.askingAboutBuying) {
+        return "Does this answer your question? When you're ready, just click the product link above to complete your order.";
+    }
+    
+    // Customer is in discovery mode - standard closing
+    if (commercial.productsShown.length <= 3) {
+        return "Which of these catches your eye? I can tell you more about any of them.";
+    }
+    
+    // Customer has seen multiple products - help them decide
+    if (commercial.productsShown.length > 5) {
+        return "You've seen a few options now! Would you like me to help you compare, or is there one that stands out?";
+    }
+    
+    // Default
+    return "Would any of these work for your space? Let me know if you'd like more details.";
+}
+
 function buildBundleOffer(session, mainProductSku, offerType) {
     const bundles = getBundleForProduct(mainProductSku);
     if (bundles.length === 0) return null;
@@ -942,6 +1193,17 @@ function validateAIOutput(aiOutput, whitelist, sessionId) {
 async function assembleResponse(aiOutput, sessionId, session) {
     const intent = aiOutput.intent;
     
+    // ============================================
+    // HANDLE CHECKOUT FLOW RESPONSES
+    // ============================================
+    if (intent === 'checkout_flow') {
+        return aiOutput.response_text || aiOutput.text || "Let me help you complete your purchase!";
+    }
+    
+    if (intent === 'email_capture') {
+        return aiOutput.response_text || aiOutput.text || "I'd be happy to email you the details!";
+    }
+    
     // For non-product intents, use AI's response text directly
     if (intent !== 'product_recommendation') {
         return aiOutput.response_text || "I'm here to help! What would you like to know about our outdoor furniture?";
@@ -954,11 +1216,10 @@ async function assembleResponse(aiOutput, sessionId, session) {
         parts.push(aiOutput.intro_copy);
     }
     
-    let productCards = [];
     let mainProductSku = null;
     
     if (aiOutput.selected_skus && aiOutput.selected_skus.length > 0) {
-        mainProductSku = aiOutput.selected_skus[0]; // First product is the main one
+        mainProductSku = aiOutput.selected_skus[0];
         
         const cards = await renderMultipleProducts(
             aiOutput.selected_skus,
@@ -968,7 +1229,6 @@ async function assembleResponse(aiOutput, sessionId, session) {
         if (cards.length > 0) {
             parts.push('');
             parts.push(cards.join('\n---\n'));
-            productCards = cards;
         } else {
             parts.push("\nI'm sorry, but the products I wanted to show you aren't currently available. Let me find some alternatives - what's most important to you: material, size, or style?");
             return parts.join('\n');
@@ -976,14 +1236,25 @@ async function assembleResponse(aiOutput, sessionId, session) {
     }
     
     // ============================================
-    // INTELLIGENT BUNDLE/CROSS-SELL INJECTION
+    // INTELLIGENT CROSS-SELL TIMING
+    // Only cross-sell AFTER positive signals, not on first showing
     // ============================================
     
     if (mainProductSku && session) {
+        const hasPositiveSignal = session.commercial.positiveSignalReceived;
+        const messageCount = session.messageCount;
+        const productsAlreadyShown = session.commercial.productsShown.length;
+        
         // Check if we should offer a bundle
         const bundleEligibility = checkBundleEligibility(session);
         
-        if (bundleEligibility.eligible) {
+        // Only show bundle offers if:
+        // 1. Eligible AND
+        // 2. (Customer showed positive signal OR this is at least their 3rd message OR they've seen products before)
+        const shouldOfferBundle = bundleEligibility.eligible && 
+            (hasPositiveSignal || messageCount >= 3 || productsAlreadyShown > 0);
+        
+        if (shouldOfferBundle) {
             const bundleOffer = buildBundleOffer(session, mainProductSku, bundleEligibility.offerType);
             
             if (bundleOffer) {
@@ -991,12 +1262,12 @@ async function assembleResponse(aiOutput, sessionId, session) {
                 parts.push(bundleOffer.text);
                 session.commercial.bundlesOffered++;
                 session.commercial.lastOfferType = 'bundle';
-                console.log(`🎁 Bundle offer added (${bundleEligibility.offerType})`);
+                console.log(`🎁 Bundle offer added (${bundleEligibility.offerType}) - positive signal: ${hasPositiveSignal}`);
             }
         }
         
-        // Check for cross-sell opportunities (if no bundle offered)
-        if (!bundleEligibility.eligible || session.commercial.bundlesOffered === 0) {
+        // Cross-sell: Only if no bundle offered AND customer has shown interest
+        if (!shouldOfferBundle && hasPositiveSignal) {
             const crossSells = getCrossSellSuggestions(mainProductSku, session);
             
             if (crossSells.length > 0 && session.commercial.crossSellsShown.length < 2) {
@@ -1009,11 +1280,17 @@ async function assembleResponse(aiOutput, sessionId, session) {
         }
     }
     
-    // Add closing copy
-    if (aiOutput.closing_copy) {
-        parts.push('');
-        parts.push(aiOutput.closing_copy);
-    }
+    // ============================================
+    // CONTEXT-AWARE CLOSING COPY
+    // Don't ask "would you like these?" if customer already said yes!
+    // ============================================
+    
+    // Get the latest sentiment to determine closing copy
+    const latestSentiment = session.commercial.latestSentiment || { positive: false };
+    
+    const closingCopy = getContextAwareClosingCopy(session, latestSentiment);
+    parts.push('');
+    parts.push(closingCopy);
     
     return parts.join('\n');
 }
@@ -1053,7 +1330,9 @@ app.post('/chat', async (req, res) => {
                     upsellDeclined: false,
                     bundleInterestShown: false,
                     positiveSignalReceived: false,
-                    sentiment: 'neutral', // neutral, positive, price_concerned
+                    strongPositiveReceived: false,
+                    sentiment: 'neutral',
+                    latestSentiment: null,
                     productsShown: [],
                     crossSellsShown: [],
                     lastProductPrice: null,
@@ -1098,8 +1377,14 @@ app.post('/chat', async (req, res) => {
             console.log(`📝 Context: seats = ${session.context.seatCount}`);
         }
 
-        // Detect customer sentiment and update commercial state
+        // ============================================
+        // DETECT CUSTOMER SENTIMENT AND PURCHASE INTENT
+        // ============================================
         const sentiment = detectCustomerSentiment(message);
+        
+        // Store latest sentiment for closing copy decisions
+        session.commercial.latestSentiment = sentiment;
+        
         if (sentiment.priceConcerned) {
             session.commercial.sentiment = 'price_concerned';
             console.log(`💰 Sentiment: Price concerned`);
@@ -1108,12 +1393,18 @@ app.post('/chat', async (req, res) => {
             session.commercial.positiveSignalReceived = true;
             console.log(`😊 Sentiment: Positive signal received`);
         }
+        
+        if (sentiment.strongPositive) {
+            session.commercial.strongPositiveReceived = true;
+            console.log(`🎯 Sentiment: Strong positive - customer has chosen!`);
+        }
+        
         if (sentiment.bundleInterest) {
             session.commercial.bundleInterestShown = true;
             console.log(`🎁 Bundle interest detected`);
         }
+        
         if (sentiment.decline) {
-            // Check what was last offered
             if (session.commercial.lastOfferType === 'bundle') {
                 session.commercial.bundleDeclined = true;
                 console.log(`❌ Bundle offer declined`);
@@ -1121,6 +1412,38 @@ app.post('/chat', async (req, res) => {
                 session.commercial.upsellDeclined = true;
                 console.log(`❌ Upsell declined`);
             }
+        }
+        
+        // ============================================
+        // PURCHASE INTENT HANDLING - TRIGGER CLOSING FLOW
+        // ============================================
+        if (sentiment.readyToBuy && session.commercial.productsShown.length > 0) {
+            console.log(`🛒 PURCHASE INTENT DETECTED - Triggering closing flow`);
+            
+            // Build closing response directly - don't let AI show more products
+            const closingResponse = buildClosingResponse(session, sentiment);
+            
+            // Add to conversation history
+            session.conversationHistory.push({
+                role: 'user',
+                content: message,
+                timestamp: new Date().toISOString()
+            });
+            session.conversationHistory.push({
+                role: 'assistant',
+                content: closingResponse.text,
+                metadata: {
+                    intent: 'checkout_flow',
+                    timestamp: new Date().toISOString()
+                }
+            });
+            
+            console.log(`📤 Closing flow response sent`);
+            
+            return res.json({
+                response: closingResponse.text,
+                sessionId: sessionId
+            });
         }
         
         // Build session state for AI
@@ -1229,6 +1552,92 @@ app.post('/chat', async (req, res) => {
                     });
                 }
             }
+
+            if (toolCall.function.name === "capture_email_for_quote") {
+                    console.log(`📧 Email capture:`, args);
+                    
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(args.email)) {
+                        toolResults.push({
+                            tool_call_id: toolCall.id,
+                            output: JSON.stringify({
+                                success: false,
+                                message: "That doesn't look like a valid email. Please ask for a valid email address."
+                            })
+                        });
+                    } else {
+                        // Store email in session
+                        session.customerEmail = args.email;
+                        
+                        // Get products for quote
+                        const productsForQuote = args.productSkus || session.commercial.productsShown.slice(-3);
+                        
+                        // In production, you would send an actual email here
+                        // For now, we log it and confirm
+                        console.log(`📧 Quote requested for: ${args.email}`);
+                        console.log(`📧 Products: ${productsForQuote.join(', ')}`);
+                        
+                        toolResults.push({
+                            tool_call_id: toolCall.id,
+                            output: JSON.stringify({
+                                success: true,
+                                email: args.email,
+                                products: productsForQuote,
+                                message: `Email captured successfully. Confirm to customer that quote will be sent to ${args.email} within a few minutes, with their discount locked in for 48 hours. Also mention they can reply to the email if they have questions.`
+                            })
+                        });
+                    }
+                }
+                
+                if (toolCall.function.name === "initiate_checkout") {
+                    console.log(`🛒 Checkout initiated:`, args);
+                    
+                    const product = productIndex.bySku[args.productSku];
+                    if (!product) {
+                        toolResults.push({
+                            tool_call_id: toolCall.id,
+                            output: JSON.stringify({
+                                success: false,
+                                message: "Product not found. Ask customer which product they'd like to order."
+                            })
+                        });
+                    } else {
+                        const productUrl = `https://www.mint-outdoor.com/products/${args.productSku.toLowerCase()}`;
+                        const price = parseFloat(product.product_identity?.price_gbp) || 0;
+                        
+                        let checkoutInfo = {
+                            success: true,
+                            productName: product.product_identity?.product_name,
+                            productUrl: productUrl,
+                            price: price,
+                            message: `Direct the customer to click the ORDER NOW button or visit: ${productUrl}`
+                        };
+                        
+                        // Add bundle info if requested
+                        if (args.includeBundle) {
+                            const bundles = getBundleForProduct(args.productSku);
+                            if (bundles.length > 0) {
+                                const bundle = bundles[0];
+                                let bundleTotal = 0;
+                                for (const item of bundle.products) {
+                                    const prod = productIndex.bySku[item.product_sku];
+                                    if (prod) {
+                                        bundleTotal += (parseFloat(prod.product_identity?.price_gbp) || 0) * item.product_qty;
+                                    }
+                                }
+                                const discount = bundleTotal * 0.20;
+                                checkoutInfo.bundlePrice = bundleTotal - discount;
+                                checkoutInfo.bundleSavings = discount;
+                                checkoutInfo.message += ` Bundle discount of 20% (saving £${discount.toFixed(2)}) applies at checkout when they add the matching cover.`;
+                            }
+                        }
+                        
+                        toolResults.push({
+                            tool_call_id: toolCall.id,
+                            output: JSON.stringify(checkoutInfo)
+                        });
+                    }
+                }
             
             messages.push(aiMessage);
             
