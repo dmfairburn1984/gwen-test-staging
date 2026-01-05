@@ -1367,7 +1367,7 @@ app.get('/run-tests', async (req, res) => {
             { role: 'system', content: systemPrompt },
             { role: 'user', content: test.input }
           ],
-          tools: tools,
+           tools: aiTools,
           tool_choice: 'auto',
           max_tokens: 800,
           temperature: 0.7
@@ -1392,7 +1392,7 @@ app.get('/run-tests', async (req, res) => {
             if (toolCall.function.name === 'search_products') {
               toolResult = searchProducts(args);
             } else if (toolCall.function.name === 'get_material_info') {
-              toolResult = getMaterialInfo(args);
+              toolResult = materialInfo[args.material] || { error: 'Unknown material' };
             } else {
               toolResult = { error: 'Unknown tool' };
             }
@@ -1502,7 +1502,33 @@ app.get('/run-tests', async (req, res) => {
   }
   
   // Generate HTML report
-  const html = generateTestReport(results, passed, total, passRate, suitesToRun);
+  // Build results object for HTML generator
+  const suiteResults = {};
+  for (const suiteName of suitesToRun) {
+    const suiteTests = results.filter(r => r.suite === suiteName);
+    suiteResults[suiteName] = {
+      total: suiteTests.length,
+      passed: suiteTests.filter(t => t.passed).length,
+      tests: suiteTests.map(t => ({
+        id: t.id,
+        name: t.name,
+        input: t.input,
+        passed: t.passed,
+        responseTime: t.responseTime,
+        found: t.foundTerms,
+        missing: t.missingTerms,
+        violations: t.violations,
+        error: t.error,
+        response: t.response
+      }))
+    };
+  }
+  
+  const html = generateTestReportHTML({
+    timestamp: new Date().toISOString(),
+    summary: { total, passed, failed: total - passed, passRate: passRate + '%' },
+    suites: suiteResults
+  });
   res.send(html);
 });
 
@@ -1710,117 +1736,7 @@ function generateTestReportHTML(results) {
 </html>`;
 }
 
-/ ═══════════════════════════════════════════════════════════════════════════
-// STEP 3: Add this HTML report generator function
-// ═══════════════════════════════════════════════════════════════════════════
 
-function generateTestReport(results, passed, total, passRate, suitesRun) {
-  const suiteGroups = {};
-  results.forEach(r => {
-    if (!suiteGroups[r.suite]) suiteGroups[r.suite] = [];
-    suiteGroups[r.suite].push(r);
-  });
-  
-  let suiteHtml = '';
-  for (const [suite, tests] of Object.entries(suiteGroups)) {
-    const suitePassed = tests.filter(t => t.passed).length;
-    const suiteTotal = tests.length;
-    const suiteRate = ((suitePassed / suiteTotal) * 100).toFixed(0);
-    
-    suiteHtml += `
-      <div class="suite">
-        <h3>${suite} <span class="suite-stats">${suitePassed}/${suiteTotal} (${suiteRate}%)</span></h3>
-        ${tests.map(t => `
-          <div class="test ${t.passed ? 'pass' : 'fail'}">
-            <div class="test-header" onclick="this.parentElement.classList.toggle('expanded')">
-              <span class="status">${t.passed ? '✅' : '❌'}</span>
-              <span class="test-id">${t.id}</span>
-              <span class="test-name">${t.name}</span>
-              <span class="test-time">${t.responseTime}ms</span>
-            </div>
-            <div class="test-details">
-              <p><strong>Input:</strong> "${t.input}"</p>
-              ${t.foundTerms?.length ? `<p><strong>Found:</strong> <span class="found">${t.foundTerms.join(', ')}</span></p>` : ''}
-              ${t.missingTerms?.length ? `<p><strong>Missing:</strong> <span class="missing">${t.missingTerms.join(', ')}</span></p>` : ''}
-              ${t.violations?.length ? `<p><strong>Violations:</strong> <span class="violation">${t.violations.join(', ')}</span></p>` : ''}
-              ${t.toolsUsed?.length ? `<p><strong>Tools:</strong> ${t.toolsUsed.join(', ')}</p>` : ''}
-              ${t.error ? `<p><strong>Error:</strong> <span class="error">${t.error}</span></p>` : ''}
-              <p><strong>Response:</strong></p>
-              <pre>${t.response || 'No response'}</pre>
-            </div>
-          </div>
-        `).join('')}
-      </div>
-    `;
-  }
-  
-  return `<!DOCTYPE html>
-<html>
-<head>
-  <title>GWEN Test Results V2</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
-    h1 { color: #1a1a2e; }
-    .summary { background: ${parseFloat(passRate) >= 80 ? '#d4edda' : parseFloat(passRate) >= 60 ? '#fff3cd' : '#f8d7da'}; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-    .summary h2 { margin: 0; font-size: 2em; }
-    .summary p { margin: 5px 0; color: #666; }
-    .suite { background: white; border-radius: 8px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    .suite h3 { margin: 0 0 10px 0; display: flex; justify-content: space-between; align-items: center; }
-    .suite-stats { font-size: 0.8em; color: #666; }
-    .test { border: 1px solid #ddd; border-radius: 4px; margin: 5px 0; overflow: hidden; }
-    .test.pass { border-left: 4px solid #28a745; }
-    .test.fail { border-left: 4px solid #dc3545; }
-    .test-header { padding: 10px 15px; cursor: pointer; display: flex; align-items: center; gap: 10px; background: #fafafa; }
-    .test-header:hover { background: #f0f0f0; }
-    .test-id { font-weight: bold; color: #333; }
-    .test-name { flex: 1; }
-    .test-time { color: #888; font-size: 0.9em; }
-    .test-details { display: none; padding: 15px; background: white; border-top: 1px solid #eee; }
-    .test.expanded .test-details { display: block; }
-    pre { background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto; font-size: 0.85em; white-space: pre-wrap; }
-    .found { color: #28a745; }
-    .missing { color: #dc3545; }
-    .violation { color: #dc3545; font-weight: bold; }
-    .error { color: #dc3545; }
-    .links { margin-top: 20px; }
-    .links a { margin-right: 15px; color: #007bff; }
-    .filters { margin-bottom: 20px; padding: 15px; background: white; border-radius: 8px; }
-    .filters a { display: inline-block; margin: 5px; padding: 5px 10px; background: #e9ecef; border-radius: 4px; text-decoration: none; color: #333; font-size: 0.9em; }
-    .filters a:hover { background: #007bff; color: white; }
-  </style>
-</head>
-<body>
-  <h1>🧪 GWEN Test Results V2</h1>
-  
-  <div class="summary">
-    <h2>${passed}/${total} Tests Passed (${passRate}%)</h2>
-    <p>Suites run: ${suitesRun.join(', ')}</p>
-    <p>Generated: ${new Date().toISOString()}</p>
-  </div>
-  
-  <div class="filters">
-    <strong>Run specific suites:</strong><br>
-    ${Object.keys(TEST_SCENARIOS_V2.suites).map(s => 
-      `<a href="/run-tests?suite=${s}">${s}</a>`
-    ).join('')}
-    <a href="/run-tests">All Suites</a>
-  </div>
-  
-  ${suiteHtml}
-  
-  <div class="links">
-    <a href="/run-tests?format=json">View as JSON</a>
-    <a href="/run-tests">Re-run All Tests</a>
-  </div>
-  
-  <script>
-    // Expand all failed tests by default
-    document.querySelectorAll('.test.fail').forEach(t => t.classList.add('expanded'));
-  </script>
-</body>
-</html>`;
-}
 
 // ============================================
 // SERVER STARTUP
