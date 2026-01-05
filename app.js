@@ -992,26 +992,65 @@ app.post('/chat', async (req, res) => {
             aiMessage = response.choices[0].message;
         }
         
-        // Parse AI output
+      // Parse AI output
         let aiOutput;
         try {
             aiOutput = JSON.parse(aiMessage.content);
             console.log(`✅ AI intent: ${aiOutput.intent}`);
         } catch (e) {
             console.error(`❌ Invalid JSON:`, aiMessage.content?.substring(0, 200));
-            aiOutput = {
-                intent: 'greeting',
-                response_text: "Hello! Welcome to MINT Outdoor. I'd love to help you find the perfect outdoor furniture. Are you looking for a dining set, lounge set, or something else?"
-            };
+            
+            // CONTEXT-AWARE FALLBACK - Don't ignore what customer said!
+            let fallbackText = "";
+            const ctx = session.context;
+            
+            if (ctx.material || ctx.furnitureType || ctx.seatCount) {
+                // We have context - acknowledge it
+                let parts = [];
+                if (ctx.material) parts.push(ctx.material);
+                if (ctx.furnitureType) parts.push(ctx.furnitureType);
+                if (ctx.seatCount) parts.push(`seating for ${ctx.seatCount}`);
+                
+                fallbackText = `I understand you're looking for ${parts.join(' ')} furniture. Let me search for the best options for you. One moment...`;
+                
+                // Try to show products if we have a whitelist
+                if (session.currentWhitelist && session.currentWhitelist.length > 0) {
+                    aiOutput = {
+                        intent: 'product_recommendation',
+                        intro_copy: `Here are our best ${ctx.material || ''} options${ctx.seatCount ? ' for ' + ctx.seatCount + '+ people' : ''}:`,
+                        selected_skus: session.currentWhitelist.slice(0, 3),
+                        closing_copy: "Would any of these work for you?"
+                    };
+                } else {
+                    aiOutput = {
+                        intent: 'clarification',
+                        response_text: fallbackText
+                    };
+                }
+            } else {
+                // No context yet - use greeting
+                aiOutput = {
+                    intent: 'greeting',
+                    response_text: "Hello! Welcome to MINT Outdoor. I'd love to help you find the perfect outdoor furniture. Are you looking for a dining set, lounge set, or something else?"
+                };
+            }
         }
         
         // Validate
         aiOutput = validateAIOutput(aiOutput, session.currentWhitelist, sessionId);
         
         if (!aiOutput) {
+            // CONTEXT-AWARE FALLBACK
+            const ctx = session.context;
+            let fallbackText = "I'd love to help you find the perfect outdoor furniture.";
+            
+            if (ctx.material || ctx.seatCount) {
+                fallbackText = `I'm still looking for ${ctx.material || 'furniture'}${ctx.seatCount ? ' for ' + ctx.seatCount + ' people' : ''}. Could you tell me if you prefer dining or lounge style?`;
+            }
+            
             aiOutput = {
                 intent: 'clarification',
-                response_text: "I'd love to help you find the perfect outdoor furniture. Are you looking for dining, lounging, or both?"
+                response_text: fallbackText
             };
         }
         
