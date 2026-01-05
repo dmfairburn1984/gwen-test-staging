@@ -1113,191 +1113,165 @@ app.get('/widget', (req, res) => {
 });
 
 // =====================================================
-// GWEN AUTOMATED TEST RUNNER v1.0
-// =====================================================
-// 
-// HOW TO ADD TO YOUR APP.JS:
-// 
-// 1. Open your App.js file
-// 2. Find this line near the end (around line 3117):
-//    // ============================================
-//    // SERVER STARTUP
-//    // ============================================
-// 
-// 3. PASTE all the code below DIRECTLY ABOVE that line
-// 4. Save the file
-// 5. Push to Heroku: git add . && git commit -m "Add test runner" && git push heroku main
-// 6. Access tests at: https://gwen-test-staging.herokuapp.com/run-tests
-// 
-// =====================================================
+const TEST_SCENARIOS_V2 = {
+  "version": "2.0",
+  "suites": {
+    
+    "fuzzy_product_matching": {
+      "description": "Vague customer requests that require AI interpretation",
+      "tests": [
+        { "id": "FUZZY-001", "name": "Vague seating request", "input": "I need something to sit on outside", "expect_any": ["sofa", "chair", "lounge", "seating", "seat", "corner"], "must_not_contain": ["sorry", "cannot"] },
+        { "id": "FUZZY-002", "name": "Relaxation focused", "input": "looking for somewhere to chill and have drinks with friends", "expect_any": ["lounge", "sofa", "corner", "seating", "set"], "must_not_contain": ["sorry", "cannot"] },
+        { "id": "FUZZY-003", "name": "Sunbathing request", "input": "want to sunbathe in garden", "expect_any": ["lounger", "sun", "daybed", "recline"], "must_not_contain": ["sorry", "cannot"] },
+        { "id": "FUZZY-004", "name": "Dining intent", "input": "want to eat outside with family", "expect_any": ["dining", "table", "eat", "meal", "food", "outdoor dining"], "must_not_contain": ["sorry", "cannot help"] },
+        { "id": "FUZZY-005", "name": "Entertainment focused", "input": "hosting a bbq party next month need furniture", "expect_any": ["seat", "dining", "guest", "entertain", "set"], "must_not_contain": ["sorry"] },
+        { "id": "FUZZY-006", "name": "Cozy corner request", "input": "want a cozy spot to read in garden", "expect_any": ["chair", "lounge", "corner", "seat", "comfortable"], "must_not_contain": ["sorry"] }
+      ]
+    },
 
-// ============================================
-// TEST SCENARIOS
-// ============================================
+    "seat_count": {
+      "description": "Seating capacity requirements",
+      "tests": [
+        { "id": "SEAT-001", "name": "2 people", "input": "outdoor furniture for 2 people please", "expect_any": ["2", "two", "couple", "bistro", "pair", "loveseat"], "must_not_contain": ["8", "10", "large"] },
+        { "id": "SEAT-002", "name": "4 people", "input": "need seating for 4 guests", "expect_any": ["4", "four", "seat"], "must_not_contain": ["sorry"] },
+        { "id": "SEAT-003", "name": "6 people", "input": "furniture for family of 6", "expect_any": ["6", "six", "seat"], "must_not_contain": ["sorry"] },
+        { "id": "SEAT-004", "name": "8+ people", "input": "large family gatherings of 8-10 people", "expect_any": ["8", "9", "10", "large", "corner", "modular"], "must_not_contain": ["sorry"] }
+      ]
+    },
 
-const TEST_SCENARIOS = {
-  "fuzzy_product_matching": [
-    {
-      id: "FUZZY-001",
-      name: "Vague seating request",
-      input: "I need something to sit on outside",
-      expect_any: ["sofa", "lounge", "seating", "corner", "seat", "Sofa", "Lounge", "Corner"]
+    "material_questions": {
+      "description": "Material durability and care",
+      "tests": [
+        { "id": "MAT-001", "name": "General durability", "input": "will this furniture last outside?", "expect_any": ["durable", "weather", "year", "last", "UV", "resistant", "quality", "built"], "must_not_contain": ["sorry"] },
+        { "id": "MAT-002", "name": "Rattan longevity", "input": "how long does rattan furniture typically last?", "expect_any": ["year", "rattan", "polyrattan", "20", "durable", "last"], "must_not_contain": ["sorry"] },
+        { "id": "MAT-003", "name": "Aluminium rust", "input": "does aluminium garden furniture rust?", "expect_any": ["rust", "aluminium", "aluminum", "no", "resistant", "won't", "doesn't"], "must_not_contain": ["sorry", "yes it does"] },
+        { "id": "MAT-004", "name": "Teak care", "input": "how do I look after teak furniture?", "expect_any": ["teak", "oil", "clean", "silver", "maintain", "care"], "must_not_contain": ["sorry"] },
+        { "id": "MAT-005", "name": "Material comparison", "input": "which is better rattan or aluminium?", "expect_any": ["rattan", "aluminium", "aluminum", "depend", "both", "prefer"], "must_not_contain": ["sorry", "cannot compare"] }
+      ]
     },
-    {
-      id: "FUZZY-002",
-      name: "Relaxation focused",
-      input: "somewhere to chill and have drinks",
-      expect_any: ["lounge", "sofa", "corner", "Lounge", "Sofa", "Corner"]
+
+    "weather_care": {
+      "description": "Weather resistance questions",
+      "tests": [
+        { "id": "WEATHER-001", "name": "Rain concern", "input": "can I leave the furniture out in the rain?", "expect_any": ["rain", "water", "weather", "resistant", "cover", "yes", "protect"], "must_not_contain": ["sorry"] },
+        { "id": "WEATHER-002", "name": "Winter storage", "input": "what should I do with furniture in winter?", "expect_any": ["winter", "store", "cover", "inside", "protect", "cushion"], "must_not_contain": ["sorry"] },
+        { "id": "WEATHER-003", "name": "Year round", "input": "can furniture stay outside all year round?", "expect_any": ["year", "outside", "weather", "cover", "protect", "yes"], "must_not_contain": ["sorry"] },
+        { "id": "WEATHER-004", "name": "UV fade", "input": "will sun fade the furniture colour?", "expect_any": ["UV", "sun", "fade", "colour", "color", "protect", "resistant"], "must_not_contain": ["sorry"] }
+      ]
     },
-    {
-      id: "FUZZY-003",
-      name: "Sunbathing request",
-      input: "want to sunbathe in my garden",
-      expect_any: ["sunlounger", "lounger", "Sola", "sun"]
+
+    "warranty_delivery": {
+      "description": "Service and delivery",
+      "tests": [
+        { "id": "WARRANTY-001", "name": "Warranty coverage", "input": "what warranty do you offer on furniture?", "expect_any": ["warranty", "year", "guarantee", "cover"], "must_not_contain": ["sorry"] },
+        { "id": "DELIVERY-001", "name": "Delivery time", "input": "how long does delivery take?", "expect_any": ["deliver", "day", "week", "working", "5", "10"], "must_not_contain": ["sorry"] },
+        { "id": "DELIVERY-002", "name": "Assembly", "input": "do you offer assembly?", "expect_any": ["assembl", "build", "set up", "service", "£69", "69.95"], "must_not_contain": ["sorry", "no"] },
+        { "id": "DELIVERY-003", "name": "Scotland delivery", "input": "do you deliver to Scotland?", "expect_any": ["Scotland", "deliver", "postcode", "unfortunately", "unable", "currently"], "must_not_contain": ["sorry we cannot help"] }
+      ]
     },
-    {
-      id: "FUZZY-004",
-      name: "Dining intent",
-      input: "want to eat outside with family",
-      expect_any: ["dining", "table", "Dining", "Table", "eat"]
+
+    "upsell_bundles": {
+      "description": "Cross-sell opportunities",
+      "tests": [
+        { "id": "UPSELL-001", "name": "Cover suggestion", "input": "I've decided on the Faro set, anything else I need?", "expect_any": ["cover", "protect", "cushion", "accessory", "recommend", "bundle"], "must_not_contain": ["sorry"] },
+        { "id": "UPSELL-002", "name": "Bundle offer", "input": "are there any deals if I buy multiple items?", "expect_any": ["bundle", "deal", "discount", "save", "%", "offer"], "must_not_contain": ["sorry"] },
+        { "id": "UPSELL-003", "name": "Complete set", "input": "just looking at dining chairs right now", "expect_any": ["table", "set", "complete", "match", "go with"], "must_not_contain": ["sorry"] }
+      ]
+    },
+
+    "specific_products": {
+      "description": "Named product queries",
+      "tests": [
+        { "id": "PROD-001", "name": "Faro details", "input": "tell me about the Faro range", "expect_any": ["Faro", "seat", "rattan", "lounge", "corner"], "must_not_contain": ["sorry", "don't have"] },
+        { "id": "PROD-002", "name": "Stockholm options", "input": "what Stockholm products do you have?", "expect_any": ["Stockholm", "dining", "aluminium", "aluminum"], "must_not_contain": ["sorry"] },
+        { "id": "PROD-003", "name": "Barcelona info", "input": "is the Barcelona set any good?", "expect_any": ["Barcelona", "quality", "seat", "feature"], "must_not_contain": ["sorry", "don't know"] }
+      ]
+    },
+
+    "price_budget": {
+      "description": "Pricing and budget queries",
+      "tests": [
+        { "id": "PRICE-001", "name": "Price query", "input": "how much is the Faro set?", "expect_any": ["£", "price", "cost", "Faro", "from"], "must_not_contain": ["sorry", "cannot provide"] },
+        { "id": "PRICE-002", "name": "Budget request", "input": "what can I get for under £1000?", "expect_any": ["£", "budget", "range", "option", "under"], "must_not_contain": ["sorry"] },
+        { "id": "PRICE-003", "name": "Value concern", "input": "seems quite expensive, is it worth it?", "expect_any": ["quality", "value", "warranty", "last", "investment", "worth"], "must_not_contain": ["sorry"] },
+        { "id": "PRICE-004", "name": "Payment options", "input": "can I pay in installments?", "expect_any": ["pay", "payment", "finance", "deposit", "option"], "must_not_contain": ["sorry", "cash only"] }
+      ]
+    },
+
+    "space_dimensions": {
+      "description": "Space planning queries",
+      "tests": [
+        { "id": "SPACE-001", "name": "Small space", "input": "I have a small balcony about 2m x 3m", "expect_any": ["small", "space", "balcony", "bistro", "compact", "fit"], "must_not_contain": ["sorry"] },
+        { "id": "SPACE-002", "name": "Dimension request", "input": "what are the dimensions of the corner sofa?", "expect_any": ["dimension", "cm", "metre", "wide", "deep", "size", "measure"], "must_not_contain": ["sorry", "don't know"] },
+        { "id": "SPACE-003", "name": "Will it fit", "input": "will a 6 seater set fit in a 4x5 metre patio?", "expect_any": ["fit", "space", "room", "yes", "should", "enough"], "must_not_contain": ["sorry"] }
+      ]
+    },
+
+    "returns_policy": {
+      "description": "Returns and exchanges",
+      "tests": [
+        { "id": "RETURN-001", "name": "Return policy", "input": "what's your return policy?", "expect_any": ["return", "14", "day", "refund", "policy"], "must_not_contain": ["sorry"] },
+        { "id": "RETURN-002", "name": "Damaged item", "input": "what if my furniture arrives damaged?", "expect_any": ["damage", "contact", "photo", "replace", "48 hour", "report"], "must_not_contain": ["sorry"] },
+        { "id": "RETURN-003", "name": "Exchange query", "input": "can I exchange if I change my mind?", "expect_any": ["exchange", "return", "change", "14", "original"], "must_not_contain": ["sorry"] }
+      ]
+    },
+
+    "objection_handling": {
+      "description": "Sales objections",
+      "tests": [
+        { "id": "OBJ-001", "name": "Price objection", "input": "that's more than I wanted to spend", "expect_any": ["understand", "budget", "value", "option", "quality", "alternative", "worth"], "must_not_contain": ["sorry", "can't help"] },
+        { "id": "OBJ-002", "name": "Thinking about it", "input": "I need to think about it", "expect_any": ["understand", "question", "help", "decision", "happy", "here"], "must_not_contain": ["sorry", "goodbye"] },
+        { "id": "OBJ-003", "name": "Competitor mention", "input": "I saw something similar cheaper at B&Q", "expect_any": ["quality", "warranty", "difference", "material", "compare", "value"], "must_not_contain": ["sorry", "buy from them"] }
+      ]
+    },
+
+    "stock_availability": {
+      "description": "Stock queries",
+      "tests": [
+        { "id": "STOCK-001", "name": "In stock query", "input": "is the Faro set in stock?", "expect_any": ["stock", "available", "delivery", "Faro"], "must_not_contain": ["sorry"] },
+        { "id": "STOCK-002", "name": "Pre-order", "input": "when will the Stockholm be available?", "expect_any": ["available", "stock", "pre-order", "delivery", "week"], "must_not_contain": ["sorry", "never"] },
+        { "id": "STOCK-003", "name": "Alternative request", "input": "that one is out of stock, what else do you have?", "expect_any": ["alternative", "similar", "option", "recommend", "instead"], "must_not_contain": ["sorry", "nothing"] }
+      ]
+    },
+
+    "use_case_specific": {
+      "description": "Special use cases",
+      "tests": [
+        { "id": "USE-001", "name": "Commercial", "input": "do you supply to hotels and restaurants?", "expect_any": ["commercial", "business", "trade", "bulk", "contact", "volume"], "must_not_contain": ["sorry", "residential only"] },
+        { "id": "USE-002", "name": "Gift purchase", "input": "buying as a gift for my parents", "expect_any": ["gift", "lovely", "great", "choice", "popular"], "must_not_contain": ["sorry"] },
+        { "id": "USE-003", "name": "Rental property", "input": "need furniture for rental property, something durable", "expect_any": ["durable", "robust", "low maintenance", "weather", "quality"], "must_not_contain": ["sorry"] }
+      ]
+    },
+
+    "cushion_fabric": {
+      "description": "Fabric care",
+      "tests": [
+        { "id": "CUSH-001", "name": "Cushion washing", "input": "can I machine wash the cushion covers?", "expect_any": ["wash", "cushion", "hand", "gentle", "clean"], "must_not_contain": ["sorry"] },
+        { "id": "CUSH-002", "name": "Fabric samples", "input": "can I get fabric swatches?", "expect_any": ["swatch", "sample", "fabric", "free", "send"], "must_not_contain": ["sorry", "no"] },
+        { "id": "CUSH-003", "name": "Spill handling", "input": "what if I spill wine on the cushions?", "expect_any": ["spill", "clean", "stain", "wipe", "blot"], "must_not_contain": ["sorry", "ruined"] }
+      ]
+    },
+
+    "edge_cases": {
+      "description": "Unusual inputs",
+      "tests": [
+        { "id": "EDGE-001", "name": "Simple greeting", "input": "Hi there", "expect_any": ["hello", "hi", "help", "welcome", "looking"], "must_not_contain": ["error", "cannot"] },
+        { "id": "EDGE-002", "name": "Gibberish", "input": "asdfghjkl", "expect_any": ["help", "understand", "looking", "assist", "question"], "must_not_contain": ["error", "crash"] },
+        { "id": "EDGE-003", "name": "Off-topic", "input": "what's the weather like today?", "expect_any": ["outdoor", "furniture", "help", "garden", "weather"], "must_not_contain": ["error"] },
+        { "id": "EDGE-004", "name": "Thank you", "input": "thank you for your help", "expect_any": ["welcome", "pleasure", "help", "question", "happy"], "must_not_contain": ["error", "sorry"] }
+      ]
+    },
+
+    "sustainability": {
+      "description": "Eco questions",
+      "tests": [
+        { "id": "ECO-001", "name": "Environmental", "input": "is your furniture environmentally friendly?", "expect_any": ["sustainable", "FSC", "recycle", "environment", "responsible", "eco"], "must_not_contain": ["sorry", "no"] },
+        { "id": "ECO-002", "name": "Material sourcing", "input": "where does your teak come from?", "expect_any": ["teak", "source", "FSC", "certified", "sustainable"], "must_not_contain": ["sorry", "don't know"] }
+      ]
     }
-  ],
-  "seat_count": [
-    {
-      id: "SEAT-001",
-      name: "2 people",
-      input: "outdoor furniture for 2 people",
-      expect_any: ["2", "two", "couple", "bistro"],
-      must_not_contain: ["8 seater", "9 seater", "10 seater"]
-    },
-    {
-      id: "SEAT-002",
-      name: "4 people",
-      input: "need seating for 4 guests",
-      expect_any: ["4", "four"]
-    },
-    {
-      id: "SEAT-003",
-      name: "6 people",
-      input: "furniture for family of 6",
-      expect_any: ["6", "six"]
-    },
-    {
-      id: "SEAT-004",
-      name: "8+ people",
-      input: "hosting big parties need 8 or more seats",
-      expect_any: ["8", "9", "10", "eight", "nine", "ten"]
-    }
-  ],
-  "material_questions": [
-    {
-      id: "MAT-001",
-      name: "Durability concern",
-      input: "will this furniture last outside?",
-      expect_any: ["durable", "weather", "year", "last", "UV", "resistant"]
-    },
-    {
-      id: "MAT-002",
-      name: "Rattan longevity",
-      input: "how long does rattan furniture last?",
-      expect_any: ["20", "year", "polyrattan", "rattan", "UV"]
-    },
-    {
-      id: "MAT-003",
-      name: "Aluminium rust",
-      input: "will aluminium furniture rust?",
-      expect_any: ["rust", "powder", "coat", "resistant", "no", "doesn't", "won't"]
-    }
-  ],
-  "weather_care": [
-    {
-      id: "WEATHER-001",
-      name: "Rain concern",
-      input: "can I leave furniture out in the rain?",
-      expect_any: ["rain", "weather", "cover", "store", "yes", "outdoor"]
-    },
-    {
-      id: "WEATHER-002",
-      name: "Winter storage",
-      input: "what do I do with furniture in winter?",
-      expect_any: ["winter", "store", "cover", "indoor", "protect"]
-    },
-    {
-      id: "WEATHER-003",
-      name: "All year outside",
-      input: "can polyrattan stay outside all year round?",
-      expect_any: ["year", "outside", "cover", "yes", "recommend"]
-    }
-  ],
-  "warranty_delivery": [
-    {
-      id: "WARRANTY-001",
-      name: "Warranty question",
-      input: "what warranty do you offer?",
-      expect_any: ["warranty", "year", "guarantee", "1", "2", "3", "5", "10"]
-    },
-    {
-      id: "DELIVERY-001",
-      name: "Delivery time",
-      input: "how long for delivery?",
-      expect_any: ["5", "10", "day", "working", "delivery", "week"]
-    },
-    {
-      id: "DELIVERY-002",
-      name: "Assembly service",
-      input: "can someone assemble for me?",
-      expect_any: ["assembly", "service", "£69", "69.95"]
-    }
-  ],
-  "upsell_bundles": [
-    {
-      id: "UPSELL-001",
-      name: "Cover suggestion",
-      input: "I want to buy the Faro lounge set",
-      expect_any: ["Faro", "cover", "protect", "bundle", "20%", "save"]
-    },
-    {
-      id: "UPSELL-002",
-      name: "Bundle deals",
-      input: "do you have any deals or bundles?",
-      expect_any: ["bundle", "save", "20%", "discount", "deal"]
-    }
-  ],
-  "specific_products": [
-    {
-      id: "PROD-001",
-      name: "Faro details",
-      input: "tell me about the Faro lounge set",
-      expect_any: ["Faro", "9", "seat", "rattan"]
-    },
-    {
-      id: "PROD-002",
-      name: "Stockholm options",
-      input: "what Stockholm sets do you have?",
-      expect_any: ["Stockholm"]
-    },
-    {
-      id: "PROD-003",
-      name: "Barcelona info",
-      input: "Barcelona lounge set features?",
-      expect_any: ["Barcelona", "seat"]
-    }
-  ],
-  "edge_cases": [
-    {
-      id: "EDGE-001",
-      name: "Simple greeting",
-      input: "hi",
-      expect_any: ["help", "Hello", "Hi", "looking", "outdoor", "welcome"]
-    },
-    {
-      id: "EDGE-002",
-      name: "Price query",
-      input: "how much is the Faro?",
-      expect_any: ["£", "price", "Faro"]
-    }
-  ]
+  }
 };
+
 
 // ============================================
 // TEST RUNNER FUNCTIONS
@@ -1351,174 +1325,184 @@ function checkTestResult(response, scenario) {
 // TEST ENDPOINTS
 // ============================================
 
-// Full test suite
 app.get('/run-tests', async (req, res) => {
+  const format = req.query.format || 'html';
+  const requestedSuites = req.query.suite ? req.query.suite.split(',') : null;
+  
   console.log('\n🧪 ═══════════════════════════════════════');
-  console.log('🧪 STARTING GWEN TEST SUITE');
+  console.log('🧪 GWEN TEST SUITE V2');
   console.log('🧪 ═══════════════════════════════════════\n');
   
-  const results = {
-    timestamp: new Date().toISOString(),
-    summary: { total: 0, passed: 0, failed: 0, passRate: '0%' },
-    suites: {}
-  };
+  const results = [];
+  const suites = TEST_SCENARIOS_V2.suites;
   
-  for (const [suiteName, scenarios] of Object.entries(TEST_SCENARIOS)) {
+  // Filter suites if specific ones requested
+  const suitesToRun = requestedSuites 
+    ? Object.keys(suites).filter(s => requestedSuites.includes(s))
+    : Object.keys(suites);
+  
+  for (const suiteName of suitesToRun) {
+    const suite = suites[suiteName];
     console.log(`\n📋 Suite: ${suiteName}`);
-    results.suites[suiteName] = { total: 0, passed: 0, failed: 0, tests: [] };
     
-    for (const scenario of scenarios) {
-      console.log(`  🔄 ${scenario.id}: ${scenario.name}`);
+    for (const test of suite.tests) {
+      console.log(`🔄 ${test.id}: ${test.name}`);
       const startTime = Date.now();
       
       try {
         // Create fresh session for each test
-        const testSessionId = `test-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
-        
-        // Build system prompt with empty session state
         const testSessionState = {
           messageCount: 1,
           established: {},
           commercial: {},
           availableSkus: []
         };
-        const systemPrompt = buildSystemPrompt(testSessionState);
         
-        const messages = [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: scenario.input }
-        ];
+        const systemPrompt = buildSystemPrompt(testSessionState);
         
         // Call OpenAI
         const completion = await openai.chat.completions.create({
-          model: "gpt-4o",
-          messages: messages,
-          tools: aiTools,
-          tool_choice: "auto",
-          temperature: 0.4,
-          max_tokens: 600
+          model: 'gpt-4o-mini',
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: test.input }
+          ],
+          tools: tools,
+          tool_choice: 'auto',
+          max_tokens: 800,
+          temperature: 0.7
         });
         
         let response = completion.choices[0].message;
-        let finalContent = response.content || '';
+        let toolsUsed = [];
         
         // Handle tool calls if any
         if (response.tool_calls && response.tool_calls.length > 0) {
-          const toolMessages = [...messages, response];
+          const toolMessages = [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: test.input },
+            response
+          ];
           
           for (const toolCall of response.tool_calls) {
-            const funcName = toolCall.function.name;
+            toolsUsed.push(toolCall.function.name);
             const args = JSON.parse(toolCall.function.arguments);
+            let toolResult;
             
-            let toolResult = { error: "Unknown function" };
-            
-            // Call the appropriate handler
-            if (funcName === "search_products") {
+            if (toolCall.function.name === 'search_products') {
               toolResult = searchProducts(args);
-            } else if (funcName === "get_product_availability") {
-              // Use your existing availability check
-              const product = productIndex.bySku[args.sku];
-              toolResult = product ? { 
-                sku: args.sku, 
-                available: true,
-                stockLevel: product.stockStatus?.level || 'In Stock'
-              } : { error: "Product not found" };
-            } else if (funcName === "get_comprehensive_warranty") {
-              const product = productIndex.bySku[args.sku];
-              toolResult = product?.actual_warranties || { standard: "1 year guarantee" };
-            } else if (funcName === "get_material_expertise") {
-              toolResult = getMaterialExpertise ? getMaterialExpertise(args.material) : { info: "Material information" };
+            } else if (toolCall.function.name === 'get_material_info') {
+              toolResult = getMaterialInfo(args);
+            } else {
+              toolResult = { error: 'Unknown tool' };
             }
             
             toolMessages.push({
-              role: "tool",
+              role: 'tool',
               tool_call_id: toolCall.id,
               content: JSON.stringify(toolResult)
             });
           }
           
-          // Get final response
-          const finalCompletion = await openai.chat.completions.create({
-            model: "gpt-4o",
+          const followUp = await openai.chat.completions.create({
+            model: 'gpt-4o-mini',
             messages: toolMessages,
-            temperature: 0.4,
-            max_tokens: 600
+            max_tokens: 800,
+            temperature: 0.7
           });
           
-          finalContent = finalCompletion.choices[0].message.content || '';
+          response = followUp.choices[0].message;
         }
         
+        const responseText = response.content || '';
         const responseTime = Date.now() - startTime;
-        const result = checkTestResult(finalContent, scenario);
+        const responseLower = responseText.toLowerCase();
         
-        const testResult = {
-          id: scenario.id,
-          name: scenario.name,
-          input: scenario.input,
-          passed: result.passed,
-          responseTime,
-          response: finalContent.substring(0, 400) + (finalContent.length > 400 ? '...' : ''),
-          found: result.foundTerms,
-          missing: result.missingTerms,
-          violations: result.violations
-        };
+        // Check assertions
+        let passed = true;
+        let foundTerms = [];
+        let missingTerms = [];
+        let violations = [];
         
-        results.suites[suiteName].tests.push(testResult);
-        results.suites[suiteName].total++;
-        results.summary.total++;
-        
-        if (result.passed) {
-          results.suites[suiteName].passed++;
-          results.summary.passed++;
-          console.log(`  ✅ PASSED (${responseTime}ms)`);
-        } else {
-          results.suites[suiteName].failed++;
-          results.summary.failed++;
-          console.log(`  ❌ FAILED (${responseTime}ms)`);
-          if (result.missingTerms.length > 0 && result.foundTerms.length === 0) {
-            console.log(`     None found from: ${scenario.expect_any.join(', ')}`);
-          }
-          if (result.violations.length > 0) {
-            console.log(`     Violations: ${result.violations.join(', ')}`);
+        // Check expect_any (at least one must match)
+        if (test.expect_any && test.expect_any.length > 0) {
+          const found = test.expect_any.filter(term => 
+            responseLower.includes(term.toLowerCase())
+          );
+          foundTerms = found;
+          if (found.length === 0) {
+            passed = false;
+            missingTerms = test.expect_any;
           }
         }
+        
+        // Check must_not_contain
+        if (test.must_not_contain && test.must_not_contain.length > 0) {
+          for (const term of test.must_not_contain) {
+            if (responseLower.includes(term.toLowerCase())) {
+              passed = false;
+              violations.push(term);
+            }
+          }
+        }
+        
+        const status = passed ? '✅ PASSED' : '❌ FAILED';
+        console.log(`${status} (${responseTime}ms)`);
+        
+        if (!passed && missingTerms.length > 0) {
+          console.log(`None found from: ${missingTerms.join(', ')}`);
+        }
+        if (violations.length > 0) {
+          console.log(`Violations: ${violations.join(', ')}`);
+        }
+        
+        results.push({
+          suite: suiteName,
+          id: test.id,
+          name: test.name,
+          input: test.input,
+          passed,
+          responseTime,
+          foundTerms,
+          missingTerms,
+          violations,
+          toolsUsed,
+          response: responseText.substring(0, 500)
+        });
         
       } catch (error) {
-        console.log(`  ❌ ERROR: ${error.message}`);
-        results.suites[suiteName].tests.push({
-          id: scenario.id,
-          name: scenario.name,
-          input: scenario.input,
+        console.log(`❌ ERROR: ${error.message}`);
+        results.push({
+          suite: suiteName,
+          id: test.id,
+          name: test.name,
+          input: test.input,
           passed: false,
-          error: error.message
+          error: error.message,
+          responseTime: Date.now() - startTime
         });
-        results.suites[suiteName].total++;
-        results.suites[suiteName].failed++;
-        results.summary.total++;
-        results.summary.failed++;
       }
       
-      // Rate limit protection
-      await new Promise(resolve => setTimeout(resolve, 800));
+      // Rate limiting
+      await new Promise(r => setTimeout(r, 600));
     }
   }
   
-  // Calculate pass rate
-  results.summary.passRate = results.summary.total > 0 
-    ? ((results.summary.passed / results.summary.total) * 100).toFixed(1) + '%'
-    : '0%';
+  // Calculate stats
+  const passed = results.filter(r => r.passed).length;
+  const total = results.length;
+  const passRate = ((passed / total) * 100).toFixed(1);
   
   console.log(`\n🧪 ═══════════════════════════════════════`);
-  console.log(`🧪 RESULTS: ${results.summary.passed}/${results.summary.total} (${results.summary.passRate})`);
+  console.log(`🧪 RESULTS: ${passed}/${total} (${passRate}%)`);
   console.log(`🧪 ═══════════════════════════════════════\n`);
   
-  // Return HTML or JSON
-  if (req.query.format === 'json') {
-    return res.json(results);
+  if (format === 'json') {
+    return res.json({ passed, total, passRate, results });
   }
   
   // Generate HTML report
-  let html = generateTestReportHTML(results);
+  const html = generateTestReport(results, passed, total, passRate, suitesToRun);
   res.send(html);
 });
 
@@ -1722,6 +1706,118 @@ function generateTestReportHTML(results) {
     <a href="/run-tests?format=json" class="btn">📊 JSON Results</a>
     <a href="/test-single?input=I need 6 seater rattan furniture" class="btn">🧪 Test Single</a>
   </div>
+</body>
+</html>`;
+}
+
+/ ═══════════════════════════════════════════════════════════════════════════
+// STEP 3: Add this HTML report generator function
+// ═══════════════════════════════════════════════════════════════════════════
+
+function generateTestReport(results, passed, total, passRate, suitesRun) {
+  const suiteGroups = {};
+  results.forEach(r => {
+    if (!suiteGroups[r.suite]) suiteGroups[r.suite] = [];
+    suiteGroups[r.suite].push(r);
+  });
+  
+  let suiteHtml = '';
+  for (const [suite, tests] of Object.entries(suiteGroups)) {
+    const suitePassed = tests.filter(t => t.passed).length;
+    const suiteTotal = tests.length;
+    const suiteRate = ((suitePassed / suiteTotal) * 100).toFixed(0);
+    
+    suiteHtml += `
+      <div class="suite">
+        <h3>${suite} <span class="suite-stats">${suitePassed}/${suiteTotal} (${suiteRate}%)</span></h3>
+        ${tests.map(t => `
+          <div class="test ${t.passed ? 'pass' : 'fail'}">
+            <div class="test-header" onclick="this.parentElement.classList.toggle('expanded')">
+              <span class="status">${t.passed ? '✅' : '❌'}</span>
+              <span class="test-id">${t.id}</span>
+              <span class="test-name">${t.name}</span>
+              <span class="test-time">${t.responseTime}ms</span>
+            </div>
+            <div class="test-details">
+              <p><strong>Input:</strong> "${t.input}"</p>
+              ${t.foundTerms?.length ? `<p><strong>Found:</strong> <span class="found">${t.foundTerms.join(', ')}</span></p>` : ''}
+              ${t.missingTerms?.length ? `<p><strong>Missing:</strong> <span class="missing">${t.missingTerms.join(', ')}</span></p>` : ''}
+              ${t.violations?.length ? `<p><strong>Violations:</strong> <span class="violation">${t.violations.join(', ')}</span></p>` : ''}
+              ${t.toolsUsed?.length ? `<p><strong>Tools:</strong> ${t.toolsUsed.join(', ')}</p>` : ''}
+              ${t.error ? `<p><strong>Error:</strong> <span class="error">${t.error}</span></p>` : ''}
+              <p><strong>Response:</strong></p>
+              <pre>${t.response || 'No response'}</pre>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+  
+  return `<!DOCTYPE html>
+<html>
+<head>
+  <title>GWEN Test Results V2</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+    h1 { color: #1a1a2e; }
+    .summary { background: ${parseFloat(passRate) >= 80 ? '#d4edda' : parseFloat(passRate) >= 60 ? '#fff3cd' : '#f8d7da'}; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    .summary h2 { margin: 0; font-size: 2em; }
+    .summary p { margin: 5px 0; color: #666; }
+    .suite { background: white; border-radius: 8px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .suite h3 { margin: 0 0 10px 0; display: flex; justify-content: space-between; align-items: center; }
+    .suite-stats { font-size: 0.8em; color: #666; }
+    .test { border: 1px solid #ddd; border-radius: 4px; margin: 5px 0; overflow: hidden; }
+    .test.pass { border-left: 4px solid #28a745; }
+    .test.fail { border-left: 4px solid #dc3545; }
+    .test-header { padding: 10px 15px; cursor: pointer; display: flex; align-items: center; gap: 10px; background: #fafafa; }
+    .test-header:hover { background: #f0f0f0; }
+    .test-id { font-weight: bold; color: #333; }
+    .test-name { flex: 1; }
+    .test-time { color: #888; font-size: 0.9em; }
+    .test-details { display: none; padding: 15px; background: white; border-top: 1px solid #eee; }
+    .test.expanded .test-details { display: block; }
+    pre { background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto; font-size: 0.85em; white-space: pre-wrap; }
+    .found { color: #28a745; }
+    .missing { color: #dc3545; }
+    .violation { color: #dc3545; font-weight: bold; }
+    .error { color: #dc3545; }
+    .links { margin-top: 20px; }
+    .links a { margin-right: 15px; color: #007bff; }
+    .filters { margin-bottom: 20px; padding: 15px; background: white; border-radius: 8px; }
+    .filters a { display: inline-block; margin: 5px; padding: 5px 10px; background: #e9ecef; border-radius: 4px; text-decoration: none; color: #333; font-size: 0.9em; }
+    .filters a:hover { background: #007bff; color: white; }
+  </style>
+</head>
+<body>
+  <h1>🧪 GWEN Test Results V2</h1>
+  
+  <div class="summary">
+    <h2>${passed}/${total} Tests Passed (${passRate}%)</h2>
+    <p>Suites run: ${suitesRun.join(', ')}</p>
+    <p>Generated: ${new Date().toISOString()}</p>
+  </div>
+  
+  <div class="filters">
+    <strong>Run specific suites:</strong><br>
+    ${Object.keys(TEST_SCENARIOS_V2.suites).map(s => 
+      `<a href="/run-tests?suite=${s}">${s}</a>`
+    ).join('')}
+    <a href="/run-tests">All Suites</a>
+  </div>
+  
+  ${suiteHtml}
+  
+  <div class="links">
+    <a href="/run-tests?format=json">View as JSON</a>
+    <a href="/run-tests">Re-run All Tests</a>
+  </div>
+  
+  <script>
+    // Expand all failed tests by default
+    document.querySelectorAll('.test.fail').forEach(t => t.classList.add('expanded'));
+  </script>
 </body>
 </html>`;
 }
