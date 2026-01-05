@@ -1540,7 +1540,7 @@ app.post('/chat', async (req, res) => {
                     });
                 }
                 
-                if (toolCall.function.name === "request_human_handoff") {
+                         if (toolCall.function.name === "request_human_handoff") {
                     console.log(`📧 Handoff requested: ${args.reason}`);
                     
                     toolResults.push({
@@ -1551,9 +1551,8 @@ app.post('/chat', async (req, res) => {
                         })
                     });
                 }
-            }
-
-            if (toolCall.function.name === "capture_email_for_quote") {
+                
+                if (toolCall.function.name === "capture_email_for_quote") {
                     console.log(`📧 Email capture:`, args);
                     
                     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -1566,14 +1565,9 @@ app.post('/chat', async (req, res) => {
                             })
                         });
                     } else {
-                        // Store email in session
                         session.customerEmail = args.email;
-                        
-                        // Get products for quote
                         const productsForQuote = args.productSkus || session.commercial.productsShown.slice(-3);
                         
-                        // In production, you would send an actual email here
-                        // For now, we log it and confirm
                         console.log(`📧 Quote requested for: ${args.email}`);
                         console.log(`📧 Products: ${productsForQuote.join(', ')}`);
                         
@@ -1613,7 +1607,6 @@ app.post('/chat', async (req, res) => {
                             message: `Direct the customer to click the ORDER NOW button or visit: ${productUrl}`
                         };
                         
-                        // Add bundle info if requested
                         if (args.includeBundle) {
                             const bundles = getBundleForProduct(args.productSku);
                             if (bundles.length > 0) {
@@ -1638,6 +1631,7 @@ app.post('/chat', async (req, res) => {
                         });
                     }
                 }
+            }
             
             messages.push(aiMessage);
             
